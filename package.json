@@ -1,0 +1,20 @@
+{
+  "name": "kuzeymarmara-cekici",
+  "version": "1.0.0",
+  "description": "Kuzey Marmara Oto Çekici, Kurtarıcı ve Yol Yardım Platformu",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "generate": "node scripts/generate_regions.js && node scripts/generate_services.js && node scripts/generate_blogs.js && node scripts/generate_sitemap.js && node scripts/generate_llms.js",
+    "generate:regions": "node scripts/generate_regions.js",
+    "generate:services": "node scripts/generate_services.js",
+    "generate:blogs": "node scripts/generate_blogs.js",
+    "generate:sitemap": "node scripts/generate_sitemap.js",
+    "generate:llms": "node scripts/generate_llms.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED"
+}
