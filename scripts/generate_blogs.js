@@ -224,9 +224,11 @@ function generateArticleHtml(blog) {
   <meta name="description" content="${blog.metaDesc}">
   <meta name="keywords" content="${blog.keywords}">
   <link rel="canonical" href="${DOMAIN}/blog/${blog.slug}.html">
-  <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
 
   <script type="application/ld+json">
   ${JSON.stringify(articleSchema, null, 2)}
@@ -295,7 +297,7 @@ function generateArticleHtml(blog) {
     <div class="container" style="max-width: 860px;">
       <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 35px; margin-bottom: 30px;">
         <div style="border-radius: 12px; overflow: hidden; margin-bottom: 25px;">
-          <img src="../images/${blog.image}" alt="${blog.headline}" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;">
+          <img src="../images/${blog.image}" alt="${blog.headline}" width="800" height="420" loading="lazy" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;">
         </div>
 
         ${blog.content}
@@ -346,7 +348,7 @@ function generateArticleHtml(blog) {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }
@@ -376,8 +378,28 @@ function generateBlogIndexHtml() {
   <meta name="description" content="Otoyolda araç arızası, çekici çağırma kuralları, fiyat hesaplama, akü takviyesi ve araç kurtarma rehber yazıları.">
   <link rel="canonical" href="${DOMAIN}/blog/index.html">
   <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Kuzey Marmara Çekici Sürücü Rehberi & Blog",
+    "description": "Otoyolda araç arızası, çekici çağırma kuralları, fiyat hesaplama ve araç kurtarma rehber yazıları.",
+    "url": "${DOMAIN}/blog/index.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "${DOMAIN}/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "${DOMAIN}/blog/index.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="top-bar">
@@ -450,7 +472,7 @@ function generateBlogIndexHtml() {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }

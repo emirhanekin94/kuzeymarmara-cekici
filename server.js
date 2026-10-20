@@ -32,7 +32,7 @@ const MIME_TYPES = {
   '.woff': 'font/woff'
 };
 
-const IMMUTABLE_EXT = new Set(['.css', '.js', '.woff2', '.woff', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.ico']);
+const IMMUTABLE_EXT = new Set(['.woff2', '.woff', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.ico', '.ttf']);
 
 // Kısa URL takma adları: /kurtkoy, /kurtkoy-cekici, /kurtkoy-oto-cekici -> /bolgeler/kurtkoy-oto-cekici
 let REGION_ALIASES = {};
@@ -85,8 +85,10 @@ function securityHeaders(res) {
 function cacheHeaders(res, ext) {
   if (IMMUTABLE_EXT.has(ext)) {
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+  } else if (['.css', '.js'].includes(ext)) {
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
   } else if (ext === '.html') {
-    res.setHeader('Cache-Control', 'public, max-age=0, stale-while-revalidate=86400');
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   } else {
     res.setHeader('Cache-Control', 'public, max-age=3600');
   }
@@ -109,18 +111,42 @@ function sendFile(req, res, filePath) {
     const acceptEncoding = (req.headers['accept-encoding'] || '');
     const compressible = /text|javascript|json|svg|xml/.test(contentType);
 
-    if (compressible && /\bgzip\b/.test(acceptEncoding)) {
-      res.setHeader('Content-Encoding', 'gzip');
-      res.statusCode = 200;
-      zlib.gzip(data, (zErr, zData) => res.end(zErr ? data : zData));
-    } else if (compressible && /\bdeflate\b/.test(acceptEncoding)) {
-      res.setHeader('Content-Encoding', 'deflate');
-      res.statusCode = 200;
-      zlib.deflate(data, (zErr, zData) => res.end(zErr ? data : zData));
-    } else {
-      res.statusCode = 200;
-      res.end(data);
+    if (compressible) {
+      res.setHeader('Vary', 'Accept-Encoding');
+      if (/\bgzip\b/.test(acceptEncoding)) {
+        res.setHeader('Content-Encoding', 'gzip');
+        zlib.gzip(data, (zErr, zData) => {
+          if (zErr) {
+            res.statusCode = 200;
+            res.setHeader('Content-Length', data.length);
+            res.end(data);
+          } else {
+            res.statusCode = 200;
+            res.setHeader('Content-Length', zData.length);
+            res.end(zData);
+          }
+        });
+        return;
+      } else if (/\bdeflate\b/.test(acceptEncoding)) {
+        res.setHeader('Content-Encoding', 'deflate');
+        zlib.deflate(data, (zErr, zData) => {
+          if (zErr) {
+            res.statusCode = 200;
+            res.setHeader('Content-Length', data.length);
+            res.end(data);
+          } else {
+            res.statusCode = 200;
+            res.setHeader('Content-Length', zData.length);
+            res.end(zData);
+          }
+        });
+        return;
+      }
     }
+
+    res.statusCode = 200;
+    res.setHeader('Content-Length', data.length);
+    res.end(data);
   });
 }
 

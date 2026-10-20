@@ -415,6 +415,87 @@ const regions = [
       { q: 'Ödeme nasıl yapılır?', a: 'Kredi kartı, FAST veya nakit geçerlidir.' },
       { q: 'Taşıma kaskolu mu?', a: 'Tüm operasyonlarımız nakliyat sigortası güvencesindedir.' }
     ]
+  },
+  {
+    slug: 'kartal-oto-cekici',
+    name: 'Kartal',
+    category: 'anadolu-merkez',
+    categoryLabel: 'Kartal & Yakacık',
+    title: 'Kartal Oto Çekici 7/24 | 10 Dk En Yakın Çekici - 0533 265 70 89',
+    metaDesc: 'Kartal çekici, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 acil oto kurtarıcı. 10-15 dakikada intikal: 0533 265 70 89.',
+    keywords: 'kartal çekici, kartal oto çekici, yakacık çekici, samandıra kmo çekici, soğanlık çekici, kartal acil çekici, kartal oto kurtarma',
+    eta: '10 - 15 Dk',
+    caseTitle: 'Samandıra KMO Bağlantısında Şanzıman Kilitlenmesi',
+    caseDesc: 'Samandıra viyadük ayrımında şanzımanı kilitlenen binek araç için ekibimiz 11 dakikada intikal ederek hidrolik kayar platforma hasarsız yükleme yapmış ve Kartal Sanayi Sitesi\'ne güvenle ulaştırmıştır.',
+    vehicleType: 'B-Segment Hatchback',
+    deliveryPoint: 'Kartal Oto Sanayi Sitesi',
+    leadText: 'Kartal merkez, Samandıra KMO bağlantı yolu, Yakacık yokuşları, Soğanlık ve E-5 koridorunda konuşlu nöbetçi ekiplerimizle 10-15 dakikada yanınızdayız.',
+    hotspots: 'Samandıra KMO Bağlantısı, Yakacık Rampaları, Kartal Köprüsü, Soğanlık E-5, Kartal Sahil Yolu',
+    trafficAnalysis: "Kartal, Anadolu Yakası'nın en kritik kavşaklarından biri olup Samandıra üzerinden Kuzey Marmara Otoyolu'na, Yakacık üzerinden TEM otoyoluna ve güneyden D-100 (E-5) karayoluna bağlanan yoğun bir transit artere sahiptir. Yakacık yokuşlarında hararet ve debriyaj balatası arızaları, Samandıra gişe bağlantısında ise ani dur-kalk trafiğine bağlı tampon sürtmeleri sıkça yaşanır.",
+    scenarios: "Yakacık rampalarında hararet ve debriyaj yanması, Samandıra KMO gişe çıkışında şanzıman ve aks kilitlenmesi, Soğanlık yan yol bağlantılarında küçük hasarlı çarpışmalar.",
+    equipmentProtocol: "Dar sokaklar için hidrolik kayar platformlar, Samandıra otoyol bağlantısı için yüksek tonajlı kurtarıcılar ve dijital akü şarj destek üniteleri.",
+    localAdvice: "Kartal E-5 veya Samandıra bağlantısında arızalanan sürücülerin dörtlülerini yakıp güvenlik şeridine yanaşmaları ve bariyer arkasında beklemeleri hayati önem taşır.",
+    faqs: [
+      { q: 'Kartal oto çekici kaç dakikada gelir?', a: 'Samandıra ve Yakacık nöbetçi araçlarımızla ortalama 10-15 dakikada yanınızdayız.' },
+      { q: 'Kartal Sanayi Sitesi\'ne çekim yapıyor musunuz?', a: 'Evet, Kartal Sanayi, Maltepe veya Pendik yetkili servislerine kaskolu teslimat yapıyoruz.' },
+      { q: 'Samandıra KMO gişelerinde kaldım, gelir misiniz?', a: 'Kuzey Marmara Otoyolu Samandıra gişe hattında 7/24 devriye aracımız hazırdır.' },
+      { q: 'Kredi kartıyla ödeme yapabilir miyim?', a: 'Evet, mobil POS ile tek çekim veya taksitli ödeme yapabilirsiniz.' },
+      { q: 'Gece çekici desteğiniz var mı?', a: '7 gün 24 saat kesintisiz gece nöbetçi kurtarıcılarımız görev başındadır.' }
+    ]
+  },
+  {
+    slug: 'maltepe-oto-cekici',
+    name: 'Maltepe',
+    category: 'anadolu-merkez',
+    categoryLabel: 'Maltepe & Başıbüyük',
+    title: 'Maltepe Oto Çekici 7/24 | Başıbüyük KMO & E-5 Çekici - 0533 265 70 89',
+    metaDesc: 'Maltepe çekici, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto kurtarıcı. 10-15 dk varış: 0533 265 70 89.',
+    keywords: 'maltepe çekici, maltepe oto çekici, başıbüyük çekici, küçükyalı çekici, zümrütevler çekici, maltepe oto kurtarma',
+    eta: '10 - 15 Dk',
+    caseTitle: 'Başıbüyük KMO Bağlantısında Gece Lastik Patlaması',
+    caseDesc: 'Gece 01:15\'te Başıbüyük viyadük ayağında lastiği yarılan SUV tipi araç için ekibimiz 12 dakikada olay yerine varmış, emniyet tedbirleri altında aracı kayar kasaya alarak yetkili servise ulaştırmıştır.',
+    vehicleType: 'C-SUV',
+    deliveryPoint: 'Küçükyalı Yetkili Servis',
+    leadText: 'Maltepe merkez, Başıbüyük KMO bağlantı yolu, Küçükyalı E-5 ve sahil hattında nöbetçi çekicilerimizle 10-15 dakikada hızlı ve emniyetli müdahale.',
+    hotspots: 'Başıbüyük KMO Çıkışı, Küçükyalı Kavşağı, Zümrütevler, Süreyyapaşa Rampası, Maltepe Sahil Yolu',
+    trafficAnalysis: "Maltepe ilçesi, sahil yolu, D-100 karayolu ve Başıbüyük üzerinden Kuzey Marmara Otoyolu'na bağlanan çok katmanlı bir ulaşım ağına sahiptir. Başıbüyük Orman Yolu ve Süreyyapaşa rampalarındaki virajlı yokuşlar, fren balatası aşınması ve mekanik arızaların sık görüldüğü güzergahlardır.",
+    scenarios: "Başıbüyük KMO bağlantısında keskin virajlarda lastik yarılması, Süreyyapaşa rampalarında dik tırmanışta hararet, Küçükyalı E-5 kavşağında zincirleme kazalar.",
+    equipmentProtocol: "Basık araçlar için sıfır açılı hidrolik rampa sistemleri, LED flaşör kuleleri ve profesyonel akü takviye üniteleri.",
+    localAdvice: "E-5 veya KMO bağlantısında kalan araçların reflektörlerini kuralına uygun yerleştirmesi ve yolcuların kaldırım veya bariyer arkasına geçmesi esastır.",
+    faqs: [
+      { q: 'Maltepe oto çekici ne kadar sürede gelir?', a: 'Küçükyalı ve Başıbüyük nöbetçi araçlarımızla 10-15 dakika içinde ulaşıyoruz.' },
+      { q: 'Başıbüyük Kuzey Marmara çıkışına geliyor musunuz?', a: 'Evet, KMO Başıbüyük kavşağı ve bağlantı viyadüklerinde 7/24 nöbetçiyiz.' },
+      { q: 'Taşıma kaskolu mu?', a: 'Evet, yükleme anından itibaren %100 nakliyat sigortası güvencesi sunuyoruz.' },
+      { q: 'Kredi kartı geçerli mi?', a: 'Evet, mobil POS ile tüm kartlar kabul edilir.' },
+      { q: 'Motosiklet çekiyor musunuz?', a: 'Özel ön teker sabitleme aparatlı motosiklet çekicilerimiz mevcuttur.' }
+    ]
+  },
+  {
+    slug: 'korfez-hereke-oto-cekici',
+    name: 'Körfez & Hereke',
+    category: 'kocaeli-sanayi',
+    categoryLabel: 'Körfez & Hereke',
+    title: 'Körfez & Hereke Oto Çekici 7/24 | KMO & Tüneller - 0533 265 70 89',
+    metaDesc: 'Körfez çekici, Hereke tünelleri çekici, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici ve kurtarma. 10-15 dk varış: 0533 265 70 89.',
+    keywords: 'körfez çekici, hereke çekici, hereke tüneli çekici, kmo körfez çekici, körfez oto kurtarma, hereke oto çekici',
+    eta: '10 - 15 Dk',
+    caseTitle: 'Hereke Tüneli Çıkışında Hararet Yapan Aracın Tahliyesi',
+    caseDesc: 'Hereke tünel çıkışında radyatör hortumu patlayan binek araç için ekibimiz 13 dakikada ulaşmış, trafiği tehlikeye atmadan aracı kayar platforma yükleyerek Körfez Sanayi Sitesi\'ne güvenle aktarmıştır.',
+    vehicleType: 'Sedan Otomobil',
+    deliveryPoint: 'Körfez Sanayi Sitesi',
+    leadText: 'Kuzey Marmara Otoyolu Doğu Gişeleri, Hereke tünelleri, viyadükler ve Körfez TEM geçişinde 7/24 hazır bekleyen kurtarıcı filomuzla 10-15 dakikada intikal.',
+    hotspots: 'Hereke Tünelleri, KMO Doğu Gişeleri, Körfez Gişeleri, Hereke Viyadüğü, Yarımca Sanayi Liman Yolu',
+    trafficAnalysis: "Körfez ve Hereke hattı, Kocaeli sanayi koridoru ile İstanbul bağlantısının en kritik boğazıdır. Hereke viyadükleri, KMO Dilovası-Körfez geçişi ve TEM Hereke Tünelleri boyunca ağır vasıta ve tır trafiği son derece yoğundur. Tünel girişlerindeki ani frenler ve rüzgarlı viyadük geçişleri risk noktalarıdır.",
+    scenarios: "Hereke tüneli içinde ani motor arızası ve tahliyesi, KMO Doğu gişelerinde ağır vasıta lastik patlaması, viyadüklerde kayma ve bariyer teması.",
+    equipmentProtocol: "Çift kırmalı ağır hizmet kurtarma vinçleri, kayar kasa platformlar, otoyol LED uyarı panoları ve tünel tahliye ekipmanları.",
+    localAdvice: "Hereke tünelleri veya KMO viyadüklerinde arızalanan sürücülerin araç içinde beklememesi, derhal tünel acil cebine veya bariyer dışına geçmesi gerekir.",
+    faqs: [
+      { q: 'Hereke tünellerine çekici ne kadar sürede varır?', a: 'Tünel çıkışında konuşlu nöbetçi ekiplerimiz ortalama 10-12 dakikada yanınızdadır.' },
+      { q: 'Ağır vasıta ve kamyon çekiyor musunuz?', a: 'Evet, çift çeker vinçlerimizle 40 tona kadar ağır vasıta çekiyoruz.' },
+      { q: 'Otoyol çekici fiyatı nedir?', a: 'Şeffaf taban ücret + km tarifesiyle telefonda sabit fiyat teyidi verilir.' },
+      { q: 'Kredi kartı geçerli mi?', a: 'Evet, mobil POS ile yerinde kredi kartı ödemesi kabul edilir.' },
+      { q: 'Aracımı İstanbul veya İzmit\'e götürebilir misiniz?', a: 'Evet, talebinize göre Kocaeli veya İstanbul servislerine teslim ediyoruz.' }
+    ]
   }
 ];
 
@@ -512,8 +593,9 @@ function generateRegionHtml(reg) {
   <!-- Google Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
 
   <!-- Schema.org Verileri -->
   <script type="application/ld+json">
@@ -799,7 +881,7 @@ function generateRegionHtml(reg) {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }
@@ -833,8 +915,28 @@ function generateIndexHtml() {
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
   <link rel="canonical" href="${DOMAIN}/bolgeler/index.html">
   <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Kuzey Marmara Çekici Hizmet Bölgelerimiz",
+    "description": "Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik ve tüm çevre ilçelerde 7/24 oto çekici bölgelerimiz.",
+    "url": "${DOMAIN}/bolgeler/index.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "${DOMAIN}/" },
+        { "@type": "ListItem", "position": 2, "name": "Bölgelerimiz", "item": "${DOMAIN}/bolgeler/index.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="top-bar">
@@ -842,7 +944,7 @@ function generateIndexHtml() {
       <div class="top-bar-inner">
         <div class="top-bar-left">
           <span class="live-badge"><span class="pulse-dot"></span> 7/24 Canlı Nöbetçi Çekici</span>
-          <span>15 Stratejik Bölgede 10-15 Dk İntikal</span>
+          <span>${regions.length} Stratejik Bölgede 10-15 Dk İntikal</span>
         </div>
       </div>
     </div>
@@ -936,7 +1038,7 @@ function generateIndexHtml() {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }

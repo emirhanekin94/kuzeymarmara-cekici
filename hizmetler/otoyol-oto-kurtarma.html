@@ -29,8 +29,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
 
   <script type="application/ld+json">
   {
@@ -206,7 +207,7 @@
         <div class="service-content-col">
           <article class="content-block" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; margin-bottom: 30px;">
             <div style="border-radius: 12px; overflow: hidden; margin-bottom: 25px;">
-              <img src="../images/otoyol-cekici.webp" alt="Kuzey Marmara & TEM Otoyol Acil Kurtarıcı" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 420px;">
+              <img src="../images/otoyol-cekici.webp" alt="Kuzey Marmara & TEM Otoyol Acil Kurtarıcı" width="800" height="533" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 420px;">
             </div>
 
             <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 15px;">
@@ -362,6 +363,6 @@
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>

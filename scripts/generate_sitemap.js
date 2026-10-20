@@ -42,6 +42,9 @@ const urls = [
   { loc: `${DOMAIN}/bolgeler/kurnakoy-mecidiye-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
   { loc: `${DOMAIN}/bolgeler/darica-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
   { loc: `${DOMAIN}/bolgeler/omerli-resadiye-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/bolgeler/kartal-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/bolgeler/maltepe-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/bolgeler/korfez-hereke-oto-cekici.html`, priority: '0.85', changefreq: 'weekly' },
   // Blog
   { loc: `${DOMAIN}/blog/otoyolda-arac-arizalandiginda-yapilmasi-gerekenler.html`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${DOMAIN}/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-nasil-hesaplanir.html`, priority: '0.8', changefreq: 'monthly' },
@@ -65,11 +68,58 @@ ${urls.map(u => `  <url>
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log(`✓ sitemap.xml üretildi (${urls.length} URL)`);
 
-const robotsTxt = `User-agent: *
+const robotsTxt = `# ==============================================================
+# Kuzey Marmara Çekici Robots.txt - Ajan Tabanlı Arama & SEO Optimize
+# ==============================================================
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /scripts/
+
+# AI Search & LLM Crawlers (Ajan Tabanlı Arama Optimizasyonu)
+User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Sitemap ve Yapılandırılmış Ajan Bilgi Kaynağı
 Sitemap: ${DOMAIN}/sitemap.xml
 `;
 
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), robotsTxt, 'utf8');
-console.log('✓ robots.txt üretildi');
+console.log('✓ robots.txt üretildi (AI arama ajanları izinli)');

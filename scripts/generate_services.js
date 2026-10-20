@@ -290,8 +290,9 @@ function generateServiceHtml(svc) {
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
 
   <script type="application/ld+json">
   ${JSON.stringify(serviceSchema, null, 2)}
@@ -390,7 +391,7 @@ function generateServiceHtml(svc) {
         <div class="service-content-col">
           <article class="content-block" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; margin-bottom: 30px;">
             <div style="border-radius: 12px; overflow: hidden; margin-bottom: 25px;">
-              <img src="../images/${svc.image}" alt="${svc.name}" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 420px;">
+              <img src="../images/${svc.image}" alt="${svc.name}" width="800" height="533" loading="lazy" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 420px;">
             </div>
 
             <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 15px;">
@@ -496,7 +497,7 @@ function generateServiceHtml(svc) {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }
@@ -528,8 +529,28 @@ function generateIndexHtml() {
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu ve çevre ilçelerde sunduğumuz 7/24 oto çekici, kurtarıcı, akü takviye, lastik değişimi ve yol yardım hizmetlerimiz.">
   <link rel="canonical" href="${DOMAIN}/hizmetler/index.html">
   <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=3.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Kuzey Marmara Çekici Hizmetlerimiz",
+    "description": "Kuzey Marmara Otoyolu, TEM Otoyolu ve çevre ilçelerde 7/24 sunduğumuz oto çekici, kurtarıcı, akü takviye ve yol yardım hizmetlerimiz.",
+    "url": "${DOMAIN}/hizmetler/index.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "${DOMAIN}/" },
+        { "@type": "ListItem", "position": 2, "name": "Hizmetlerimiz", "item": "${DOMAIN}/hizmetler/index.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="top-bar">
@@ -609,7 +630,7 @@ function generateIndexHtml() {
     </button>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=3.0" defer></script>
 </body>
 </html>`;
 }

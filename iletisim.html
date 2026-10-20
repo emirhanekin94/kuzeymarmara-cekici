@@ -7,8 +7,28 @@
   <meta name="description" content="Kuzey Marmara Çekici 7/24 iletişim ve acil çekici çağrı hattı: 0533 265 70 89. WhatsApp canlı konum göndererek anında en yakın çekiciyi çağırabilirsiniz.">
   <link rel="canonical" href="https://kuzeymarmaracekici.com/iletisim.html">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Kuzey Marmara Çekici İletişim",
+    "description": "Kuzey Marmara Çekici 7/24 iletişim ve acil çekici çağrı hattı: 0533 265 70 89.",
+    "url": "https://kuzeymarmaracekici.com/iletisim.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://kuzeymarmaracekici.com/" },
+        { "@type": "ListItem", "position": 2, "name": "İletişim", "item": "https://kuzeymarmaracekici.com/iletisim.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="top-bar">
@@ -126,12 +146,12 @@
 
         <form class="wp-contact-form" id="contact-page-form">
           <div class="form-field" style="margin-bottom: 15px;">
-            <label class="form-label">Bulunduğunuz Bölge / İlçe</label>
-            <input type="text" name="region_select" class="wp-form-input" placeholder="Örn: Kurtköy Viaport, KMO Gişeler, Gebze OSB..." required>
+            <label class="form-label" for="region_select">Bulunduğunuz Bölge / İlçe</label>
+            <input type="text" id="region_select" name="region_select" class="wp-form-input" placeholder="Örn: Kurtköy Viaport, KMO Gişeler, Gebze OSB..." aria-label="Bulunduğunuz Bölge" required>
           </div>
           <div class="form-field" style="margin-bottom: 15px;">
-            <label class="form-label">Araç Türü</label>
-            <select name="vehicle_type_select" class="form-select">
+            <label class="form-label" for="vehicle_type_select">Araç Türü</label>
+            <select id="vehicle_type_select" name="vehicle_type_select" class="form-select" aria-label="Araç Türü">
               <option value="Binek Otomobil">Binek Otomobil</option>
               <option value="SUV / 4x4">SUV / 4x4 / Crossover</option>
               <option value="Lüks / Basık / Elektrikli Araç">Lüks / Basık / Elektrikli Araç</option>
@@ -141,12 +161,12 @@
             </select>
           </div>
           <div class="form-field" style="margin-bottom: 15px;">
-            <label class="form-label">Arıza / Durum</label>
-            <input type="text" name="problem_select" class="wp-form-input" placeholder="Örn: Çalışmıyor, Kaza, Lastik patlak, Akü bitti...">
+            <label class="form-label" for="problem_select">Arıza / Durum</label>
+            <input type="text" id="problem_select" name="problem_select" class="wp-form-input" placeholder="Örn: Çalışmıyor, Kaza, Lastik patlak, Akü bitti..." aria-label="Arıza veya Durum">
           </div>
           <div class="form-field" style="margin-bottom: 20px;">
-            <label class="form-label">Gidilecek Yer / Servis (İsteğe Bağlı)</label>
-            <input type="text" name="to_location" class="wp-form-input" placeholder="Örn: Pendik Sanayi, Gebze Sanayi veya Adres">
+            <label class="form-label" for="to_location">Gidilecek Yer / Servis (İsteğe Bağlı)</label>
+            <input type="text" id="to_location" name="to_location" class="wp-form-input" placeholder="Örn: Pendik Sanayi, Gebze Sanayi veya Adres" aria-label="Gidilecek Yer veya Servis">
           </div>
           <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
             💬 WhatsApp ile Teklif Al &amp; Konum Gönder
@@ -176,6 +196,6 @@
     </button>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3.0" defer></script>
 </body>
 </html>

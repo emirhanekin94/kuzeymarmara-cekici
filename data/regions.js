@@ -531,6 +531,105 @@ const REGIONS = [
     ],
     neighbors: ['gebze-oto-cekici', 'dilovasi-oto-cekici', 'cayirova-oto-cekici'],
     distanceTable: null
+  },
+  {
+    slug: 'kartal-oto-cekici',
+    name: 'Kartal',
+    shortName: 'Kartal',
+    isAds: false,
+    coords: { lat: 40.8886, lng: 29.1855 },
+    metaTitle: 'Kartal Oto Çekici | 7/24 Kartal, Yakacık & Samandıra Çekici',
+    metaDescription: 'Kartal, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 oto çekici ve kurtarma hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.',
+    h1: 'Kartal Oto Çekici | 7/24 Acil Kurtarma & Yol Yardım',
+    intro: 'Kartal merkez, Samandıra KMO bağlantı yolu, Yakacık rampaları ve E-5 koridorunda konuşlu nöbetçi ekiplerimizle 10-15 dakikada yanınızdayız.',
+    trafficAnalysis: 'Kartal, Anadolu Yakası\'nın en kritik kavşaklarından biri olup Samandıra üzerinden Kuzey Marmara Otoyolu\'na, Yakacık üzerinden TEM otoyoluna ve güneyden D-100 (E-5) karayoluna bağlanan yoğun bir transit artere sahiptir. Yakacık yokuşlarında hararet ve debriyaj balatası arızaları, Samandıra gişe bağlantısında ise sabah ve akşam zirve saatlerinde ani dur-kalk trafiğine bağlı tampon sürtmeleri sıkça yaşanır.',
+    scenarios: [
+      { title: 'Yakacık Yokuşlarında Hararet ve Debriyaj Yanması', desc: 'Dik Yakacık rampalarında dur-kalk trafiğinde aşırı ısınan debriyaj ve radyatör kaynaması vakaları.' },
+      { title: 'Samandıra KMO Gişe Çıkışında Mekanik Kilitlenme', desc: 'Otoyol hızından şehir içi bağlantısına geçişte şanzıman ve aks kırılması problemleri.' },
+      { title: 'Soğanlık & E-5 Bağlantısında Zincirleme Kaza', desc: 'Yoğun yan yol bağlantılarında ani fren kaynaklı hafif hasarlı çarpışmalar.' },
+      { title: 'Oto Sanayi ve Plaza Otoparklarında Akü Boşalması', desc: 'Kartal Oto Sanayi Sitesi ve sahil plazalarında uzun süre park halinde kalan araçlarda akü tükenmesi.' }
+    ],
+    equipment: 'Kartal filomuzda dar sokaklar için hidrolik kayar kasa platformlar, Samandıra otoyol bağlantısı için yüksek tonajlı kurtarıcılar ve 12V/24V dijital akü şarj destek üniteleri bulunmaktadır.',
+    safety: 'Kartal E-5 veya Samandıra bağlantısında arızalanan sürücülerin dörtlülerini yakıp güvenlik şeridine yanaşmaları ve bariyer arkasında beklemeleri önemle tavsiye edilir.',
+    fieldCase: {
+      title: 'Samandıra KMO Bağlantısında Şanzıman Kilitlenmesi Vakası',
+      body: 'Akşam saat 19:30 sularında Samandıra viyadük ayrımında şanzımanı kilitlenen binek araç için ekibimiz 11 dakikada intikal ederek hidrolik kayar platforma hasarsız yükleme yapmış ve Kartal Oto Sanayi Sitesi\'ne güvenle ulaştırmıştır.'
+    },
+    faqs: [
+      { q: 'Kartal\'da ne kadar sürede yanıma ulaşırsınız?', a: 'Samandıra ve Yakacık nöbetçi araçlarımızla ortalama 10-15 dakikada olay yerindeyiz.' },
+      { q: 'Kartal Oto Sanayi Sitesi\'ndeki servislere çekiyor musunuz?', a: 'Evet, Kartal Sanayi, Maltepe veya Pendik yetkili servislerine kaskolu teslimat yapıyoruz.' },
+      { q: 'Samandıra KMO gişelerinde kaldım, gelebilir misiniz?', a: 'Kuzey Marmara Otoyolu Samandıra gişe hattında 7/24 devriye aracımız hazırdır.' },
+      { q: 'Ödemeyi kartla alıyor musunuz?', a: 'Evet, araç başında mobil POS ile taksitli veya tek çekim kredi kartı ödemesi alıyoruz.' },
+      { q: 'Fiyat tarifesi nasıl belirlenir?', a: 'Taban ücret + km tarifesiyle telefonda sabit fiyat verilir, sonradan ek ücret çıkarılmaz.' }
+    ],
+    neighbors: ['pendik-oto-cekici', 'sultanbeyli-oto-cekici', 'sancaktepe-oto-cekici'],
+    distanceTable: null
+  },
+  {
+    slug: 'maltepe-oto-cekici',
+    name: 'Maltepe',
+    shortName: 'Maltepe',
+    isAds: false,
+    coords: { lat: 40.9250, lng: 29.1350 },
+    metaTitle: 'Maltepe Oto Çekici | 7/24 Başıbüyük KMO & E-5 Çekici',
+    metaDescription: 'Maltepe, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto çekici. 10-15 dk varış, %100 kaskolu taşıma.',
+    h1: 'Maltepe Oto Çekici | 7/24 Acil Kurtarma & Yol Yardım',
+    intro: 'Maltepe merkez, Başıbüyük KMO bağlantı yolu, Küçükyalı E-5 ve sahil hattında nöbetçi çekicilerimizle 10-15 dakikada hızlı müdahale.',
+    trafficAnalysis: 'Maltepe ilçesi, sahil yolu, D-100 karayolu ve Başıbüyük üzerinden Kuzey Marmara Otoyolu\'na bağlanan çok katmanlı bir ulaşım ağına sahiptir. Başıbüyük Orman Yolu ve Süreyyapaşa rampalarındaki virajlı yokuşlar, fren balatası aşınması ve mekanik arızaların sık görüldüğü güzergahlardır. E-5 Küçükyalı geçişinde ise yoğun kavşak trafiği küçük çaplı çarpışmalara zemin hazırlar.',
+    scenarios: [
+      { title: 'Başıbüyük KMO Bağlantısında Lastik Yarılması', desc: 'Orman yolu virajlarında keskin mucur ve çukurlara bağlı lastik yarılması vakaları.' },
+      { title: 'Süreyyapaşa Rampalarında Hararet Yapma', desc: 'Dik tırmanışlarda soğutma sistemi arızaları ve su kaynatma problemleri.' },
+      { title: 'Küçükyalı E-5 Kavşağında Kaza Sonrası Kurtarma', desc: 'Yoğun akşam trafiğinde tampon hasarlı araçların ana yoldan tahliyesi.' },
+      { title: 'Sahil Yolu Otoparklarında Akü Boşalması', desc: 'Maltepe sahil etkinlik alanlarında uzun süre bekleyen araçlarda akü takviyesi.' }
+    ],
+    equipment: 'Maltepe bölgemizde basık araçlar için sıfır açılı rampa sistemleri, sahil ve otoyol güvenliği için flaşörlü LED ışık kuleleri ve takviye ekipmanları hazır bekletilir.',
+    safety: 'Maltepe E-5 veya KMO bağlantısında kalan araçların reflektörlerini kuralına uygun yerleştirmesi ve yolcuların kaldırım veya bariyer arkasına geçmesi esastır.',
+    fieldCase: {
+      title: 'Başıbüyük KMO Bağlantısında Gece Lastik Patlaması',
+      body: 'Gece 01:15\'te Başıbüyük viyadük ayağında lastiği yarılan SUV tipi araç için ekibimiz 12 dakikada olay yerine varmış, emniyet tedbirleri altında aracı kayar kasaya alarak yetkili servise ulaştırmıştır.'
+    },
+    faqs: [
+      { q: 'Maltepe\'de ne kadar sürede yanımda olursunuz?', a: 'Küçükyalı ve Başıbüyük nöbetçi araçlarımızla 10-15 dakika içinde ulaşıyoruz.' },
+      { q: 'Başıbüyük Kuzey Marmara çıkışına da hizmetiniz var mı?', a: 'Evet, KMO Başıbüyük kavşağı ve bağlantı viyadüklerinde 7/24 nöbetçiyiz.' },
+      { q: 'Aracım taşınırken kasko kapsamında mı?', a: 'Evet, yükleme anından itibaren %100 Emtia Nakliyat Taşıma Kaskomuz devrededir.' },
+      { q: 'Kredi kartıyla ödeme yapabilir miyim?', a: 'Mobil POS cihazlarımızla tüm kredi kartlarına taksit veya tek çekim geçerlidir.' },
+      { q: 'Motosiklet çekici hizmetiniz var mı?', a: 'Evet, özel teker sabitleme aparatlı motosiklet çekicilerimiz mevcuttur.' }
+    ],
+    neighbors: ['kartal-oto-cekici', 'sancaktepe-oto-cekici', 'kuzey-marmara-otoyolu-oto-cekici'],
+    distanceTable: null
+  },
+  {
+    slug: 'korfez-hereke-oto-cekici',
+    name: 'Körfez & Hereke',
+    shortName: 'Körfez & Hereke',
+    isAds: false,
+    coords: { lat: 40.7850, lng: 29.6200 },
+    metaTitle: 'Körfez & Hereke Oto Çekici | 7/24 KMO & TEM Kurtarma',
+    metaDescription: 'Körfez, Hereke Tünelleri, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici, ağır vasıta ve yol yardım hizmeti. 10-15 dk varış: 0533 265 70 89.',
+    h1: 'Körfez & Hereke Oto Çekici | 7/24 Otoyol Kurtarma',
+    intro: 'Kuzey Marmara Otoyolu Doğu Gişeleri, Hereke tünelleri ve Körfez TEM geçişinde 7/24 hazır bekleyen kurtarıcı filomuzla 10-15 dakikada intikal.',
+    trafficAnalysis: 'Körfez ve Hereke hattı, Kocaeli sanayi koridoru ile İstanbul bağlantısının en kritik boğazıdır. Hereke viyadükleri, KMO Dilovası-Körfez geçişi ve TEM Hereke Tünelleri boyunca ağır vasıta ve tır trafiği son derece yoğundur. Tünel girişlerindeki ani frenler, viyadüklerdeki yan rüzgarlar ve dik rampa inişlerinde fren şişmesi otoyol kurtarma operasyonlarının temel nedenleridir.',
+    scenarios: [
+      { title: 'Hereke Tüneli İçi Ani Arıza ve Tahliye', desc: 'Tünel içinde stop eden araçların trafiği aksatmadan hızla emniyetli alana çıkarılması.' },
+      { title: 'KMO Doğu Gişeleri Bağlantısında Tır ve Kamyon Arızaları', desc: 'Ağır vasıtalarda görülen körük patlaması ve diferansiyel kilitlenmesi müdahaleleri.' },
+      { title: 'Hereke Viyadüğünde Yağış Kaynaklı Kayma', desc: 'Islak zemin ve rüzgar etkisiyle bariyere çarpan araçların vinçli kurtarılması.' },
+      { title: 'Körfez Sanayi Girişinde Mekanik Arıza', desc: 'Liman ve sanayi tesislerine giden ticari araçların yerinde yol yardımı.' }
+    ],
+    equipment: 'Hereke ve Körfez hattında çift kırmalı ağır hizmet kurtarma vinçleri, kayar kasa platformlar, otoyol LED uyarı panoları ve tünel tahliye ekipmanları görev yapar.',
+    safety: 'Hereke tünelleri veya KMO viyadüklerinde arızalanan sürücülerin araç içinde beklememesi, derhal tünel içi acil sığınma cebine veya bariyer dışına geçmesi hayati önem taşır.',
+    fieldCase: {
+      title: 'Hereke Tüneli Çıkışında Hararet Yapan Aracın Tahliyesi',
+      body: 'Gündüz saatlerinde Hereke tünel çıkışında radyatör hortumu patlayan binek araç için ekibimiz 13 dakikada ulaşmış, trafiği tehlikeye atmadan aracı kayar platforma yükleyerek Körfez Sanayi Sitesi\'ne güvenle aktarmıştır.'
+    },
+    faqs: [
+      { q: 'Hereke tünellerine çekici ne kadar sürede varır?', a: 'Tünel çıkışında konuşlu nöbetçi ekiplerimiz ortalama 10-12 dakikada yanınızdadır.' },
+      { q: 'Ağır vasıta, kamyon ve tır çekiyor musunuz?', a: 'Evet, çift çeker gözlüklü vinç sistemlerimizle 40 tona kadar ağır vasıta çekiyoruz.' },
+      { q: 'KMO Körfez gişelerinde kaldım, ücret nasıl hesaplanır?', a: 'Taban ücret + km tarifesiyle telefonda sabit fiyat verilir, ek ücret talep edilmez.' },
+      { q: 'Kredi kartı geçerli mi?', a: 'Evet, mobil POS ile yerinde kredi kartı ödemesi kabul edilir.' },
+      { q: 'Aracımı Kocaeli veya İstanbul\'daki servise götürebilir misiniz?', a: 'Evet, isteğinize bağlı olarak Gebze, Körfez, İzmit veya İstanbul servislerine teslim ediyoruz.' }
+    ],
+    neighbors: ['dilovasi-oto-cekici', 'gebze-oto-cekici', 'kuzey-marmara-otoyolu-oto-cekici'],
+    distanceTable: null
   }
 ];
 
