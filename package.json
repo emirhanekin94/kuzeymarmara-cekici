@@ -6,10 +6,12 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "generate": "node scripts/generate_regions.js && node scripts/generate_services.js && node scripts/generate_blogs.js && node scripts/generate_sitemap.js && node scripts/generate_llms.js",
+    "generate": "node scripts/generate_regions.js && node scripts/generate_services.js && node scripts/generate_blogs.js && node scripts/generate_index.js && node scripts/update_static_pages.js && node scripts/generate_sitemap.js && node scripts/generate_llms.js",
     "generate:regions": "node scripts/generate_regions.js",
     "generate:services": "node scripts/generate_services.js",
     "generate:blogs": "node scripts/generate_blogs.js",
+    "generate:index": "node scripts/generate_index.js",
+    "generate:static": "node scripts/update_static_pages.js",
     "generate:sitemap": "node scripts/generate_sitemap.js",
     "generate:llms": "node scripts/generate_llms.js"
   },

@@ -228,7 +228,7 @@ function generateArticleHtml(blog) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.0">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
 
   <script type="application/ld+json">
   ${JSON.stringify(articleSchema, null, 2)}
@@ -238,16 +238,6 @@ function generateArticleHtml(blog) {
   </script>
 </head>
 <body>
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-inner">
-        <div class="top-bar-left">
-          <span class="live-badge"><span class="pulse-dot"></span> Sürücü Rehberi</span>
-          <span>7/24 Acil Çağrı: 0533 265 70 89</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <header class="site-header">
     <div class="container">
@@ -256,7 +246,7 @@ function generateArticleHtml(blog) {
           <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım & Kurtarma</span>
+            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -270,6 +260,17 @@ function generateArticleHtml(blog) {
             <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a href="tel:${PHONE_RAW}" class="header-call-pill">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+            <span>${PHONE}</span>
+          </a>
+          <button type="button" class="menu-toggle-btn" aria-label="Menüyü Aç/Kapat">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -382,7 +383,7 @@ function generateBlogIndexHtml() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.0">
+  <link rel="stylesheet" href="../css/style.css?v=3.1">
 
   <script type="application/ld+json">
   {
@@ -402,16 +403,6 @@ function generateBlogIndexHtml() {
   </script>
 </head>
 <body>
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-inner">
-        <div class="top-bar-left">
-          <span class="live-badge"><span class="pulse-dot"></span> Sürücü Rehberi</span>
-          <span>Faydalı Bilgiler &amp; Otoyol Güvenliği</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <header class="site-header">
     <div class="container">
@@ -420,7 +411,7 @@ function generateBlogIndexHtml() {
           <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım & Kurtarma</span>
+            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -434,6 +425,17 @@ function generateBlogIndexHtml() {
             <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <a href="tel:${PHONE_RAW}" class="header-call-pill">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+            <span>${PHONE}</span>
+          </a>
+          <button type="button" class="menu-toggle-btn" aria-label="Menüyü Aç/Kapat">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>

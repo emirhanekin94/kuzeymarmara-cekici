@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. CANLI BÖLGE ARAMA & FİLTRELEME MOTORU (SEARCH-FIRST UX)
   const searchInput = document.getElementById('region-search-input');
   const searchClearBtn = document.getElementById('region-search-clear');
-  const regionCards = document.querySelectorAll('.region-square-card, .region-card-luxury, .region-card');
+  const regionCards = document.querySelectorAll('.region-photo-card, .region-square-card, .region-card-luxury, .region-card');
   const regionTabs = document.querySelectorAll('.region-filter-tabs .filter-tab-btn, .filter-tabs-wrap .filter-tab-btn');
   const noResultsBox = document.getElementById('no-search-results');
   const regionsContainer = document.getElementById('regions-container');
@@ -129,9 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     regionCards.forEach(card => {
       const cardCategory = card.getAttribute('data-category') || '';
-      const cardTitle = (card.querySelector('.region-square-title, .region-card-name, .region-name, h3')?.textContent || '').toLocaleLowerCase('tr');
-      const cardDesc = (card.querySelector('.region-square-sub, .region-card-sub, .region-sub, p')?.textContent || '').toLocaleLowerCase('tr');
-      const cardBadges = (card.querySelector('.region-square-badges, .region-badges')?.textContent || '').toLocaleLowerCase('tr');
+      const cardTitle = (card.querySelector('.region-photo-title, .region-square-title, .region-card-name, .region-name, h3')?.textContent || '').toLocaleLowerCase('tr');
+      const cardDesc = (card.querySelector('.region-photo-hotspots, .region-square-sub, .region-card-sub, .region-sub, p')?.textContent || '').toLocaleLowerCase('tr');
+      const cardBadges = (card.querySelector('.region-photo-badge, .region-photo-category, .region-square-badges, .region-badges')?.textContent || '').toLocaleLowerCase('tr');
 
       const matchesCategory = (selectedCategory === 'all' || cardCategory === selectedCategory || cardCategory.includes(selectedCategory));
       const matchesQuery = query === '' || cardTitle.includes(query) || cardDesc.includes(query) || cardBadges.includes(query);
