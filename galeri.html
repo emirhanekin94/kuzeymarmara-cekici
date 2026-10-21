@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foto Galeri | Kuzey Marmara Çekici Filosu & Kurtarma Vakaları - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Çekici araç filosu, kayar kasa çekicilerimiz, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğraf galerisi.">
+  <title>Foto Galeri | Kuzey Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0533 265 70 89</title>
+  <meta name="description" content="Kuzey Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
   <link rel="canonical" href="https://kuzeymarmaracekici.com/galeri.html">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.1">
+  <link rel="stylesheet" href="css/style.css?v=3.2">
 
   <script type="application/ld+json">
   {
@@ -32,6 +32,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
@@ -69,25 +70,28 @@
     </div>
   </header>
 
+  <!-- Subpage Hero -->
   <section class="subpage-hero" style="background: linear-gradient(135deg, #070b14 0%, #0f172a 60%, #162032 100%); color: #fff; padding: 50px 0;">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 15px; color: #94a3b8;">
         <a href="index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
-        <span style="color: #ff5500; font-weight: 600;">Foto Galeri</span>
+        <span style="color: #ea580c; font-weight: 600;">Foto Galeri</span>
       </nav>
       <h1 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 900; margin-bottom: 15px;">
-        Saha Operasyonlarımız &amp; <span style="color: #ff5500;">Araç Filomuz</span>
+        Saha Operasyonlarımız &amp; <span style="color: #ea580c;">Araç Filomuz</span>
       </h1>
-      <p style="font-size: 1.05rem; color: #cbd5e1; max-width: 780px;">
-        Kuzey Marmara Otoyolu, TEM ve Kurtköy bölgesinde gerçekleştirdiğimiz gerçek kurtarma, lüks araç taşıma ve yol yardım operasyonlarımızdan kareler.
+      <p style="font-size: 1.05rem; color: #cbd5e1; max-width: 800px; line-height: 1.6;">
+        Kuzey Marmara Otoyolu, TEM ve Kurtköy bölgesinde gerçekleştirdiğimiz gerçek oto kurtarma, lüks araç taşıma ve mobil yol yardım operasyonlarımızdan kareler.
       </p>
     </div>
   </section>
 
-  <main class="section">
+  <!-- Galeri Ana Alanı (Açık Gri Temiz Arka Plan) -->
+  <main class="section" style="padding: 50px 0 70px; background: #f8fafc;">
     <div class="container">
+      
       <!-- Filtre Butonları -->
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px;">
+      <div class="gallery-filter-tabs" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 35px;">
         <button type="button" class="filter-tab-btn active" data-gallery-filter="all">Tümü</button>
         <button type="button" class="filter-tab-btn" data-gallery-filter="otoyol">Otoyol Kurtarma</button>
         <button type="button" class="filter-tab-btn" data-gallery-filter="luks">Lüks &amp; Spor Araç</button>
@@ -96,188 +100,171 @@
       </div>
 
       <!-- Galeri Grid -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+      <div id="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
         
-        <div class="photo-slot-card" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/otoyol-cekici.webp" alt="Kuzey Marmara Otoyolu Çekici Operasyonu" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/otoyol-cekici.webp" data-lightbox-title="KMO Otoyol Güvenlikli Kurtarma" data-lightbox-desc="Otoyol emniyet şeridinde flaşör kulesi eşliğinde güvenli araç tahliyesi.">
-          <div style="padding: 15px;">
-            <span style="color: #ff5500; font-size: 0.75rem; font-weight: 800;">KMO OTOYOL</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Otoyol Güvenlikli Kurtarma</h4>
+        <div class="photo-slot-card gallery-item" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/otoyol-cekici.webp" alt="KMO Otoyol Güvenlikli Kurtarma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/otoyol-cekici.webp" data-lightbox-title="KMO Otoyol Güvenlikli Kurtarma" data-lightbox-desc="Kuzey Marmara Otoyolu emniyet şeridinde flaşör kuleleri ve güvenlik koridoru eşliğinde tahliye.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">KMO OTOYOL</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">KMO Otoyol Güvenlikli Kurtarma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Kuzey Marmara Otoyolu emniyet şeridinde flaşör kuleleri ve güvenlik koridoru eşliğinde tahliye.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/luks-arac-cekici.webp" alt="Lüks Spor Araç Çekici" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/luks-arac-cekici.webp" data-lightbox-title="Lüks Spor Araç Transferi" data-lightbox-desc="Sıfır açılı rampa aparatı ile hasarsız yükleme.">
-          <div style="padding: 15px;">
-            <span style="color: #10b981; font-size: 0.75rem; font-weight: 800;">LÜKS TRANSFER</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Porsche &amp; Spor Araç Taşıma</h4>
+        <div class="photo-slot-card gallery-item" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/luks-arac-cekici.webp" alt="Porsche & Spor Araç Taşıma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/luks-arac-cekici.webp" data-lightbox-title="Porsche & Spor Araç Taşıma" data-lightbox-desc="Sıfır açılı rampa aparatı ile karlık ve tampona temas etmeden hasarsız yükleme.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">LÜKS TRANSFER</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Porsche & Spor Araç Taşıma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Sıfır açılı rampa aparatı ile karlık ve tampona temas etmeden hasarsız yükleme.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="kaza" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/kazali-arac-cekici.webp" alt="Kaza ve Vinç Kurtarma" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/kazali-arac-cekici.webp" data-lightbox-title="Ağır Hasarlı Kaza Kurtarma" data-lightbox-desc="Çift halatlı hidrolik vinçle şarampolden araç çekimi.">
-          <div style="padding: 15px;">
-            <span style="color: #f59e0b; font-size: 0.75rem; font-weight: 800;">KAZA &amp; VİNÇ</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Ağır Hasarlı Kaza Kurtarma</h4>
+        <div class="photo-slot-card gallery-item" data-category="kaza" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/kazali-arac-cekici.webp" alt="Ağır Hasarlı Kaza Kurtarma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/kazali-arac-cekici.webp" data-lightbox-title="Ağır Hasarlı Kaza Kurtarma" data-lightbox-desc="Çift tamburlu hidrolik çelik vinçle şarampolden ve bariyerden emniyetli araç çekimi.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">KAZA & VİNÇ</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Ağır Hasarlı Kaza Kurtarma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Çift tamburlu hidrolik çelik vinçle şarampolden ve bariyerden emniyetli araç çekimi.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/otomobil_cekici-1.webp" alt="Kayar Kasa Çekici" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/otomobil_cekici-1.webp" data-lightbox-title="Kayar Kasa Hidrolik Platform" data-lightbox-desc="Kurtköy merkezde binek aracın kaskolu transferi.">
-          <div style="padding: 15px;">
-            <span style="color: #ff5500; font-size: 0.75rem; font-weight: 800;">KURTKÖY</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Kayar Kasa Hidrolik Taşıma</h4>
+        <div class="photo-slot-card gallery-item" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/otomobil_cekici-1.webp" alt="Kayar Kasa Hidrolik Taşıma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/otomobil_cekici-1.webp" data-lightbox-title="Kayar Kasa Hidrolik Taşıma" data-lightbox-desc="Kurtköy Viaport çıkışında arızalanan binek aracın Pendik servisine kaskolu transferi.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">KURTKÖY MERKEZ</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Kayar Kasa Hidrolik Taşıma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Kurtköy Viaport çıkışında arızalanan binek aracın Pendik servisine kaskolu transferi.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="yol-yardim" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/aku-takviye.webp" alt="Akü Takviye Yol Yardım" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/aku-takviye.webp" data-lightbox-title="Yerinde Akü Takviye" data-lightbox-desc="12V/24V taşınabilir booster ile yerinde marş basma.">
-          <div style="padding: 15px;">
-            <span style="color: #10b981; font-size: 0.75rem; font-weight: 800;">YOL YARDIM</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Yerinde 12V/24V Akü Takviyesi</h4>
+        <div class="photo-slot-card gallery-item" data-category="yol-yardim" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/aku-takviye.webp" alt="Yerinde 12V / 24V Akü Takviyesi" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/aku-takviye.webp" data-lightbox-title="Yerinde 12V / 24V Akü Takviyesi" data-lightbox-desc="Dijital akım korumalı endüstriyel booster ile araç beynine zarar vermeden yerinde marş.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">YOL YARDIM</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Yerinde 12V / 24V Akü Takviyesi</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Dijital akım korumalı endüstriyel booster ile araç beynine zarar vermeden yerinde marş.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="yol-yardim" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/lastik-tamir.webp" alt="Mobil Lastik Tamiri" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/lastik-tamir.webp" data-lightbox-title="Mobil Stepne Montajı" data-lightbox-desc="Otoyolda güvenli hava basımı ve stepne değişimi.">
-          <div style="padding: 15px;">
-            <span style="color: #10b981; font-size: 0.75rem; font-weight: 800;">YOL YARDIM</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Mobil Lastik &amp; Stepne Değişimi</h4>
+        <div class="photo-slot-card gallery-item" data-category="yol-yardim" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/lastik-tamir.webp" alt="Mobil Lastik & Stepne Değişimi" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/lastik-tamir.webp" data-lightbox-title="Mobil Lastik & Stepne Değişimi" data-lightbox-desc="Otoyol emniyet şeridinde hava basımı, havalı bijon anahtarı ve stepne montajı.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">YOL YARDIM</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Mobil Lastik & Stepne Değişimi</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Otoyol emniyet şeridinde hava basımı, havalı bijon anahtarı ve stepne montajı.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/motorsiklet-cekici.webp" alt="Motosiklet Çekici" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/motorsiklet-cekici.webp" data-lightbox-title="Motosiklet Sabitleme Sehpası" data-lightbox-desc="Ön teker kıskacı ile devrilmeden dik taşıma.">
-          <div style="padding: 15px;">
-            <span style="color: #ff5500; font-size: 0.75rem; font-weight: 800;">MOTOSİKLET</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Özel Kilit Aparatlı Motor Çekici</h4>
+        <div class="photo-slot-card gallery-item" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/motorsiklet-cekici.webp" alt="Özel Kilit Aparatlı Motor Çekici" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/motorsiklet-cekici.webp" data-lightbox-title="Özel Kilit Aparatlı Motor Çekici" data-lightbox-desc="Ön teker sabitleme sehpası ve 4 noktadan gergi kilitleriyle dik konumda güvenli nakil.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">MOTOSİKLET</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Özel Kilit Aparatlı Motor Çekici</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Ön teker sabitleme sehpası ve 4 noktadan gergi kilitleriyle dik konumda güvenli nakil.</p>
           </div>
         </div>
+  
 
-        <div class="photo-slot-card" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
-          <img src="images/sehirlerarasi-cekici.webp" alt="Şehirler Arası Araç Taşıma" width="600" height="400" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;" data-lightbox-src="images/sehirlerarasi-cekici.webp" data-lightbox-title="Şehirler Arası Çoklu Taşıma" data-lightbox-desc="81 ile tam nakliyat kaskosuyla adrese teslim transfer.">
-          <div style="padding: 15px;">
-            <span style="color: #0f172a; font-size: 0.75rem; font-weight: 800;">81 İL NAKLİYAT</span>
-            <h4 style="color: #0f172a; font-size: 1rem; margin-top: 5px;">Şehirler Arası Kaskolu Nakil</h4>
+        <div class="photo-slot-card gallery-item" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/sehirlerarasi-cekici.webp" alt="Şehirler Arası Kaskolu Taşıma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/sehirlerarasi-cekici.webp" data-lightbox-title="Şehirler Arası Kaskolu Taşıma" data-lightbox-desc="İstanbul çıkışlı tüm Türkiye illerine adresten adrese tam emtia kaskolu sevk.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">81 İL NAKLİYAT</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Şehirler Arası Kaskolu Taşıma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">İstanbul çıkışlı tüm Türkiye illerine adresten adrese tam emtia kaskolu sevk.</p>
           </div>
         </div>
+  
 
+        <div class="photo-slot-card gallery-item" data-category="otoyol" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/otomobil-cekici-2.webp" alt="TEM Şekerpınar Dinlenme Kurtarması" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/otomobil-cekici-2.webp" data-lightbox-title="TEM Şekerpınar Dinlenme Kurtarması" data-lightbox-desc="Hararet yapan hafif ticari aracın Gebze Sanayi Sitesi ustasına süratli intikali.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">TEM OTOYOLU</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">TEM Şekerpınar Dinlenme Kurtarması</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Hararet yapan hafif ticari aracın Gebze Sanayi Sitesi ustasına süratli intikali.</p>
+          </div>
+        </div>
+  
+
+        <div class="photo-slot-card gallery-item" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/suv-cekici.webp" alt="Ağır SUV & Crossover Taşıma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/suv-cekici.webp" data-lightbox-title="Ağır SUV & Crossover Taşıma" data-lightbox-desc="3.5 tona kadar taşıma kapasiteli geniş tablalı hidrolik platform transferi.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">4X4 & SUV</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Ağır SUV & Crossover Taşıma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">3.5 tona kadar taşıma kapasiteli geniş tablalı hidrolik platform transferi.</p>
+          </div>
+        </div>
+  
+
+        <div class="photo-slot-card gallery-item" data-category="luks" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/luks-arac-cekici-1.webp" alt="Tesla & Elektrikli Araç Transferi" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/luks-arac-cekici-1.webp" data-lightbox-title="Tesla & Elektrikli Araç Transferi" data-lightbox-desc="Transport modu devrede, batarya korumalı ve dolly arabacıklı güvenli yükleme.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">ELEKTRİKLİ ARAÇ</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Tesla & Elektrikli Araç Transferi</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Transport modu devrede, batarya korumalı ve dolly arabacıklı güvenli yükleme.</p>
+          </div>
+        </div>
+  
+
+        <div class="photo-slot-card gallery-item" data-category="kaza" style="cursor: pointer; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          <div style="position: relative; overflow: hidden; height: 220px;">
+            <img src="images/otomobil-cekici-3.webp" alt="Şarampol & Çamurdan Kurtarma" width="600" height="400" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" data-lightbox-src="images/otomobil-cekici-3.webp" data-lightbox-title="Şarampol & Çamurdan Kurtarma" data-lightbox-desc="Yağışlı havada yol dışına çıkan aracın 20 tonluk vinç tertibatıyla kurtarılması.">
+            <span style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15);">VİNÇLİ KURTARMA</span>
+          </div>
+          <div style="padding: 16px 18px;">
+            <h4 style="color: #0f172a; font-size: 1.05rem; font-weight: 800; margin-bottom: 6px;">Şarampol & Çamurdan Kurtarma</h4>
+            <p style="color: #64748b; font-size: 0.88rem; line-height: 1.5; margin: 0;">Yağışlı havada yol dışına çıkan aracın 20 tonluk vinç tertibatıyla kurtarılması.</p>
+          </div>
+        </div>
+  
       </div>
+
     </div>
   </main>
 
-  
-  <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
-  <section class="process-section" style="background:#f8fafc; padding:65px 0;">
-    <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 35px;">
-        <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Şeffaf &amp; Güvenli Operasyon
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-          Çekici Sürecimiz Nasıl İşler?
-        </h2>
-        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-          Yolda kaldığınız andan itibaren 4 şeffaf adımda aracınızı güvenle istediğiniz noktaya ulaştırıyoruz.
-        </p>
-      </div>
-
-      <div class="process-grid-luxury">
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">01</span>
-            <span class="process-icon-circle">📞</span>
-          </div>
-          <h3>1. Bize Ulaşın &amp; Konum Atın</h3>
-          <p><strong>0533 265 70 89</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu iletin. Santralimiz 30 saniye içinde yanıt verir.</p>
-          <span class="process-tag">30 Saniyede Yanıt</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">02</span>
-            <span class="process-icon-circle">💰</span>
-          </div>
-          <h3>2. Net &amp; Sabit Fiyat Teyidi</h3>
-          <p>Mesafe ve araç tipinize göre telefonda net fiyat teyit edilir. Ek masraf veya sonradan sürpriz ücret talep edilmez.</p>
-          <span class="process-tag">Sürpriz Ücret Yok</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">03</span>
-            <span class="process-icon-circle">🚚</span>
-          </div>
-          <h3>3. 10-15 Dk Hızlı İntikal</h3>
-          <p>Kurtköy, KMO ve TEM arterlerinde konuşlu nöbetçi kayar kasa çekicimiz GPS yönlendirmesiyle rekor sürede yanınıza ulaşır.</p>
-          <span class="process-tag">10-15 Dk Varış</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">04</span>
-            <span class="process-icon-circle">🛡️</span>
-          </div>
-          <h3>4. Kaskolu &amp; Sıfır Hasarlı Teslimat</h3>
-          <p>Aracınız özel tekerlek kilitleriyle hasarsız platforma yüklenir; %100 nakliyat sigortasıyla yetkili servise ulaştırılır.</p>
-          <span class="process-tag">%100 Kaskolu</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
-  <section class="section section-dark" style="background: #090d16; color: #fff; padding: 70px 0;">
-    <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
-        <span class="section-badge" style="background: rgba(255,85,0,0.15); color: #ff5500; border: 1px solid rgba(255,85,0,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Kurumsal Standartlarımız
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
-        </h2>
-        <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
-          15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
-        </p>
-      </div>
-
-      <div class="why-us-luxury-grid">
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⏱️</div>
-          <h3>10-15 Dakikada Hızlı İntikal</h3>
-          <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🛡️</div>
-          <h3>%100 Nakliyat Emtia Kaskosu</h3>
-          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏷️</div>
-          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
-          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏎️</div>
-          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
-          <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">💳</div>
-          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
-          <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⭐</div>
-          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
-          <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
-        </div>
+  <!-- Açık Renk Şık Eylem Çağrısı (Dark Section Kaldırıldı - Footer ile Renk Çakışması Engellendi) -->
+  <section style="background: #ffffff; border-top: 1px solid #e2e8f0; padding: 50px 0; text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+        7/24 Kesintisiz Otoyol Nöbeti
+      </span>
+      <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
+        Aracınız Yolda mı Kaldı? Hemen Çekici Çağırın
+      </h2>
+      <p style="color: #64748b; font-size: 1rem; margin-bottom: 25px; line-height: 1.6;">
+        Kurtköy, KMO, TEM, Pendik ve Gebze'de hazır bekleyen nöbetçi ekiplerimizle ortalama 10-15 dakikada yanınızdayız.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+        <a href="tel:905332657089" class="btn btn-call btn-lg">📞 Hemen Bizi Arayın: 0533 265 70 89</a>
+        <button type="button" class="btn btn-whatsapp btn-lg btn-send-location">📍 WhatsApp Canlı Konum At</button>
       </div>
     </div>
   </section>
@@ -285,32 +272,85 @@
   <!-- Lightbox Modal -->
   <div id="gallery-lightbox" class="lightbox-modal" aria-hidden="true" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(7,11,20,0.95); z-index:9999; justify-content:center; align-items:center; padding:20px;">
     <div style="position:relative; max-width:900px; width:100%; text-align:center;">
-      <button type="button" class="lightbox-close-btn" style="position:absolute; top:-40px; right:0; background:none; border:none; color:#fff; font-size:2rem; cursor:pointer;">✕</button>
+      <button type="button" class="lightbox-close-btn" style="position:absolute; top:-40px; right:0; background:none; border:none; color:#fff; font-size:2rem; cursor:pointer;" aria-label="Kapat">✕</button>
       <img id="lightbox-img" src="images/otoyol-cekici.webp" alt="Galeri Büyütülmüş Görsel" width="900" height="600" style="max-width:100%; max-height:75vh; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5);">
       <h3 id="lightbox-title" style="color:#fff; margin-top:15px; font-size:1.3rem;"></h3>
       <p id="lightbox-desc" style="color:#cbd5e1; font-size:0.95rem; margin-top:5px;"></p>
     </div>
   </div>
 
+  
+  <!-- 4 Kolonlu Kurumsal Site Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div style="text-align:center; color:#94a3b8; font-size:0.9rem; padding:25px 0;">
-        © 2026 Kuzey Marmara Çekici - Tüm Hakları Saklıdır. 7/24 Acil Oto Kurtarma &amp; Yol Yardım.
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+        </div>
+        <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
+          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+        </p>
+        <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
+          Acil Çağrı: <a href="tel:905332657089" style="color: #ea580c; text-decoration: none; font-weight: 800;">0533 265 70 89</a>
+        </p>
+        <p style="color: #64748b; font-size: 0.85rem;">7 Gün 24 Saat Kesintisiz Nöbetçi Çekici Filosu</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Öne Çıkan Bölgeler</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="bolgeler/kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
+          <li><a href="bolgeler/kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
+          <li><a href="bolgeler/tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
+          <li><a href="bolgeler/gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
+          <li><a href="bolgeler/pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
+          <li><a href="bolgeler/sabiha-gokcen-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Sabiha Gökçen Çekici</a></li>
+          <li><a href="bolgeler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm Bölgelerimiz →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
+          <li><a href="iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
 
+    <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
+      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+    </div>
+  </footer>
+  
   <div class="mobile-sticky-dock">
-    <a href="tel:905332657089" class="sticky-dock-btn sticky-call-btn">
+    <a href="tel:905332657089" class="sticky-dock-btn sticky-call-btn" aria-label="Hemen Ara">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
       <span>HEMEN ARA</span>
     </a>
-    <button type="button" class="sticky-dock-btn sticky-whatsapp-btn btn-send-location">
+    <button type="button" class="sticky-dock-btn sticky-whatsapp-btn btn-send-location" aria-label="WhatsApp Konum Gönder">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
       <span>KONUM AT</span>
     </button>
   </div>
 
-  <script src="js/main.js?v=3.1" defer></script>
+  <script src="js/main.js?v=3.2" defer></script>
 </body>
 </html>

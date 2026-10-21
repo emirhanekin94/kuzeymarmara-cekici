@@ -1108,11 +1108,14 @@ function generateRegionHtml(reg) {
               ${reg.faqs.map((f, idx) => `
                 <details class="faq-accordion-item" ${idx === 0 ? 'open' : ''}>
                   <summary class="faq-summary">
-                    <span>${idx + 1}. ${f.q}</span>
-                    <span class="faq-chevron">▼</span>
+                    <div class="faq-summary-left">
+                      <span class="faq-num">0${idx + 1}</span>
+                      <span class="faq-q-text">${f.q}</span>
+                    </div>
+                    <span class="faq-chevron">▾</span>
                   </summary>
                   <div class="faq-content">
-                    <p style="margin: 0; line-height: 1.7;">${f.a}</p>
+                    <p style="margin: 0; line-height: 1.75;">${f.a}</p>
                   </div>
                 </details>
               `).join('')}
@@ -1188,48 +1191,61 @@ function generateRegionHtml(reg) {
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand-col">
-          <div class="brand-logo" style="margin-bottom: 15px;">
-            <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="40" height="40">
-            <span class="brand-name" style="color: #fff; font-size: 1.2rem; font-weight: 900;">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-          </div>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
-            Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
-          </p>
-          <p style="color: #cbd5e1; font-weight: 700; font-size: 1rem;">
-            Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none;">${PHONE}</a>
-          </p>
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
-
-        <div class="footer-links-col">
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 15px;">Hızlı Menü</h4>
-          <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
-            <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" style="color: #94a3b8; text-decoration: none;">Hizmetlerimiz</a></li>
-            <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Galeri</a></li>
-            <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog</a></li>
-            <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 15px;">Popüler Bölgeler</h4>
-          <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
-            <li><a href="kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
-            <li><a href="kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
-            <li><a href="tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
-            <li><a href="gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
-            <li><a href="pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
-          </ul>
-        </div>
+        <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
+          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+        </p>
+        <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
+          Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none; font-weight: 800;">${PHONE}</a>
+        </p>
+        <p style="color: #64748b; font-size: 0.85rem;">7 Gün 24 Saat Kesintisiz Nöbetçi Çekici Filosu</p>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="../hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="../hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="../hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="../hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="../hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="../hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="../hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+        </ul>
       </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Öne Çıkan Bölgeler</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
+          <li><a href="kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
+          <li><a href="tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
+          <li><a href="gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
+          <li><a href="pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
+          <li><a href="sabiha-gokcen-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Sabiha Gökçen Çekici</a></li>
+          <li><a href="index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm Bölgelerimiz →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="../hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
+          <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
+      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>
 
@@ -1363,8 +1379,43 @@ function generateIndexHtml() {
     </div>
   </section>
 
+  <!-- FOTOĞRAFLI BÖLGELER LİSTESİ (ÖNCE BÖLGELER) -->
+  <main class="section" style="padding: 50px 0 70px; background: #f8fafc;">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin-bottom: 10px;">
+          Fotoğraflı Hizmet Bölgelerimiz
+        </h2>
+        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
+          Yolda kaldığınız bölgeyi seçerek ortalama intikal süresi, yol ve kavşak analizi ile tek tıkla arama butonlarına ulaşabilirsiniz.
+        </p>
+      </div>
+
+      <!-- Kategori Filtreleme Sekmeleri (Arama Kutusu Kaldırıldı) -->
+      <div class="region-filter-tabs" style="display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom: 30px;">
+        <button type="button" class="filter-tab-btn active" data-filter="all">Tüm Bölgeler</button>
+        <button type="button" class="filter-tab-btn" data-filter="otoyol-giseler">Otoyol &amp; Gişeler</button>
+        <button type="button" class="filter-tab-btn" data-filter="anadolu-merkez">Anadolu Yakası</button>
+        <button type="button" class="filter-tab-btn" data-filter="kocaeli-sanayi">Kocaeli &amp; Gebze OSB</button>
+      </div>
+
+      <!-- Fotoğraflı Bölge Kartları Grid -->
+      <div class="region-photo-grid" id="regions-container">
+        ${cardsHtml}
+      </div>
+
+      <div id="no-search-results" style="display: none; text-align: center; padding: 40px; background: #fff; border-radius: 18px; border: 1px solid #e2e8f0; margin-top: 20px;">
+        <h3 style="color: #0f172a; margin-bottom: 10px;">Aradığınız bölge listede bulunamadı mı?</h3>
+        <p style="color: #64748b; margin-bottom: 20px;">Tüm hat boyunca nöbetçi araçlarımız devriye gezmektedir. Hemen bizi arayarak konum bildirebilirsiniz.</p>
+        <a href="tel:${PHONE_RAW}" class="btn btn-call btn-lg">📞 Hemen Bizi Arayın: ${PHONE}</a>
+      </div>
+
+    </div>
+  </main>
+
   <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
-  <section class="process-section">
+  <section class="process-section" style="padding: 70px 0; background: #ffffff;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
         <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
@@ -1423,7 +1474,7 @@ function generateIndexHtml() {
   </section>
 
   <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
-  <section class="section" style="padding: 70px 0; background: #ffffff;">
+  <section class="section" style="padding: 70px 0; background: #f8fafc; border-top: 1px solid #e2e8f0;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
         <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
@@ -1433,7 +1484,7 @@ function generateIndexHtml() {
           Neden Kuzey Marmara Çekici?
         </h2>
         <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-          18 stratejik bölgede 7/24 kesintisiz nöbetçi filomuzla sunduğumuz kurumsal ayrıcalıklar.
+          Kuzey Marmara ve TEM arterlerinde 7/24 kesintisiz nöbetçi filomuzla sunduğumuz kurumsal ayrıcalıklar.
         </p>
       </div>
 
@@ -1474,45 +1525,6 @@ function generateIndexHtml() {
           <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FOTOĞRAFLI BÖLGELER LİSTESİ -->
-  <main class="section" style="padding: 60px 0 80px; background: #f8fafc;">
-    <div class="container">
-      
-      <div style="text-align: center; max-width: 760px; margin: 0 auto 35px;">
-        <h2 style="font-size: 2rem; font-weight: 900; color: #0f172a; margin-bottom: 10px;">
-          Fotoğraflı Hizmet Bölgelerimiz (${regions.length} Bölge)
-        </h2>
-        <p style="color: #64748b; font-size: 1rem;">
-          Yolda kaldığınız bölgeyi seçerek ortalama intikal süresi, yol analizi ve doğrudan arama butonlarına ulaşabilirsiniz.
-        </p>
-      </div>
-
-      <!-- Arama ve Filtreleme -->
-      <div class="search-first-box" style="margin-bottom: 25px;">
-        <input type="text" id="region-search-input" placeholder="Hangi bölgede yolda kaldınız? (Örn: Kurtköy, Gebze, KMO, Pendik, Tuzla...)" aria-label="Bölge Arama">
-        <button type="button" id="region-search-clear" class="search-clear-btn" aria-label="Temizle">✕</button>
-      </div>
-
-      <div class="region-filter-tabs" style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 30px;">
-        <button type="button" class="filter-tab-btn active" data-filter="all">Tüm Bölgeler (${regions.length})</button>
-        <button type="button" class="filter-tab-btn" data-filter="otoyol-giseler">Otoyol &amp; Gişeler</button>
-        <button type="button" class="filter-tab-btn" data-filter="anadolu-merkez">Anadolu Yakası</button>
-        <button type="button" class="filter-tab-btn" data-filter="kocaeli-sanayi">Kocaeli &amp; Gebze OSB</button>
-      </div>
-
-      <!-- Fotoğraflı Bölge Kartları Grid -->
-      <div class="region-photo-grid" id="regions-container">
-        ${cardsHtml}
-      </div>
-
-      <div id="no-search-results" style="display: none; text-align: center; padding: 40px; background: #fff; border-radius: 18px; border: 1px solid #e2e8f0; margin-top: 20px;">
-        <h3 style="color: #0f172a; margin-bottom: 10px;">Aradığınız bölge listede bulunamadı mı?</h3>
-        <p style="color: #64748b; margin-bottom: 20px;">Tüm hat boyunca nöbetçi araçlarımız devriye gezmektedir. Hemen bizi arayarak konum bildirebilirsiniz.</p>
-        <a href="tel:${PHONE_RAW}" class="btn btn-call btn-lg">📞 Hemen Bizi Arayın: ${PHONE}</a>
-      </div>
 
       <!-- SSS Bölümü -->
       <div style="margin-top: 60px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 30px;">
@@ -1522,8 +1534,11 @@ function generateIndexHtml() {
         <div class="faq-accordion-list">
           <details class="faq-accordion-item" open>
             <summary class="faq-summary">
-              <span>1. En yakın oto çekici ne kadar sürede yanımda olur?</span>
-              <span class="faq-chevron">▼</span>
+              <div class="faq-summary-left">
+                <span class="faq-num">01</span>
+                <span class="faq-q-text">En yakın oto çekici ne kadar sürede yanımda olur?</span>
+              </div>
+              <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
               <p>Kurtköy, Gebze, KMO gişeleri, TEM ve Pendik gibi stratejik merkezlerde sürekli hazır bekleyen nöbetçi ekiplerimizle ortalama 10 ila 15 dakika içinde yanınızdayız.</p>
@@ -1532,8 +1547,11 @@ function generateIndexHtml() {
 
           <details class="faq-accordion-item">
             <summary class="faq-summary">
-              <span>2. Çekici fiyatı telefonda mı belirlenir?</span>
-              <span class="faq-chevron">▼</span>
+              <div class="faq-summary-left">
+                <span class="faq-num">02</span>
+                <span class="faq-q-text">Çekici fiyatı telefonda mı belirlenir?</span>
+              </div>
+              <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
               <p>Evet, bulunduğunuz konum ve teslim edilmesini istediğiniz adrese göre telefonda net ve sabit bir fiyat teklifi sunulur; sürpriz ek masraf talep edilmez.</p>
@@ -1542,8 +1560,11 @@ function generateIndexHtml() {
 
           <details class="faq-accordion-item">
             <summary class="faq-summary">
-              <span>3. Otoyolda veya sanayide kredi kartı geçerli mi?</span>
-              <span class="faq-chevron">▼</span>
+              <div class="faq-summary-left">
+                <span class="faq-num">03</span>
+                <span class="faq-q-text">Otoyolda veya sanayide kredi kartı geçerli mi?</span>
+              </div>
+              <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
               <p>Evet, kurtarıcı araçlarımızın tümünde mobil POS cihazı mevcuttur; tüm kredi kartları ile tek çekim veya taksitli ödeme yapabilirsiniz.</p>
@@ -1552,8 +1573,11 @@ function generateIndexHtml() {
 
           <details class="faq-accordion-item">
             <summary class="faq-summary">
-              <span>4. Aracım taşınırken sigortalı mıdır?</span>
-              <span class="faq-chevron">▼</span>
+              <div class="faq-summary-left">
+                <span class="faq-num">04</span>
+                <span class="faq-q-text">Aracım taşınırken sigortalı mıdır?</span>
+              </div>
+              <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
               <p>Evet, yükleme anından teslimata kadar tüm araçlar %100 nakliyat emtia sigortası ve taşıyıcı sorumluluk kaskosu kapsamındadır.</p>
@@ -1563,52 +1587,65 @@ function generateIndexHtml() {
       </div>
 
     </div>
-  </main>
+  </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand-col">
-          <div class="brand-logo" style="margin-bottom: 15px;">
-            <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="40" height="40">
-            <span class="brand-name" style="color: #fff; font-size: 1.2rem; font-weight: 900;">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-          </div>
-          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
-            Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
-          </p>
-          <p style="color: #cbd5e1; font-weight: 700; font-size: 1rem;">
-            Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none;">${PHONE}</a>
-          </p>
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
-
-        <div class="footer-links-col">
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 15px;">Hızlı Menü</h4>
-          <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
-            <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" style="color: #94a3b8; text-decoration: none;">Hizmetlerimiz</a></li>
-            <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Galeri</a></li>
-            <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog</a></li>
-            <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 15px;">Popüler Bölgeler</h4>
-          <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
-            <li><a href="kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
-            <li><a href="kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
-            <li><a href="tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
-            <li><a href="gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
-            <li><a href="pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
-          </ul>
-        </div>
+        <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
+          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+        </p>
+        <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
+          Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none; font-weight: 800;">${PHONE}</a>
+        </p>
+        <p style="color: #64748b; font-size: 0.85rem;">7 Gün 24 Saat Kesintisiz Nöbetçi Çekici Filosu</p>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="../hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="../hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="../hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="../hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="../hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="../hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="../hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+        </ul>
       </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Öne Çıkan Bölgeler</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
+          <li><a href="kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
+          <li><a href="tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
+          <li><a href="gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
+          <li><a href="pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
+          <li><a href="sabiha-gokcen-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Sabiha Gökçen Çekici</a></li>
+          <li><a href="index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm Bölgelerimiz →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
+          <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="../hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
+          <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
+      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>
 

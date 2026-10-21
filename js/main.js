@@ -182,28 +182,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 6. CANLI GALERİ FİLTRELEME MOTORU (galeri.html)
-  const galleryFilterBtns = document.querySelectorAll('[data-gallery-filter]');
-  const galleryCards = document.querySelectorAll('.photo-slot-card, .gallery-item');
+  document.addEventListener('click', (e) => {
+    const filterBtn = e.target.closest('[data-gallery-filter]');
+    if (!filterBtn) return;
+    e.preventDefault();
 
-  if (galleryFilterBtns.length && galleryCards.length) {
-    galleryFilterBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        galleryFilterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.getAttribute('data-gallery-filter');
+    document.querySelectorAll('[data-gallery-filter]').forEach(b => b.classList.remove('active'));
+    filterBtn.classList.add('active');
+    const filter = filterBtn.getAttribute('data-gallery-filter');
 
-        galleryCards.forEach(card => {
-          const category = card.getAttribute('data-category') || '';
-          if (filter === 'all' || category === filter || category.includes(filter)) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
+    const galleryCards = document.querySelectorAll('.gallery-item, .photo-slot-card');
+    galleryCards.forEach(card => {
+      const category = card.getAttribute('data-category') || '';
+      if (filter === 'all' || category === filter || category.includes(filter)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
     });
-  }
+  });
 
   // 7. Bölge Listesini Genişletme / Daraltma Butonu
   if (toggleAllRegionsBtn && regionsContainer) {
@@ -228,28 +225,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. Sıkça Sorulan Sorular (FAQ) Akordiyonu
   document.addEventListener('click', (e) => {
-    const trigger = e.target.closest('.faq-trigger, .faq-question');
+    const trigger = e.target.closest('.faq-accordion-btn, .faq-trigger, .faq-question');
     if (!trigger) return;
     
     e.preventDefault();
-    const card = trigger.closest('.faq-card, .faq-item');
-    if (!card) return;
+    const item = trigger.closest('.faq-accordion-item, .faq-card, .faq-item');
+    if (!item) return;
 
-    const isOpen = card.classList.contains('active');
-    const parentWrap = card.closest('.faq-wrapper, .faq-wrap, .faq-grid') || card.parentElement;
+    const isOpen = item.classList.contains('active');
+    const parentWrap = item.closest('.faq-accordion-wrap, .faq-wrapper, .faq-wrap, .faq-grid') || item.parentElement;
 
     if (parentWrap) {
-      parentWrap.querySelectorAll('.faq-card.active, .faq-item.active').forEach(c => {
-        if (c !== card) c.classList.remove('active');
+      parentWrap.querySelectorAll('.faq-accordion-item.active, .faq-card.active, .faq-item.active').forEach(c => {
+        c.classList.remove('active');
+        const b = c.querySelector('.faq-accordion-btn, .faq-trigger, .faq-question');
+        if (b) b.setAttribute('aria-expanded', 'false');
       });
     }
 
-    if (isOpen) {
-      card.classList.remove('active');
-    } else {
-      card.classList.add('active');
+    if (!isOpen) {
+      item.classList.add('active');
+      trigger.setAttribute('aria-expanded', 'true');
     }
   });
+
+  // HTML5 <details> akordiyonları için tekli açılma davranışı (Bölgeler ve Bloglar)
+  document.addEventListener('toggle', (e) => {
+    const details = e.target;
+    if (!details || details.tagName !== 'DETAILS' || !details.classList.contains('faq-accordion-item')) return;
+    if (details.open) {
+      const parent = details.closest('.faq-accordion-list') || details.parentElement;
+      if (parent) {
+        parent.querySelectorAll('details.faq-accordion-item[open]').forEach(other => {
+          if (other !== details) other.open = false;
+        });
+      }
+    }
+  }, true);
 
   // 9. Mobil Hero Teklif Formu Aç/Kapat
   const heroFormToggle = document.getElementById('hero-form-toggle');

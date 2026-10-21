@@ -16,15 +16,19 @@ const urls = [
   { loc: `${DOMAIN}/hizmetler/index.html`, priority: '0.9', changefreq: 'weekly' },
   { loc: `${DOMAIN}/bolgeler/index.html`, priority: '0.9', changefreq: 'weekly' },
   { loc: `${DOMAIN}/blog/index.html`, priority: '0.8', changefreq: 'weekly' },
-  // Hizmetler
+  // Hizmetler (13 Kapsamlı Hizmet)
   { loc: `${DOMAIN}/hizmetler/oto-cekici.html`, priority: '0.9', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/otoyol-oto-kurtarma.html`, priority: '0.9', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/kaza-vinc-kurtarma.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/luks-spor-arac-cekici.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/hizmetler/ahtapot-cekici.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/hizmetler/kapali-otopark-cekici.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/agir-vasita-cekici.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/yol-yardim-aku-takviye.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/yerinde-lastik-yol-yardim.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/motosiklet-cekici.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/hizmetler/tekne-karavan-cekici.html`, priority: '0.8', changefreq: 'weekly' },
+  { loc: `${DOMAIN}/hizmetler/ariza-yol-yardim.html`, priority: '0.8', changefreq: 'weekly' },
   { loc: `${DOMAIN}/hizmetler/sehirlerarasi-arac-tasima.html`, priority: '0.8', changefreq: 'weekly' },
   // Bölgeler
   { loc: `${DOMAIN}/bolgeler/kurtkoy-oto-cekici.html`, priority: '0.95', changefreq: 'daily' },
