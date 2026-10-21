@@ -336,5 +336,152 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 11. CANLI UYDUDAN GPS KONUM BELİRLEME (ONE-CLICK HIGHWAY DISPATCH)
+  const gpsBtn = document.getElementById('btn-gps-autolocate');
+  const gpsText = document.getElementById('btn-gps-text');
+
+  if (gpsBtn) {
+    gpsBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (navigator.vibrate) navigator.vibrate(50);
+
+      if (!('geolocation' in navigator)) {
+        window.sendWhatsAppMessage('Merhaba Kuzey Marmara Çekici, yolda kaldım. Bulunduğum konuma en yakın acil oto çekiciyi yönlendirir misiniz? Canlı konumumu iletiyorum:');
+        return;
+      }
+
+      const originalText = gpsText ? gpsText.textContent : 'UYDUDAN CANLI KONUM AT (1 TIKLA)';
+      if (gpsText) gpsText.textContent = '🛰️ GPS Uydusuna Bağlanılıyor...';
+      gpsBtn.style.opacity = '0.85';
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const lat = position.coords.latitude.toFixed(6);
+          const lng = position.coords.longitude.toFixed(6);
+          const accuracy = Math.round(position.coords.accuracy || 15);
+          const mapsUrl = `https://maps.google.com/?q=${lat},${lng}`;
+
+          const msg = `Merhaba Kuzey Marmara Çekici,\nOtoyolda / yolda kaldım, acil çekiciye ihtiyacım var!\n\n🛰️ CANLI GPS KONUMUM (Hassasiyet: ±${accuracy}m):\n${mapsUrl}\n\nEn yakın nöbetçi kurtarıcınızı yönlendirip net sabit fiyat teyidi verir misiniz?`;
+
+          if (gpsText) gpsText.textContent = '✅ Konum Alındı! Yönlendiriliyor...';
+          setTimeout(() => {
+            if (gpsText) gpsText.textContent = originalText;
+            gpsBtn.style.opacity = '1';
+          }, 2500);
+
+          window.sendWhatsAppMessage(msg);
+        },
+        (error) => {
+          if (gpsText) gpsText.textContent = originalText;
+          gpsBtn.style.opacity = '1';
+          const fallbackMsg = 'Merhaba Kuzey Marmara Çekici, otoyolda yolda kaldım. Lütfen en yakın çekicinizi yönlendirir misiniz? Canlı konumumu aşağıda iletiyorum:';
+          window.sendWhatsAppMessage(fallbackMsg);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 8000,
+          maximumAge: 0
+        }
+      );
+    });
+  }
+
+  // 12. İNTERAKTİF FİYAT & VARIŞ SÜRESİ HESAPLAMA MOTORU
+  const calcPickup = document.getElementById('calc-pickup');
+  const calcDropoff = document.getElementById('calc-dropoff');
+  const calcVehicle = document.getElementById('calc-vehicle');
+  const calcEtaVal = document.getElementById('calc-eta-val');
+  const calcPriceVal = document.getElementById('calc-price-val');
+  const calcBtnCall = document.getElementById('calc-btn-call');
+  const calcBtnWhatsapp = document.getElementById('calc-btn-whatsapp');
+
+  function updatePriceCalculation() {
+    if (!calcPickup || !calcDropoff || !calcVehicle) return;
+
+    const pickup = calcPickup.value;
+    const dropoff = calcDropoff.value;
+    const vehicle = calcVehicle.value;
+
+    let eta = '10 - 15 Dakika';
+    if (pickup === 'kurtkoy') eta = '8 - 12 Dakika';
+    else if (pickup === 'kmo') eta = '10 - 14 Dakika';
+    else if (pickup === 'tem') eta = '9 - 13 Dakika';
+    else if (pickup === 'sabiha') eta = '10 - 12 Dakika';
+    else if (pickup === 'gebze') eta = '12 - 15 Dakika';
+    else if (pickup === 'dilovasi') eta = '15 - 18 Dakika';
+
+    let priceText = "1.500 ₺'den Başlayan";
+    if (dropoff === 'yakin') {
+      if (vehicle === 'motor') priceText = "1.300 ₺ - 1.500 ₺";
+      else if (vehicle === 'binek') priceText = "1.500 ₺ - 1.800 ₺";
+      else if (vehicle === 'suv') priceText = "1.800 ₺ - 2.200 ₺";
+      else if (vehicle === 'ticari') priceText = "2.000 ₺ - 2.400 ₺";
+      else if (vehicle === 'luks') priceText = "2.500 ₺ (Özel Rampa)";
+    } else if (dropoff === 'anadolu') {
+      if (vehicle === 'motor') priceText = "1.600 ₺ - 2.000 ₺";
+      else if (vehicle === 'binek') priceText = "2.000 ₺ - 2.500 ₺";
+      else if (vehicle === 'suv') priceText = "2.400 ₺ - 2.900 ₺";
+      else if (vehicle === 'ticari') priceText = "2.600 ₺ - 3.200 ₺";
+      else if (vehicle === 'luks') priceText = "3.200 ₺ (Özel Rampa)";
+    } else if (dropoff === 'avrupa') {
+      if (vehicle === 'binek') priceText = "3.500 ₺ - 4.500 ₺";
+      else if (vehicle === 'suv') priceText = "4.000 ₺ - 5.000 ₺";
+      else priceText = "4.500 ₺ - 5.500 ₺";
+    } else if (dropoff === 'kocaeli') {
+      if (vehicle === 'binek') priceText = "2.800 ₺ - 3.800 ₺";
+      else priceText = "3.500 ₺ - 4.800 ₺";
+    } else if (dropoff === 'sehirlerarasi') {
+      priceText = "Özel İndirimli Km Tarifesi";
+    }
+
+    if (calcEtaVal) calcEtaVal.textContent = eta;
+    if (calcPriceVal) calcPriceVal.textContent = priceText;
+  }
+
+  if (calcPickup && calcDropoff && calcVehicle) {
+    [calcPickup, calcDropoff, calcVehicle].forEach(el => {
+      el.addEventListener('change', updatePriceCalculation);
+    });
+
+    if (calcBtnWhatsapp) {
+      calcBtnWhatsapp.addEventListener('click', (e) => {
+        e.preventDefault();
+        const pickupText = calcPickup.options[calcPickup.selectedIndex].text;
+        const dropoffText = calcDropoff.options[calcDropoff.selectedIndex].text;
+        const vehicleText = calcVehicle.options[calcVehicle.selectedIndex].text;
+        const priceText = calcPriceVal ? calcPriceVal.textContent : '1.500 ₺';
+        const etaText = calcEtaVal ? calcEtaVal.textContent : '10 - 15 Dk';
+
+        const msg = `Merhaba Kuzey Marmara Çekici,\nFiyat hesaplayıcı üzerinden talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Tahmini Ücret: ${priceText}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
+        window.sendWhatsAppMessage(msg);
+      });
+    }
+  }
+
+  // 13. GOOGLE ADS KAMPANYA PARAMETRESİ & MOBİL HAPTİK TIKLAMA
+  const urlParams = new URLSearchParams(window.location.search);
+  const isGoogleAds = urlParams.has('gclid') || urlParams.get('utm_source') === 'google' || urlParams.has('gad_source') || urlParams.has('ads');
+
+  if (isGoogleAds) {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const adsBanner = document.createElement('div');
+      adsBanner.setAttribute('style', 'background: linear-gradient(90deg, #ea580c 0%, #c2410c 100%); color: #fff; padding: 10px 16px; text-align: center; font-size: 0.88rem; font-weight: 800; letter-spacing: 0.03em; box-shadow: 0 4px 15px rgba(234,88,12,0.3); border-radius: 8px; margin: 0 auto 20px; max-width: 850px;');
+      adsBanner.innerHTML = '🚨 GOOGLE ÖZEL: KUZEY MARMARA &amp; TEM OTOYOLUNDA EN YAKIN NÖBETÇİ ÇEKİCİ 10 DAKİKADA YANINIZDA! <span>%100 KASKO GÜVENCESİ</span>';
+      const heroContainer = heroSection.querySelector('.container');
+      if (heroContainer) {
+        heroContainer.insertBefore(adsBanner, heroContainer.firstChild);
+      }
+    }
+  }
+
+  // Mobil Haptik Titreşim Desteği
+  document.querySelectorAll('a[href^="tel:"], .btn-call, .header-call-pill, .sticky-call-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (navigator.vibrate) navigator.vibrate(40);
+    });
+  });
 });
+
 
