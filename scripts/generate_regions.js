@@ -741,15 +741,15 @@ function generateRegionHtml(reg) {
   const otherRegionsList = regions
     .filter(r => r.slug !== reg.slug)
     .slice(0, 8)
-    .map(r => `<li><a href="/bolgeler/${r.slug}.html" style="color:#0f172a; text-decoration:none; display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #f1f5f9; font-size:0.88rem;"><span>📍 ${r.name} Çekici</span> <strong style="color:#ea580c;">${r.eta}</strong></a></li>`)
+    .map(r => `<a href="/bolgeler/${r.slug}.html" class="sidebar-link-item"><span>📍 ${r.name} Çekici</span> <strong style="color:#ea580c;">${r.eta}</strong></a>`)
     .join('\n');
 
-  const distanceRows = reg.distanceTable.map(d => `
-    <tr>
-      <td><strong>${d.place}</strong></td>
-      <td>${d.km} km</td>
-      <td><span class="distance-time-badge">⏱️ ${d.time}</span></td>
-      <td><span class="distance-price-tag">${d.price}</span></td>
+  const distanceRows = reg.distanceTable.map((d, idx) => `
+    <tr style="border-bottom: 1px solid #f1f5f9; ${idx % 2 === 1 ? 'background: #fafafa;' : ''}">
+      <td style="padding: 12px 16px; font-weight: 700; color: #0f172a;">${d.place}</td>
+      <td style="padding: 12px 16px; color: #64748b;">${d.km} km</td>
+      <td style="padding: 12px 16px; color: #ea580c; font-weight: 800;">⏱️ ${d.time}</td>
+      <td style="padding: 12px 16px; color: #10b981; font-weight: 800;">${d.price}</td>
     </tr>
   `).join('\n');
 
@@ -842,35 +842,35 @@ function generateRegionHtml(reg) {
     </div>
   </header>
 
-  <!-- Google Ads Yüksek Dönüşümlü Hero Bölümü -->
-  <section class="ads-hero-container">
+  <!-- Lüks İç Sayfa Hero Bölümü -->
+  <section class="inner-hero-lux">
     <div class="container">
-      <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="font-size: 0.875rem; margin-bottom: 16px; color: #94a3b8;">
-        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
-        <a href="index.html" style="color: #cbd5e1; text-decoration: none;">Bölgelerimiz</a> /
-        <span style="color: #ea580c; font-weight: 600;">${reg.name} Oto Çekici</span>
+      <nav class="inner-breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="/">Ana Sayfa</a> <span>/</span>
+        <a href="/bolgeler/index.html">Bölgelerimiz</a> <span>/</span>
+        <span class="current">${reg.name} Oto Çekici</span>
       </nav>
 
-      <span class="ads-hero-badge">
+      <span class="inner-hero-badge">
         <span class="pulse-dot"></span> ⚡ ${reg.eta} Varış Garantisi • 7/24 Canlı Nöbetçi Kurtarıcı
       </span>
 
-      <h1 class="ads-hero-title">
-        ${reg.name} Oto Çekici &amp; <span style="color: #ea580c;">7/24 Acil Oto Kurtarma</span>
+      <h1 class="inner-hero-title">
+        ${reg.name} Oto Çekici &amp; <span>7/24 Acil Oto Kurtarma</span>
       </h1>
 
-      <p class="ads-hero-desc">
+      <p class="inner-hero-desc">
         ${reg.leadText}
       </p>
 
-      <div class="ads-trust-pills">
-        <span class="ads-trust-pill">🛡️ %100 Taşıma Kaskolu</span>
-        <span class="ads-trust-pill">💰 Telefonda Sabit Fiyat Sözü</span>
-        <span class="ads-trust-pill">💳 Mobil POS &amp; Kredi Kartı</span>
-        <span class="ads-trust-pill">🏎️ Sıfır Açılı Rampa (Lüks &amp; Elektrikli)</span>
+      <div class="inner-trust-pills">
+        <span class="inner-trust-pill">🛡️ %100 Taşıma Kaskolu</span>
+        <span class="inner-trust-pill">💰 Telefonda Sabit Fiyat Sözü</span>
+        <span class="inner-trust-pill">💳 Mobil POS &amp; Kredi Kartı</span>
+        <span class="inner-trust-pill">🏎️ Sıfır Açılı Rampa (Lüks &amp; Elektrikli)</span>
       </div>
 
-      <div class="ads-hero-ctas">
+      <div class="inner-hero-ctas">
         <a href="tel:${PHONE_RAW}" class="btn btn-call btn-lg" style="box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
           <span>Hemen Ara: ${PHONE}</span>
@@ -881,18 +881,213 @@ function generateRegionHtml(reg) {
         </button>
       </div>
 
-      <!-- Saha Filo Fotoğraf Bandı -->
-      <div class="ads-hero-photo-banner">
-        <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="1200" height="380">
-        <div class="ads-hero-photo-caption">
-          <span>✓ ${reg.name} ve Çevre Bağlantı Yollarında 7/24 Nöbetçi Kayar Kasa Filomuz</span>
-          <a href="tel:${PHONE_RAW}" class="btn btn-call btn-sm">📞 10-15 Dk Varış: Ara</a>
+      <!-- Quick Stats Strip -->
+      <div class="stats-strip-lux">
+        <div class="stats-strip-item">
+          <span class="stats-strip-val">⏱️ ${reg.eta}</span>
+          <span class="stats-strip-lbl">Ortalama Varış Süresi</span>
+        </div>
+        <div class="stats-strip-item">
+          <span class="stats-strip-val">🛡️ %100</span>
+          <span class="stats-strip-lbl">Emtia Nakliyat Kaskosu</span>
+        </div>
+        <div class="stats-strip-item">
+          <span class="stats-strip-val">📍 7/24</span>
+          <span class="stats-strip-lbl">Bölgede Nöbetçi Filo</span>
+        </div>
+        <div class="stats-strip-item">
+          <span class="stats-strip-val">⭐ 5.0 / 5.0</span>
+          <span class="stats-strip-lbl">128+ Onaylı Müşteri Puanı</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEDEN BİZ? / GÜVENİLİRLİK & AVANTAJLARIMIZ -->
+  <!-- ANA İÇERİK ALANI & BÖLGESEL SEO REHBERİ -->
+  <main class="section" style="padding: 50px 0 80px; background: #f8fafc;">
+    <div class="container">
+      <div class="inner-page-layout">
+        
+        <!-- Sol İçerik Kolonu -->
+        <div class="inner-content-col">
+          
+          <!-- Kart 1: Bölgeye Özel Saha Filosu & Yol Analizi -->
+          <article class="inner-card-box">
+            <div class="inner-media-showcase">
+              <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="800" height="420" loading="eager">
+              <div class="inner-media-meta-bar">
+                <span>📍 Lokasyon: ${reg.name} &amp; Çevre Bağlantı Kolları</span>
+                <span>⚡ Nöbet: 7/24 Hazır Kayar Kasa &amp; Vinç Ekibi</span>
+              </div>
+            </div>
+
+            <h2 class="inner-card-title">
+              🚗 ${reg.name} Trafik Analizi, Otoyol Gişeleri &amp; Yol Dinamikleri
+            </h2>
+            <p class="inner-card-text">
+              ${reg.trafficAnalysis}
+            </p>
+
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 24px 0 12px; display: flex; align-items: center; gap: 8px;">
+              <span>⚠️</span> ${reg.name} Çevresinde En Sık Karşılaşılan Arızalar &amp; Çekici Senaryoları
+            </h3>
+            <p class="inner-card-text">
+              ${reg.scenarios}
+            </p>
+
+            <h3 style="font-size: 1.22rem; font-weight: 800; color: #0f172a; margin: 24px 0 12px; display: flex; align-items: center; gap: 8px;">
+              <span>🛡️</span> ${reg.name} Donanımımız: Sıfır Açılı Rampa, Dolly &amp; Sıfır Hasar Protokolü
+            </h3>
+            <p class="inner-card-text">
+              ${reg.equipmentProtocol}
+            </p>
+
+            <div class="operator-callout-box">
+              <h4>💡 ${reg.name} Sürücülerine Hayati Tavsiyeler &amp; Yetkili Servis Aktarımı</h4>
+              <p>
+                ${reg.localAdvice}
+              </p>
+            </div>
+          </article>
+
+          <!-- Kart 2: Bölgesel Mesafe & Fiyat Şeffaflık Tablosu -->
+          <section class="inner-card-box">
+            <h3 class="inner-card-title">
+              📊 ${reg.name} Çıkışlı Tahmini Mesafe, Süre ve Fiyat Tablosu
+            </h3>
+            <p class="inner-card-text">
+              Başlangıç noktanızdan popüler transfer lokasyonlarına ortalama intikal süresi ve yaklaşık çekici ücretleri:
+            </p>
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
+                <thead>
+                  <tr style="background: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
+                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Hedef Lokasyon / Servis</th>
+                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Mesafe</th>
+                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Ortalama Süre</th>
+                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Tahmini Ücret</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${distanceRows}
+                </tbody>
+              </table>
+            </div>
+            <div style="padding: 12px 0 0 0; font-size: 0.8rem; color: #64748b; text-align: right;">
+              * Fiyatlar binek otomobil standart taban tarifesine göredir; araç ağırlığı ve özel ekipman ihtiyacına göre telefonda netleştirilir.
+            </div>
+          </section>
+
+          <!-- Kart 3: Gerçek Saha Kurtarma Vakası -->
+          <section class="inner-card-box">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="background: #0f172a; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">Gerçek Saha Vakası</span>
+              <span style="color: #64748b; font-size: 0.875rem;">${reg.name} Operasyon Kaydı</span>
+            </div>
+            <h3 class="inner-card-title" style="font-size: 1.35rem; margin-bottom: 12px;">
+              ${reg.caseTitle}
+            </h3>
+            <p class="inner-card-text">
+              ${reg.caseDesc}
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.875rem; color: #334155; border-top: 1px solid #f1f5f9; padding-top: 15px;">
+              <div><strong>Araç Türü:</strong> ${reg.vehicleType}</div>
+              <div><strong>Varış / Teslim Noktası:</strong> ${reg.deliveryPoint}</div>
+              <div><strong>Taşıma Statüsü:</strong> <span style="color: #10b981; font-weight: 700;">%100 Emtia Kaskolu Nakil</span></div>
+            </div>
+          </section>
+
+          <!-- Kart 4: Kapsamlı SSS -->
+          <article class="inner-card-box">
+            <h3 class="inner-card-title">
+              ${reg.name} Çekici Hakkında Sıkça Sorulan Sorular
+            </h3>
+            <p class="inner-card-text">
+              ${reg.name} ve çevre otoyol güzergahındaki sürücülerimizin en çok merak ettiği sorular:
+            </p>
+            <div class="faq-accordion-list">
+              ${reg.faqs.map((f, idx) => `
+                <details class="faq-accordion-item" ${idx === 0 ? 'open' : ''} style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 12px; padding: 14px 18px;">
+                  <summary style="font-weight: 800; color: #0f172a; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.98rem;">${idx + 1}. ${f.q}</span>
+                    <span style="color: #ea580c; font-size: 1.1rem;">▾</span>
+                  </summary>
+                  <div style="margin-top: 10px; color: #475569; font-size: 0.92rem; line-height: 1.7; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+                    ${f.a}
+                  </div>
+                </details>
+              `).join('')}
+            </div>
+          </article>
+
+          <!-- Kart 5: Komşu Bölgelerimiz Fotoğraflı Kartlar -->
+          <section class="inner-card-box">
+            <h3 class="inner-card-title">
+              📍 Komşu Hizmet Bölgelerimiz (10-15 Dk İntikal)
+            </h3>
+            <p class="inner-card-text">
+              ${reg.name} çevresindeki diğer nöbet noktalarımız ve bağlantı arterleri:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;" class="neighbor-grid">
+              ${neighborCardsHtml}
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Sağ Kenar Çubuğu (Sidebar) -->
+        <aside class="inner-sidebar-col">
+          
+          <!-- Hızlı Çağrı Kartı -->
+          <div class="sidebar-call-card-lux">
+            <span style="background: rgba(234,88,12,0.25); color: #ff7a33; font-weight: 800; font-size: 0.78rem; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 12px; border: 1px solid rgba(234,88,12,0.5);">
+              ${reg.name} Nöbetçi Çekici
+            </span>
+            <h3>${reg.eta} İntikal Garantisi</h3>
+            <p>
+              Konumunuzu iletin, ${reg.name} bölgesindeki en yakın nöbetçi kurtarıcımız derhal çıkış yapsın.
+            </p>
+            <a href="tel:${PHONE_RAW}" class="btn btn-call btn-block btn-lg" style="margin-bottom: 12px;">
+              📞 Hemen Ara: ${PHONE}
+            </a>
+            <button type="button" class="btn btn-whatsapp btn-block btn-lg btn-send-location">
+              💬 WhatsApp Canlı Konum
+            </button>
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #94a3b8; display: flex; justify-content: space-between;">
+              <span>⏱️ Yanıt: 30 Saniye</span>
+              <span>💳 Mobil POS / Kredi Kartı</span>
+            </div>
+          </div>
+
+          <!-- Müşteri Güven Rozeti -->
+          <div class="sidebar-list-card">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+              <span style="font-size: 1.8rem;">⭐⭐⭐⭐⭐</span>
+              <div>
+                <strong style="display: block; font-size: 0.95rem; color: #0f172a;">5.0 / 5.0 Memnuniyet</strong>
+                <span style="font-size: 0.78rem; color: #64748b;">128+ Doğrulanmış Müşteri Yorumu</span>
+              </div>
+            </div>
+            <p style="font-size: 0.86rem; color: #475569; line-height: 1.6; margin: 0;">
+              %100 Emtia Taşıma Kaskosu ve resmi taşıma irsaliyesi ile sıfır hasar güvencesi sunuyoruz.
+            </p>
+          </div>
+
+          <!-- Diğer Hizmet Bölgelerimiz Menüsü -->
+          <div class="sidebar-list-card">
+            <h4>Diğer Hizmet Bölgelerimiz</h4>
+            <div style="display: flex; flex-direction: column;">
+              ${otherRegionsList}
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- KURUMSAL STANDARTLARIMIZ / NEDEN KUZEY MARMARA ÇEKİCİ? (İÇERİKTEN SONRA) -->
   <section class="section section-dark" style="padding: 70px 0; background: #090d16; color: #fff;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
@@ -969,7 +1164,7 @@ function generateRegionHtml(reg) {
             <span class="process-icon-circle">📞</span>
           </div>
           <h3>1. Bize Ulaşın &amp; Konum Atın</h3>
-          <p><strong>0533 265 70 89</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu iletin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
+          <p><strong>${PHONE}</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu iletin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
           <span class="process-tag">30 Saniyede Yanıt</span>
         </div>
 
@@ -1005,191 +1200,6 @@ function generateRegionHtml(reg) {
       </div>
     </div>
   </section>
-
-  <!-- ANA İÇERİK ALANI & TEKNİK SEO DERİNLİĞİ -->
-  <main class="section" style="padding: 50px 0 80px; background: #f8fafc;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;" class="region-page-grid">
-        <div class="region-content-col">
-          
-          <!-- Derinlemesine Bölge Makalesi -->
-          <article class="content-block" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 30px; margin-bottom: 30px; box-shadow: 0 4px 16px -2px rgba(15,23,42,0.04);">
-            <div style="margin-bottom: 28px;">
-              <h2 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-                <span style="color: #ea580c;">🚗</span> ${reg.name} Trafik Analizi, Otoyol Gişeleri &amp; Yol Dinamikleri
-              </h2>
-              <p style="font-size: 1rem; line-height: 1.8; color: #334155; margin: 0; text-align: justify;">
-                ${reg.trafficAnalysis}
-              </p>
-            </div>
-
-            <div style="margin-bottom: 28px;">
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-                <span style="color: #f59e0b;">⚠️</span> ${reg.name} Çevresinde En Sık Karşılaşılan Arızalar &amp; Çekici Senaryoları
-              </h3>
-              <p style="font-size: 0.98rem; line-height: 1.8; color: #334155; margin: 0; text-align: justify;">
-                ${reg.scenarios}
-              </p>
-            </div>
-
-            <div style="margin-bottom: 28px;">
-              <h3 style="font-size: 1.22rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-                <span style="color: #10b981;">🛡️</span> ${reg.name} Donanımımız: Sıfır Açılı Rampa, Dolly &amp; Sıfır Hasar Protokolü
-              </h3>
-              <p style="font-size: 0.98rem; line-height: 1.8; color: #334155; margin: 0; text-align: justify;">
-                ${reg.equipmentProtocol}
-              </p>
-            </div>
-
-            <div style="background: #fff7ed; border-left: 4px solid #ea580c; padding: 22px; border-radius: 10px; margin-bottom: 10px;">
-              <h3 style="font-size: 1.15rem; font-weight: 800; color: #9a3412; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                <span>💡</span> ${reg.name} Sürücülerine Hayati Tavsiyeler &amp; Yetkili Servis Aktarımı
-              </h3>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: #7c2d12; margin: 0; text-align: justify;">
-                ${reg.localAdvice}
-              </p>
-            </div>
-          </article>
-
-          <!-- Bölgesel Mesafe & Fiyat Şeffaflık Tablosu -->
-          <div class="distance-table-wrap">
-            <div style="padding: 22px 24px; border-bottom: 1px solid #f1f5f9; background: #ffffff;">
-              <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 6px;">
-                📊 ${reg.name} Çıkışlı Tahmini Mesafe, Süre ve Fiyat Tablosu
-              </h3>
-              <p style="font-size: 0.9rem; color: #64748b; margin: 0;">
-                Başlangıç noktanızdan popüler transfer lokasyonlarına ortalama intikal süresi ve yaklaşık çekici ücretleri.
-              </p>
-            </div>
-            <table class="distance-table">
-              <thead>
-                <tr>
-                  <th>Hedef Lokasyon / Servis</th>
-                  <th>Mesafe</th>
-                  <th>Ortalama Süre</th>
-                  <th>Tahmini Ücret Aralığı</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${distanceRows}
-              </tbody>
-            </table>
-            <div style="padding: 12px 20px; background: #f8fafc; font-size: 0.8rem; color: #64748b; text-align: right;">
-              * Fiyatlar binek otomobil standart taban tarifesine göredir; araç ağırlığı ve özel ekipman ihtiyacına göre telefonda netleştirilir.
-            </div>
-          </div>
-
-          <!-- Gerçek Saha Kurtarma Vakası -->
-          <article class="content-block" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 16px -2px rgba(15,23,42,0.04);">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
-              <span style="background: #0f172a; color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;">Gerçek Saha Vakası</span>
-              <span style="color: #64748b; font-size: 0.875rem;">${reg.name} Operasyon Kaydı</span>
-            </div>
-            <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin-bottom: 12px;">
-              ${reg.caseTitle}
-            </h3>
-            <p style="font-size: 1rem; line-height: 1.7; color: #475569; margin-bottom: 18px;">
-              ${reg.caseDesc}
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.875rem; color: #334155; border-top: 1px solid #f1f5f9; padding-top: 15px;">
-              <div><strong>Araç Türü:</strong> ${reg.vehicleType}</div>
-              <div><strong>Varış / Teslim Noktası:</strong> ${reg.deliveryPoint}</div>
-              <div><strong>Taşıma Statüsü:</strong> %100 Emtia Kaskolu Nakil</div>
-            </div>
-          </article>
-
-          <!-- Kapsamlı Sıkça Sorulan Sorular (SSS) -->
-          <article class="content-block" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 30px; margin-bottom: 30px; box-shadow: 0 4px 16px -2px rgba(15,23,42,0.04);">
-            <div style="margin-bottom: 24px;">
-              <span style="color: #ea580c; font-weight: 800; font-size: 0.82rem; text-transform: uppercase;">Merak Edilenler</span>
-              <h2 style="font-size: 1.55rem; font-weight: 900; color: #0f172a; margin-top: 6px;">
-                ${reg.name} Çekici Hakkında Sıkça Sorulan Sorular
-              </h2>
-            </div>
-            <div class="faq-accordion-list">
-              ${reg.faqs.map((f, idx) => `
-                <details class="faq-accordion-item" ${idx === 0 ? 'open' : ''}>
-                  <summary class="faq-summary">
-                    <div class="faq-summary-left">
-                      <span class="faq-num">0${idx + 1}</span>
-                      <span class="faq-q-text">${f.q}</span>
-                    </div>
-                    <span class="faq-chevron">▾</span>
-                  </summary>
-                  <div class="faq-content">
-                    <p style="margin: 0; line-height: 1.75;">${f.a}</p>
-                  </div>
-                </details>
-              `).join('')}
-            </div>
-          </article>
-
-          <!-- Komşu Bölgelerimiz Fotoğraflı Kartlar -->
-          <div style="margin-top: 40px;">
-            <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin-bottom: 20px;">
-              📍 Komşu Hizmet Bölgelerimiz (10-15 Dk İntikal)
-            </h3>
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;" class="neighbor-grid">
-              ${neighborCardsHtml}
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Sağ Kenar Çubuğu (Sidebar) -->
-        <aside class="region-sidebar-col">
-          <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 28px; margin-bottom: 25px; position: sticky; top: 90px; box-shadow: 0 10px 30px rgba(15,23,42,0.06);">
-            <span style="background: rgba(234,88,12,0.1); color: #ea580c; font-weight: 800; font-size: 0.8rem; padding: 5px 12px; border-radius: 999px; display: inline-block; margin-bottom: 14px;">
-              ${reg.name} Nöbetçi Çekici
-            </span>
-            <h3 style="font-size: 1.35rem; font-weight: 900; color: #0f172a; margin-bottom: 10px; line-height: 1.3;">
-              ${reg.eta} İntikal Garantisi
-            </h3>
-            <p style="font-size: 0.92rem; color: #64748b; line-height: 1.6; margin-bottom: 22px;">
-              Konumunuzu iletin, ${reg.name} bölgesindeki en yakın nöbetçi kurtarıcımız derhal çıkış yapsın.
-            </p>
-            <a href="tel:${PHONE_RAW}" class="btn btn-call btn-block btn-lg" style="margin-bottom: 12px; text-decoration: none; justify-content: center; box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);">
-              📞 Hemen Ara: ${PHONE}
-            </a>
-            <button type="button" class="btn btn-whatsapp btn-block btn-lg btn-send-location" style="justify-content: center;">
-              💬 WhatsApp Canlı Konum
-            </button>
-
-            <div style="margin-top: 20px; padding: 14px; background: #f8fafc; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
-              <span style="font-size: 1.5rem;">⭐⭐⭐⭐⭐</span>
-              <div>
-                <strong style="display: block; font-size: 0.88rem; color: #0f172a;">5.0 / 5.0 Memnuniyet</strong>
-                <span style="font-size: 0.78rem; color: #64748b;">128+ Doğrulanmış Müşteri Yorumu</span>
-              </div>
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid #f1f5f9; margin: 22px 0;">
-
-            <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a; margin-bottom: 14px;">
-              Hizmet Avantajlarımız
-            </h4>
-            <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: #334155; line-height: 2;">
-              <li>✓ %100 Emtia Taşıma Kaskosu</li>
-              <li>✓ Şeffaf &amp; Sabit Fiyat Sözü</li>
-              <li>✓ Kapıda Kredi Kartı / Mobil POS</li>
-              <li>✓ Sıfır Dereceli Rampa (Lüks &amp; Elektrikli)</li>
-              <li>✓ 7/24 Kesintisiz Otoyol Nöbeti</li>
-            </ul>
-
-            <hr style="border: 0; border-top: 1px solid #f1f5f9; margin: 22px 0;">
-
-            <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a; margin-bottom: 12px;">
-              Diğer Hizmet Bölgelerimiz
-            </h4>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              ${otherRegionsList}
-            </ul>
-          </div>
-        </aside>
-
-      </div>
-    </div>
-  </main>
 
   <!-- Footer -->
   <footer class="site-footer">

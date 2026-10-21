@@ -321,4 +321,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 8. Mobilde 4 bölgeden sonrasını aç/kapat (Tümünü Göster)
+  const toggleMobileRegionsBtn = document.getElementById('toggleMobileRegionsBtn');
+  if (toggleMobileRegionsBtn) {
+    toggleMobileRegionsBtn.addEventListener('click', () => {
+      const hiddenCards = document.querySelectorAll('.region-photo-card.mobile-hidden-region');
+      const isExpanded = hiddenCards.length > 0 && hiddenCards[0].classList.contains('is-expanded');
+      hiddenCards.forEach(c => c.classList.toggle('is-expanded'));
+      if (isExpanded) {
+        toggleMobileRegionsBtn.innerHTML = '<span>Tüm Bölgeleri Göster (+14 Bölge) ▾</span>';
+      } else {
+        toggleMobileRegionsBtn.innerHTML = '<span>Daha Az Bölge Göster ▴</span>';
+      }
+    });
+  }
 });
+

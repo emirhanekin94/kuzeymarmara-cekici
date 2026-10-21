@@ -5192,3 +5192,498 @@ details.faq-accordion-item[open] .faq-chevron {
   margin: 0;
 }
 
+/* ==========================================================================
+   MOBİL BÖLGE GİZLEME & GENİŞLETME (ANA SAYFA)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .region-photo-card.mobile-hidden-region {
+    display: none !important;
+  }
+  .region-photo-card.mobile-hidden-region.is-expanded {
+    display: flex !important;
+    animation: fadeInRegion 0.35s ease forwards;
+  }
+  .mobile-regions-toggle-wrap {
+    display: block !important;
+    text-align: center;
+    margin-top: 18px;
+    width: 100%;
+  }
+  #toggleMobileRegionsBtn {
+    display: inline-flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 14px 20px !important;
+    font-size: 0.98rem !important;
+    font-weight: 800 !important;
+    border-radius: 12px !important;
+    background: #ffffff !important;
+    border: 2px solid #ea580c !important;
+    color: #ea580c !important;
+    box-shadow: 0 4px 14px rgba(234, 88, 12, 0.15) !important;
+    cursor: pointer;
+  }
+}
+
+@keyframes fadeInRegion {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 769px) {
+  .mobile-regions-toggle-wrap {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   LÜKS İÇ SAYFA HERO TASARIMI (HİZMETLER & BÖLGELER)
+   ========================================================================== */
+.inner-hero-lux {
+  position: relative;
+  background: linear-gradient(180deg, #070b14 0%, #0d1527 100%);
+  color: #ffffff;
+  padding: 50px 0 55px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.inner-hero-lux::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(234, 88, 12, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.inner-hero-lux .container {
+  position: relative;
+  z-index: 2;
+}
+
+.inner-breadcrumb-nav {
+  font-size: 0.86rem;
+  margin-bottom: 18px;
+  color: #94a3b8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.inner-breadcrumb-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.inner-breadcrumb-nav a:hover {
+  color: #ea580c;
+}
+
+.inner-breadcrumb-nav span.current {
+  color: #ea580c;
+  font-weight: 700;
+}
+
+.inner-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(234, 88, 12, 0.15);
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.35);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.inner-hero-title {
+  font-size: clamp(1.85rem, 3.8vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.inner-hero-title span {
+  color: #ea580c;
+}
+
+.inner-hero-desc {
+  font-size: clamp(0.96rem, 1.6vw, 1.1rem);
+  line-height: 1.75;
+  color: #cbd5e1;
+  max-width: 860px;
+  margin-bottom: 24px;
+}
+
+.inner-trust-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.inner-trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f1f5f9;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.inner-hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 640px) {
+  .inner-hero-ctas .btn {
+    width: 100% !important;
+  }
+}
+
+/* Stats Strip */
+.stats-strip-lux {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px 20px;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 768px) {
+  .stats-strip-lux {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 14px;
+  }
+}
+
+.stats-strip-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-strip-val {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #ea580c;
+  line-height: 1.2;
+}
+
+.stats-strip-lbl {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   İÇ SAYFA 2 SÜTUNLU DÜZEN (CONTENT + SIDEBAR)
+   ========================================================================== */
+.inner-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 36px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .inner-page-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Sol İçerik Kolonu */
+.inner-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Şık Kartlar */
+.inner-card-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+}
+
+@media (max-width: 640px) {
+  .inner-card-box {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+}
+
+.inner-card-title {
+  font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.inner-card-title span {
+  color: #ea580c;
+}
+
+.inner-card-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 18px;
+}
+
+/* Görsel Vitrin */
+.inner-media-showcase {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 26px;
+  position: relative;
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.inner-media-showcase img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.inner-media-meta-bar {
+  background: #0f172a;
+  color: #fff;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+/* Uyumlu Araç Tipleri Grid */
+.vehicle-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 640px) {
+  .vehicle-types-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vehicle-type-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: all 0.25s ease;
+}
+
+.vehicle-type-item:hover {
+  background: #ffffff;
+  border-color: #ea580c;
+  box-shadow: 0 6px 18px -2px rgba(234, 88, 12, 0.12);
+  transform: translateY(-2px);
+}
+
+.vehicle-type-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.vehicle-type-item h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.vehicle-type-item p {
+  font-size: 0.86rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 4 Aşamalı Müdahale Kartları */
+.service-steps-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 640px) {
+  .service-steps-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-step-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+}
+
+.service-step-item .step-badge {
+  display: inline-block;
+  background: #ea580c;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.service-step-item h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.service-step-item p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Operatör İpucu Kutusu */
+.operator-callout-box {
+  background: #fff7ed;
+  border-left: 4px solid #ea580c;
+  border-radius: 12px;
+  padding: 22px;
+  margin: 20px 0;
+}
+
+.operator-callout-box h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #9a3412;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.operator-callout-box p {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: #7c2d12;
+  margin: 0;
+}
+
+/* Şık Sidebar */
+.inner-sidebar-col {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-call-card-lux {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-call-card-lux h3 {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.sidebar-call-card-lux p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sidebar-list-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.04);
+}
+
+.sidebar-list-card h4 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 14px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.sidebar-link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.88rem;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link-item:hover {
+  color: #ea580c;
+  padding-left: 4px;
+}
+
+.sidebar-link-item:last-child {
+  border-bottom: none;
+}
+

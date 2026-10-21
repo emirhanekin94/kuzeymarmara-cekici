@@ -13,8 +13,8 @@ const PHONE_RAW = '905332657089';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 function generateIndexHtml() {
-  const regionCardsHtml = regions.map(r => `
-          <div class="region-photo-card" data-category="${r.category}">
+  const regionCardsHtml = regions.map((r, idx) => `
+          <div class="region-photo-card ${idx >= 4 ? 'mobile-hidden-region' : ''}" data-category="${r.category}">
             <div class="region-photo-img-wrap">
               <img src="images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
             </div>
@@ -466,6 +466,19 @@ function generateIndexHtml() {
         <!-- Fotoğraflı Bölge Kartları Grid -->
         <div class="region-photo-grid" id="regions-container">
 ${regionCardsHtml}
+        </div>
+
+        <!-- Mobilde 4 bölgeden sonrasını açma butonu -->
+        <div class="mobile-regions-toggle-wrap">
+          <button type="button" id="toggleMobileRegionsBtn">
+            <span>Tüm Bölgeleri Göster (+14 Bölge) ▾</span>
+          </button>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="/bolgeler/index.html" class="btn btn-outline" style="padding: 14px 28px; font-weight: 800; border-color: #ea580c; color: #ea580c;">
+            Tüm 18 Hizmet Bölgemizi ve Güzergah Rehberlerini İnceleyin →
+          </a>
         </div>
       </div>
     </section>
