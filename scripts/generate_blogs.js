@@ -16,7 +16,7 @@ const richFooterHtml = `
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
           <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
@@ -31,37 +31,37 @@ const richFooterHtml = `
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
-          <li><a href="../hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
-          <li><a href="../hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
-          <li><a href="../hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
-          <li><a href="../hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
-          <li><a href="../hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
-          <li><a href="../hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+          <li><a href="/hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="/hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="/hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="/hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="/hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="/hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="/hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Öne Çıkan Bölgeler</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../bolgeler/kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
-          <li><a href="../bolgeler/kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
-          <li><a href="../bolgeler/tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
-          <li><a href="../bolgeler/gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
-          <li><a href="../bolgeler/pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
-          <li><a href="../bolgeler/sabiha-gokcen-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Sabiha Gökçen Çekici</a></li>
-          <li><a href="../bolgeler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm Bölgelerimiz →</a></li>
+          <li><a href="/bolgeler/kurtkoy-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kurtköy Çekici</a></li>
+          <li><a href="/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">KMO Otoyol Çekici</a></li>
+          <li><a href="/bolgeler/tem-otoyolu-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">TEM Otoyolu Çekici</a></li>
+          <li><a href="/bolgeler/gebze-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Gebze Çekici</a></li>
+          <li><a href="/bolgeler/pendik-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Pendik Çekici</a></li>
+          <li><a href="/bolgeler/sabiha-gokcen-oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Sabiha Gökçen Çekici</a></li>
+          <li><a href="/bolgeler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm Bölgelerimiz →</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
-          <li><a href="../hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
-          <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="/" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="/hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="/galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
           <li><a href="index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
-          <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+          <li><a href="/iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
         </ul>
       </div>
     </div>
@@ -392,7 +392,7 @@ function generateArticleHtml(blog) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.2">
+  <link rel="stylesheet" href="/css/style.css?v=3.2">
 
   <script type="application/ld+json">
   ${JSON.stringify(articleSchema, null, 2)}
@@ -407,8 +407,8 @@ function generateArticleHtml(blog) {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+        <a href="/" class="brand-logo">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -416,13 +416,13 @@ function generateArticleHtml(blog) {
         </a>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
-            <li><a href="../bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
+            <li><a href="/bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
             <li><a href="index.html" class="nav-link active">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -444,7 +444,7 @@ function generateArticleHtml(blog) {
   <section class="subpage-hero" style="background: linear-gradient(135deg, #070b14 0%, #0f172a 60%, #162032 100%); color: #fff; padding: 45px 0;">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 15px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
         <a href="index.html" style="color: #cbd5e1; text-decoration: none;">Blog</a> /
         <span style="color: #ea580c; font-weight: 600;">Rehber</span>
       </nav>
@@ -466,7 +466,7 @@ function generateArticleHtml(blog) {
       <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
         
         <div style="border-radius: 14px; overflow: hidden; margin-bottom: 30px;">
-          <img src="../images/${blog.image}" alt="${blog.headline}" width="800" height="450" style="width: 100%; height: auto; display: block;">
+          <img src="/images/${blog.image}" alt="${blog.headline}" width="800" height="450" style="width: 100%; height: auto; display: block;">
         </div>
 
         <p style="font-size: 1.15rem; line-height: 1.85; color: #0f172a; font-weight: 600; margin-bottom: 25px; border-bottom: 1px solid #f1f5f9; padding-bottom: 20px;">
@@ -528,7 +528,7 @@ function generateArticleHtml(blog) {
     </button>
   </div>
 
-  <script src="../js/main.js?v=3.2" defer></script>
+  <script src="/js/main.js?v=3.2" defer></script>
 </body>
 </html>`;
 }
@@ -537,16 +537,18 @@ function generateBlogIndexHtml() {
   const cardsHtml = blogs.map(b => `
     <div class="service-card" style="background:#fff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
       <div class="service-card-img-wrap" style="height: 220px; overflow: hidden;">
-        <img src="../images/${b.image}" alt="${b.headline}" width="600" height="350" style="width: 100%; height: 100%; object-fit: cover;">
-        <span class="service-card-badge">${b.readTime}</span>
+        <img src="/images/${b.image}" alt="${b.headline}" width="600" height="350" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       <div class="service-card-body" style="padding: 22px;">
-        <span style="color:#ea580c; font-size:0.82rem; font-weight:800;">📅 ${b.date}</span>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px;">
+          <span style="color:#ea580c; font-size:0.82rem; font-weight:800;">📅 ${b.date}</span>
+          <span style="background: rgba(15, 23, 42, 0.06); color: #475569; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">⏱️ ${b.readTime}</span>
+        </div>
         <h3 class="service-title" style="margin: 8px 0 10px; font-size: 1.15rem; font-weight: 800; line-height: 1.4;">
-          <a href="${b.slug}.html" style="color: #0f172a; text-decoration: none;">${b.headline}</a>
+          <a href="/blog/${b.slug}.html" style="color: #0f172a; text-decoration: none;">${b.headline}</a>
         </h3>
         <p class="service-text" style="color: #64748b; font-size: 0.9rem; line-height: 1.6; margin-bottom: 18px;">${b.lead}</p>
-        <a href="${b.slug}.html" class="service-btn" style="text-decoration: none; font-weight: 700; color: #ea580c;">Yazıyı Oku →</a>
+        <a href="/blog/${b.slug}.html" class="service-btn" style="text-decoration: none; font-weight: 700; color: #ea580c;">Yazıyı Oku →</a>
       </div>
     </div>
   `).join('\n');
@@ -564,7 +566,7 @@ function generateBlogIndexHtml() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.2">
+  <link rel="stylesheet" href="/css/style.css?v=3.2">
 
   <script type="application/ld+json">
   {
@@ -589,8 +591,8 @@ function generateBlogIndexHtml() {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+        <a href="/" class="brand-logo">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -598,13 +600,13 @@ function generateBlogIndexHtml() {
         </a>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
-            <li><a href="../bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
+            <li><a href="/bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
             <li><a href="index.html" class="nav-link active">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -626,7 +628,7 @@ function generateBlogIndexHtml() {
   <section class="subpage-hero" style="background: linear-gradient(135deg, #070b14 0%, #0f172a 60%, #162032 100%); color: #fff; padding: 50px 0;">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 15px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
         <span style="color: #ea580c; font-weight: 600;">Blog</span>
       </nav>
       <h1 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 900; margin-bottom: 15px;">
@@ -660,7 +662,7 @@ function generateBlogIndexHtml() {
     </button>
   </div>
 
-  <script src="../js/main.js?v=3.2" defer></script>
+  <script src="/js/main.js?v=3.2" defer></script>
 </body>
 </html>`;
 }

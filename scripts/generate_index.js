@@ -17,12 +17,14 @@ function generateIndexHtml() {
           <div class="region-photo-card" data-category="${r.category}">
             <div class="region-photo-img-wrap">
               <img src="images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
-              <span class="region-photo-badge">⏱️ ${r.eta} Varış</span>
-              <span class="region-photo-category">${r.categoryLabel}</span>
             </div>
             <div class="region-photo-body">
+              <div class="region-photo-meta-row">
+                <span class="region-meta-tag">⏱️ ${r.eta} Varış</span>
+                <span class="region-meta-tag" style="background: rgba(15, 23, 42, 0.06); color: #334155; border-color: #cbd5e1;">${r.categoryLabel}</span>
+              </div>
               <h3 class="region-photo-title">
-                <a href="bolgeler/${r.slug}.html">${r.name} Oto Çekici</a>
+                <a href="/bolgeler/${r.slug}.html">${r.name} Oto Çekici</a>
               </h3>
               <p class="region-photo-hotspots">📍 ${r.hotspots}</p>
               <div class="region-photo-features">
@@ -32,7 +34,7 @@ function generateIndexHtml() {
               </div>
               <div class="region-photo-actions">
                 <a href="tel:${PHONE_RAW}" class="btn btn-call btn-sm">📞 Hemen Ara</a>
-                <a href="bolgeler/${r.slug}.html" class="btn btn-outline btn-sm">Bölge İncele →</a>
+                <a href="/bolgeler/${r.slug}.html" class="btn btn-outline btn-sm">Bölge İncele →</a>
               </div>
             </div>
           </div>`).join('\n');
@@ -330,17 +332,16 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/otomobil_cekici-1.webp" alt="Kayar Kasa Oto Çekici" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">En Çok Tercih Edilen</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/oto-cekici.html">Kayar Kasa Oto Çekici</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/oto-cekici.html">Kayar Kasa Oto Çekici</a></h3>
               <p class="service-text">Hidrolik kayar platform ile binek ve SUV araçları tampon sürtmesi olmadan, kaskolu ve emniyetli olarak taşıyoruz.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> 10-15 dakikada hızlı intikal</li>
                 <li><span class="check-icon">✓</span> Kurtköy, KMO gişeleri ve servislere nakil</li>
                 <li><span class="check-icon">✓</span> Taşıma ve yol kaskosu güvencesi</li>
               </ul>
-              <a href="hizmetler/oto-cekici.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/oto-cekici.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
@@ -348,17 +349,16 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/otoyol-cekici.webp" alt="Otoyol Oto Kurtarma" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">KMO &amp; TEM Nöbetçi</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></h3>
               <p class="service-text">Kuzey Marmara Otoyolu ve TEM güzergahında tepe flaşör kuleli emniyet araçlarımızla hızlı ve can güvenliği öncelikli tahliye.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> Otoyol güvenlik koridoru kurulumu</li>
                 <li><span class="check-icon">✓</span> Gişeler, viyadük ve tünel müdahalesi</li>
                 <li><span class="check-icon">✓</span> 15 dakikada yerinde intikal</li>
               </ul>
-              <a href="hizmetler/otoyol-oto-kurtarma.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/otoyol-oto-kurtarma.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
@@ -366,17 +366,16 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/kazali-arac-cekici.webp" alt="Kaza ve Vinç Kurtarma" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">Vinç &amp; Ahtapot Destekli</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/kaza-vinc-kurtarma.html">Kaza &amp; Vinç Kurtarma</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/kaza-vinc-kurtarma.html">Kaza &amp; Vinç Kurtarma</a></h3>
               <p class="service-text">Şarampole yuvarlanma, bariyer sıkışması, devrilme veya ağır hasarlı kazalarda güçlü vinç tertibatıyla acil kurtarma operasyonu.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> Çift halatlı hidrolik vinç sistemi</li>
                 <li><span class="check-icon">✓</span> Otoyol güvenlik önlemleri ve flaşör</li>
                 <li><span class="check-icon">✓</span> Sigorta ve yetkili servise teslimat</li>
               </ul>
-              <a href="hizmetler/kaza-vinc-kurtarma.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/kaza-vinc-kurtarma.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
@@ -384,17 +383,16 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/luks-arac-cekici.webp" alt="Lüks ve Spor Araç Çekici" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">Sıfır Derece Rampa</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></h3>
               <p class="service-text">Porsche, Ferrari, Tesla ve basık şasili spor otomobiller için özel sıfır dereceli rampa uzantısıyla sürtünmesiz hasarsız taşıma.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> Alçak şasi ve basık araç uyumu</li>
                 <li><span class="check-icon">✓</span> Özel tekerlek sabitleme aparatları</li>
                 <li><span class="check-icon">✓</span> Yüksek teminatlı emtia kaskosu</li>
               </ul>
-              <a href="hizmetler/luks-spor-arac-cekici.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/luks-spor-arac-cekici.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
@@ -402,17 +400,16 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/ahtapot-cekici.webp" alt="Ahtapot Çekici Dört Tekerden Askı" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">4 Tekerden Askılı</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/ahtapot-cekici.html">Ahtapot Çekici</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/ahtapot-cekici.html">Ahtapot Çekici</a></h3>
               <p class="service-text">Şanzımanı kilitlenen, el freni takılı kalan veya dar alanlarda sıkışan araçları tekerleklerinden havaya kaldırarak hasarsız taşıma.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> Kilitli şanzımana sıfır sürtünme</li>
                 <li><span class="check-icon">✓</span> Dar alanlardan vinçle tahliye</li>
                 <li><span class="check-icon">✓</span> %100 jant korumalı bağlama</li>
               </ul>
-              <a href="hizmetler/ahtapot-cekici.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/ahtapot-cekici.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
@@ -420,24 +417,23 @@ function generateIndexHtml() {
           <div class="service-card">
             <div class="service-card-img-wrap">
               <img src="images/kapali-otopark-cekici.webp" alt="Kapalı Otopark Çekicisi" loading="lazy" width="600" height="400">
-              <span class="service-card-badge">Alçak Tavan 1.95m</span>
             </div>
             <div class="service-card-body">
-              <h3 class="service-title"><a href="hizmetler/kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></h3>
+              <h3 class="service-title"><a href="/hizmetler/kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></h3>
               <p class="service-text">Viaport ve AVM'lerin 1.90m - 2.00m tavanlı bodrum otoparklarına rahatça inebilen özel alçak kabinli kurtarıcı araç filosu.</p>
               <ul class="service-features">
                 <li><span class="check-icon">✓</span> -1, -2, -3 katlardan araç çekimi</li>
                 <li><span class="check-icon">✓</span> Dar manevra kabiliyeti</li>
                 <li><span class="check-icon">✓</span> Yerinde akü takviyesi ve lastik</li>
               </ul>
-              <a href="hizmetler/kapali-otopark-cekici.html" class="service-btn">Hizmet Detayları →</a>
+              <a href="/hizmetler/kapali-otopark-cekici.html" class="service-btn">Hizmet Detayları →</a>
             </div>
           </div>
 
         </div>
 
         <div style="text-align: center; margin-top: 35px;">
-          <a href="hizmetler/index.html" class="btn btn-outline" style="padding: 14px 28px; font-weight: 800; border-color: #ea580c; color: #ea580c;">
+          <a href="/hizmetler/index.html" class="btn btn-outline" style="padding: 14px 28px; font-weight: 800; border-color: #ea580c; color: #ea580c;">
             Tüm 13 Profesyonel Hizmetimizi İnceleyin →
           </a>
         </div>
@@ -474,7 +470,62 @@ ${regionCardsHtml}
       </div>
     </section>
 
-    <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
+    <!-- 1. NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
+    <section class="section" style="padding: 70px 0; background: #090d16; color: #fff;">
+      <div class="container">
+        <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
+          <span class="section-badge" style="background: rgba(234,88,12,0.15); color: #ea580c; border: 1px solid rgba(234,88,12,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+            Kurumsal Standartlarımız
+          </span>
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
+            Neden Kuzey Marmara Çekici?
+          </h2>
+          <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
+            15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
+          </p>
+        </div>
+
+        <div class="why-us-luxury-grid">
+          <div class="why-card-luxury">
+            <div class="why-icon-box">⏱️</div>
+            <h3>10-15 Dakikada Hızlı İntikal</h3>
+            <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
+          </div>
+
+          <div class="why-card-luxury">
+            <div class="why-icon-box">🛡️</div>
+            <h3>%100 Nakliyat Emtia Kaskosu</h3>
+            <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
+          </div>
+
+          <div class="why-card-luxury">
+            <div class="why-icon-box">🏷️</div>
+            <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
+            <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
+          </div>
+
+          <div class="why-card-luxury">
+            <div class="why-icon-box">🏎️</div>
+            <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
+            <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
+          </div>
+
+          <div class="why-card-luxury">
+            <div class="why-icon-box">💳</div>
+            <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
+            <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
+          </div>
+
+          <div class="why-card-luxury">
+            <div class="why-icon-box">⭐</div>
+            <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
+            <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
     <section class="process-section" style="padding: 70px 0; background: #ffffff;">
       <div class="container">
         <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 35px;">
@@ -528,61 +579,6 @@ ${regionCardsHtml}
             <h3>4. Kaskolu &amp; Sıfır Hasarlı Teslimat</h3>
             <p>Aracınız özel aparatlarla şasiye temas etmeden platforma yüklenir; %100 nakliyat sigortasıyla dilediğiniz yetkili servise ulaştırılır.</p>
             <span class="process-tag">%100 Kaskolu</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
-    <section class="section" style="padding: 70px 0; background: #090d16; color: #fff;">
-      <div class="container">
-        <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
-          <span class="section-badge" style="background: rgba(234,88,12,0.15); color: #ea580c; border: 1px solid rgba(234,88,12,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-            Kurumsal Standartlarımız
-          </span>
-          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
-            Neden Kuzey Marmara Çekici?
-          </h2>
-          <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
-            15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
-          </p>
-        </div>
-
-        <div class="why-us-luxury-grid">
-          <div class="why-card-luxury">
-            <div class="why-icon-box">⏱️</div>
-            <h3>10-15 Dakikada Hızlı İntikal</h3>
-            <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
-          </div>
-
-          <div class="why-card-luxury">
-            <div class="why-icon-box">🛡️</div>
-            <h3>%100 Nakliyat Emtia Kaskosu</h3>
-            <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
-          </div>
-
-          <div class="why-card-luxury">
-            <div class="why-icon-box">🏷️</div>
-            <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
-            <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
-          </div>
-
-          <div class="why-card-luxury">
-            <div class="why-icon-box">🏎️</div>
-            <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
-            <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
-          </div>
-
-          <div class="why-card-luxury">
-            <div class="why-icon-box">💳</div>
-            <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
-            <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
-          </div>
-
-          <div class="why-card-luxury">
-            <div class="why-icon-box">⭐</div>
-            <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
-            <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
           </div>
         </div>
       </div>

@@ -4788,34 +4788,32 @@ details.faq-accordion-item[open] .faq-chevron {
   transform: scale(1.08);
 }
 
-.region-photo-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(8px);
-  color: #ffedd5;
-  border: 1px solid rgba(234, 88, 12, 0.4);
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  z-index: 2;
+/* Fotoğraf Üzerindeki Tüm Şapka / Rozetleri Kaldır (Kullanıcı İsteği - Galeri Hariç) */
+.region-photo-badge,
+.region-photo-category,
+.service-card-badge,
+.service-badge {
+  display: none !important;
 }
 
-.region-photo-category {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(234, 88, 12, 0.9);
-  color: #ffffff;
-  padding: 4px 10px;
+.region-photo-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.region-meta-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(234, 88, 12, 0.08);
+  color: #ea580c;
+  padding: 3px 10px;
   border-radius: 999px;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 800;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  z-index: 2;
+  border: 1px solid rgba(234, 88, 12, 0.2);
 }
 
 .region-photo-body {
@@ -5028,28 +5026,28 @@ details.faq-accordion-item[open] .faq-chevron {
   }
 }
 
+/* Light Section Variant (Açık Zeminlerde %100 Okunabilir Koyu Metin) */
 .why-card-luxury {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
   border-radius: 18px;
   padding: 28px 24px;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .why-card-luxury:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(234, 88, 12, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 28px -4px rgba(15, 23, 42, 0.12);
+  border-color: rgba(234, 88, 12, 0.4);
 }
 
 .why-icon-box {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: rgba(234, 88, 12, 0.12);
-  border: 1px solid rgba(234, 88, 12, 0.3);
+  background: rgba(234, 88, 12, 0.1);
+  border: 1px solid rgba(234, 88, 12, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5060,16 +5058,47 @@ details.faq-accordion-item[open] .faq-chevron {
 .why-card-luxury h3 {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #0f172a !important; /* Koyu Lacivert - Net Okunur */
   margin-bottom: 10px;
   line-height: 1.35;
 }
 
 .why-card-luxury p {
-  color: #94a3b8;
-  font-size: 0.92rem;
-  line-height: 1.6;
+  color: #475569 !important; /* Koyu Slate - Net Okunur */
+  font-size: 0.94rem;
+  line-height: 1.65;
   margin: 0;
+}
+
+/* Koyu Zemin Variantı (.section-dark veya #090d16 içi) */
+.section-dark .why-card-luxury,
+[style*="#090d16"] .why-card-luxury {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
+}
+
+.section-dark .why-card-luxury:hover,
+[style*="#090d16"] .why-card-luxury:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(234, 88, 12, 0.5) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35) !important;
+}
+
+.section-dark .why-card-luxury .why-icon-box,
+[style*="#090d16"] .why-card-luxury .why-icon-box {
+  background: rgba(234, 88, 12, 0.15) !important;
+  border-color: rgba(234, 88, 12, 0.35) !important;
+}
+
+.section-dark .why-card-luxury h3,
+[style*="#090d16"] .why-card-luxury h3 {
+  color: #ffffff !important;
+}
+
+.section-dark .why-card-luxury p,
+[style*="#090d16"] .why-card-luxury p {
+  color: #cbd5e1 !important;
 }
 
 /* ==========================================================================

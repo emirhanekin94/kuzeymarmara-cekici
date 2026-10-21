@@ -405,7 +405,7 @@ function generateServiceHtml(svc) {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
+        <a href="/" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
           <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
@@ -415,13 +415,13 @@ function generateServiceHtml(svc) {
 
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="index.html" class="nav-link active">Hizmetlerimiz</a></li>
-            <li><a href="../bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link active">Hizmetlerimiz</a></li>
+            <li><a href="/bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
 
@@ -444,8 +444,8 @@ function generateServiceHtml(svc) {
   <section class="ads-hero-container">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 16px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
-        <a href="index.html" style="color: #cbd5e1; text-decoration: none;">Hizmetlerimiz</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/hizmetler/index.html" style="color: #cbd5e1; text-decoration: none;">Hizmetlerimiz</a> /
         <span style="color: #ea580c; font-weight: 600;">${svc.name}</span>
       </nav>
 
@@ -585,6 +585,61 @@ function generateServiceHtml(svc) {
     </div>
   </main>
 
+  <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
+  <section class="section section-dark" style="background: #090d16; color: #fff; padding: 70px 0;">
+    <div class="container">
+      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
+        <span class="section-badge" style="background: rgba(255,85,0,0.15); color: #ff5500; border: 1px solid rgba(255,85,0,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+          Kurumsal Standartlarımız
+        </span>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
+          Neden Kuzey Marmara Çekici?
+        </h2>
+        <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
+          15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
+        </p>
+      </div>
+
+      <div class="why-us-luxury-grid">
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⏱️</div>
+          <h3>10-15 Dakikada Hızlı İntikal</h3>
+          <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🛡️</div>
+          <h3>%100 Nakliyat Emtia Kaskosu</h3>
+          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏷️</div>
+          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
+          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏎️</div>
+          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
+          <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">💳</div>
+          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
+          <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⭐</div>
+          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
+          <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
   <section class="process-section" style="background:#fff; padding:65px 0;">
     <div class="container">
@@ -644,61 +699,6 @@ function generateServiceHtml(svc) {
     </div>
   </section>
 
-  <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
-  <section class="section section-dark" style="background: #090d16; color: #fff; padding: 70px 0;">
-    <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
-        <span class="section-badge" style="background: rgba(255,85,0,0.15); color: #ff5500; border: 1px solid rgba(255,85,0,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Kurumsal Standartlarımız
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
-        </h2>
-        <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
-          15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
-        </p>
-      </div>
-
-      <div class="why-us-luxury-grid">
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⏱️</div>
-          <h3>10-15 Dakikada Hızlı İntikal</h3>
-          <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🛡️</div>
-          <h3>%100 Nakliyat Emtia Kaskosu</h3>
-          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏷️</div>
-          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
-          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏎️</div>
-          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
-          <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">💳</div>
-          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
-          <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⭐</div>
-          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
-          <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Tam Kurumsal Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -718,24 +718,24 @@ function generateServiceHtml(svc) {
         <div>
           <h3 class="footer-title">Hizmetlerimiz</h3>
           <ul class="footer-links">
-            <li><a href="oto-cekici.html">Kayar Kasa Oto Çekici</a></li>
-            <li><a href="otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></li>
-            <li><a href="luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></li>
-            <li><a href="ahtapot-cekici.html">Ahtapot Çekici</a></li>
-            <li><a href="kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></li>
-            <li><a href="yol-yardim-aku-takviye.html">Mobil Akü Takviye</a></li>
+            <li><a href="/hizmetler/oto-cekici.html">Kayar Kasa Oto Çekici</a></li>
+            <li><a href="/hizmetler/otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></li>
+            <li><a href="/hizmetler/luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></li>
+            <li><a href="/hizmetler/ahtapot-cekici.html">Ahtapot Çekici</a></li>
+            <li><a href="/hizmetler/kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></li>
+            <li><a href="/hizmetler/yol-yardim-aku-takviye.html">Mobil Akü Takviye</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="footer-title">Öne Çıkan Bölgeler</h3>
           <ul class="footer-links">
-            <li><a href="../bolgeler/kurtkoy-oto-cekici.html">Kurtköy Çekici</a></li>
-            <li><a href="../bolgeler/kuzey-marmara-otoyolu-oto-cekici.html">Kuzey Marmara Otoyolu</a></li>
-            <li><a href="../bolgeler/tem-otoyolu-oto-cekici.html">TEM Otoyolu Çekici</a></li>
-            <li><a href="../bolgeler/gebze-oto-cekici.html">Gebze Çekici</a></li>
-            <li><a href="../bolgeler/sabiha-gokcen-oto-cekici.html">Sabiha Gökçen Havalimanı</a></li>
-            <li><a href="../bolgeler/pendik-oto-cekici.html">Pendik Çekici</a></li>
+            <li><a href="/bolgeler/kurtkoy-oto-cekici.html">Kurtköy Çekici</a></li>
+            <li><a href="/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html">Kuzey Marmara Otoyolu</a></li>
+            <li><a href="/bolgeler/tem-otoyolu-oto-cekici.html">TEM Otoyolu Çekici</a></li>
+            <li><a href="/bolgeler/gebze-oto-cekici.html">Gebze Çekici</a></li>
+            <li><a href="/bolgeler/sabiha-gokcen-oto-cekici.html">Sabiha Gökçen Havalimanı</a></li>
+            <li><a href="/bolgeler/pendik-oto-cekici.html">Pendik Çekici</a></li>
           </ul>
         </div>
 
@@ -746,7 +746,7 @@ function generateServiceHtml(svc) {
             <li>📍 Kurtköy Gişeleri &amp; KMO Bağlantısı, Pendik / İstanbul</li>
             <li>⏰ 7 Gün 24 Saat Kesintisiz Nöbetçi</li>
             <li>💳 Nakit &amp; Kredi Kartı (Mobil POS)</li>
-            <li><a href="../iletisim.html" style="color: var(--primary); font-weight: 700;">İletişim Sayfası →</a></li>
+            <li><a href="/iletisim.html" style="color: var(--primary); font-weight: 700;">İletişim Sayfası →</a></li>
           </ul>
         </div>
       </div>
@@ -780,8 +780,7 @@ function generateIndexHtml() {
   const cardsHtml = services.map(s => `
         <article class="service-card">
           <div class="service-card-img-wrap">
-            <img src="../images/${s.image}" alt="${s.name}" loading="lazy" width="600" height="380">
-            <span class="service-card-badge">${s.badge || '⚡ 15 Dk Varış'}</span>
+            <img src="/images/${s.image}" alt="${s.name}" loading="lazy" width="600" height="380">
           </div>
           <div class="service-card-body">
             <h3 class="service-title">${s.name}</h3>
@@ -789,7 +788,7 @@ function generateIndexHtml() {
             <ul class="service-features">
               ${s.features.slice(0, 3).map(f => `<li><span class="check-icon">✓</span> ${f}</li>`).join('')}
             </ul>
-            <a href="${s.slug}.html" class="service-btn">Hizmet Detayı &amp; Çağır →</a>
+            <a href="/hizmetler/${s.slug}.html" class="service-btn">Hizmet Detayı &amp; Çağır →</a>
           </div>
         </article>
   `).join('\n');
@@ -802,13 +801,13 @@ function generateIndexHtml() {
   <title>Oto Çekici ve Yol Yardım Hizmetlerimiz | Kuzey Marmara - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy ve Gebze çevresinde kayar kasa oto çekici, vinç, ahtapot, kapalı otopark, akü takviye ve mobil yol yardım hizmetlerimiz.">
   <link rel="canonical" href="${DOMAIN}/hizmetler/index.html">
-  <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <link rel="stylesheet" href="/css/style.css?v=3.2">
 
   <script type="application/ld+json">
   {
@@ -833,8 +832,8 @@ function generateIndexHtml() {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+        <a href="/" class="brand-logo">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -842,13 +841,13 @@ function generateIndexHtml() {
         </a>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="index.html" class="nav-link active">Hizmetlerimiz</a></li>
-            <li><a href="../bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link active">Hizmetlerimiz</a></li>
+            <li><a href="/bolgeler/index.html" class="nav-link">Bölgelerimiz</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -870,7 +869,7 @@ function generateIndexHtml() {
   <section class="subpage-hero" style="background: linear-gradient(180deg, #090d16 0%, #0f172a 100%); color: #fff; padding: 50px 0 45px; border-bottom: 1px solid rgba(255,255,255,0.08);">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 16px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
         <span style="color: #ea580c; font-weight: 600;">Hizmetlerimiz</span>
       </nav>
       <h1 style="font-size: clamp(2rem, 4vw, 2.85rem); font-weight: 900; margin-bottom: 15px;">
@@ -903,70 +902,11 @@ ${cardsHtml}
     </div>
   </section>
 
-  <!-- 2. ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
-  <section class="process-section" style="background: #fff; padding: 65px 0;">
-    <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 35px;">
-        <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Şeffaf &amp; Güvenli Operasyon
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-          Çekici Sürecimiz Nasıl İşler?
-        </h2>
-        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-          Yolda kaldığınız andan itibaren 4 şeffaf adımda aracınızı güvenle istediğiniz noktaya ulaştırıyoruz.
-        </p>
-      </div>
-
-      <div class="process-grid-luxury">
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">01</span>
-            <span class="process-icon-circle">📞</span>
-          </div>
-          <h3>1. Bize Ulaşın &amp; Konum Atın</h3>
-          <p><strong>0533 265 70 89</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu iletin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
-          <span class="process-tag">30 Saniyede Yanıt</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">02</span>
-            <span class="process-icon-circle">💰</span>
-          </div>
-          <h3>2. Net &amp; Sabit Fiyat Teyidi</h3>
-          <p>Mesafe ve araç tipinize göre telefonda net fiyat verilir. Ek masraf, gişe sürprizi veya gizli ücret kesinlikle talep edilmez.</p>
-          <span class="process-tag">Sürpriz Ücret Yok</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">03</span>
-            <span class="process-icon-circle">🚚</span>
-          </div>
-          <h3>3. 10-15 Dk Hızlı İntikal</h3>
-          <p>Kurtköy, KMO ve TEM gişelerinde hazır bekleyen nöbetçi kayar kasa çekicimiz GPS yönlendirmesiyle rekor sürede yanınıza ulaşır.</p>
-          <span class="process-tag">10-15 Dk Varış</span>
-        </div>
-
-        <div class="process-card-luxury">
-          <div class="process-card-header">
-            <span class="process-num-pill">04</span>
-            <span class="process-icon-circle">🛡️</span>
-          </div>
-          <h3>4. Kaskolu &amp; Sıfır Hasarlı Teslimat</h3>
-          <p>Aracınız özel aparatlarla şasiye temas etmeden platforma yüklenir; %100 nakliyat sigortasıyla dilediğiniz yetkili servise ulaştırılır.</p>
-          <span class="process-tag">%100 Kaskolu</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
+  <!-- 2. ÖNCE KURUMSAL STANDARTLARIMIZ / NEDEN BİZ? (KULLANICI İSTEĞİ) -->
   <section class="section section-dark" style="background: #090d16; color: #fff; padding: 70px 0;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 40px;">
-        <span class="section-badge" style="background: rgba(255,85,0,0.15); color: #ff5500; border: 1px solid rgba(255,85,0,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+        <span class="section-badge" style="background: rgba(234,88,12,0.15); color: #ea580c; border: 1px solid rgba(234,88,12,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
           Kurumsal Standartlarımız
         </span>
         <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
@@ -1017,13 +957,72 @@ ${cardsHtml}
     </div>
   </section>
 
+  <!-- 3. SONRA ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
+  <section class="process-section" style="background: #fff; padding: 65px 0;">
+    <div class="container">
+      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 35px;">
+        <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+          Şeffaf &amp; Güvenli Operasyon
+        </span>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
+          Çekici Sürecimiz Nasıl İşler?
+        </h2>
+        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
+          Yolda kaldığınız andan itibaren 4 şeffaf adımda aracınızı güvenle istediğiniz noktaya ulaştırıyoruz.
+        </p>
+      </div>
+
+      <div class="process-grid-luxury">
+        <div class="process-card-luxury">
+          <div class="process-card-header">
+            <span class="process-num-pill">01</span>
+            <span class="process-icon-circle">📞</span>
+          </div>
+          <h3>1. Bize Ulaşın &amp; Konum Atın</h3>
+          <p><strong>${PHONE}</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu iletin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
+          <span class="process-tag">30 Saniyede Yanıt</span>
+        </div>
+
+        <div class="process-card-luxury">
+          <div class="process-card-header">
+            <span class="process-num-pill">02</span>
+            <span class="process-icon-circle">💰</span>
+          </div>
+          <h3>2. Net &amp; Sabit Fiyat Teyidi</h3>
+          <p>Mesafe ve araç tipinize göre telefonda net fiyat verilir. Ek masraf, gişe sürprizi veya gizli ücret kesinlikle talep edilmez.</p>
+          <span class="process-tag">Sürpriz Ücret Yok</span>
+        </div>
+
+        <div class="process-card-luxury">
+          <div class="process-card-header">
+            <span class="process-num-pill">03</span>
+            <span class="process-icon-circle">🚚</span>
+          </div>
+          <h3>3. 10-15 Dk Hızlı İntikal</h3>
+          <p>Kurtköy, KMO ve TEM gişelerinde hazır bekleyen nöbetçi kayar kasa çekicimiz GPS yönlendirmesiyle rekor sürede yanınıza ulaşır.</p>
+          <span class="process-tag">10-15 Dk Varış</span>
+        </div>
+
+        <div class="process-card-luxury">
+          <div class="process-card-header">
+            <span class="process-num-pill">04</span>
+            <span class="process-icon-circle">🛡️</span>
+          </div>
+          <h3>4. Kaskolu &amp; Sıfır Hasarlı Teslimat</h3>
+          <p>Aracınız özel aparatlarla şasiye temas etmeden platforma yüklenir; %100 nakliyat sigortasıyla dilediğiniz yetkili servise ulaştırılır.</p>
+          <span class="process-tag">%100 Kaskolu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Tam Kurumsal Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <div class="brand-logo" style="margin-bottom: 1rem;">
-            <img src="../images/logo.svg" alt="Kuzey Marmara Çekici" width="38" height="38" style="border-radius:50%;">
+            <img src="/images/logo.svg" alt="Kuzey Marmara Çekici" width="38" height="38" style="border-radius:50%;">
             <div class="brand-text">
               <span class="brand-name" style="font-size: 1.05rem;">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             </div>
@@ -1036,24 +1035,24 @@ ${cardsHtml}
         <div>
           <h3 class="footer-title">Hizmetlerimiz</h3>
           <ul class="footer-links">
-            <li><a href="oto-cekici.html">Kayar Kasa Oto Çekici</a></li>
-            <li><a href="otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></li>
-            <li><a href="luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></li>
-            <li><a href="ahtapot-cekici.html">Ahtapot Çekici</a></li>
-            <li><a href="kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></li>
-            <li><a href="yol-yardim-aku-takviye.html">Mobil Akü Takviye</a></li>
+            <li><a href="/hizmetler/oto-cekici.html">Kayar Kasa Oto Çekici</a></li>
+            <li><a href="/hizmetler/otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></li>
+            <li><a href="/hizmetler/luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></li>
+            <li><a href="/hizmetler/ahtapot-cekici.html">Ahtapot Çekici</a></li>
+            <li><a href="/hizmetler/kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></li>
+            <li><a href="/hizmetler/yol-yardim-aku-takviye.html">Mobil Akü Takviye</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="footer-title">Öne Çıkan Bölgeler</h3>
           <ul class="footer-links">
-            <li><a href="../bolgeler/kurtkoy-oto-cekici.html">Kurtköy Çekici</a></li>
-            <li><a href="../bolgeler/kuzey-marmara-otoyolu-oto-cekici.html">Kuzey Marmara Otoyolu</a></li>
-            <li><a href="../bolgeler/tem-otoyolu-oto-cekici.html">TEM Otoyolu Çekici</a></li>
-            <li><a href="../bolgeler/gebze-oto-cekici.html">Gebze Çekici</a></li>
-            <li><a href="../bolgeler/sabiha-gokcen-oto-cekici.html">Sabiha Gökçen Havalimanı</a></li>
-            <li><a href="../bolgeler/pendik-oto-cekici.html">Pendik Çekici</a></li>
+            <li><a href="/bolgeler/kurtkoy-oto-cekici.html">Kurtköy Çekici</a></li>
+            <li><a href="/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html">Kuzey Marmara Otoyolu</a></li>
+            <li><a href="/bolgeler/tem-otoyolu-oto-cekici.html">TEM Otoyolu Çekici</a></li>
+            <li><a href="/bolgeler/gebze-oto-cekici.html">Gebze Çekici</a></li>
+            <li><a href="/bolgeler/sabiha-gokcen-oto-cekici.html">Sabiha Gökçen Havalimanı</a></li>
+            <li><a href="/bolgeler/pendik-oto-cekici.html">Pendik Çekici</a></li>
           </ul>
         </div>
 
@@ -1064,7 +1063,7 @@ ${cardsHtml}
             <li>📍 Kurtköy Gişeleri &amp; KMO Bağlantısı, Pendik / İstanbul</li>
             <li>⏰ 7 Gün 24 Saat Kesintisiz Nöbetçi</li>
             <li>💳 Nakit &amp; Kredi Kartı (Mobil POS)</li>
-            <li><a href="../iletisim.html" style="color: var(--primary); font-weight: 700;">İletişim Sayfası →</a></li>
+            <li><a href="/iletisim.html" style="color: var(--primary); font-weight: 700;">İletişim Sayfası →</a></li>
           </ul>
         </div>
       </div>

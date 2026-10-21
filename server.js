@@ -64,6 +64,14 @@ function tryResolve(urlPath) {
     candidates.push(urlPath); // tam eşleşme (örn. /css/style.css)
     candidates.push(urlPath + '.html'); // temiz URL (örn. /iletisim)
     candidates.push(urlPath + '/index.html');
+
+    // Alt dizin akıllı çözümleme (örn. /oto-cekici.html -> /hizmetler/oto-cekici.html)
+    candidates.push('/hizmetler' + urlPath);
+    candidates.push('/hizmetler' + urlPath + '.html');
+    candidates.push('/bolgeler' + urlPath);
+    candidates.push('/bolgeler' + urlPath + '.html');
+    candidates.push('/blog' + urlPath);
+    candidates.push('/blog' + urlPath + '.html');
   }
 
   for (const candidate of candidates) {
@@ -176,6 +184,15 @@ function startServer(port) {
       urlPath = REGION_ALIASES[cleanPath];
     } else if (REGION_ALIASES[urlPath]) {
       urlPath = REGION_ALIASES[urlPath];
+    }
+
+    // Dizin isteklerinde trailing slash yoksa 301 yönlendirmesi yap (örn: /hizmetler -> /hizmetler/)
+    const checkDir = safeJoin(ROOT, urlPath);
+    if (fs.existsSync(checkDir) && fs.statSync(checkDir).isDirectory() && !urlPath.endsWith('/')) {
+      res.statusCode = 301;
+      res.setHeader('Location', urlPath + '/');
+      res.end();
+      return;
     }
 
     const filePath = tryResolve(urlPath);

@@ -722,14 +722,16 @@ function generateRegionHtml(reg) {
     .map(r => `
       <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 2px 10px rgba(0,0,0,0.03);">
         <div style="height:120px; overflow:hidden; position:relative;">
-          <img src="../images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
-          <span style="position:absolute; top:8px; left:8px; background:rgba(15,23,42,0.85); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 8px; border-radius:999px;">⏱️ ${r.eta}</span>
+          <img src="/images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="padding:14px;">
-          <h4 style="font-size:1.05rem; font-weight:800; color:#0f172a; margin-bottom:6px;">${r.name} Çekici</h4>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <h4 style="font-size:1.05rem; font-weight:800; color:#0f172a; margin:0;">${r.name} Çekici</h4>
+            <span style="background:rgba(234,88,12,0.08); color:#ea580c; font-size:0.75rem; font-weight:800; padding:2px 7px; border-radius:999px;">⏱️ ${r.eta}</span>
+          </div>
           <p style="font-size:0.8rem; color:#64748b; margin-bottom:12px; line-height:1.4;">${r.hotspots.slice(0, 50)}...</p>
           <div style="display:flex; justify-content:space-between; align-items:center;">
-            <a href="${r.slug}.html" style="color:#ea580c; font-weight:700; font-size:0.82rem; text-decoration:none;">İncele →</a>
+            <a href="/bolgeler/${r.slug}.html" style="color:#ea580c; font-weight:700; font-size:0.82rem; text-decoration:none;">İncele →</a>
             <a href="tel:${PHONE_RAW}" style="background:#ea580c; color:#fff; font-size:0.78rem; font-weight:700; padding:4px 10px; border-radius:6px; text-decoration:none;">Ara</a>
           </div>
         </div>
@@ -739,7 +741,7 @@ function generateRegionHtml(reg) {
   const otherRegionsList = regions
     .filter(r => r.slug !== reg.slug)
     .slice(0, 8)
-    .map(r => `<li><a href="${r.slug}.html" style="color:#0f172a; text-decoration:none; display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #f1f5f9; font-size:0.88rem;"><span>📍 ${r.name} Çekici</span> <strong style="color:#ea580c;">${r.eta}</strong></a></li>`)
+    .map(r => `<li><a href="/bolgeler/${r.slug}.html" style="color:#0f172a; text-decoration:none; display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #f1f5f9; font-size:0.88rem;"><span>📍 ${r.name} Çekici</span> <strong style="color:#ea580c;">${r.eta}</strong></a></li>`)
     .join('\n');
 
   const distanceRows = reg.distanceTable.map(d => `
@@ -763,9 +765,9 @@ function generateRegionHtml(reg) {
   <link rel="canonical" href="${DOMAIN}/bolgeler/${reg.slug}.html">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-  <link rel="icon" type="image/webp" href="../images/logo.webp">
-  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+  <link rel="icon" type="image/webp" href="/images/logo.webp">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
@@ -786,7 +788,7 @@ function generateRegionHtml(reg) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <link rel="stylesheet" href="/css/style.css?v=3.1">
 
   <!-- Schema.org Verileri -->
   <script type="application/ld+json">
@@ -805,8 +807,8 @@ function generateRegionHtml(reg) {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" class="brand-logo-img" width="46" height="46">
+        <a href="/" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" class="brand-logo-img" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -815,13 +817,13 @@ function generateRegionHtml(reg) {
 
         <nav class="main-nav" aria-label="Ana Menü">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
             <li><a href="index.html" class="nav-link active">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
 
@@ -844,7 +846,7 @@ function generateRegionHtml(reg) {
   <section class="ads-hero-container">
     <div class="container">
       <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="font-size: 0.875rem; margin-bottom: 16px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
         <a href="index.html" style="color: #cbd5e1; text-decoration: none;">Bölgelerimiz</a> /
         <span style="color: #ea580c; font-weight: 600;">${reg.name} Oto Çekici</span>
       </nav>
@@ -881,7 +883,7 @@ function generateRegionHtml(reg) {
 
       <!-- Saha Filo Fotoğraf Bandı -->
       <div class="ads-hero-photo-banner">
-        <img src="../images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="1200" height="380">
+        <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="1200" height="380">
         <div class="ads-hero-photo-caption">
           <span>✓ ${reg.name} ve Çevre Bağlantı Yollarında 7/24 Nöbetçi Kayar Kasa Filomuz</span>
           <a href="tel:${PHONE_RAW}" class="btn btn-call btn-sm">📞 10-15 Dk Varış: Ara</a>
@@ -890,8 +892,63 @@ function generateRegionHtml(reg) {
     </div>
   </section>
 
+  <!-- NEDEN BİZ? / GÜVENİLİRLİK & AVANTAJLARIMIZ -->
+  <section class="section section-dark" style="padding: 70px 0; background: #090d16; color: #fff;">
+    <div class="container">
+      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
+        <span class="section-badge" style="background: rgba(234,88,12,0.15); color: #ea580c; border: 1px solid rgba(234,88,12,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+          Kurumsal Standartlarımız
+        </span>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
+          Neden Kuzey Marmara Çekici?
+        </h2>
+        <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
+          ${reg.name} ve otoyol koridorunda binlerce sürücünün 1 numaralı tercihi olmamızı sağlayan kurumsal güvencelerimiz.
+        </p>
+      </div>
+
+      <div class="why-us-luxury-grid">
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⏱️</div>
+          <h3>10-15 Dakikada Hızlı İntikal</h3>
+          <p>${reg.name} arterlerinde ve otoyol gişelerinde sürekli konuşlu nöbetçi filomuz sayesinde çağrınızla birlikte derhal harekete geçeriz.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🛡️</div>
+          <h3>%100 Nakliyat Emtia Kaskosu</h3>
+          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir; risk sıfırdır.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏷️</div>
+          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
+          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan net olarak bildirilir.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏎️</div>
+          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
+          <p>Basık spor araçlar, lüks coupe'lar ve Tesla gibi elektrikli araçlar için sürtünmeyi önleyen özel rampa uzantıları ve tekerlek dolly'si kullanılır.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">💳</div>
+          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
+          <p>Nakit arama derdine son. Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksitle ödeme imkanı.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⭐</div>
+          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
+          <p>Zorlu otoyol viyadükleri, tüneller, bariyer sıkışması ve kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü güvencesi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
-  <section class="process-section">
+  <section class="process-section" style="padding: 70px 0; background: #ffffff;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
         <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
@@ -944,61 +1001,6 @@ function generateRegionHtml(reg) {
           <h3>4. Kaskolu &amp; Sıfır Hasarlı Teslimat</h3>
           <p>Aracınız özel aparatlarla şasiye temas etmeden platforma yüklenir; %100 nakliyat sigortasıyla dilediğiniz yetkili servise ulaştırılır.</p>
           <span class="process-tag">%100 Kaskolu</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEDEN BİZ? / GÜVENİLİRLİK & AVANTAJLARIMIZ -->
-  <section class="section" style="padding: 70px 0; background: #ffffff;">
-    <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
-        <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Neden Bizi Seçmelisiniz?
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
-        </h2>
-        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-          ${reg.name} ve otoyol koridorunda binlerce sürücünün 1 numaralı tercihi olmamızı sağlayan kurumsal güvencelerimiz.
-        </p>
-      </div>
-
-      <div class="why-us-luxury-grid">
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⏱️</div>
-          <h3>10-15 Dakikada Hızlı İntikal</h3>
-          <p>${reg.name} arterlerinde ve otoyol gişelerinde sürekli konuşlu nöbetçi filomuz sayesinde çağrınızla birlikte derhal harekete geçeriz.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🛡️</div>
-          <h3>%100 Nakliyat Emtia Kaskosu</h3>
-          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir; risk sıfırdır.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏷️</div>
-          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
-          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan net olarak bildirilir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏎️</div>
-          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
-          <p>Basık spor araçlar, lüks coupe'lar ve Tesla gibi elektrikli araçlar için sürtünmeyi önleyen özel rampa uzantıları ve tekerlek dolly'si kullanılır.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">💳</div>
-          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
-          <p>Nakit arama derdine son. Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksitle ödeme imkanı.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⭐</div>
-          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
-          <p>Zorlu otoyol viyadükleri, tüneller, bariyer sıkışması ve kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü güvencesi.</p>
         </div>
       </div>
     </div>
@@ -1194,7 +1196,7 @@ function generateRegionHtml(reg) {
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
           <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
@@ -1209,13 +1211,13 @@ function generateRegionHtml(reg) {
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
-          <li><a href="../hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
-          <li><a href="../hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
-          <li><a href="../hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
-          <li><a href="../hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
-          <li><a href="../hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
-          <li><a href="../hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+          <li><a href="/hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="/hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="/hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="/hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="/hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="/hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="/hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
         </ul>
       </div>
 
@@ -1235,11 +1237,11 @@ function generateRegionHtml(reg) {
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
-          <li><a href="../hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
-          <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
-          <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
-          <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+          <li><a href="/" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="/hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="/galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="/blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
+          <li><a href="/iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
         </ul>
       </div>
     </div>
@@ -1261,7 +1263,7 @@ function generateRegionHtml(reg) {
     </button>
   </div>
 
-  <script src="../js/main.js?v=3.1" defer></script>
+  <script src="/js/main.js?v=3.1" defer></script>
 </body>
 </html>`;
 }
@@ -1270,13 +1272,15 @@ function generateIndexHtml() {
   const cardsHtml = regions.map(r => `
     <div class="region-photo-card" data-category="${r.category}">
       <div class="region-photo-img-wrap">
-        <img src="../images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
-        <span class="region-photo-badge">⏱️ ${r.eta} Varış</span>
-        <span class="region-photo-category">${r.categoryLabel}</span>
+        <img src="/images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
       </div>
       <div class="region-photo-body">
+        <div class="region-photo-meta-row">
+          <span class="region-meta-tag">⏱️ ${r.eta} Varış</span>
+          <span class="region-meta-tag" style="background: rgba(15, 23, 42, 0.06); color: #334155; border-color: #cbd5e1;">${r.categoryLabel}</span>
+        </div>
         <h3 class="region-photo-title">
-          <a href="${r.slug}.html">${r.name} Oto Çekici</a>
+          <a href="/bolgeler/${r.slug}.html">${r.name} Oto Çekici</a>
         </h3>
         <p class="region-photo-hotspots">📍 ${r.hotspots}</p>
         <div class="region-photo-features">
@@ -1286,7 +1290,7 @@ function generateIndexHtml() {
         </div>
         <div class="region-photo-actions">
           <a href="tel:${PHONE_RAW}" class="btn btn-call btn-sm">📞 Hemen Ara</a>
-          <a href="${r.slug}.html" class="btn btn-outline btn-sm">Bölge İncele →</a>
+          <a href="/bolgeler/${r.slug}.html" class="btn btn-outline btn-sm">Bölge İncele →</a>
         </div>
       </div>
     </div>
@@ -1300,12 +1304,12 @@ function generateIndexHtml() {
   <title>Hizmet Bölgelerimiz | Kuzey Marmara Çekici - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
   <link rel="canonical" href="${DOMAIN}/bolgeler/index.html">
-  <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="../css/style.css?v=3.1">
+  <link rel="stylesheet" href="/css/style.css?v=3.1">
 
   <script type="application/ld+json">
   {
@@ -1330,8 +1334,8 @@ function generateIndexHtml() {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="../index.html" class="brand-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+        <a href="/" class="brand-logo">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -1339,13 +1343,13 @@ function generateIndexHtml() {
         </a>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
-            <li><a href="../hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
+            <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="/hizmetler/index.html" class="nav-link">Hizmetlerimiz</a></li>
             <li><a href="index.html" class="nav-link active">Bölgelerimiz</a></li>
-            <li><a href="../galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="../blog/index.html" class="nav-link">Blog</a></li>
-            <li><a href="../hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-            <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+            <li><a href="/blog/index.html" class="nav-link">Blog</a></li>
+            <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+            <li><a href="/iletisim.html" class="nav-link">İletişim</a></li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -1367,7 +1371,7 @@ function generateIndexHtml() {
   <section class="subpage-hero" style="background: linear-gradient(180deg, #090d16 0%, #0f172a 100%); color: #fff; padding: 50px 0 45px; border-bottom: 1px solid rgba(255,255,255,0.08);">
     <div class="container">
       <nav class="breadcrumb-nav" style="font-size: 0.875rem; margin-bottom: 16px; color: #94a3b8;">
-        <a href="../index.html" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
+        <a href="/" style="color: #cbd5e1; text-decoration: none;">Ana Sayfa</a> /
         <span style="color: #ea580c; font-weight: 600;">Bölgelerimiz</span>
       </nav>
       <h1 style="font-size: clamp(2rem, 4vw, 2.85rem); font-weight: 900; margin-bottom: 15px;">
@@ -1414,7 +1418,62 @@ function generateIndexHtml() {
     </div>
   </main>
 
-  <!-- ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
+  <!-- 1. KURUMSAL STANDARTLARIMIZ / NEDEN BİZ? -->
+  <section class="section section-dark" style="padding: 70px 0; background: #090d16; color: #fff;">
+    <div class="container">
+      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
+        <span class="section-badge" style="background: rgba(234,88,12,0.15); color: #ea580c; border: 1px solid rgba(234,88,12,0.3); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
+          Kurumsal Standartlarımız
+        </span>
+        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
+          Neden Kuzey Marmara Çekici?
+        </h2>
+        <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
+          Kuzey Marmara ve TEM arterlerinde 7/24 kesintisiz nöbetçi filomuzla sunduğumuz kurumsal ayrıcalıklar.
+        </p>
+      </div>
+
+      <div class="why-us-luxury-grid">
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⏱️</div>
+          <h3>10-15 Dakikada Hızlı İntikal</h3>
+          <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🛡️</div>
+          <h3>%100 Nakliyat Emtia Kaskosu</h3>
+          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏷️</div>
+          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
+          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">🏎️</div>
+          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
+          <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">💳</div>
+          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
+          <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
+        </div>
+
+        <div class="why-card-luxury">
+          <div class="why-icon-box">⭐</div>
+          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
+          <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ÇEKİCİ SÜRECİMİZ NASIL İŞLER? (4 ADIM) -->
   <section class="process-section" style="padding: 70px 0; background: #ffffff;">
     <div class="container">
       <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
@@ -1473,58 +1532,9 @@ function generateIndexHtml() {
     </div>
   </section>
 
-  <!-- NEDEN BİZ? / KURUMSAL GÜVENCELERİMİZ -->
-  <section class="section" style="padding: 70px 0; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+  <!-- 3. SSS BÖLÜMÜ -->
+  <section class="section" style="padding: 50px 0 70px; background: #f8fafc; border-top: 1px solid #e2e8f0;">
     <div class="container">
-      <div class="section-header text-center" style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
-        <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-          Neden Bizi Seçmelisiniz?
-        </span>
-        <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
-        </h2>
-        <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-          Kuzey Marmara ve TEM arterlerinde 7/24 kesintisiz nöbetçi filomuzla sunduğumuz kurumsal ayrıcalıklar.
-        </p>
-      </div>
-
-      <div class="why-us-luxury-grid">
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⏱️</div>
-          <h3>10-15 Dakikada Hızlı İntikal</h3>
-          <p>KMO gişeleri, TEM ve sanayi kavşaklarında konuşlu nöbetçi ekiplerimiz sayesinde olay yerine en kısa sürede ulaşırız.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🛡️</div>
-          <h3>%100 Nakliyat Emtia Kaskosu</h3>
-          <p>Yükleme anından teslimata kadar tüm araçlar tam kapsamlı taşıyıcı sorumluluk sigortası güvencesindedir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏷️</div>
-          <h3>Şeffaf &amp; Sabit Fiyat Sözü</h3>
-          <p>Telefonda onaylanan ücret dışında asla sürpriz ek masraf çıkarılmaz. Otoyol ücretleri ve km baştan netleştirilir.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">🏎️</div>
-          <h3>Sıfır Açılı Lüks &amp; Elektrikli Rampa</h3>
-          <p>Basık spor araçlar ve elektrikli araçlar için sürtünmeyi önleyen özel sıfır dereceli rampa uzantıları kullanılır.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">💳</div>
-          <h3>Mobil POS ile Kredi Kartı / Taksit</h3>
-          <p>Kurtarıcı araçlarımızdaki mobil POS ile tüm kredi kartlarıyla tek çekim veya taksit imkanı mevcuttur.</p>
-        </div>
-
-        <div class="why-card-luxury">
-          <div class="why-icon-box">⭐</div>
-          <h3>15+ Yıllık Otoyol Saha Deneyimi</h3>
-          <p>Zorlu otoyol viyadükleri, tüneller, şarampol ve ağır kaza durumlarında profesyonel vinç ve kurtarma operatörlüğü.</p>
-        </div>
-      </div>
 
       <!-- SSS Bölümü -->
       <div style="margin-top: 60px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 30px;">
@@ -1594,7 +1604,7 @@ function generateIndexHtml() {
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="../images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
           <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
@@ -1609,13 +1619,13 @@ function generateIndexHtml() {
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Hizmetlerimiz</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
-          <li><a href="../hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
-          <li><a href="../hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
-          <li><a href="../hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
-          <li><a href="../hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
-          <li><a href="../hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
-          <li><a href="../hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
+          <li><a href="/hizmetler/oto-cekici.html" style="color: #94a3b8; text-decoration: none;">Kayar Kasa Oto Çekici</a></li>
+          <li><a href="/hizmetler/otoyol-oto-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Otoyol Oto Kurtarma</a></li>
+          <li><a href="/hizmetler/kaza-vinc-kurtarma.html" style="color: #94a3b8; text-decoration: none;">Kaza &amp; Vinç Kurtarma</a></li>
+          <li><a href="/hizmetler/luks-spor-arac-cekici.html" style="color: #94a3b8; text-decoration: none;">Lüks &amp; Spor Araç Taşıma</a></li>
+          <li><a href="/hizmetler/ahtapot-cekici.html" style="color: #94a3b8; text-decoration: none;">Ahtapot Vinç Çekici</a></li>
+          <li><a href="/hizmetler/kapali-otopark-cekici.html" style="color: #94a3b8; text-decoration: none;">Kapalı Otopark Çekicisi</a></li>
+          <li><a href="/hizmetler/index.html" style="color: #ea580c; text-decoration: none; font-weight: 700;">Tüm 13 Hizmet →</a></li>
         </ul>
       </div>
 
@@ -1635,11 +1645,11 @@ function generateIndexHtml() {
       <div class="footer-col">
         <h4 style="color: #fff; font-weight: 800; font-size: 1.05rem; margin-bottom: 16px;">Kurumsal &amp; Hızlı Menü</h4>
         <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.1; font-size: 0.9rem;">
-          <li><a href="../index.html" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
-          <li><a href="../hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
-          <li><a href="../galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
-          <li><a href="../blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
-          <li><a href="../iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
+          <li><a href="/" style="color: #94a3b8; text-decoration: none;">Ana Sayfa</a></li>
+          <li><a href="/hakkimizda.html" style="color: #94a3b8; text-decoration: none;">Hakkımızda</a></li>
+          <li><a href="/galeri.html" style="color: #94a3b8; text-decoration: none;">Foto Galeri</a></li>
+          <li><a href="/blog/index.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Rehber</a></li>
+          <li><a href="/iletisim.html" style="color: #94a3b8; text-decoration: none;">İletişim</a></li>
         </ul>
       </div>
     </div>
@@ -1661,7 +1671,7 @@ function generateIndexHtml() {
     </button>
   </div>
 
-  <script src="../js/main.js?v=3.1" defer></script>
+  <script src="/js/main.js?v=3.1" defer></script>
 </body>
 </html>`;
 }
