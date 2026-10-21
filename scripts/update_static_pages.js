@@ -74,7 +74,7 @@ const richFooterHtml = `
     </div>
 
     <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
-      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <p>&copy; 2026 Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>`;
 
@@ -97,8 +97,8 @@ function buildHakkimizda() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakkımızda | Kuzey Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
+  <title>Hakkımızda | Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0533 265 70 89</title>
+  <meta name="description" content="Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
   <meta name="robots" content="index, follow">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="format-detection" content="telephone=no">
@@ -115,8 +115,8 @@ function buildHakkimizda() {
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "Kuzey Marmara Çekici Hakkımızda",
-    "description": "Kuzey Marmara Çekici kurumsal bilgileri, donanımlı araç filomuz ve hizmet ilkelerimiz.",
+    "name": "Marmara Çekici Hakkımızda",
+    "description": "Marmara Çekici kurumsal bilgileri, donanımlı araç filomuz ve hizmet ilkelerimiz.",
     "url": "${DOMAIN}/hakkimizda.html",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -190,7 +190,7 @@ function buildHakkimizda() {
           Yolda Kalan Sürücünün Yanında, Dürüst ve İlkeli Hizmet
         </h2>
         <p style="font-size: 1.05rem; line-height: 1.85; color: #334155; margin-bottom: 18px;">
-          <strong>Kuzey Marmara Çekici</strong>; Türkiye'nin en kritik ve yüksek hızlı ulaşım koridorları olan Kuzey Marmara Otoyolu (KMO), TEM Otoyolu ve Anadolu Yakası sanayi kavşaklarında (Kurtköy, Gebze, Pendik, Tuzla, Çayırova) profesyonel kurtarma hizmeti vermek amacıyla kuruldu.
+          <strong>Marmara Çekici</strong>; Türkiye'nin en kritik ve yüksek hızlı ulaşım koridorları olan Kuzey Marmara Otoyolu (KMO), TEM Otoyolu ve Anadolu Yakası sanayi kavşaklarında (Kurtköy, Gebze, Pendik, Tuzla, Çayırova) profesyonel kurtarma hizmeti vermek amacıyla kuruldu.
         </p>
         <p style="font-size: 1rem; line-height: 1.8; color: #475569; margin-bottom: 18px;">
           Sektörde uzun yıllardır süregelen iki büyük mağduriyeti ortadan kaldırmak en temel varoluş amacımız oldu: <strong>Birincisi</strong>; yolda çaresiz kalan sürücülere iş bitiminde dayatılan fahiş ve sürpriz fiyatlar. <strong>İkincisi</strong>; yetersiz ekipman ve eğitimsiz personel yüzünden lüks, spor ya da elektrikli araçların çekilirken alt takımlarının, tamponlarının ve şanzımanlarının zarar görmesi.
@@ -232,7 +232,7 @@ function buildHakkimizda() {
       <!-- Rakamlarla Biz -->
       <div style="background: #090d16; color: #fff; border-radius: 18px; padding: 40px; margin-bottom: 35px; text-align: center;">
         <span style="color: #ea580c; font-weight: 800; font-size: 0.85rem; text-transform: uppercase;">Güven Veren İstatistikler</span>
-        <h2 style="font-size: 1.8rem; font-weight: 900; margin: 10px 0 30px;">Rakamlarla Kuzey Marmara Çekici</h2>
+        <h2 style="font-size: 1.8rem; font-weight: 900; margin: 10px 0 30px;">Rakamlarla Marmara Çekici</h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px;">
           <div>
@@ -297,8 +297,8 @@ function buildIletisim() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Kuzey Marmara Çekici - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0533 265 70 89. WhatsApp ile canlı konum gönderin.">
+  <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Marmara Çekici - 0533 265 70 89</title>
+  <meta name="description" content="Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0533 265 70 89. WhatsApp ile canlı konum gönderin.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/iletisim.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
@@ -313,8 +313,8 @@ function buildIletisim() {
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Kuzey Marmara Çekici İletişim",
-    "description": "Kuzey Marmara Çekici 7/24 acil oto çekici çağrı merkezi ve nöbet istasyonları.",
+    "name": "Marmara Çekici İletişim",
+    "description": "Marmara Çekici 7/24 acil oto çekici çağrı merkezi ve nöbet istasyonları.",
     "url": "${DOMAIN}/iletisim.html",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -640,8 +640,8 @@ function buildGaleri() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foto Galeri | Kuzey Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
+  <title>Foto Galeri | Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0533 265 70 89</title>
+  <meta name="description" content="Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/galeri.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
@@ -656,7 +656,7 @@ function buildGaleri() {
   {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
-    "name": "Kuzey Marmara Çekici Foto Galeri",
+    "name": "Marmara Çekici Foto Galeri",
     "description": "Kuzey Marmara Otoyolu, TEM ve Kurtköy oto kurtarma filosu ve saha operasyonu fotoğrafları.",
     "url": "${DOMAIN}/galeri.html",
     "breadcrumb": {

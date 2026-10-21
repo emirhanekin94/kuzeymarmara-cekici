@@ -116,7 +116,7 @@ const blogs = [
         Bariyerin arkasından yürüyerek aracınızın 150 metre gerisine doğru ilerleyin. Üçgen reflektörü emniyet şeridinin çizgisine görünür şekilde kurun. Eğer viraj veya tepe üstü çıkışındaysanız, reflektörü viraj girişinden önce koymalısınız ki arkadan gelen sürücüler tehlikeyi önceden fark etsin.
       </p>
 
-      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">4. Adım: Kuzey Marmara Çekici Nöbet Merkezini Arayın (0533 265 70 89)</h2>
+      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">4. Adım: Marmara Çekici Nöbet Merkezini Arayın (0533 265 70 89)</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
         Güvenli noktaya geçtikten sonra vakit kaybetmeden <strong>0533 265 70 89</strong> numaramızı arayın veya WhatsApp üzerinden canlı konum gönderin. Bulunduğunuz yerdeki otoyol kilometre taşını (Örn: KMO Km: 142+500), geçtiniz son gişeyi (Kurtköy, Kurnaköy, Mecidiye, Akse vb.) veya tünel adını operatörümüze iletiniz.
       </p>
@@ -146,7 +146,7 @@ const blogs = [
     image: 'otomobil_cekici-1.webp',
     date: '2026-10-18',
     readTime: '7 Dakika Okuma',
-    headline: 'Kuzey Marmara Çekici Fiyatları Nasıl Hesaplanır? 2026 Şeffaf Ücret Standartları',
+    headline: 'Kuzey Marmara Otoyolu Çekici Fiyatları Nasıl Hesaplanır? 2026 Şeffaf Ücret Standartları',
     lead: 'Yolda kaldığınızda fahiş fiyatlarla veya sonradan eklenen sürpriz masraflarla karşılaşmamak için oto çekici fiyatlarının nasıl hesaplandığını ve sabit fiyat garantisinin detaylarını öğrenin.',
     content: `
       <p style="font-size:1.05rem; line-height:1.85; color:#334155; margin-bottom:20px;">
@@ -200,7 +200,7 @@ const blogs = [
         </table>
       </div>
 
-      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Kuzey Marmara Çekici Sabit Fiyat Garantisi</h2>
+      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Marmara Çekici Sabit Fiyat Garantisi</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
         <strong>0533 265 70 89</strong> numaramızı aradığınızda, çağrı merkezi yetkilimiz nereden nereye taşınacağını öğrenir ve size <strong>tek ve kesin bir fiyat</strong> söyler. İşlem bittiğinde bu fiyatın tek kuruş üzerine çıkılmaz. Kredi kartı ile mobil POS üzerinden tek çekim ya da taksitli ödeme yapabilir, anında resmi kurumsal e-arşiv faturanızı alabilirsiniz.
       </p>
@@ -241,7 +241,7 @@ const blogs = [
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">3. Tekerlekleri Kilitli Araçlar İçin "Dolly Arabacığı"</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Elektrikli park freni takılı kalan veya şanzımanı P modundan çıkmayan araçları vinçle asılarak çekmek lastikleri ve aksları parçalar. Kuzey Marmara Çekici filomuzda bu durumlar için özel tekerlek arabacıkları (dolly) kullanılır. Kilitli tekerleklerin altına yerleştirilen rulmanlı arabacıklar sayesinde araç sıfır sürtünmeyle platforma alınır.
+        Elektrikli park freni takılı kalan veya şanzımanı P modundan çıkmayan araçları vinçle asılarak çekmek lastikleri ve aksları parçalar. Marmara Çekici filomuzda bu durumlar için özel tekerlek arabacıkları (dolly) kullanılır. Kilitli tekerleklerin altına yerleştirilen rulmanlı arabacıklar sayesinde araç sıfır sürtünmeyle platforma alınır.
       </p>
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">4. Sıfır Açılı Rampa ile Tampon Hasarını Önleme</h2>
@@ -252,7 +252,7 @@ const blogs = [
     faqs: [
       { q: 'Otomatik vitesli araba N modunda çekilebilir mi?', a: 'Platforma yükleme amaçlı birkaç metrelik çekim haricinde otoyolda halatla çekilmesi şanzımanı yakar.' },
       { q: 'Elektrikli araç çekilirken akü biterse ne yapılır?', a: '12V aküye takviye verilerek ekran açılır ve çekici modu devreye alınarak kayar kasaya yüklenir.' },
-      { q: 'Taşıma sırasında aracın kaskosu var mı?', a: 'Evet, Kuzey Marmara Çekici ile taşınan her araç %100 nakliyat emtia kaskosu altındadır.' }
+      { q: 'Taşıma sırasında aracın kaskosu var mı?', a: 'Evet, Marmara Çekici ile taşınan her araç %100 nakliyat emtia kaskosu altındadır.' }
     ]
   },
   {
@@ -286,7 +286,7 @@ const blogs = [
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Profesyonel Dijital Booster ile Yerinde Çözüm</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Kuzey Marmara Çekici yol yardım araçlarımızda akım korumalı, ters kutup emniyetli endüstriyel 12V/24V dijital booster cihazları bulunmaktadır. Kurtköy, KMO gişeleri, TEM ve Pendik çevresinde aracınız çalışmadığında çekici masrafına gerek kalmadan 10-15 dakikada yerinde güvenli akü takviyesi ve şarj dinamosu testi yapıyoruz.
+        Marmara Çekici yol yardım araçlarımızda akım korumalı, ters kutup emniyetli endüstriyel 12V/24V dijital booster cihazları bulunmaktadır. Kurtköy, KMO gişeleri, TEM ve Pendik çevresinde aracınız çalışmadığında çekici masrafına gerek kalmadan 10-15 dakikada yerinde güvenli akü takviyesi ve şarj dinamosu testi yapıyoruz.
       </p>
     `,
     faqs: [
@@ -332,14 +332,14 @@ const blogs = [
         İstanbul'un diğer ucundan geleceğini söyleyip sizi 1.5 saat soğukta veya tehlikeli otoyol emniyet şeridinde bekleten aracılar yerine; Kurtköy, KMO ve Gebze gişelerinde hazır bekleyen yerel filoları tercih edin.
       </p>
 
-      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Kuzey Marmara Çekici ile 10-15 Dakikada Çözüm</h2>
+      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Marmara Çekici ile 10-15 Dakikada Çözüm</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Kuzey Marmara Çekici olarak Kurtköy Viaport, KMO gişeleri, Sabiha Gökçen bağlantısı ve Gebze OSB'de 7/24 kesintisiz hazır nöbetçi araçlarımızla çağrınızdan sonra ortalama 10-15 dakika içinde yanınızdayız. Tek dokunuşla <strong>0533 265 70 89</strong> numaramızdan bizi arayabilir veya WhatsApp üzerinden konumunuzu gönderebilirsiniz.
+        Marmara Çekici olarak Kurtköy Viaport, KMO gişeleri, Sabiha Gökçen bağlantısı ve Gebze OSB'de 7/24 kesintisiz hazır nöbetçi araçlarımızla çağrınızdan sonra ortalama 10-15 dakika içinde yanınızdayız. Tek dokunuşla <strong>0533 265 70 89</strong> numaramızdan bizi arayabilir veya WhatsApp üzerinden konumunuzu gönderebilirsiniz.
       </p>
     `,
     faqs: [
       { q: 'Kurtköy ve Gebze\'de çekici ücreti ne kadardır?', a: 'Mesafe, aracın sınıfı ve teslim noktasına göre telefonda net ve bağlayıcı sabit fiyat teyidi verilir; sonradan ek sürpriz masraf çıkarılmaz.' },
-      { q: 'Aracım taşınırken kaskolu mudur?', a: 'Evet, Kuzey Marmara Çekici ile yapılan her operasyon %100 nakliyat emtia sigortalıdır.' },
+      { q: 'Aracım taşınırken kaskolu mudur?', a: 'Evet, Marmara Çekici ile yapılan her operasyon %100 nakliyat emtia sigortalıdır.' },
       { q: 'Fatura alabilir miyim?', a: 'Evet, kaskodan geri ödeme alabilmeniz için resmi kurumsal e-arşiv fatura düzenlenir.' }
     ]
   }

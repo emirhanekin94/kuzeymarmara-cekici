@@ -1,5 +1,5 @@
 # ==============================================================
-# Kuzey Marmara Çekici Robots.txt - Ajan Tabanlı Arama & SEO Optimize
+# Marmara Çekici Robots.txt - Ajan Tabanlı Arama & SEO Optimize
 # ==============================================================
 
 User-agent: *

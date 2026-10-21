@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Kuzey Marmara Çekici — Sıfır bağımlılıklı Node.js sunucusu.
+ * Marmara Çekici — Sıfır bağımlılıklı Node.js sunucusu.
  * Özellikler: Gzip/Deflate sıkıştırma, temiz URL desteği, güvenlik başlıkları,
  * agresif önbellekleme (statik varlıklar için immutable, HTML için stale-while-revalidate).
  */
@@ -231,7 +231,7 @@ function startServer(port) {
   });
 
   currentServer.listen(port, () => {
-    console.log(`🚀 Kuzey Marmara Çekici sunucusu http://localhost:${port} üzerinde çalışıyor`);
+    console.log(`🚀 Marmara Çekici sunucusu http://localhost:${port} üzerinde çalışıyor`);
   });
 }
 

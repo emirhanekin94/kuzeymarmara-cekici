@@ -131,7 +131,7 @@ function buildIndex() {
   </section>`;
 
   return page({
-    title: 'Kuzey Marmara Çekici | 7/24 En Yakın Acil Oto Çekici & Yol Yardım',
+    title: 'Marmara Çekici | 7/24 En Yakın Acil Oto Çekici & Yol Yardım',
     description: 'Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova, Tuzla ve Sabiha Gökçen çevresinde 7/24 acil oto çekici ve yol yardım. 10-15 dakikada yanınızdayız.',
     canonicalPath: '/',
     active: 'home',
@@ -176,8 +176,8 @@ function buildAbout() {
   </section>`;
 
   return page({
-    title: 'Hakkımızda | Kuzey Marmara Çekici',
-    description: 'Kuzey Marmara Çekici\'nin hikayesi, filosu, ekipmanları ve güvenceleri hakkında bilgi alın. 7/24 KTK yetki belgeli uzman operatörler.',
+    title: 'Hakkımızda | Marmara Çekici',
+    description: 'Marmara Çekici\'nin hikayesi, filosu, ekipmanları ve güvenceleri hakkında bilgi alın. 7/24 KTK yetki belgeli uzman operatörler.',
     canonicalPath: '/hakkimizda',
     active: 'about',
     bodySchemas: [breadcrumbSchema(breadcrumbItems)],
@@ -228,8 +228,8 @@ function buildContact() {
   </section>`;
 
   return page({
-    title: 'İletişim | Kuzey Marmara Çekici',
-    description: 'Kuzey Marmara Çekici iletişim bilgileri: telefon, WhatsApp, çalışma saatleri ve hizmet bölgeleri. 7/24 acil çağrı hattı.',
+    title: 'İletişim | Marmara Çekici',
+    description: 'Marmara Çekici iletişim bilgileri: telefon, WhatsApp, çalışma saatleri ve hizmet bölgeleri. 7/24 acil çağrı hattı.',
     canonicalPath: '/iletisim',
     active: 'contact',
     bodySchemas: [breadcrumbSchema(breadcrumbItems)],
@@ -260,8 +260,8 @@ function buildGallery() {
   </section>`;
 
   return page({
-    title: 'Galeri | Kuzey Marmara Çekici',
-    description: 'Kuzey Marmara Çekici filosu, ekipmanları ve saha operasyonlarından görseller.',
+    title: 'Galeri | Marmara Çekici',
+    description: 'Marmara Çekici filosu, ekipmanları ve saha operasyonlarından görseller.',
     canonicalPath: '/galeri',
     active: 'gallery',
     bodySchemas: [breadcrumbSchema(breadcrumbItems)],
@@ -292,7 +292,7 @@ function buildBlogIndex() {
   </section>`;
 
   return page({
-    title: 'Blog | Kuzey Marmara Çekici Oto Kurtarma Rehberi',
+    title: 'Blog | Marmara Çekici Oto Kurtarma Rehberi',
     description: 'Otoyolda arıza, kaza, akü, lastik ve çekici fiyatları hakkında kapsamlı rehber makaleler.',
     canonicalPath: '/blog/',
     active: 'blog',
@@ -371,7 +371,7 @@ function build404() {
     </div>
   </section>`;
   return page({
-    title: '404 - Sayfa Bulunamadı | Kuzey Marmara Çekici',
+    title: '404 - Sayfa Bulunamadı | Marmara Çekici',
     description: 'Aradığınız sayfa bulunamadı.',
     canonicalPath: '/404',
     active: '',

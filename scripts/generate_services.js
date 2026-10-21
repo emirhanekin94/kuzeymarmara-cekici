@@ -17,7 +17,7 @@ const services = [
     slug: 'oto-cekici',
     name: 'Kayar Kasa Oto Çekici',
     badge: '⚡ 10-15 Dk Varış',
-    title: 'Kayar Kasa Oto Çekici 7/24 | Kuzey Marmara Çekici - 0533 265 70 89',
+    title: 'Kayar Kasa Oto Çekici 7/24 | Marmara Çekici - 0533 265 70 89',
     metaDesc: 'Binek otomobil, crossover ve SUV araçlarınız için hidrolik kayar kasa çekici. Sıfır hasar garantisi, %100 taşıma kaskosu, 10-15 dk intikal: 0533 265 70 89.',
     keywords: 'oto çekici, kayar kasa çekici, kurtköy oto çekici, kuzey marmara oto çekici, acil çekici, hasarsız araç çekici, çekici çağır',
     image: 'otomobil_cekici-1.webp',
@@ -476,7 +476,7 @@ function generateServiceHtml(svc) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": `Kuzey Marmara Çekici - ${svc.name}`,
+    "name": `Marmara Çekici - ${svc.name}`,
     "serviceType": svc.name,
     "provider": {
       "@type": "EmergencyService",
@@ -635,17 +635,6 @@ function generateServiceHtml(svc) {
         <span class="inner-trust-pill">💰 Telefonda Sabit Fiyat Sözü</span>
         <span class="inner-trust-pill">💳 Mobil POS ile Kredi Kartı</span>
         <span class="inner-trust-pill">⏱️ 10-15 Dakika Varış Garantisi</span>
-      </div>
-
-      <div class="inner-hero-ctas">
-        <a href="tel:${PHONE_RAW}" class="btn btn-call btn-lg" style="box-shadow: 0 8px 24px rgba(234, 88, 12, 0.4);">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
-          <span>Hemen Ara: ${PHONE}</span>
-        </a>
-        <button type="button" class="btn btn-whatsapp btn-lg btn-send-location">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
-          <span>WhatsApp Canlı Konum Gönder</span>
-        </button>
       </div>
 
       <!-- Quick Stats Strip -->
@@ -917,7 +906,7 @@ function generateServiceHtml(svc) {
           Kurumsal Standartlarımız
         </span>
         <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
+          Neden Marmara Çekici?
         </h2>
         <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
           15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
@@ -1141,7 +1130,7 @@ function generateIndexHtml() {
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Kuzey Marmara Çekici Hizmetlerimiz",
+    "name": "Marmara Çekici Hizmetlerimiz",
     "description": "Kuzey Marmara Otoyolu, TEM Otoyolu ve çevre ilçelerde 7/24 sunduğumuz oto çekici, kurtarıcı, akü takviye ve yol yardım hizmetlerimiz.",
     "url": "${DOMAIN}/hizmetler/index.html",
     "breadcrumb": {
@@ -1161,7 +1150,7 @@ function generateIndexHtml() {
     <div class="container">
       <div class="header-inner">
         <a href="/" class="brand-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
             <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
@@ -1238,7 +1227,7 @@ ${cardsHtml}
           Kurumsal Standartlarımız
         </span>
         <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin: 12px 0 10px;">
-          Neden Kuzey Marmara Çekici?
+          Neden Marmara Çekici?
         </h2>
         <p style="color: #94a3b8; font-size: 1rem; line-height: 1.6;">
           15 yılı aşkın otoyol kurtarma deneyimimiz, kurumsal güvencelerimiz ve şeffaf hizmet ilkelerimizle yolda kalan sürücülerin ilk tercihiyiz.
@@ -1349,7 +1338,7 @@ ${cardsHtml}
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
           <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-top: 15px;">
@@ -1399,7 +1388,7 @@ ${cardsHtml}
     </div>
 
     <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
-      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <p>&copy; 2026 Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>
 
@@ -1426,7 +1415,7 @@ if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
 }
 
-console.log('🚀 Kuzey Marmara Çekici Hizmet Sayfaları Üretiliyor...');
+console.log('🚀 Marmara Çekici Hizmet Sayfaları Üretiliyor...');
 
 services.forEach(svc => {
   const filePath = path.join(outDir, `${svc.slug}.html`);

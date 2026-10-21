@@ -78,7 +78,7 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log(`✓ sitemap.xml üretildi (${urls.length} URL)`);
 
 const robotsTxt = `# ==============================================================
-# Kuzey Marmara Çekici Robots.txt - Ajan Tabanlı Arama & SEO Optimize
+# Marmara Çekici Robots.txt - Ajan Tabanlı Arama & SEO Optimize
 # ==============================================================
 
 User-agent: *
