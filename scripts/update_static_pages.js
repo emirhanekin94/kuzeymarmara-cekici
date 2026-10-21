@@ -23,11 +23,11 @@ const richFooterHtml = `
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
-          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+          <img src="images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
-          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+          İstanbul Anadolu Yakası (Pendik, Kartal, Maltepe, Tuzla), Kocaeli (Gebze, Çayırova) ve Kuzey Marmara &amp; TEM otoyol koridorunda 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı filosu.
         </p>
         <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
           Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none; font-weight: 800;">${PHONE}</a>
@@ -133,10 +133,10 @@ function buildHakkimizda() {
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="brand-logo">
-          <img src="images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -331,10 +331,10 @@ function buildIletisim() {
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="brand-logo">
-          <img src="images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -674,10 +674,10 @@ function buildGaleri() {
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="brand-logo">
-          <img src="images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
           </div>
         </a>
         <nav class="main-nav">

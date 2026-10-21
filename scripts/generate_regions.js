@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { REGION_EXTENSIONS } = require('../data/region_extensions.js');
 
 const PHONE = '0533 265 70 89';
 const PHONE_RAW = '905332657089';
@@ -809,11 +810,11 @@ function generateRegionHtml(reg) {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="/" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" class="brand-logo-img" width="46" height="46">
+        <a href="/" class="brand-logo" aria-label="Marmara Çekici Ana Sayfa">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" class="brand-logo-img" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
           </div>
         </a>
 
@@ -948,6 +949,36 @@ function generateRegionHtml(reg) {
               <h4>💡 ${reg.name} Sürücülerine Hayati Tavsiyeler &amp; Yetkili Servis Aktarımı</h4>
               <p>
                 ${reg.localAdvice}
+              </p>
+            </div>
+
+            <!-- Kart 1.1: 2000+ Karakter Zengin İlçe & Güzergah Kılavuzu -->
+            <div style="margin-top: 28px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🗺️</span> ${reg.name} İlçe, Mahalle &amp; Otoyol Ulaşım Rehberi
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(REGION_EXTENSIONS[reg.slug] || {}).districtCorridorGuide || ''}
+              </p>
+            </div>
+
+            <!-- Kart 1.2: Şehir İçi Sabit Fiyat, Yetkili Servis Ağı & Kasko Standartları -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>💳</span> ${reg.name} Şehir İçi Sabit Fiyat, Yetkili Servis Ağı &amp; Kasko Standartları
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(REGION_EXTENSIONS[reg.slug] || {}).serviceAndPricingNetwork || ''}
+              </p>
+            </div>
+
+            <!-- Kart 1.3: Bölgeye Özel Acil Eylem ve Yol Güvenliği Planı -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🚨</span> ${reg.name} Acil Durum &amp; Güvenli Tahliye Protokolü
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(REGION_EXTENSIONS[reg.slug] || {}).emergencyActionPlan || ''}
               </p>
             </div>
           </article>
@@ -1208,11 +1239,11 @@ function generateRegionHtml(reg) {
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
-          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
-          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+          İstanbul Anadolu Yakası (Pendik, Kartal, Maltepe, Tuzla), Kocaeli (Gebze, Çayırova) ve Kuzey Marmara &amp; TEM otoyol koridorunda 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı filosu.
         </p>
         <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
           Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none; font-weight: 800;">${PHONE}</a>
@@ -1259,7 +1290,7 @@ function generateRegionHtml(reg) {
     </div>
 
     <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
-      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <p>&copy; 2026 Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Anadolu Yakası, Kocaeli &amp; Otoyol Oto Kurtarma.</p>
     </div>
   </footer>
 

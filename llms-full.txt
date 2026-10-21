@@ -1,8 +1,8 @@
-# Kuzey Marmara Çekici — Kapsamlı Ajan & RAG Bilgi Bankası (LLMs Full)
+# Marmara Çekici — Kapsamlı Ajan & RAG Bilgi Bankası (LLMs Full)
 
 ## 1. Kurumsal Kimlik & Genel Bakış
-- Marka: Kuzey Marmara Çekici (Kuzey Marmara Oto Kurtarma & Yol Yardım)
-- Slogan: 7/24 En Yakın Acil Oto Çekici
+- Marka: Marmara Çekici (Marmara Oto Kurtarma & Yol Yardım Hizmetleri)
+- Slogan: 7/24 Anadolu Yakası, Kocaeli & Otoyol Acil Oto Çekici
 - 7/24 Doğrudan Acil Çağrı: 0533 265 70 89
 - WhatsApp Destek & Konum İletişimi: 0533 265 70 89
 - E-posta: info@kuzeymarmaracekici.com
@@ -57,12 +57,17 @@
 - [Maltepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/maltepe-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Maltepe, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto çekici. 10-15 dk varış, %100 kaskolu taşıma.
 - [Körfez & Hereke Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/korfez-hereke-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Körfez, Hereke Tünelleri, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici, ağır vasıta ve yol yardım hizmeti. 10-15 dk varış: 0533 265 70 89.
 
-## 5. Teknik Dokümanlar & Sürücü Rehberleri (5 Makale)
+## 5. Teknik Dokümanlar & Sürücü Rehberleri (10 Makale)
 - [Otoyolda Araç Arızalandığında Yapılması Gerekenler](https://www.kuzeymarmaracekici.com/blog/otoyolda-arac-arizalandiginda-yapilmasi-gerekenler.html) — Otoyolda arıza yaptığınızda reflektör kaç metreye konur, emniyet şeridinde nasıl güvende kalınır ve çekici çağırırken konum nasıl paylaşılır? Adım adım rehber.
 - [Kuzey Marmara Otoyolu Çekici Fiyatları 2026](https://www.kuzeymarmaracekici.com/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-2026.html) — Kuzey Marmara Otoyolu çekici fiyatı nasıl hesaplanır? 2026 güncel taban fiyat, km başına ücret ve sabit fiyat garantisinin önemi.
 - [Otomatik Vites ve Elektrikli Araçlar Nasıl Çekilir?](https://www.kuzeymarmaracekici.com/blog/otomatik-vites-ve-elektrikli-araclar-nasil-cekilir.html) — Otomatik şanzımanlı ve elektrikli araçlar neden halatla çekilmez? Tesla Transport Mode, batarya kilidi ve kayar kasa vinç farkı anlatıldı.
 - [Akü Neden Aniden Biter, Takviye Nasıl Yapılır?](https://www.kuzeymarmaracekici.com/blog/aku-neden-aniden-biter-takviye-nasil-yapilir.html) — Kışın ve yazın akü ömrü, start-stop AGM/EFB akü tipleri, yanlış takviyede ECU yanma riski ve dijital booster avantajları.
 - [Kurtköy ve Gebze'de En Yakın Oto Çekici Seçim Rehberi](https://www.kuzeymarmaracekici.com/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-secim-rehberi.html) — Kurtköy ve Gebze sanayi bölgelerinde korsan çekiciden korunma, taşıma kaskosu ve yetki belgesi sorgulama rehberi.
+- [Şehir İçi ve Otoyol Çekici Farkları: Fiyat, Hız ve Güvenlik | 2026 Rehberi](https://www.kuzeymarmaracekici.com/blog/sehir-ici-ve-otoyol-cekici-farklari-fiyat-ve-guvenlik.html) — Şehir içi sokak araları ile Kuzey Marmara ve TEM otoyolu çekici operasyonları arasındaki farklar. Sabit fiyat tarifesi, rampa donanımı ve emniyet şeridi güvenliği: 0533 265 70 89.
+- [Pendik, Kartal, Maltepe E-5 & Sahil Çekici Rehberi | Marmara Çekici](https://www.kuzeymarmaracekici.com/blog/pendik-kartal-maltepe-e5-yol-yardim-ve-cekici-rehberi.html) — İstanbul Anadolu Yakası D-100 (E-5) Karayolu, sahil bulvarı ve mahalle aralarında yolda kalındığında acil çekici çağırma rehberi. 10 dakikada intikal: 0533 265 70 89.
+- [Çayırova & Gebze OSB Sanayi Bölgesi Çekici Rehberi | 0533 265 70 89](https://www.kuzeymarmaracekici.com/blog/cayirova-gebze-sanayi-bolgesi-arac-kurtarma-ve-cekici.html) — Gebze Organize Sanayi Bölgesi (GOSB), Çayırova TOSB, TAYSAD ve lojistik antrepolar koridorunda 7/24 oto çekici, tır kurtarma ve hafif ticari yol yardım rehberi.
+- [Kaza ve Arıza Anında Kasko Anlaşmalı Çekici Süreci | 2026](https://www.kuzeymarmaracekici.com/blog/kaza-ve-ariza-aninda-kasko-anlasmali-cekici-sureci.html) — Trafik kazası ve mekanik arızalarda kasko sigortasından çekici hizmeti alma rehberi. Ücretsiz çekici hakkı, rücu süreci ve resmi faturalandırma: 0533 265 70 89.
+- [Gece Nöbetçi Çekici Çağırırken Bilinmesi Gereken 5 Kural | Marmara Çekici](https://www.kuzeymarmaracekici.com/blog/gece-nobetci-oto-cekici-cagirirken-bilinmesi-gerekenler.html) — 7/24 gece nöbetçi oto çekici çağırırken korsan çekici tuzağına düşmemek ve fahiş fiyattan korunmak için bilmeniz gereken altın kurallar: 0533 265 70 89.
 
 ## 6. Araç Tiplerine Göre Operasyonel Protokoller
 ### 6.1. Elektrikli Araçlar (EV - Tesla, TOGG, Porsche Taycan, Mercedes EQ, BMW i)

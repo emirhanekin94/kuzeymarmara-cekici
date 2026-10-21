@@ -40,7 +40,7 @@ function head({ title, description, canonicalPath, schema, preloadImage }) {
 function topBar() {
   return `<div class="top-bar">
     <div class="container top-bar-inner">
-      <span class="live-pulse"><span class="pulse-dot"></span> 7/24 Nöbetçi Çekici Aktif • Kuzey Marmara &amp; TEM Hattında 10-15 Dk Varış</span>
+      <span class="live-pulse"><span class="pulse-dot"></span> 7/24 Nöbetçi Çekici Aktif • Anadolu Yakası, Kocaeli &amp; Otoyol Koridorunda 10-15 Dk Varış</span>
       <a class="top-bar-phone" href="${telLink()}">${BUSINESS.phoneDisplay}</a>
     </div>
   </div>`;
@@ -54,8 +54,8 @@ function headerNav(active) {
     ${topBar()}
     <div class="container nav-inner">
       <a href="/" class="brand">
-        <span class="brand-mark">K</span>
-        <span class="brand-text">Kuzey Marmara<br><small>Çekici &amp; Yol Yardım</small></span>
+        <span class="brand-mark">M</span>
+        <span class="brand-text">Marmara Çekici<br><small>Anadolu Yakası &amp; Otoyol Filosu</small></span>
       </a>
       <nav class="main-nav" id="main-nav">
         <a href="/"${is('home')}>Ana Sayfa</a>
@@ -173,8 +173,8 @@ function footer() {
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="brand">
-          <span class="brand-mark">K</span>
-          <span class="brand-text">Kuzey Marmara<br><small>Çekici &amp; Yol Yardım</small></span>
+          <span class="brand-mark">M</span>
+          <span class="brand-text">Marmara Çekici<br><small>Anadolu Yakası &amp; Otoyol Filosu</small></span>
         </div>
         <p>${escapeHtml(BUSINESS.slogan)}</p>
         <p class="footer-phone"><a href="${telLink()}">${BUSINESS.phoneDisplay}</a></p>

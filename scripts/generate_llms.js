@@ -6,6 +6,16 @@ const { SITE_URL, BUSINESS, whatsappLink } = require('../data/business.js');
 const { REGIONS } = require('../data/regions.js');
 const { SERVICES } = require('../data/services.js');
 const { BLOG_POSTS } = require('../data/blog.js');
+const { ADDITIONAL_BLOGS } = require('../data/blog_new.js');
+
+const allBlogPosts = [
+  ...BLOG_POSTS,
+  ...ADDITIONAL_BLOGS.map(b => ({
+    title: b.title,
+    slug: b.slug,
+    metaDescription: b.metaDesc
+  }))
+];
 
 const ROOT = path.join(__dirname, '..');
 
@@ -58,7 +68,7 @@ Genişletilmiş teknik RAG dokümantasyonu ve derin operasyon rehberi için: ${S
 function buildLlmsFullTxt() {
   const regionLines = REGIONS.map(r => `- [${r.name} Oto Çekici](${SITE_URL}/bolgeler/${r.slug}.html) — Varış: ⏱️ ${r.eta} | Noktalar: ${r.hotspots} | ${r.metaDescription}`).join('\n');
   const serviceLines = SERVICES.map(s => `- [${s.name}](${SITE_URL}/hizmetler/${s.slug}.html) — ${s.metaDescription || s.metaDesc}`).join('\n');
-  const blogLines = BLOG_POSTS.map(p => `- [${p.title}](${SITE_URL}/blog/${p.slug}.html) — ${p.metaDescription}`).join('\n');
+  const blogLines = allBlogPosts.map(p => `- [${p.title}](${SITE_URL}/blog/${p.slug}.html) — ${p.metaDescription}`).join('\n');
 
   return `# ${BUSINESS.name} — Kapsamlı Ajan & RAG Bilgi Bankası (LLMs Full)
 
@@ -90,7 +100,7 @@ ${serviceLines}
 ## 4. Bölgesel Operasyon Alanı (${REGIONS.length} Bölge)
 ${regionLines}
 
-## 5. Teknik Dokümanlar & Sürücü Rehberleri (${BLOG_POSTS.length} Makale)
+## 5. Teknik Dokümanlar & Sürücü Rehberleri (${allBlogPosts.length} Makale)
 ${blogLines}
 
 ## 6. Araç Tiplerine Göre Operasyonel Protokoller

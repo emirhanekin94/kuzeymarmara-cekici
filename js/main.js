@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const toLocation = form.querySelector('[name="to_location"]')?.value || '';
       const userPhone = form.querySelector('[name="user_phone"]')?.value || '';
 
-      let message = `Merhaba Kuzey Marmara Çekici,\nAcil oto çekici / kurtarıcıya ihtiyacım var:\n\n📍 Bulunduğum Bölge: ${region}\n🚗 Araç Türü: ${vehicle}\n⚠️ Durum: ${problem}`;
+      let message = `Merhaba Marmara Çekici,\nAcil oto çekici / kurtarıcıya ihtiyacım var:\n\n📍 Bulunduğum Bölge: ${region}\n🚗 Araç Türü: ${vehicle}\n⚠️ Durum: ${problem}`;
       if (toLocation) message += `\n🎯 Gidilecek Yer / Servis: ${toLocation}`;
       if (userPhone) message += `\n📞 İletişim Numaram: ${userPhone}`;
       message += `\n\nEn yakın oto çekicinizi yönlendirip sabit fiyat bilgisi verir misiniz? Konumumu iletiyorum:`;
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       if (btn.closest('form')) return; // Form içi submit butonlarını atla
       e.preventDefault();
-      const message = 'Merhaba Kuzey Marmara Çekici, yolda kaldım. Bulunduğum konuma en yakın oto çekici / yol yardım aracınızı acil yönlendirir misiniz? Canlı konumumu iletiyorum:';
+      const message = 'Merhaba Marmara Çekici, yolda kaldım. Bulunduğum konuma en yakın nöbetçi oto çekici / kurtarıcı aracınızı acil yönlendirir misiniz? Canlı konumumu iletiyorum:';
       window.sendWhatsAppMessage(message);
     });
   });
@@ -453,22 +453,36 @@ document.addEventListener('DOMContentLoaded', () => {
         const priceText = calcPriceVal ? calcPriceVal.textContent : '1.500 ₺';
         const etaText = calcEtaVal ? calcEtaVal.textContent : '10 - 15 Dk';
 
-        const msg = `Merhaba Kuzey Marmara Çekici,\nFiyat hesaplayıcı üzerinden talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Tahmini Ücret: ${priceText}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
+        const msg = `Merhaba Marmara Çekici,\nFiyat hesaplayıcı üzerinden talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Tahmini Ücret: ${priceText}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
         window.sendWhatsAppMessage(msg);
       });
     }
   }
 
-  // 13. GOOGLE ADS KAMPANYA PARAMETRESİ & MOBİL HAPTİK TIKLAMA
+  // 13. GOOGLE ADS KAMPANYA PARAMETRESİ & ŞEHİR İÇİ / OTOYOL HIZLI ÇAĞRI MOTORU
   const urlParams = new URLSearchParams(window.location.search);
-  const isGoogleAds = urlParams.has('gclid') || urlParams.get('utm_source') === 'google' || urlParams.has('gad_source') || urlParams.has('ads');
+  const isGoogleAds = urlParams.has('gclid') || urlParams.get('utm_source') === 'google' || urlParams.has('gad_source') || urlParams.has('ads') || urlParams.has('utm_campaign');
+
+  // İlçe veya anahtar kelime eşleştirme (Ads / Mobil Arama)
+  const queryStr = (window.location.search + ' ' + window.location.pathname).toLowerCase();
+  let matchedLocation = 'ANADOLU YAKASI & OTOYOL BÖLGESİ';
+  if (queryStr.includes('pendik')) matchedLocation = 'PENDİK & E-5 ÇEVRESİ';
+  else if (queryStr.includes('kartal')) matchedLocation = 'KARTAL & SAHİL / E-5';
+  else if (queryStr.includes('maltepe')) matchedLocation = 'MALTEPE & BAĞDAT CAD.';
+  else if (queryStr.includes('gebze')) matchedLocation = 'GEBZE & ORGANİZE SANAYİ';
+  else if (queryStr.includes('cayirova') || queryStr.includes('çayırova')) matchedLocation = 'ÇAYIROVA & ŞEKERPINAR';
+  else if (queryStr.includes('kurtkoy') || queryStr.includes('kurtköy')) matchedLocation = 'KURTKÖY & HAVAALANI YOLU';
+  else if (queryStr.includes('tuzla')) matchedLocation = 'TUZLA & DERİ SANAYİ';
+  else if (queryStr.includes('sabiha')) matchedLocation = 'SABİHA GÖKÇEN HAVALİMANI';
+  else if (queryStr.includes('dilovasi') || queryStr.includes('dilovası')) matchedLocation = 'DİLOVASI & OSMANGAZİ KÖPRÜSÜ';
+  else if (queryStr.includes('atasehir') || queryStr.includes('ataşehir')) matchedLocation = 'ATAŞEHİR & FSM BAĞLANTISI';
 
   if (isGoogleAds) {
-    const heroSection = document.querySelector('.hero-section');
+    const heroSection = document.querySelector('.hero-section, .hero, .subpage-hero');
     if (heroSection) {
       const adsBanner = document.createElement('div');
-      adsBanner.setAttribute('style', 'background: linear-gradient(90deg, #ea580c 0%, #c2410c 100%); color: #fff; padding: 10px 16px; text-align: center; font-size: 0.88rem; font-weight: 800; letter-spacing: 0.03em; box-shadow: 0 4px 15px rgba(234,88,12,0.3); border-radius: 8px; margin: 0 auto 20px; max-width: 850px;');
-      adsBanner.innerHTML = '🚨 GOOGLE ÖZEL: KUZEY MARMARA &amp; TEM OTOYOLUNDA EN YAKIN NÖBETÇİ ÇEKİCİ 10 DAKİKADA YANINIZDA! <span>%100 KASKO GÜVENCESİ</span>';
+      adsBanner.setAttribute('style', 'background: linear-gradient(90deg, #ea580c 0%, #b91c1c 100%); color: #fff; padding: 12px 18px; text-align: center; font-size: 0.92rem; font-weight: 800; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(234,88,12,0.35); border-radius: 10px; margin: 0 auto 22px; max-width: 900px; border: 1px solid rgba(255,255,255,0.2);');
+      adsBanner.innerHTML = `🚨 <strong>ACİL ÇAĞRI:</strong> ${matchedLocation} NÖBETÇİ ÇEKİCİMİZ <strong>10 DAKİKADA YANINIZDA!</strong> • Şehir İçi Taban: 1.500 ₺ • %100 Taşıma Kaskolu`;
       const heroContainer = heroSection.querySelector('.container');
       if (heroContainer) {
         heroContainer.insertBefore(adsBanner, heroContainer.firstChild);

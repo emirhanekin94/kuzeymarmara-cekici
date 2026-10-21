@@ -54,7 +54,12 @@ const urls = [
   { loc: `${DOMAIN}/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-nasil-hesaplanir.html`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${DOMAIN}/blog/otomatik-vitesli-ve-elektrikli-araclar-nasil-cekilir.html`, priority: '0.8', changefreq: 'monthly' },
   { loc: `${DOMAIN}/blog/aku-neden-aniden-biter-takviye-nasil-yapilir.html`, priority: '0.8', changefreq: 'monthly' },
-  { loc: `${DOMAIN}/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-rehberi.html`, priority: '0.8', changefreq: 'monthly' }
+  { loc: `${DOMAIN}/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-rehberi.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog/sehir-ici-ve-otoyol-cekici-farklari-fiyat-ve-guvenlik.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog/pendik-kartal-maltepe-e5-yol-yardim-ve-cekici-rehberi.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog/cayirova-gebze-sanayi-bolgesi-arac-kurtarma-ve-cekici.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog/kaza-ve-ariza-aninda-kasko-anlasmali-cekici-sureci.html`, priority: '0.8', changefreq: 'monthly' },
+  { loc: `${DOMAIN}/blog/gece-nobetci-oto-cekici-cagirirken-bilinmesi-gerekenler.html`, priority: '0.8', changefreq: 'monthly' }
 ];
 
 const today = new Date().toISOString().split('T')[0];

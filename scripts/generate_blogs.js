@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { ADDITIONAL_BLOGS } = require('../data/blog_new.js');
 
 const PHONE = '0533 265 70 89';
 const PHONE_RAW = '905332657089';
@@ -16,11 +17,11 @@ const richFooterHtml = `
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
-          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
-          Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
+          Anadolu Yakası (Pendik, Kartal, Maltepe, Kurtköy, Tuzla), Gebze, Çayırova ve Kuzey Marmara Otoyolu ile TEM güzergahında 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
         </p>
         <p style="color: #cbd5e1; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px;">
           Acil Çağrı: <a href="tel:${PHONE_RAW}" style="color: #ea580c; text-decoration: none; font-weight: 800;">${PHONE}</a>
@@ -67,7 +68,7 @@ const richFooterHtml = `
     </div>
 
     <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
-      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <p>&copy; 2026 Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>`;
 
@@ -355,12 +356,12 @@ function generateArticleHtml(blog) {
     "dateModified": "2026-10-21T18:00:00+03:00",
     "author": {
       "@type": "Organization",
-      "name": "Kuzey Marmara Çekici",
+      "name": "Marmara Çekici",
       "url": DOMAIN
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Kuzey Marmara Çekici",
+      "name": "Marmara Çekici",
       "logo": {
         "@type": "ImageObject",
         "url": `${DOMAIN}/images/logo.svg`
@@ -411,10 +412,10 @@ function generateArticleHtml(blog) {
     <div class="container">
       <div class="header-inner">
         <a href="/" class="brand-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -457,7 +458,7 @@ function generateArticleHtml(blog) {
       <div style="display: flex; flex-wrap: wrap; gap: 15px; color: #cbd5e1; font-size: 0.9rem;">
         <span>📅 ${blog.date}</span>
         <span>⏱️ ${blog.readTime}</span>
-        <span>✍️ Kuzey Marmara Çekici Saha Ekibi</span>
+        <span>✍️ Marmara Çekici Saha Ekibi</span>
       </div>
     </div>
   </section>
@@ -536,8 +537,8 @@ function generateArticleHtml(blog) {
 </html>`;
 }
 
-function generateBlogIndexHtml() {
-  const cardsHtml = blogs.map(b => `
+function generateBlogIndexHtml(blogsList) {
+  const cardsHtml = blogsList.map(b => `
     <div class="service-card" style="background:#fff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
       <div class="service-card-img-wrap" style="height: 220px; overflow: hidden;">
         <img src="/images/${b.image}" alt="${b.headline}" width="600" height="350" style="width: 100%; height: 100%; object-fit: cover;">
@@ -561,8 +562,8 @@ function generateBlogIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sürücü Rehberi &amp; Otoyol Güvenlik Blogu | Kuzey Marmara Çekici - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Otoyolu ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve elektrikli araç kurtarma rehberleri.">
+  <title>Sürücü Rehberi &amp; Otoyol ve Şehir İçi Güvenlik Blogu | Marmara Çekici - 0533 265 70 89</title>
+  <meta name="description" content="Anadolu Yakası, Gebze, Pendik, KMO ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve kasko anlaşmalı kurtarma rehberleri.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/blog/index.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
@@ -577,8 +578,8 @@ function generateBlogIndexHtml() {
   {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Kuzey Marmara Çekici Sürücü Rehberi",
-    "description": "Kuzey Marmara Otoyolu ve TEM güzergahında otoyol güvenliği, çekici rehberleri ve teknik makaleler.",
+    "name": "Marmara Çekici Sürücü Rehberi",
+    "description": "Anadolu Yakası, Gebze, KMO ve TEM güzergahında otoyol güvenliği, çekici rehberleri ve teknik makaleler.",
     "url": "${DOMAIN}/blog/index.html",
     "breadcrumb": {
       "@type": "BreadcrumbList",
@@ -597,10 +598,10 @@ function generateBlogIndexHtml() {
     <div class="container">
       <div class="header-inner">
         <a href="/" class="brand-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol</span>
           </div>
         </a>
         <nav class="main-nav">
@@ -678,15 +679,17 @@ if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
 }
 
-console.log('🚀 Kuzey Marmara Çekici Blog Makaleleri Üretiliyor...');
+const allBlogs = [...blogs, ...ADDITIONAL_BLOGS];
 
-blogs.forEach(b => {
+console.log('🚀 Marmara Çekici Blog Makaleleri Üretiliyor...');
+
+allBlogs.forEach(b => {
   const filePath = path.join(outDir, `${b.slug}.html`);
   fs.writeFileSync(filePath, generateArticleHtml(b), 'utf8');
   console.log(`✓ Üretildi: blog/${b.slug}.html`);
 });
 
-fs.writeFileSync(path.join(outDir, 'index.html'), generateBlogIndexHtml(), 'utf8');
+fs.writeFileSync(path.join(outDir, 'index.html'), generateBlogIndexHtml(allBlogs), 'utf8');
 console.log('✓ Üretildi: blog/index.html (Dizin)');
 
-console.log('🎉 Toplam ' + (blogs.length + 1) + ' blog sayfası başarıyla tamamlandı!');
+console.log('🎉 Toplam ' + (allBlogs.length + 1) + ' blog sayfası başarıyla tamamlandı!');

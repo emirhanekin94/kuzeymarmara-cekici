@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { SERVICE_EXTENSIONS } = require('../data/service_extensions.js');
 
 const PHONE = '0533 265 70 89';
 const PHONE_RAW = '905332657089';
@@ -479,7 +480,7 @@ function generateServiceHtml(svc) {
     "serviceType": svc.name,
     "provider": {
       "@type": "EmergencyService",
-      "name": "Kuzey Marmara Çekici",
+      "name": "Marmara Çekici",
       "telephone": `+${PHONE_RAW}`,
       "url": DOMAIN,
       "image": `${DOMAIN}/images/${svc.image}`
@@ -569,11 +570,11 @@ function generateServiceHtml(svc) {
   <header class="site-header">
     <div class="container">
       <div class="header-inner">
-        <a href="/" class="brand-logo" aria-label="Kuzey Marmara Çekici Ana Sayfa">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="46" height="46">
+        <a href="/" class="brand-logo" aria-label="Marmara Çekici Ana Sayfa">
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
-            <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-tagline">7/24 Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
           </div>
         </a>
 
@@ -703,7 +704,37 @@ function generateServiceHtml(svc) {
             <div class="operator-callout-box">
               <h4>💡 Operatör Notu &amp; Otoyol Güvenlik Tavsiyesi</h4>
               <p>
-                Kuzey Marmara Otoyolu ve TEM güzergahında yolda kaldıysanız güvenliğiniz için araç içinde beklemeyiniz. Dörtlülerinizi yakıp yolcularla birlikte çelik bariyerlerin arkasına geçiniz. <strong>${PHONE}</strong> numaramızdan WhatsApp canlı konumunuzu paylaştığınızda en yakın nöbetçi ekibimiz 10-15 dakikada yanınızda olacaktır.
+                Kuzey Marmara Otoyolu, TEM ve Anadolu Yakası güzergahlarında yolda kaldıysanız güvenliğiniz için araç içinde beklemeyiniz. Dörtlülerinizi yakıp yolcularla birlikte çelik bariyerlerin arkasına geçiniz. <strong>${PHONE}</strong> numaramızdan WhatsApp canlı konumunuzu paylaştığınızda en yakın nöbetçi ekibimiz 10-15 dakikada yanınızda olacaktır.
+              </p>
+            </div>
+
+            <!-- Kart 1.1: 2000+ Karakter Zengin Teknik Standartlar -->
+            <div style="margin-top: 28px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>⚙️</span> ${svc.name} İçin Teknik Donanım, Hidrolik Sistem ve Taşıma Standartları
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(SERVICE_EXTENSIONS[svc.slug] || {}).technicalSpecs || ''}
+              </p>
+            </div>
+
+            <!-- Kart 1.2: Hizmet Aşamaları, Kasko Güvencesi ve Şeffaf Fiyatlandırma -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🛡️</span> 5 Aşamalı Güvenli Hizmet Akışı, Kasko Teminatı &amp; Ödeme Güvencesi
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(SERVICE_EXTENSIONS[svc.slug] || {}).serviceProcessAndWarranty || ''}
+              </p>
+            </div>
+
+            <!-- Kart 1.3: Kalite ve Güvenlik Taahhüdü -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>⚙️</span> Kalite, Ekipman Bakımı ve Sıfır Hasar Taahhüdü
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(SERVICE_EXTENSIONS[svc.slug] || {}).qualityAndSafetyCommitment || ''}
               </p>
             </div>
           </article>
@@ -993,11 +1024,11 @@ function generateServiceHtml(svc) {
     <div class="container footer-grid">
       <div class="footer-col footer-brand">
         <div class="footer-logo">
-          <img src="/images/logo.svg" alt="Kuzey Marmara Çekici Logo" width="44" height="44">
-          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+          <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-top: 15px;">
-          Kuzey Marmara Otoyolu, TEM Otoyolu ve Anadolu Yakası genelinde 7/24 nöbetçi çekici, vinç ve kurtarma filosu. %100 kaskolu, net fiyat garantili kurumsal hizmet.
+          İstanbul Anadolu Yakası, Kocaeli, Kuzey Marmara ve TEM otoyolu genelinde 7/24 nöbetçi çekici, vinç ve kurtarma filosu. %100 kaskolu, net fiyat garantili kurumsal hizmet.
         </p>
         <div style="margin-top: 20px;">
           <a href="tel:${PHONE_RAW}" class="btn btn-call btn-sm">📞 7/24 Acil Çağrı: ${PHONE}</a>
@@ -1043,7 +1074,7 @@ function generateServiceHtml(svc) {
     </div>
 
     <div class="container footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 25px; margin-top: 25px; text-align: center; color: #64748b; font-size: 0.88rem;">
-      <p>&copy; 2026 Kuzey Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
+      <p>&copy; 2026 Marmara Çekici. Tüm hakları saklıdır. 7/24 Kesintisiz Otoyol &amp; Şehir İçi Oto Kurtarma.</p>
     </div>
   </footer>
 
