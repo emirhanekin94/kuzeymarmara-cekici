@@ -386,7 +386,10 @@ function generateArticleHtml(blog) {
   <title>${blog.title}</title>
   <meta name="description" content="${blog.metaDesc}">
   <meta name="keywords" content="${blog.keywords}">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/blog/${blog.slug}.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
+  <link rel="preload" as="image" href="/images/${blog.image}" fetchpriority="high">
   <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -466,7 +469,7 @@ function generateArticleHtml(blog) {
       <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
         
         <div style="border-radius: 14px; overflow: hidden; margin-bottom: 30px;">
-          <img src="/images/${blog.image}" alt="${blog.headline}" width="800" height="450" style="width: 100%; height: auto; display: block;">
+          <img src="/images/${blog.image}" alt="${blog.headline}" width="800" height="450" style="width: 100%; height: auto; display: block;" fetchpriority="high">
         </div>
 
         <p style="font-size: 1.15rem; line-height: 1.85; color: #0f172a; font-weight: 600; margin-bottom: 25px; border-bottom: 1px solid #f1f5f9; padding-bottom: 20px;">
@@ -560,7 +563,9 @@ function generateBlogIndexHtml() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sürücü Rehberi &amp; Otoyol Güvenlik Blogu | Kuzey Marmara Çekici - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Otoyolu ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve elektrikli araç kurtarma rehberleri.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/blog/index.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

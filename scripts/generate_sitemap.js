@@ -81,7 +81,7 @@ Allow: /
 Disallow: /node_modules/
 Disallow: /scripts/
 
-# AI Search & LLM Crawlers (Ajan Tabanlı Arama Optimizasyonu)
+# AI Search & LLM Crawlers (Ajan Tabanlı Arama / GEO Optimizasyonu)
 User-agent: GPTBot
 Allow: /
 
@@ -115,15 +115,27 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
 User-agent: meta-externalagent
 Allow: /
 
-# Sitemap ve Yapılandırılmış Ajan Bilgi Kaynağı
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap ve Yapılandırılmış Ajan Bilgi Kaynakları
 Sitemap: ${DOMAIN}/sitemap.xml
+# LLM Knowledge Bases:
+# ${DOMAIN}/llms.txt
+# ${DOMAIN}/llms-full.txt
 `;
 
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), robotsTxt, 'utf8');
-console.log('✓ robots.txt üretildi (AI arama ajanları izinli)');
+console.log('✓ robots.txt üretildi (AI arama ajanları izinli, llms.txt referanslı)');

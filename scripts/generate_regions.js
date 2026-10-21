@@ -722,7 +722,7 @@ function generateRegionHtml(reg) {
     .map(r => `
       <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 2px 10px rgba(0,0,0,0.03);">
         <div style="height:120px; overflow:hidden; position:relative;">
-          <img src="/images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+          <img src="/images/${r.image}" alt="${r.name} Oto Çekici" width="400" height="200" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div style="padding:14px;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
@@ -763,6 +763,8 @@ function generateRegionHtml(reg) {
   <meta name="keywords" content="${reg.keywords}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/bolgeler/${reg.slug}.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
+  <link rel="preload" as="image" href="/images/${reg.image}" fetchpriority="high">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
@@ -914,7 +916,7 @@ function generateRegionHtml(reg) {
           <!-- Kart 1: Bölgeye Özel Saha Filosu & Yol Analizi -->
           <article class="inner-card-box">
             <div class="inner-media-showcase">
-              <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="800" height="420" loading="eager">
+              <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="800" height="420" loading="eager" fetchpriority="high">
               <div class="inner-media-meta-bar">
                 <span>📍 Lokasyon: ${reg.name} &amp; Çevre Bağlantı Kolları</span>
                 <span>⚡ Nöbet: 7/24 Hazır Kayar Kasa &amp; Vinç Ekibi</span>
@@ -1313,7 +1315,9 @@ function generateIndexHtml() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hizmet Bölgelerimiz | Kuzey Marmara Çekici - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/bolgeler/index.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

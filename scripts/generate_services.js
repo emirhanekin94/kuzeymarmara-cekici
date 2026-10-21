@@ -527,6 +527,8 @@ function generateServiceHtml(svc) {
   <meta name="keywords" content="${svc.keywords}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/hizmetler/${svc.slug}.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
+  <link rel="preload" as="image" href="/images/${svc.image}" fetchpriority="high">
 
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
   <link rel="icon" type="image/webp" href="/images/logo.webp">
@@ -674,7 +676,7 @@ function generateServiceHtml(svc) {
           <!-- Kart 1: Fotoğraflı Hizmet Tanıtımı ve SEO Makalesi -->
           <article class="inner-card-box">
             <div class="inner-media-showcase">
-              <img src="/images/${svc.image}" alt="${svc.name} Filosu" width="800" height="420" loading="eager">
+              <img src="/images/${svc.image}" alt="${svc.name} Filosu" width="800" height="420" loading="eager" fetchpriority="high">
               <div class="inner-media-meta-bar">
                 <span>📍 Hizmet Alanı: Kuzey Marmara &amp; TEM Otoyolu Koridoru</span>
                 <span>⚡ Ekip: Nöbetçi Kayar Kasa &amp; Vinç Filosu</span>
@@ -1089,7 +1091,9 @@ function generateIndexHtml() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oto Çekici ve Yol Yardım Hizmetlerimiz | Kuzey Marmara - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy ve Gebze çevresinde kayar kasa oto çekici, vinç, ahtapot, kapalı otopark, akü takviye ve mobil yol yardım hizmetlerimiz.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/hizmetler/index.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

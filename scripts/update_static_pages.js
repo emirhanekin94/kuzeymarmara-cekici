@@ -99,7 +99,9 @@ function buildHakkimizda() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hakkımızda | Kuzey Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/hakkimizda.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -295,7 +297,9 @@ function buildIletisim() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Kuzey Marmara Çekici - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0533 265 70 89. WhatsApp ile canlı konum gönderin.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/iletisim.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -636,7 +640,9 @@ function buildGaleri() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foto Galeri | Kuzey Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/galeri.html">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

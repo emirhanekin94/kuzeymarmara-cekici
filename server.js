@@ -48,6 +48,15 @@ try {
   // data katmanı henüz üretilmemiş olabilir; sorun değil.
 }
 
+const URL_REDIRECTS = {
+  '/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-secim-rehberi': '/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-rehberi.html',
+  '/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-secim-rehberi.html': '/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-rehberi.html',
+  '/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-2026': '/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-nasil-hesaplanir.html',
+  '/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-2026.html': '/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-nasil-hesaplanir.html',
+  '/blog/otomatik-vites-ve-elektrikli-araclar-nasil-cekilir': '/blog/otomatik-vitesli-ve-elektrikli-araclar-nasil-cekilir.html',
+  '/blog/otomatik-vites-ve-elektrikli-araclar-nasil-cekilir.html': '/blog/otomatik-vitesli-ve-elektrikli-araclar-nasil-cekilir.html'
+};
+
 function safeJoin(root, requestPath) {
   const decoded = decodeURIComponent(requestPath);
   const normalized = path.normalize(decoded).replace(/^(\.\.[/\\])+/, '');
@@ -94,11 +103,13 @@ function cacheHeaders(res, ext) {
   if (IMMUTABLE_EXT.has(ext)) {
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
   } else if (['.css', '.js'].includes(ext)) {
-    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800');
   } else if (ext === '.html') {
-    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
-  } else {
+    res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
+  } else if (['.txt', '.xml'].includes(ext)) {
     res.setHeader('Cache-Control', 'public, max-age=3600');
+  } else {
+    res.setHeader('Cache-Control', 'public, max-age=86400');
   }
 }
 
@@ -180,6 +191,13 @@ function startServer(port) {
     }
 
     const cleanPath = urlPath.length > 1 && urlPath.endsWith('/') ? urlPath.slice(0, -1) : urlPath;
+    if (URL_REDIRECTS[cleanPath] || URL_REDIRECTS[urlPath]) {
+      res.statusCode = 301;
+      res.setHeader('Location', URL_REDIRECTS[cleanPath] || URL_REDIRECTS[urlPath]);
+      res.end();
+      return;
+    }
+
     if (REGION_ALIASES[cleanPath]) {
       urlPath = REGION_ALIASES[cleanPath];
     } else if (REGION_ALIASES[urlPath]) {

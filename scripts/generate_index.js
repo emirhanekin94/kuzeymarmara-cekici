@@ -49,6 +49,7 @@ function generateIndexHtml() {
   <meta name="keywords" content="kuzey marmara çekici, kurtköy çekici, kurtköy oto çekici, kmo çekici, tem otoyolu çekici, gebze çekici, pendik çekici, sabiha gökçen çekici, oto kurtarma, oto çekici, acil oto kurtarıcı, kayar kasa çekici">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/">
+  <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
 
   <!-- Favicon & Logolar -->
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
@@ -128,7 +129,15 @@ function generateIndexHtml() {
           { "@type": "AdministrativeArea", "name": "Sabiha Gökçen Havalimanı" },
           { "@type": "AdministrativeArea", "name": "Tuzla" },
           { "@type": "AdministrativeArea", "name": "Şekerpınar" },
-          { "@type": "AdministrativeArea", "name": "Dilovası" }
+          { "@type": "AdministrativeArea", "name": "Dilovası" },
+          { "@type": "AdministrativeArea", "name": "Sultanbeyli" },
+          { "@type": "AdministrativeArea", "name": "Sancaktepe" },
+          { "@type": "AdministrativeArea", "name": "Kurnaköy - Mecidiye" },
+          { "@type": "AdministrativeArea", "name": "Darıca" },
+          { "@type": "AdministrativeArea", "name": "Ömerli - Reşadiye" },
+          { "@type": "AdministrativeArea", "name": "Kartal" },
+          { "@type": "AdministrativeArea", "name": "Maltepe" },
+          { "@type": "AdministrativeArea", "name": "Körfez - Hereke" }
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -136,7 +145,38 @@ function generateIndexHtml() {
           "reviewCount": "385",
           "bestRating": "5",
           "worstRating": "1"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Kuzey Marmara Çekici ve Yol Yardım Hizmet Kataloğu",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kayar Kasa Oto Çekici", "url": "${DOMAIN}/hizmetler/oto-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Otoyol Acil Oto Kurtarma", "url": "${DOMAIN}/hizmetler/otoyol-oto-kurtarma.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kaza & Vinç Kurtarma", "url": "${DOMAIN}/hizmetler/kaza-vinc-kurtarma.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lüks & Basık Araç Taşıma", "url": "${DOMAIN}/hizmetler/luks-spor-arac-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ahtapot Çekici", "url": "${DOMAIN}/hizmetler/ahtapot-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kapalı Otopark Çekicisi", "url": "${DOMAIN}/hizmetler/kapali-otopark-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ağır Vasıta Çekici", "url": "${DOMAIN}/hizmetler/agir-vasita-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobil Akü Takviye", "url": "${DOMAIN}/hizmetler/yol-yardim-aku-takviye.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobil Lastik Tamiri & Stepne", "url": "${DOMAIN}/hizmetler/yerinde-lastik-yol-yardim.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Motosiklet Çekici & Transfer", "url": "${DOMAIN}/hizmetler/motosiklet-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tekne & Karavan Çekici", "url": "${DOMAIN}/hizmetler/tekne-karavan-cekici.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "7/24 Arıza Yol Yardım", "url": "${DOMAIN}/hizmetler/ariza-yol-yardim.html" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Şehirler Arası Araç Taşıma", "url": "${DOMAIN}/hizmetler/sehirlerarasi-arac-tasima.html" } }
+          ]
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "${DOMAIN}/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "${DOMAIN}/"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -296,8 +336,8 @@ function generateIndexHtml() {
 
           <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
             <div style="font-size: 1.8rem; margin-bottom: 8px;">🏷️</div>
-            <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Net &amp; Sabit Fiyat</strong>
-            <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">Telefonda teyit edilen net fiyat; sonradan sürpriz masraf yok</span>
+            <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">1.500 TL Taban Fiyat</strong>
+            <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">Telefonda teyit edilen net ve sabit fiyat; sonradan sürpriz ek masraf yok</span>
           </div>
 
           <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
@@ -430,6 +470,78 @@ function generateIndexHtml() {
             </div>
           </div>
 
+        </div>
+
+        <!-- Ek 7/24 Profesyonel Yol Yardım ve Destek Hizmetleri -->
+        <div style="margin-top: 40px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 18px; padding: 30px 25px;">
+          <div style="text-align: center; margin-bottom: 22px;">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a; margin: 0 0 6px;">
+              Diğer 7/24 Acil Yol Yardım ve Özel Taşıma Hizmetlerimiz
+            </h3>
+            <p style="font-size: 0.9rem; color: #64748b; margin: 0;">
+              Yerinde akü takviyesi, lastik onarımı, ağır vasıta çekimi ve şehirler arası güvenli araç transferi.
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+            
+            <a href="/hizmetler/yol-yardim-aku-takviye.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🔋</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Mobil Akü Takviye</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">12V/24V Dijital Booster ile yerinde güvenli marş basma.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/yerinde-lastik-yol-yardim.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🛞</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Mobil Lastik Tamiri &amp; Stepne</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">Otoyol emniyet şeridinde fitil tamiri ve stepne montajı.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/agir-vasita-cekici.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🚛</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Ağır Vasıta &amp; Tır Çekici</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">Kamyon, otobüs, tır ve minibüs çift çeker gözlüklü kurtarma.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/motosiklet-cekici.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🏍️</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Motosiklet Çekici</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">Özel ön teker kilit sehpası ve devrilmez askılı transfer.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/tekne-karavan-cekici.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🚤</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Tekne &amp; Karavan Çekici</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">Çeki demirli ve römorklu araçların kaskolu taşınması.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/sehirlerarasi-arac-tasima.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🗺️</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">Şehirler Arası Araç Taşıma</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">İstanbul, Ankara, Kocaeli, Bursa kaskolu toplu ve tekli nakliyat.</span>
+              </div>
+            </a>
+
+            <a href="/hizmetler/ariza-yol-yardim.html" style="background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; text-decoration:none; display:flex; align-items:center; gap:14px; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+              <span style="font-size: 1.8rem;">🔧</span>
+              <div>
+                <strong style="color:#0f172a; font-size:0.95rem; display:block;">7/24 Arıza Yol Yardım</strong>
+                <span style="color:#64748b; font-size:0.8rem; line-height:1.3; display:block;">Yerinde arıza tespiti, sigorta değişimi ve acil mobil tamir desteği.</span>
+              </div>
+            </a>
+
+          </div>
         </div>
 
         <div style="text-align: center; margin-top: 35px;">

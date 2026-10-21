@@ -1,62 +1,89 @@
-# Kuzey Marmara Çekici — Tam İçerik Haritası
+# Kuzey Marmara Çekici — Kapsamlı Ajan & RAG Bilgi Bankası (LLMs Full)
 
-## İşletme Bilgileri
+## 1. Kurumsal Kimlik & Genel Bakış
 - Marka: Kuzey Marmara Çekici (Kuzey Marmara Oto Kurtarma & Yol Yardım)
 - Slogan: 7/24 En Yakın Acil Oto Çekici
-- Telefon: 0533 265 70 89
-- WhatsApp: 0533 265 70 89
+- 7/24 Doğrudan Acil Çağrı: 0533 265 70 89
+- WhatsApp Destek & Konum İletişimi: 0533 265 70 89
 - E-posta: info@kuzeymarmaracekici.com
-- Çalışma Saatleri: 7 Gün 24 Saat Kesintisiz
-- Ortalama İntikal Süresi: 10 - 15 Dakika
-- Adres: Kurtköy Mahallesi, Kuzey Marmara Otoyolu Bağlantı Yolu No:1, Pendik/İstanbul
-- Hizmet Bölgesi: Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Çayırova, Gebze, Sabiha Gökçen Havalimanı, Tuzla, Şekerpınar, Dilovası, Sultanbeyli, Sancaktepe, Kurnaköy, Mecidiye, Ömerli, Reşadiye, Darıca
+- Resmi Web Sitesi: https://www.kuzeymarmaracekici.com/
+- Çalışma Saatleri: 7/24 (365 gün, resmi tatiller dahil kesintisiz)
+- Merkez Konuşlanma: Kurtköy Mahallesi, Kuzey Marmara Otoyolu Bağlantı Yolu No:1, Pendik/İstanbul
+- Coğrafi Koordinatlar: Enlem 40.9126, Boylam 29.3142 (Kurtköy Kavşağı)
+- Taban Başlangıç Ücreti: 1.500 TL
+- Ortalama İntikal Süresi: 10 ila 15 Dakika
 
-## Ana Sayfalar
+## 2. Temel Sayfalar
 - [Ana Sayfa](https://www.kuzeymarmaracekici.com/)
-- [Hakkımızda](https://www.kuzeymarmaracekici.com/hakkimizda)
-- [İletişim](https://www.kuzeymarmaracekici.com/iletisim)
-- [Galeri](https://www.kuzeymarmaracekici.com/galeri)
-- [Tüm Bölgeler](https://www.kuzeymarmaracekici.com/bolgeler/)
-- [Tüm Hizmetler](https://www.kuzeymarmaracekici.com/hizmetler/)
-- [Blog](https://www.kuzeymarmaracekici.com/blog/)
+- [Hakkımızda](https://www.kuzeymarmaracekici.com/hakkimizda.html)
+- [İletişim](https://www.kuzeymarmaracekici.com/iletisim.html)
+- [Galeri](https://www.kuzeymarmaracekici.com/galeri.html)
+- [Tüm Hizmetler Dizin](https://www.kuzeymarmaracekici.com/hizmetler/index.html)
+- [Tüm Bölgeler Dizin](https://www.kuzeymarmaracekici.com/bolgeler/index.html)
+- [Sürücü Rehberi Blog](https://www.kuzeymarmaracekici.com/blog/index.html)
 
-## Hizmet Bölgeleri (18)
-- [Kuzey Marmara Otoyolu (KMO) Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kuzey-marmara-otoyolu-oto-cekici) — Kuzey Marmara Otoyolu'nun tüm viyadük, tünel ve gişe hattında 7/24 acil oto çekici ve kurtarma hizmeti. 10-15 dakikada yanınızdayız, kaskolu taşıma garantisi.
-- [Kurtköy Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurtkoy-oto-cekici) — Kurtköy, Viaport, Yenişehir ve Çamlık bölgesinde 7/24 acil oto çekici. 10-15 dakikada yanınızda, %100 kaskolu taşıma, sabit fiyat garantisi. Hemen Ara: 0533 265 70 89.
-- [Pendik Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/pendik-oto-cekici) — Pendik Merkez, Kaynarca, Velibaba ve E-5 hattında 7/24 oto çekici hizmeti. 10-15 dakikada yanınızda, sabit fiyat ve kaskolu taşıma garantisi.
-- [Çayırova Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/cayirova-oto-cekici) — Çayırova, Şekerpınar otoban girişi ve Akse Mahallesi'nde 7/24 oto çekici ve yol yardım hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Gebze Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/gebze-oto-cekici) — Gebze Merkez, Gebze OSB, Barış Mah ve Eskihisar yolunda 7/24 oto çekici ve yol yardım. 10-15 dakika intikal, kaskolu taşıma garantisi.
-- [Sabiha Gökçen Havalimanı Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sabiha-gokcen-oto-cekici) — Sabiha Gökçen Havalimanı giriş-çıkış, kargo alanı ve çevresinde 7/24 oto çekici ve yol yardım. Uçuşunuzu kaçırmayın, 10-15 dakikada yanınızdayız.
-- [TEM Otoyolu Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tem-otoyolu-oto-cekici) — TEM Otoyolu Kurtköy-Gebze koridorunda 7/24 acil oto çekici ve kurtarma hizmeti. Dinlenme tesisleri ve gişe çevresinde 10-15 dakika intikal.
-- [Tuzla Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tuzla-oto-cekici) — Tuzla İçmeler, Aydınlı, Tepeören, Deri OSB ve Formula 1 yolunda 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Şekerpınar Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sekerpinar-oto-cekici) — Şekerpınar gişeleri, lojistik depolar ve KMO-TEM kesişim noktasında 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Dilovası Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/dilovasi-oto-cekici) — Dilovası viyadüğü, Mermerciler OSB ve Osmangazi Köprüsü çıkışında 7/24 oto çekici hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
-- [Sultanbeyli Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sultanbeyli-oto-cekici) — Sultanbeyli TEM ve KMO Paşaköy bağlantı koridorunda 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Sancaktepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sancaktepe-oto-cekici) — Sancaktepe, Samandıra gişeleri ve Paşaköy ayrımında 7/24 oto çekici hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
-- [Kurnaköy-Mecidiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurnakoy-mecidiye-oto-cekici) — KMO Kurnaköy gişeleri ve Mecidiye dinlenme tesisi çevresinde 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Ömerli-Reşadiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/omerli-resadiye-oto-cekici) — KMO Ömerli Barajı çevresi ve Reşadiye gişeleri bölgesinde 7/24 oto çekici hizmeti. Orman yolu dahil 10-15 dakika intikal.
-- [Darıca Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/darica-oto-cekici) — Darıca sahil, Bayramoğlu ve Gebze-Eskihisar bağlantısında 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
-- [Kartal Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kartal-oto-cekici) — Kartal, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 oto çekici ve kurtarma hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
-- [Maltepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/maltepe-oto-cekici) — Maltepe, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto çekici. 10-15 dk varış, %100 kaskolu taşıma.
-- [Körfez & Hereke Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/korfez-hereke-oto-cekici) — Körfez, Hereke Tünelleri, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici, ağır vasıta ve yol yardım hizmeti. 10-15 dk varış: 0533 265 70 89.
+## 3. Hizmet Kataloğu (13 Kapsamlı Hizmet)
+- [Kayar Kasa Oto Çekici](https://www.kuzeymarmaracekici.com/hizmetler/oto-cekici.html) — Binek otomobil, crossover ve SUV araçlarınız için hidrolik kayar kasa çekici. Sıfır hasar garantisi, %100 taşıma kaskosu, 10-15 dk intikal: 0533 265 70 89.
+- [Otoyol Acil Oto Kurtarma (KMO & TEM)](https://www.kuzeymarmaracekici.com/hizmetler/otoyol-oto-kurtarma.html) — Kuzey Marmara Otoyolu ve TEM Otoyolu acil çekici ve kurtarma servisi. Gişeler, viyadükler ve dinlenme tesislerinde 7/24 hızlı intikal: 0533 265 70 89.
+- [Kaza & Ağır Hizmet Vinç Kurtarma](https://www.kuzeymarmaracekici.com/hizmetler/kaza-vinc-kurtarma.html) — Şarampol, devrilme, bariyer sıkışması ve kilitli araç durumlarında vinçli oto kurtarma. Kuzey Marmara ve TEM hattında 7/24 acil müdahale: 0533 265 70 89.
+- [Lüks & Spor Basık Araç Taşıma](https://www.kuzeymarmaracekici.com/hizmetler/luks-spor-arac-cekici.html) — Porsche, Ferrari, Tesla, BMW M, Mercedes AMG ve basık spor araçlar için sıfır dereceli rampa uzantılı özel çekici. Tam kaskolu: 0533 265 70 89.
+- [Ahtapot Çekici (4 Tekerden Askılı Vinç)](https://www.kuzeymarmaracekici.com/hizmetler/ahtapot-cekici.html) — Şanzımanı kilitli, el freni takılı veya sıkışık park halindeki araçlar için 4 tekerden askılı ahtapot çekici. Sıfır mekanik hasar: 0533 265 70 89.
+- [Kapalı Otopark Çekicisi (Alçak Tavan)](https://www.kuzeymarmaracekici.com/hizmetler/kapali-otopark-cekici.html) — AVM, rezidans ve site kapalı otoparklarına girebilen alçak tavanlı özel kurtarıcı. 1.90m - 2.10m tavan yüksekliği uyumlu: 0533 265 70 89.
+- [Ağır Vasıta, Kamyon & Tır Kurtarma](https://www.kuzeymarmaracekici.com/hizmetler/agir-vasita-cekici.html) — Kuzey Marmara Otoyolu ve TEM koridorunda kamyon, tır, otobüs ve hafif ticari araçlar için 7/24 ağır vasıta çekici ve kurtarıcı: 0533 265 70 89.
+- [Mobil Akü Takviye & Şarj Yol Yardım](https://www.kuzeymarmaracekici.com/hizmetler/yol-yardim-aku-takviye.html) — Yerinde akü takviyesi ve acil yol yardım. Kurtköy, Gebze, Pendik, KMO ve TEM hattında 12V/24V taşınabilir booster ile marş basma: 0533 265 70 89.
+- [Mobil Lastik Tamiri & Stepne Değişimi](https://www.kuzeymarmaracekici.com/hizmetler/yerinde-lastik-yol-yardim.html) — Otoyolda ve şehir içinde yerinde lastik tamiri, fitil uygulaması, hava desteği ve stepne montajı. 7/24 acil mobil lastikçi: 0533 265 70 89.
+- [Motosiklet Çekici & Özel Taşıma](https://www.kuzeymarmaracekici.com/hizmetler/motosiklet-cekici.html) — Scooter, racing, touring ve chopper motosikletler için özel ön tekerlek sabitleme sehpası ve sarsıntısız motosiklet çekici: 0533 265 70 89.
+- [Tekne & Karavan Çekici (Römork Transfer)](https://www.kuzeymarmaracekici.com/hizmetler/tekne-karavan-cekici.html) — Karavan, tekne, bot, tiny house ve özel römorklu araçlar için çeki demirli ve kayar kasa profesyonel transfer desteği: 0533 265 70 89.
+- [Mekanik & Elektrik Arıza Yol Yardım](https://www.kuzeymarmaracekici.com/hizmetler/ariza-yol-yardim.html) — Yolda stop eden, hararet yapan, yakıtı biten veya elektrik arızası veren araçlar için yerinde hızlı tespit ve mobil müdahale: 0533 265 70 89.
+- [Şehirler Arası Araç Taşıma & Nakliyat](https://www.kuzeymarmaracekici.com/hizmetler/sehirlerarasi-arac-tasima.html) — İstanbul ve Kocaeli çıkışlı Ankara, İzmir, Bursa, Antalya ve tüm Türkiye illerine kaskolu tekli ve çoklu şehirler arası araç nakliyatı: 0533 265 70 89.
 
-## Hizmetler (9)
-- [Kayar Kasa Oto Çekici](https://www.kuzeymarmaracekici.com/hizmetler/oto-cekici) — Binek, SUV ve hafif ticari araçlar için hidrolik kayar platform ile sıfır hasar oto çekici hizmeti. 7/24, kaskolu taşıma, sabit fiyat.
-- [Kuzey Marmara & TEM Otoyol Acil Kurtarıcı](https://www.kuzeymarmaracekici.com/hizmetler/otoyol-oto-kurtarma) — Kuzey Marmara ve TEM Otoyolu üzerinde acil oto kurtarma hizmeti. Otoban hız şeridi güvenlik önlemleri, bariyer ve tünel tahliyeleri.
-- [Kaza & Ağır Hizmet Vinç Kurtarma](https://www.kuzeymarmaracekici.com/hizmetler/kaza-vinc-kurtarma) — Şarampol, devrilme, aks kırığı ve kilitli araç vinçleme hizmeti. Ağır hizmet vinç ekipmanıyla 7/24 kaza kurtarma.
-- [Lüks & Basık Araç Taşıma](https://www.kuzeymarmaracekici.com/hizmetler/luks-spor-arac-cekici) — Sıfır açılı rampa aparatı ile Porsche, Ferrari, Tesla, BMW M gibi basık araçlar için jant korumalı, hasarsız çekici hizmeti.
-- [Kamyon, Tır, Otobüs & Minibüs Çekici](https://www.kuzeymarmaracekici.com/hizmetler/agir-vasita-cekici) — Kamyon, tır, otobüs ve minibüs için çift çeker gözlüklü ve körüklü ağır kurtarıcı sistemleriyle 7/24 ağır vasıta çekici hizmeti.
-- [Mobil Akü Takviye & Yol Yardım](https://www.kuzeymarmaracekici.com/hizmetler/yol-yardim-aku-takviye) — 12V/24V endüstriyel dijital booster ile yerinde mobil akü takviye ve yol yardım hizmeti. 7/24, hızlı ve güvenli marş basma.
-- [Mobil Lastik Tamiri & Stepne Değişimi](https://www.kuzeymarmaracekici.com/hizmetler/yerinde-lastik-yol-yardim) — Otoyolda emniyetli lastik fitil, kompresör hava desteği ve stepne montajı. 7/24 mobil lastik tamiri ve yol yardım hizmeti.
-- [Motosiklet Çekici & Transfer](https://www.kuzeymarmaracekici.com/hizmetler/motosiklet-cekici) — Motosikletler için özel ön teker kilit sehpası ve 4 noktadan gergili askı sistemiyle sarsıntısız, hasarsız çekici hizmeti.
-- [Şehirler Arası Araç Taşıma & Nakliyat](https://www.kuzeymarmaracekici.com/hizmetler/sehirlerarasi-arac-tasima) — Kocaeli-İstanbul-Ankara-Bursa hattında çoklu ve tekli kaskolu araç transferi. Şehirler arası güvenli nakliyat hizmeti.
+## 4. Bölgesel Operasyon Alanı (18 Bölge)
+- [Kuzey Marmara Otoyolu Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Kuzey Marmara Otoyolu'nun tüm viyadük, tünel ve gişe hattında 7/24 acil oto çekici ve kurtarma hizmeti. 10-15 dakikada yanınızdayız, kaskolu taşıma garantisi.
+- [Kurtköy Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurtkoy-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Kurtköy, Viaport, Yenişehir ve Çamlık bölgesinde 7/24 acil oto çekici. 10-15 dakikada yanınızda, %100 kaskolu taşıma, sabit fiyat garantisi. Hemen Ara: 0533 265 70 89.
+- [Pendik Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/pendik-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Pendik Merkez, Kaynarca, Velibaba ve E-5 hattında 7/24 oto çekici hizmeti. 10-15 dakikada yanınızda, sabit fiyat ve kaskolu taşıma garantisi.
+- [Çayırova Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/cayirova-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Çayırova, Şekerpınar otoban girişi ve Akse Mahallesi'nde 7/24 oto çekici ve yol yardım hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Gebze Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/gebze-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Gebze Merkez, Gebze OSB, Barış Mah ve Eskihisar yolunda 7/24 oto çekici ve yol yardım. 10-15 dakika intikal, kaskolu taşıma garantisi.
+- [Sabiha Gökçen Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sabiha-gokcen-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Sabiha Gökçen Havalimanı giriş-çıkış, kargo alanı ve çevresinde 7/24 oto çekici ve yol yardım. Uçuşunuzu kaçırmayın, 10-15 dakikada yanınızdayız.
+- [TEM Otoyolu Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tem-otoyolu-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | TEM Otoyolu Kurtköy-Gebze koridorunda 7/24 acil oto çekici ve kurtarma hizmeti. Dinlenme tesisleri ve gişe çevresinde 10-15 dakika intikal.
+- [Tuzla Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tuzla-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Tuzla İçmeler, Aydınlı, Tepeören, Deri OSB ve Formula 1 yolunda 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Şekerpınar Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sekerpinar-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Şekerpınar gişeleri, lojistik depolar ve KMO-TEM kesişim noktasında 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Dilovası Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/dilovasi-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Dilovası viyadüğü, Mermerciler OSB ve Osmangazi Köprüsü çıkışında 7/24 oto çekici hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
+- [Sultanbeyli Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sultanbeyli-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Sultanbeyli TEM ve KMO Paşaköy bağlantı koridorunda 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Sancaktepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sancaktepe-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Sancaktepe, Samandıra gişeleri ve Paşaköy ayrımında 7/24 oto çekici hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
+- [Kurnaköy-Mecidiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurnakoy-mecidiye-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | KMO Kurnaköy gişeleri ve Mecidiye dinlenme tesisi çevresinde 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Ömerli-Reşadiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/omerli-resadiye-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | KMO Ömerli Barajı çevresi ve Reşadiye gişeleri bölgesinde 7/24 oto çekici hizmeti. Orman yolu dahil 10-15 dakika intikal.
+- [Darıca Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/darica-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Darıca sahil, Bayramoğlu ve Gebze-Eskihisar bağlantısında 7/24 oto çekici hizmeti. 10-15 dakika intikal, sabit fiyat garantisi.
+- [Kartal Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kartal-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Kartal, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 oto çekici ve kurtarma hizmeti. 10-15 dakika intikal, kaskolu taşıma garantisi.
+- [Maltepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/maltepe-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Maltepe, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto çekici. 10-15 dk varış, %100 kaskolu taşıma.
+- [Körfez & Hereke Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/korfez-hereke-oto-cekici.html) — Varış: ⏱️ undefined | Noktalar: undefined | Körfez, Hereke Tünelleri, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici, ağır vasıta ve yol yardım hizmeti. 10-15 dk varış: 0533 265 70 89.
 
-## Blog Yazıları (5)
-- [Otoyolda Araç Arızalandığında Yapılması Gerekenler](https://www.kuzeymarmaracekici.com/blog/otoyolda-arac-arizalandiginda-yapilmasi-gerekenler) — Otoyolda arıza yaptığınızda reflektör kaç metreye konur, emniyet şeridinde nasıl güvende kalınır ve çekici çağırırken konum nasıl paylaşılır? Adım adım rehber.
-- [Kuzey Marmara Otoyolu Çekici Fiyatları 2026](https://www.kuzeymarmaracekici.com/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-2026) — Kuzey Marmara Otoyolu çekici fiyatı nasıl hesaplanır? 2026 güncel taban fiyat, km başına ücret ve sabit fiyat garantisinin önemi.
-- [Otomatik Vites ve Elektrikli Araçlar Nasıl Çekilir?](https://www.kuzeymarmaracekici.com/blog/otomatik-vites-ve-elektrikli-araclar-nasil-cekilir) — Otomatik şanzımanlı ve elektrikli araçlar neden halatla çekilmez? Tesla Transport Mode, batarya kilidi ve kayar kasa vinç farkı anlatıldı.
-- [Akü Neden Aniden Biter, Takviye Nasıl Yapılır?](https://www.kuzeymarmaracekici.com/blog/aku-neden-aniden-biter-takviye-nasil-yapilir) — Kışın ve yazın akü ömrü, start-stop AGM/EFB akü tipleri, yanlış takviyede ECU yanma riski ve dijital booster avantajları.
-- [Kurtköy ve Gebze'de En Yakın Oto Çekici Seçim Rehberi](https://www.kuzeymarmaracekici.com/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-secim-rehberi) — Kurtköy ve Gebze sanayi bölgelerinde korsan çekiciden korunma, taşıma kaskosu ve yetki belgesi sorgulama rehberi.
+## 5. Teknik Dokümanlar & Sürücü Rehberleri (5 Makale)
+- [Otoyolda Araç Arızalandığında Yapılması Gerekenler](https://www.kuzeymarmaracekici.com/blog/otoyolda-arac-arizalandiginda-yapilmasi-gerekenler.html) — Otoyolda arıza yaptığınızda reflektör kaç metreye konur, emniyet şeridinde nasıl güvende kalınır ve çekici çağırırken konum nasıl paylaşılır? Adım adım rehber.
+- [Kuzey Marmara Otoyolu Çekici Fiyatları 2026](https://www.kuzeymarmaracekici.com/blog/kuzey-marmara-otoyolu-cekici-fiyatlari-2026.html) — Kuzey Marmara Otoyolu çekici fiyatı nasıl hesaplanır? 2026 güncel taban fiyat, km başına ücret ve sabit fiyat garantisinin önemi.
+- [Otomatik Vites ve Elektrikli Araçlar Nasıl Çekilir?](https://www.kuzeymarmaracekici.com/blog/otomatik-vites-ve-elektrikli-araclar-nasil-cekilir.html) — Otomatik şanzımanlı ve elektrikli araçlar neden halatla çekilmez? Tesla Transport Mode, batarya kilidi ve kayar kasa vinç farkı anlatıldı.
+- [Akü Neden Aniden Biter, Takviye Nasıl Yapılır?](https://www.kuzeymarmaracekici.com/blog/aku-neden-aniden-biter-takviye-nasil-yapilir.html) — Kışın ve yazın akü ömrü, start-stop AGM/EFB akü tipleri, yanlış takviyede ECU yanma riski ve dijital booster avantajları.
+- [Kurtköy ve Gebze'de En Yakın Oto Çekici Seçim Rehberi](https://www.kuzeymarmaracekici.com/blog/kurtkoy-ve-gebze-en-yakin-oto-cekici-secim-rehberi.html) — Kurtköy ve Gebze sanayi bölgelerinde korsan çekiciden korunma, taşıma kaskosu ve yetki belgesi sorgulama rehberi.
 
-## Fiyat Politikası
-Şeffaf km tarifesi, telefonda teyit edilen sabit fiyat garantisi, sürpriz ek ücret yok. Kredi Kartı / Mobil POS ve FAST geçerli. %100 Emtia Nakliyat Taşıma Kaskosu, KTK Yetki Belgeli Uzman Operatörler, Sıfır Hasar Garantisi.
+## 6. Araç Tiplerine Göre Operasyonel Protokoller
+### 6.1. Elektrikli Araçlar (EV - Tesla, TOGG, Porsche Taycan, Mercedes EQ, BMW i)
+- Elektrikli araçlarda tekerlekler döndükçe elektrik motorları jeneratör gibi akım üreterek batarya ve inverter devrelerine geri besleme yapar. Bu nedenle elektrikli araçlar kesinlikle halatla veya iki tekerlek havada çekilmez; mutlaka 4 tekerlek tamamen platform üzerinde olacak şekilde (flatbed) taşınmalıdır.
+- Yükleme öncesinde aracın multimedya ekranından 'Çekme Modu' (Transport Mode / Tow Mode) aktif edilerek elektronik el freni ve şanzıman kilidi serbest bırakılır.
+- Ekiplerimiz özel tekstil sabitleme kemerleri kullanarak jantları ve batarya muhafazasını çizilme veya darbelerden %100 korur.
+
+### 6.2. Lüks, Basık ve Spor Otomobiller
+- Yerden yüksekliği düşük veya modifiyeli spor araçlarda standart rampa açısı tampon, intercooler ve karter korumayı zedeler.
+- Filomuzda bulunan 'Sıfır Dereceli Rampa Aparatı' (ultra alçak açı platform uzantısı) kullanılarak araç yatay düzleme paralel olarak platforma alınır.
+- Jant koruma pedleri sayesinde pahalı alüminyum/karbon alaşımlı jantlarda en ufak deformasyon engellenir.
+
+### 6.3. Kapalı Otopark ve Bodrum Kat Kurtarma
+- Viaport Asia, metro otoparkları, siteler ve rezidansların -1, -2, -3. kat bodrumlarında tavan yükseklikleri genellikle 1.90m - 2.05m aralığındadır.
+- Standart çekiciler bu alanlara giremez. Filomuzdaki özel alçak kabinli 1.95m hidrolik gözlüklü kurtarıcılarımızla bodrum otoparklarından tekerlekten askılı çekim sağlanır.
+
+### 6.4. Kaza ve Ağır Hasar Vinç Tahliyesi
+- Şarampole yuvarlanma, bariyer üstüne oturma, devrilme veya aks kırığı durumlarında çift tamburlu hidrolik vinç sistemlerimiz devreye girer.
+- Dönmeyen veya kilitli tekerlekler altına özel tekerlek pateni (dolly skate) yerleştirilerek araç zeminle sürtünmeden kontrollü şekilde platforma çekilir.
+
+## 7. Fiyatlandırma ve Güvence Esasları
+- Sabit Fiyat İlkesi: Çağrı merkezimizle telefonda paylaştığınız konum ve araç durumuna göre bağlayıcı ve kesin fiyat bildirilir. Sahada hava durumu, saat veya trafik bahanesiyle ek ücret çıkarılmaz.
+- %100 Kasko Güvencesi: Araç çekici platformuna bağlandığı andan varış noktasındaki teslim tutanağına kadar 1.000.000 TL teminatlı Emtia Nakliyat Taşıma Sigortası korumasındadır.
+- Ödeme Kolaylığı: Araç başında Mobil POS ile tüm banka kredi kartlarına tek çekim ve taksit uygulanır; FAST ve IBAN ile anında transfer kabul edilir.
