@@ -10,7 +10,7 @@
 - Çalışma Saatleri: 7/24 (365 gün, resmi tatiller dahil kesintisiz)
 - Merkez Konuşlanma: Kurtköy Mahallesi, Kuzey Marmara Otoyolu Bağlantı Yolu No:1, Pendik/İstanbul
 - Coğrafi Koordinatlar: Enlem 40.9126, Boylam 29.3142 (Kurtköy Kavşağı)
-- Taban Başlangıç Ücreti: 1.500 TL
+- Fiyatlandırma: Telefonda Net Sabit Fiyat Sözü
 - Ortalama İntikal Süresi: 10 ila 15 Dakika
 
 ## 2. Temel Sayfalar

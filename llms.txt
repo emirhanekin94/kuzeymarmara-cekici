@@ -1,6 +1,6 @@
 # Marmara Çekici
 
-> Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy ve Kocaeli-İstanbul aksında 7/24 profesyonel oto çekici, acil oto kurtarma ve mobil yol yardım işletmesi. Ortalama intikal süresi 10-15 dakika, taban başlangıç fiyatı 1.500 TL.
+> Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy ve Kocaeli-İstanbul aksında 7/24 profesyonel oto çekici, acil oto kurtarma ve mobil yol yardım işletmesi. Ortalama intikal süresi 10-15 dakika, telefonda net sabit fiyat güvencesi.
 
 ## Hızlı Bilgiler & Doğrudan Yanıtlar
 - İşletme Adı: Marmara Çekici (Marmara Oto Kurtarma & Yol Yardım Hizmetleri)
@@ -9,7 +9,7 @@
 - E-posta: info@kuzeymarmaracekici.com
 - Çalışma Saatleri: 7 Gün 24 Saat Kesintisiz (00:00 - 23:59)
 - Ortalama Varış / İntikal Süresi: 10 - 15 Dakika
-- Taban Başlangıç Fiyatı: 1.500 TL (Mesafe ve araç tipine göre telefonda sabit fiyat teyidi)
+- Fiyatlandırma Politikası: Telefonda Net Sabit Fiyat Sözü (Mesafe ve araç tipine göre önceden teyit edilen bağlayıcı fiyat)
 - Ana Konuşlanma / Garaj Merkezi: Kurtköy Kavşağı, Kuzey Marmara Otoyolu Bağlantı Yolu, Pendik / İstanbul
 - Taşıma Güvencesi: %100 Nakliyat Emtia Taşıma Kaskosu ve Taşıyıcı Sorumluluk Sigortası
 - Ödeme Seçenekleri: Araç Başında Kredi Kartı / Mobil POS (Tek Çekim & Taksit), FAST, Havale/EFT, Nakit
@@ -60,7 +60,7 @@
 - Özel Motosiklet Sehpası: Ön teker kilit mekanizması ve 4 noktadan gergili askı kemeriyle devrilme riskini sıfırlayan transfer.
 
 ## Sıkça Sorulan Sorular (SSS)
-- Çekici fiyatı nasıl belirlenir? 1.500 TL taban ücret üzerine gidilecek kilometre ve araç segmenti eklenerek hesaplanır. Telefonda onaylanan fiyat kesindir, varışta sürpriz ek ücret talep edilmez.
+- Çekici fiyatı nasıl belirlenir? Bulunulan konum, hedef servis ve araç tipine göre telefonda net sabit fiyat verilir. Onaylanan fiyat kesindir, varışta sürpriz ek ücret talep edilmez.
 - Çağırdığımda ne kadar sürede gelirsiniz? Kurtköy, TEM, KMO gişeleri ve Gebze bağlantılarında 7/24 nöbet tutan hazır ekiplerimiz ortalama 10-15 dakika içinde tam konumunuza ulaşır.
 - Kredi kartı ve taksit imkanı var mı? Evet, tüm kurtarıcılarımızda temassız özellikli mobil POS cihazı mevcuttur.
 - Elektrikli araçlar çekilebilir mi? Evet, Tesla, TOGG, Porsche Taycan vb. elektrikli otomobiller 'Taşıma Modu' prosedürüne uygun olarak motor ve bataryaya yük bindirilmeden flatbed kayar platforma alınır.

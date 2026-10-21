@@ -172,29 +172,29 @@ const blogs = [
             <tr>
               <th style="padding:14px; text-align:left;">Güzergah / İstikamet</th>
               <th style="padding:14px; text-align:left;">Mesafe (Ortalama)</th>
-              <th style="padding:14px; text-align:left;">Tahmini Fiyat Bandı</th>
+              <th style="padding:14px; text-align:left;">Fiyat Politikası</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom:1px solid #f1f5f9;">
               <td style="padding:12px 14px; font-weight:700;">Kurtköy Viaport → Pendik Sanayi</td>
               <td style="padding:12px 14px;">8 - 10 km</td>
-              <td style="padding:12px 14px; color:#ea580c; font-weight:800;">600 - 850 TL</td>
+              <td style="padding:12px 14px; color:#059669; font-weight:800;">Telefonda Sabit Fiyat Sözü</td>
             </tr>
             <tr style="border-bottom:1px solid #f1f5f9; background:#f8fafc;">
               <td style="padding:12px 14px; font-weight:700;">KMO Gişeler → Tuzla Deri OSB</td>
               <td style="padding:12px 14px;">14 - 16 km</td>
-              <td style="padding:12px 14px; color:#ea580c; font-weight:800;">800 - 1100 TL</td>
+              <td style="padding:12px 14px; color:#059669; font-weight:800;">Telefonda Sabit Fiyat Sözü</td>
             </tr>
             <tr style="border-bottom:1px solid #f1f5f9;">
               <td style="padding:12px 14px; font-weight:700;">TEM Şekerpınar → Gebze Küçük Sanayi</td>
               <td style="padding:12px 14px;">10 - 12 km</td>
-              <td style="padding:12px 14px; color:#ea580c; font-weight:800;">700 - 950 TL</td>
+              <td style="padding:12px 14px; color:#059669; font-weight:800;">Telefonda Sabit Fiyat Sözü</td>
             </tr>
             <tr style="border-bottom:1px solid #f1f5f9; background:#f8fafc;">
               <td style="padding:12px 14px; font-weight:700;">Sabiha Gökçen → Kartal Yetkili Servis</td>
               <td style="padding:12px 14px;">18 - 20 km</td>
-              <td style="padding:12px 14px; color:#ea580c; font-weight:800;">1000 - 1400 TL</td>
+              <td style="padding:12px 14px; color:#059669; font-weight:800;">Telefonda Sabit Fiyat Sözü</td>
             </tr>
           </tbody>
         </table>
@@ -228,7 +228,7 @@ const blogs = [
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">1. Otomatik Vitesli Araçlar Neden Halatla Çekilmez?</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Otomatik şanzımanlarda yağlama yapan hidrolik pompa, doğrudan motorun çalışmasına bağlıdır. Motor kapalıyken araç tekerlekleri döndürüldüğünde şanzıman içindeki dişliler ve kavramalar yağsız şekilde döner. Sadece 1-2 kilometre bile halatla çekilse aşırı sürtünmeden dolayı dişliler kaynar ve 150.000 TL'yi aşan şanzıman revizyon masrafı çıkar.
+        Otomatik şanzımanlarda yağlama yapan hidrolik pompa, doğrudan motorun çalışmasına bağlıdır. Motor kapalıyken araç tekerlekleri döndürüldüğünde şanzıman içindeki dişliler ve kavramalar yağsız şekilde döner. Sadece 1-2 kilometre bile halatla çekilse aşırı sürtünmeden dolayı dişliler kaynar ve yüz binlerce lirayı aşan şanzıman revizyon masrafı çıkar.
       </p>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
         Bu nedenle otomatik vitesli araçlar <strong>mutlaka 4 tekerleği de yerle teması kesilerek</strong> hidrolik kayar kasa çekici üzerinde taşınmalıdır.
@@ -338,7 +338,7 @@ const blogs = [
       </p>
     `,
     faqs: [
-      { q: 'Kurtköy ve Gebze\'de çekici ücreti ne kadardır?', a: 'Mesafe, aracın sınıfı ve teslim noktasına göre ortalama 600 - 950 TL bandında sabit fiyat geçerlidir.' },
+      { q: 'Kurtköy ve Gebze\'de çekici ücreti ne kadardır?', a: 'Mesafe, aracın sınıfı ve teslim noktasına göre telefonda net ve bağlayıcı sabit fiyat teyidi verilir; sonradan ek sürpriz masraf çıkarılmaz.' },
       { q: 'Aracım taşınırken kaskolu mudur?', a: 'Evet, Kuzey Marmara Çekici ile yapılan her operasyon %100 nakliyat emtia sigortalıdır.' },
       { q: 'Fatura alabilir miyim?', a: 'Evet, kaskodan geri ödeme alabilmeniz için resmi kurumsal e-arşiv fatura düzenlenir.' }
     ]

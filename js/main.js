@@ -411,28 +411,11 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (pickup === 'gebze') eta = '12 - 15 Dakika';
     else if (pickup === 'dilovasi') eta = '15 - 18 Dakika';
 
-    let priceText = "1.500 ₺'den Başlayan";
-    if (dropoff === 'yakin') {
-      if (vehicle === 'motor') priceText = "1.300 ₺ - 1.500 ₺";
-      else if (vehicle === 'binek') priceText = "1.500 ₺ - 1.800 ₺";
-      else if (vehicle === 'suv') priceText = "1.800 ₺ - 2.200 ₺";
-      else if (vehicle === 'ticari') priceText = "2.000 ₺ - 2.400 ₺";
-      else if (vehicle === 'luks') priceText = "2.500 ₺ (Özel Rampa)";
-    } else if (dropoff === 'anadolu') {
-      if (vehicle === 'motor') priceText = "1.600 ₺ - 2.000 ₺";
-      else if (vehicle === 'binek') priceText = "2.000 ₺ - 2.500 ₺";
-      else if (vehicle === 'suv') priceText = "2.400 ₺ - 2.900 ₺";
-      else if (vehicle === 'ticari') priceText = "2.600 ₺ - 3.200 ₺";
-      else if (vehicle === 'luks') priceText = "3.200 ₺ (Özel Rampa)";
-    } else if (dropoff === 'avrupa') {
-      if (vehicle === 'binek') priceText = "3.500 ₺ - 4.500 ₺";
-      else if (vehicle === 'suv') priceText = "4.000 ₺ - 5.000 ₺";
-      else priceText = "4.500 ₺ - 5.500 ₺";
-    } else if (dropoff === 'kocaeli') {
-      if (vehicle === 'binek') priceText = "2.800 ₺ - 3.800 ₺";
-      else priceText = "3.500 ₺ - 4.800 ₺";
-    } else if (dropoff === 'sehirlerarasi') {
-      priceText = "Özel İndirimli Km Tarifesi";
+    let priceText = "Telefonda Sabit Fiyat Garantisi";
+    if (dropoff === 'sehirlerarasi') {
+      priceText = "Özel İndirimli Şehirler Arası Km Tarifesi";
+    } else {
+      priceText = "Telefonda Net Sabit Fiyat Sözü";
     }
 
     if (calcEtaVal) calcEtaVal.textContent = eta;
@@ -450,10 +433,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const pickupText = calcPickup.options[calcPickup.selectedIndex].text;
         const dropoffText = calcDropoff.options[calcDropoff.selectedIndex].text;
         const vehicleText = calcVehicle.options[calcVehicle.selectedIndex].text;
-        const priceText = calcPriceVal ? calcPriceVal.textContent : '1.500 ₺';
+        const pricePolicy = calcPriceVal ? calcPriceVal.textContent : 'Telefonda Sabit Fiyat';
         const etaText = calcEtaVal ? calcEtaVal.textContent : '10 - 15 Dk';
 
-        const msg = `Merhaba Marmara Çekici,\nFiyat hesaplayıcı üzerinden talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Tahmini Ücret: ${priceText}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
+        const msg = `Merhaba Marmara Çekici,\nFiyat ve kurtarma talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Fiyat Talebi: ${pricePolicy}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
         window.sendWhatsAppMessage(msg);
       });
     }
@@ -482,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroSection) {
       const adsBanner = document.createElement('div');
       adsBanner.setAttribute('style', 'background: linear-gradient(90deg, #ea580c 0%, #b91c1c 100%); color: #fff; padding: 12px 18px; text-align: center; font-size: 0.92rem; font-weight: 800; letter-spacing: 0.02em; box-shadow: 0 4px 20px rgba(234,88,12,0.35); border-radius: 10px; margin: 0 auto 22px; max-width: 900px; border: 1px solid rgba(255,255,255,0.2);');
-      adsBanner.innerHTML = `🚨 <strong>ACİL ÇAĞRI:</strong> ${matchedLocation} NÖBETÇİ ÇEKİCİMİZ <strong>10 DAKİKADA YANINIZDA!</strong> • Şehir İçi Taban: 1.500 ₺ • %100 Taşıma Kaskolu`;
+      adsBanner.innerHTML = `🚨 <strong>ACİL ÇAĞRI:</strong> ${matchedLocation} NÖBETÇİ ÇEKİCİMİZ <strong>10 DAKİKADA YANINIZDA!</strong> • Telefonda Sabit Fiyat Sözü • %100 Taşıma Kaskolu`;
       const heroContainer = heroSection.querySelector('.container');
       if (heroContainer) {
         heroContainer.insertBefore(adsBanner, heroContainer.firstChild);

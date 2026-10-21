@@ -41,7 +41,7 @@ async function runAudit() {
 
   if (hasEtaAnswer && hasPriceAnswer && hasNapConsistency && has18Regions && hasServices) {
     scoreCriterion2 = 1.0;
-    console.log('  ✅ [1.0 / 1.0] Mükemmel: Doğrudan yanıt blokları (10-15 dk intikal, 1.500 TL taban fiyat), 18 bölge özgün içerikleri (hepsi 2000+ karakter), 13 hizmet kataloğu ve NAP tutarlılığı eksiksiz.');
+    console.log('  ✅ [1.0 / 1.0] Mükemmel: Doğrudan yanıt blokları (10-15 dk intikal, telefonda sabit fiyat garantisi), 18 bölge özgün içerikleri (hepsi 2000+ karakter), 13 hizmet kataloğu ve NAP tutarlılığı eksiksiz.');
   } else {
     scoreCriterion2 = 0.5;
     console.log('  ⚠️ [0.5 / 1.0] Eksik alanlar var:', { hasEtaAnswer, hasPriceAnswer, hasNapConsistency, has18Regions, hasServices });

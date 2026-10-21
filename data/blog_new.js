@@ -25,9 +25,9 @@ const ADDITIONAL_BLOGS = [
         Şehir içi operasyonlarda (Pendik, Kartal, Maltepe sokakları veya AVM kapalı otoparkları) manevra kabiliyeti yüksek, kısa dingilli ve alçak kabinli kurtarıcılar kullanılır. Bu araçlar -2. kat otoparka inebilir, dar sokaklarda park halindeki araçlara çarpmadan ters yönden manevra yapabilir. Otoyol araçlarımız ise geniş açılı uzun kayar tablalı, yüksek tonajlı hidrolik vinçli ve arkadan gelen trafiği uyaran 360 derece LED kule flaşörlü ağır devriye araçlarıdır.
       </p>
 
-      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">2. Fiyatlandırma Mantığı: Şehir İçi Taban 1.500 ₺ Güvencesi</h2>
+      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">2. Fiyatlandırma Mantığı: Telefonda Sabit Fiyat Güvencesi</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Otoyollarda mesafe ve gişe geçiş ücretleri söz konusuyken, şehir içi transferlerde kısa mesafe standart sabit fiyat tarifesi işletilir. Maltepe, Kartal, Pendik, Tuzla, Çayırova veya Gebze sınırları dahilinde en yakın sanayiye veya yetkili servise nakil işlemlerinde 1.500 TL taban fiyat uygulanır. Telefonda konuşulan bu rakam haricinde otoyol farkı, gece mesaisi veya mazot zammı gibi bahaneler asla öne sürülmez.
+        Otoyollarda mesafe ve gişe geçiş ücretleri söz konusuyken, şehir içi transferlerde kısa mesafe standart sabit fiyat tarifesi işletilir. Maltepe, Kartal, Pendik, Tuzla, Çayırova veya Gebze sınırları dahilinde en yakın sanayiye veya yetkili servise nakil işlemlerinde telefonda net sabit fiyat teyit edilir. Telefonda konuşulan bu rakam haricinde otoyol farkı, gece mesaisi veya mazot zammı gibi bahaneler asla öne sürülmez.
       </p>
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">3. Can Güvenliği ve Müdahale Hızı</h2>
@@ -43,7 +43,7 @@ const ADDITIONAL_BLOGS = [
       </div>
     `,
     faqs: [
-      { q: 'Şehir içi çekici ücreti ne kadardır?', a: 'Marmara Çekici olarak Pendik, Kartal, Maltepe, Gebze ve Çayırova şehir içi transferlerde taban fiyatımız 1.500 TL olarak sabitlenmiştir.' },
+      { q: 'Şehir içi çekici ücreti ne kadardır?', a: 'Marmara Çekici olarak Pendik, Kartal, Maltepe, Gebze ve Çayırova şehir içi transferlerde telefonda teyit edilen net ve bağlayıcı sabit fiyat tarifemiz geçerlidir.' },
       { q: 'Otoyol çekicisi şehir içi sokağıma gelir mi?', a: 'Evet, filomuzda hem dar sokaklara uygun kompakt kurtarıcılar hem de otoyol için uzun tablalı araçlar mevcuttur.' },
       { q: 'Kredi kartıyla kapıda ödeme yapabilir miyim?', a: 'Evet, tüm kurtarıcı araçlarımızda mobil POS cihazı bulunmakta olup kredi kartlarına tek çekim veya taksit imkanı tanınır.' }
     ]
@@ -80,7 +80,7 @@ const ADDITIONAL_BLOGS = [
     `,
     faqs: [
       { q: 'E-5 üzerinde arızalandığımda ne yapmalıyım?', a: 'Dörtlülerinizi yakın, aracı emniyet şeridine yanaştırın ve araçtan inerek bariyer arkasında bekleyip 0533 265 70 89 numaramızı arayın.' },
-      { q: 'Kartal veya Pendik sanayisine çekim kaç para?', a: 'İlçe içi sabit taban ücretimiz 1.500 TL\'dir; telefonda onaylanan fiyat dışında sürpriz çıkmaz.' },
+      { q: 'Kartal veya Pendik sanayisine çekim kaç para?', a: 'İlçe içi şeffaf sabit fiyat politikamız geçerlidir; telefonda onaylanan fiyat dışında varışta sürpriz ek ücret çıkmaz.' },
       { q: 'Kaza durumunda sigorta evrakı düzenliyor musunuz?', a: 'Evet, kasko hasar dosyanız için resmi çekici faturası ve teslim tutanağı eksiksiz verilir.' }
     ]
   },

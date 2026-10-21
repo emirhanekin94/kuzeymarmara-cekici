@@ -33,11 +33,11 @@ const regions = [
     equipmentProtocol: "Kurtköy operasyonlarımızda hem kapalı rezidans ve AVM otoparklarına rahatça girebilen alçak kabinli kurtarıcılar hem de otoyol için geniş tablalı kayar kasa çekiciler devrededir. Tekerlekleri kilitli veya elektrikli el freni devrede kalan araçlar için özel tekerlek arabacıkları (dolly) kullanılır; böylece aracın aktarma organlarına ve şanzımanına en ufak sürtünme veya mekanik hasar verilmez.",
     localAdvice: "Kurtköy gişeleri ve Ankara Caddesi üzerindeki nöbet noktalarımız sayesinde çağrınızdan sonra ortalama 8-12 dakika içinde yanınızda oluyoruz. Aracınızı Pendik Oto Sanayi, Kartal Oto Sanayi veya Sabiha Gökçen çevresindeki dilediğiniz yetkili servise güvenle ulaştırıyoruz. Yolda kaldıysanız güvenli bir alana geçip 0533 265 70 89 numaramızdan canlı konum paylaşınız.",
     distanceTable: [
-      { place: 'Viaport AVM Çevresi', km: 3, time: '6-8 Dk', price: '500 - 750 TL' },
-      { place: 'Sabiha Gökçen Havalimanı', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Pendik Oto Sanayi', km: 8, time: '12 Dk', price: '650 - 900 TL' },
-      { place: 'Tuzla Deri OSB', km: 14, time: '16 Dk', price: '800 - 1100 TL' },
-      { place: 'Gebze OSB (GOSB)', km: 22, time: '20 Dk', price: '1100 - 1500 TL' }
+      { place: 'Viaport AVM Çevresi', km: 3, time: '6-8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Sabiha Gökçen Havalimanı', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Pendik Oto Sanayi', km: 8, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla Deri OSB', km: 14, time: '16 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze OSB (GOSB)', km: 22, time: '20 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Kurtköy oto çekici kaç dakikada yanıma gelir?', a: 'Kurtköy merkez ve Viaport çevresinde hazır bekleyen nöbetçi ekiplerimizle ortalama 10 ila 15 dakika içinde adresinizdeyiz.' },
@@ -69,11 +69,11 @@ const regions = [
     equipmentProtocol: "KMO otoyol kurtarıcılarımız, otoyol işletme kurallarına tam uyumlu, arkadan gelen trafiği 1 km önceden uyaran yüksek parlaklıklı LED flaşör kuleleri ve sesli ikaz tertibatına sahiptir. Ağır tonajlı kayar kasa hidrolik vinç sistemimiz, şarampole inen veya aksı kırılan araçları hızlıca güvenli platforma alır.",
     localAdvice: "KMO'da aracınız arızalanırsa derhal dörtlülerinizi yakın, aracı emniyet şeridine çekip yolcularla birlikte çelik bariyerlerin arkasına geçiniz. Karayolları kuralı gereği üçgen reflektörü 150 metre geriye yerleştiriniz ve 0533 265 70 89 numaramızı arayarak otoyol kilometre taşını veya WhatsApp konumunuzu iletiniz.",
     distanceTable: [
-      { place: 'Kurnaköy Gişeleri', km: 6, time: '10 Dk', price: '600 - 850 TL' },
-      { place: 'Mecidiye Dinlenme Tesisi', km: 12, time: '12 Dk', price: '750 - 1000 TL' },
-      { place: 'Reşadiye Gişeleri', km: 18, time: '15 Dk', price: '950 - 1300 TL' },
-      { place: 'Akse Gişeleri (Şekerpınar)', km: 24, time: '18 Dk', price: '1200 - 1600 TL' },
-      { place: 'Dilovası Viyadüğü', km: 32, time: '22 Dk', price: '1500 - 2000 TL' }
+      { place: 'Kurnaköy Gişeleri', km: 6, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Mecidiye Dinlenme Tesisi', km: 12, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Reşadiye Gişeleri', km: 18, time: '15 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Akse Gişeleri (Şekerpınar)', km: 24, time: '18 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Dilovası Viyadüğü', km: 32, time: '22 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Kuzey Marmara Otoyolu gişelerine ne kadar sürede varırsınız?', a: 'Otoyol çıkış ve gişe noktalarında konuşlu nöbetçi ekiplerimizle ortalama 12-15 dakikada intikal ediyoruz.' },
@@ -105,11 +105,11 @@ const regions = [
     equipmentProtocol: "TEM koridoru için yüksek görüşlü tepe flaşörleri, güvenlik kukaları ve 5 tona kadar taşıma kapasiteli güçlü hidrolik kayar platformlar devrededir.",
     localAdvice: "TEM Otoyolu'nda yolda kaldığınızda aracınızı mümkün olduğunca emniyet şeridinin en sağına yanaştırınız. Güvenliğiniz için aracın içinde beklemeyip bariyer arkasına geçiniz ve konumunuzu bildiriniz.",
     distanceTable: [
-      { place: 'Kurtköy TEM Çıkışı', km: 5, time: '8 Dk', price: '550 - 800 TL' },
-      { place: 'Mehmetçik Vakfı Tesisleri', km: 8, time: '10 Dk', price: '650 - 900 TL' },
-      { place: 'Şekerpınar Gişeleri', km: 14, time: '12 Dk', price: '800 - 1100 TL' },
-      { place: 'Gebze Doğu / Batı Gişeler', km: 20, time: '16 Dk', price: '1000 - 1400 TL' },
-      { place: 'Çamlıca Gişeler Hattı', km: 25, time: '20 Dk', price: '1300 - 1700 TL' }
+      { place: 'Kurtköy TEM Çıkışı', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Mehmetçik Vakfı Tesisleri', km: 8, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Şekerpınar Gişeleri', km: 14, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Doğu / Batı Gişeler', km: 20, time: '16 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Çamlıca Gişeler Hattı', km: 25, time: '20 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'TEM Otoyolu çekicisi kaç dakikada gelir?', a: 'TEM Kurtköy ve Şekerpınar nöbet noktalarımızdan ortalama 10-15 dakikada intikal sağlanır.' },
@@ -141,11 +141,11 @@ const regions = [
     equipmentProtocol: "Gebze sanayi bölgesine uygun ağır hizmet kayar kasa, tekerlek korumalı dolly aparatları ve profesyonel çelik vinç tertibatlı araçlarımız hizmet vermektedir.",
     localAdvice: "Gebze merkez ve sanayi sitelerine ortalama 8 ila 12 dakikada ulaşıyoruz. Aracınızı Gebze Küçük Sanayi Sitesi veya Tuzla yetkili servislerine güvenle teslim ediyoruz.",
     distanceTable: [
-      { place: 'Gebze OSB (GOSB)', km: 6, time: '8 Dk', price: '600 - 850 TL' },
-      { place: 'Gebze Küçük Sanayi Sitesi', km: 4, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Eskihisar Feribot İskelesi', km: 7, time: '10 Dk', price: '650 - 900 TL' },
-      { place: 'Çayırova Akse Mahallesi', km: 9, time: '12 Dk', price: '700 - 950 TL' },
-      { place: 'Dilovası Mermerciler OSB', km: 12, time: '14 Dk', price: '850 - 1150 TL' }
+      { place: 'Gebze OSB (GOSB)', km: 6, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Küçük Sanayi Sitesi', km: 4, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Eskihisar Feribot İskelesi', km: 7, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Çayırova Akse Mahallesi', km: 9, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Dilovası Mermerciler OSB', km: 12, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Gebze içine çekici ne kadar sürede gelir?', a: 'Gebze merkezdeki nöbetçi ekibimiz ortalama 8-10 dakika içinde yanınızdadır.' },
@@ -177,11 +177,11 @@ const regions = [
     equipmentProtocol: "Dar sokaklar ve sahil koridoru için kıvrak manevralı kayar kasa araçlarımız ve kilitli araçlar için tekerlek kaldırma aparatlarımız hazırdır.",
     localAdvice: "Pendik nöbet noktamızdan Kaynarca, Sahil ve Velibaba'ya 8-10 dakikada varıyoruz. Pendik Oto Sanayi Sitesi veya Kartal yetkili servislerine hızlı teslimat sağlıyoruz.",
     distanceTable: [
-      { place: 'Pendik Sahil & Marina', km: 3, time: '7 Dk', price: '500 - 700 TL' },
-      { place: 'Kaynarca D-100 Yan Yol', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Pendik Oto Sanayi Sitesi', km: 5, time: '9 Dk', price: '550 - 800 TL' },
-      { place: 'Kurtköy Viaport AVM', km: 9, time: '12 Dk', price: '700 - 950 TL' },
-      { place: 'Tuzla İçmeler Köprüsü', km: 10, time: '13 Dk', price: '750 - 1000 TL' }
+      { place: 'Pendik Sahil & Marina', km: 3, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kaynarca D-100 Yan Yol', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Pendik Oto Sanayi Sitesi', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Viaport AVM', km: 9, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla İçmeler Köprüsü', km: 10, time: '13 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Pendik oto çekici kaç dakikada gelir?', a: 'Konumunuza göre ortalama 8 ila 12 dakika içinde yanınızdayız.' },
@@ -213,11 +213,11 @@ const regions = [
     equipmentProtocol: "Hafif ticari araçlar ve binekler için hidrolik kayar platform ve yerinde yol yardım ekipmanları sevk edilir.",
     localAdvice: "Çayırova Akse ve köprü kavşağına ortalama 10 dakikada intikal sağlıyoruz. Aracınızı Gebze veya Pendik servislerine aktarıyoruz.",
     distanceTable: [
-      { place: 'Akse Mahallesi Merkez', km: 3, time: '6 Dk', price: '450 - 700 TL' },
-      { place: 'Şekerpınar TEM Gişeleri', km: 4, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Gebze Küçük Sanayi', km: 8, time: '11 Dk', price: '650 - 900 TL' },
-      { place: 'Tuzla Deri OSB', km: 9, time: '12 Dk', price: '700 - 950 TL' },
-      { place: 'Dilovası Rampaları', km: 14, time: '16 Dk', price: '850 - 1150 TL' }
+      { place: 'Akse Mahallesi Merkez', km: 3, time: '6 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Şekerpınar TEM Gişeleri', km: 4, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Küçük Sanayi', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla Deri OSB', km: 9, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Dilovası Rampaları', km: 14, time: '16 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Çayırova çekici kaç dakikada gelir?', a: 'Ortalama 10 dakika içinde adresinizdeyiz.' },
@@ -249,11 +249,11 @@ const regions = [
     equipmentProtocol: "Havalimanı katlı otopark tavan yüksekliğine uygun kompakt alçak şaseli kurtarıcılar ve seyyar dijital akü çalıştırma cihazları.",
     localAdvice: "Havalimanı nizamiyesinde bekleyen ekibimizle otopark içine veya viyadüklere 8 dakikada varıyoruz. Uçuşunuz varsa hızlı koordinasyon sağlıyoruz.",
     distanceTable: [
-      { place: 'Havalimanı Katlı Otoparkları', km: 1, time: '5 Dk', price: '450 - 650 TL' },
-      { place: 'Kurtköy Merkez', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Viaport AVM', km: 5, time: '8 Dk', price: '550 - 800 TL' },
-      { place: 'Pendik Merkez', km: 11, time: '14 Dk', price: '750 - 1000 TL' },
-      { place: 'Tuzla İçmeler Sanayi', km: 13, time: '15 Dk', price: '800 - 1100 TL' }
+      { place: 'Havalimanı Katlı Otoparkları', km: 1, time: '5 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Merkez', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Viaport AVM', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Pendik Merkez', km: 11, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla İçmeler Sanayi', km: 13, time: '15 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Havalimanı katlı otoparkına çekici girer mi?', a: 'Evet, alçak tavan kurtarıcımızla otopark katlarından hasarsız tahliye yapıyoruz.' },
@@ -285,11 +285,11 @@ const regions = [
     equipmentProtocol: "Hem spor araçlara uygun sıfır açılı rampalar hem de ağır ticari taşıma kapasiteli hidrolik kayar kasalar.",
     localAdvice: "İçmeler ve Aydınlı nöbet ekiplerimizle ortalama 10-12 dakikada yanınızdayız. Tuzla İçmeler Sanayi ve Kartal servislerine teslimat yapıyoruz.",
     distanceTable: [
-      { place: 'Tuzla İçmeler Sanayi', km: 3, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Tuzla Marina & Sahil', km: 5, time: '9 Dk', price: '550 - 800 TL' },
-      { place: 'Tuzla Deri OSB', km: 8, time: '11 Dk', price: '650 - 900 TL' },
-      { place: 'Tepeören / Formula 1 Yolu', km: 12, time: '14 Dk', price: '800 - 1100 TL' },
-      { place: 'Pendik Sanayi Sitesi', km: 9, time: '12 Dk', price: '700 - 950 TL' }
+      { place: 'Tuzla İçmeler Sanayi', km: 3, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla Marina & Sahil', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tuzla Deri OSB', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Tepeören / Formula 1 Yolu', km: 12, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Pendik Sanayi Sitesi', km: 9, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Tuzla İçmeler sanayiye araç çeker misiniz?', a: 'Evet, İçmeler ve Kartal sanayi sitelerine direkt teslimat yapıyoruz.' },
@@ -321,11 +321,11 @@ const regions = [
     equipmentProtocol: "Geniş tablalı kayar kasa, çelik vinç tertibatı ve ağır yük sabitleme kemerleri.",
     localAdvice: "Gişeler çıkışındaki nöbet noktamızdan 8-10 dakikada yanınızdayız. Konumunuzu gişe numarası veya en yakın depo adı olarak iletiniz.",
     distanceTable: [
-      { place: 'Şekerpınar TEM Gişeleri', km: 2, time: '5 Dk', price: '450 - 650 TL' },
-      { place: 'TAYSAD OSB Sanayi', km: 4, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Çayırova Akse Mahallesi', km: 5, time: '8 Dk', price: '550 - 800 TL' },
-      { place: 'Gebze Organize Sanayi', km: 8, time: '11 Dk', price: '650 - 900 TL' },
-      { place: 'KMO Akse Gişe Bağlantısı', km: 5, time: '8 Dk', price: '550 - 800 TL' }
+      { place: 'Şekerpınar TEM Gişeleri', km: 2, time: '5 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'TAYSAD OSB Sanayi', km: 4, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Çayırova Akse Mahallesi', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Organize Sanayi', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'KMO Akse Gişe Bağlantısı', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Şekerpınar gişelerine kaç dakikada gelirsiniz?', a: 'Ortalama 8-10 dakika içinde gişelerdeyiz.' },
@@ -357,11 +357,11 @@ const regions = [
     equipmentProtocol: "Çift çeker güçlü kurtarıcılar, ağır yük vinçleri ve yüksek güvenlikli yol ikaz panoları.",
     localAdvice: "Rampada kalırsanız vitesi boşa almayınız, el frenini çekip reflektörü yerleştirerek hemen bizi arayınız.",
     distanceTable: [
-      { place: 'Dilovası Dik Rampası', km: 3, time: '7 Dk', price: '550 - 800 TL' },
-      { place: 'Mermerciler OSB', km: 5, time: '9 Dk', price: '600 - 850 TL' },
-      { place: 'Osmangazi Köprü Çıkışı', km: 6, time: '10 Dk', price: '650 - 900 TL' },
-      { place: 'Gebze Küçük Sanayi', km: 11, time: '14 Dk', price: '800 - 1100 TL' },
-      { place: 'Körfez Gişeler Hattı', km: 16, time: '17 Dk', price: '950 - 1300 TL' }
+      { place: 'Dilovası Dik Rampası', km: 3, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Mermerciler OSB', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Osmangazi Köprü Çıkışı', km: 6, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Küçük Sanayi', km: 11, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Körfez Gişeler Hattı', km: 16, time: '17 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Dilovası rampasında çekici ne kadar sürede ulaşır?', a: '12-15 dakika içinde olay yerindeyiz.' },
@@ -393,11 +393,11 @@ const regions = [
     equipmentProtocol: "Kıvrak manevralı hidrolik kayar kasalar ve yerinde takviye/lastik destek araçları.",
     localAdvice: "Sultanbeyli gişeler ve merkez nöbet noktamızdan 8-10 dakikada yanınızdayız. Kurtköy ve Pendik sanayilerine hızlı teslimat yapılır.",
     distanceTable: [
-      { place: 'Sultanbeyli TEM Gişeleri', km: 3, time: '6 Dk', price: '450 - 700 TL' },
-      { place: 'Fatih Bulvarı Merkez', km: 4, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Paşaköy KMO Katılımı', km: 7, time: '10 Dk', price: '600 - 850 TL' },
-      { place: 'Kurtköy Viaport AVM', km: 10, time: '13 Dk', price: '700 - 950 TL' },
-      { place: 'Samandıra Sanayi Bölgesi', km: 8, time: '11 Dk', price: '650 - 900 TL' }
+      { place: 'Sultanbeyli TEM Gişeleri', km: 3, time: '6 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Fatih Bulvarı Merkez', km: 4, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Paşaköy KMO Katılımı', km: 7, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Viaport AVM', km: 10, time: '13 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Samandıra Sanayi Bölgesi', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Sultanbeyli çekici kaç dakikada gelir?', a: 'Ortalama 8-10 dakika içinde yanınızdayız.' },
@@ -429,11 +429,11 @@ const regions = [
     equipmentProtocol: "Geniş platformlu hidrolik kayar kasa ve 12V/24V takviye üniteleri.",
     localAdvice: "Samandıra gişelerindeki nöbet ekibimizle 8-10 dakikada yanınızdayız. Dudullu veya Kurtköy sanayilerine kolay teslimat yapıyoruz.",
     distanceTable: [
-      { place: 'Samandıra TEM Gişeleri', km: 3, time: '6 Dk', price: '450 - 700 TL' },
-      { place: 'Paşaköy KMO Gişeleri', km: 6, time: '9 Dk', price: '550 - 800 TL' },
-      { place: 'Sarıgazi Meydan', km: 5, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Sultanbeyli Merkez', km: 8, time: '11 Dk', price: '650 - 900 TL' },
-      { place: 'Kurtköy Viaport', km: 12, time: '14 Dk', price: '800 - 1100 TL' }
+      { place: 'Samandıra TEM Gişeleri', km: 3, time: '6 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Paşaköy KMO Gişeleri', km: 6, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Sarıgazi Meydan', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Sultanbeyli Merkez', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Viaport', km: 12, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Samandıra gişelerine ne kadar sürede varırsınız?', a: 'Ortalama 8-10 dakika içinde gişelerdeyiz.' },
@@ -465,11 +465,11 @@ const regions = [
     equipmentProtocol: "Otoyol ikaz tepe lambalı kayar kasa kurtarıcılar ve yüksek teminatlı emtia kaskosu.",
     localAdvice: "Gişelerde veya dinlenme tesisinde yolda kalırsanız peron veya pompa numarasını bize iletiniz; 10 dakikada yanınızdayız.",
     distanceTable: [
-      { place: 'Kurnaköy Gişeleri', km: 2, time: '5 Dk', price: '450 - 650 TL' },
-      { place: 'Mecidiye Dinlenme Tesisleri', km: 5, time: '8 Dk', price: '550 - 800 TL' },
-      { place: 'Kurtköy Gişeleri', km: 8, time: '11 Dk', price: '650 - 900 TL' },
-      { place: 'Akfırat / Tepeören', km: 10, time: '13 Dk', price: '750 - 1000 TL' },
-      { place: 'Reşadiye Gişeleri', km: 16, time: '16 Dk', price: '950 - 1300 TL' }
+      { place: 'Kurnaköy Gişeleri', km: 2, time: '5 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Mecidiye Dinlenme Tesisleri', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Gişeleri', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Akfırat / Tepeören', km: 10, time: '13 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Reşadiye Gişeleri', km: 16, time: '16 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Kurnaköy gişelerine çekici kaç dakikada gelir?', a: 'Ortalama 10-12 dakika içinde yanınızdayız.' },
@@ -501,11 +501,11 @@ const regions = [
     equipmentProtocol: "Kompakt boyutlu hidrolik kayar kasa ve jant koruyucu sabitleme kayışları.",
     localAdvice: "Darıca merkez ve sahil noktalarına 10-12 dakikada intikal sağlıyoruz. Gebze veya Tuzla servislerine teslimat yapıyoruz.",
     distanceTable: [
-      { place: 'Bayramoğlu Sahil Yolu', km: 3, time: '7 Dk', price: '500 - 750 TL' },
-      { place: 'Darıca Millet Bahçesi', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Eskihisar Feribot İskelesi', km: 5, time: '9 Dk', price: '550 - 800 TL' },
-      { place: 'Gebze Küçük Sanayi', km: 8, time: '12 Dk', price: '650 - 900 TL' },
-      { place: 'Çayırova Köprüsü', km: 9, time: '13 Dk', price: '700 - 950 TL' }
+      { place: 'Bayramoğlu Sahil Yolu', km: 3, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Darıca Millet Bahçesi', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Eskihisar Feribot İskelesi', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Gebze Küçük Sanayi', km: 8, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Çayırova Köprüsü', km: 9, time: '13 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Darıca çekici ne kadar sürede gelir?', a: 'Ortalama 10-12 dakika içinde adresinizdeyiz.' },
@@ -537,11 +537,11 @@ const regions = [
     equipmentProtocol: "4x4 vinç donanımlı kurtarıcılar, sis aydınlatma kuleleri ve sıfır açılı kayar platformlar.",
     localAdvice: "Orman ve baraj yolunda kalırsanız en yakın gişe veya tabela numarasını ileterek araç içinde beklemeyiniz.",
     distanceTable: [
-      { place: 'Reşadiye KMO Gişeleri', km: 3, time: '7 Dk', price: '550 - 800 TL' },
-      { place: 'Ömerli Baraj Yolu', km: 5, time: '9 Dk', price: '600 - 850 TL' },
-      { place: 'Hüseyinli Kavşağı', km: 8, time: '11 Dk', price: '700 - 950 TL' },
-      { place: 'Paşaköy Gişeleri', km: 14, time: '15 Dk', price: '850 - 1200 TL' },
-      { place: 'Kurtköy Merkez', km: 18, time: '18 Dk', price: '1000 - 1400 TL' }
+      { place: 'Reşadiye KMO Gişeleri', km: 3, time: '7 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Ömerli Baraj Yolu', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Hüseyinli Kavşağı', km: 8, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Paşaköy Gişeleri', km: 14, time: '15 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kurtköy Merkez', km: 18, time: '18 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Reşadiye gişelerine kaç dakikada gelirsiniz?', a: '12-15 dakika içinde yanınızdayız.' },
@@ -573,11 +573,11 @@ const regions = [
     equipmentProtocol: "Dar sokaklar için hidrolik kayar platformlar, Samandıra otoyol bağlantısı için yüksek tonajlı kurtarıcılar ve dijital akü şarj destek üniteleri.",
     localAdvice: "Kartal E-5 veya Samandıra bağlantısında arızalanan sürücülerin dörtlülerini yakıp güvenlik şeridine yanaşmaları ve bariyer arkasında beklemeleri hayati önem taşır.",
     distanceTable: [
-      { place: 'Kartal Oto Sanayi Sitesi', km: 3, time: '6 Dk', price: '500 - 700 TL' },
-      { place: 'Yakacık Rampaları', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Samandıra KMO Bağlantısı', km: 7, time: '10 Dk', price: '600 - 850 TL' },
-      { place: 'Soğanlık E-5 Yan Yol', km: 5, time: '8 Dk', price: '550 - 800 TL' },
-      { place: 'Pendik Köprüsü', km: 6, time: '9 Dk', price: '550 - 800 TL' }
+      { place: 'Kartal Oto Sanayi Sitesi', km: 3, time: '6 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Yakacık Rampaları', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Samandıra KMO Bağlantısı', km: 7, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Soğanlık E-5 Yan Yol', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Pendik Köprüsü', km: 6, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Kartal oto çekici kaç dakikada gelir?', a: 'Samandıra ve Yakacık nöbetçi araçlarımızla ortalama 10-15 dakikada yanınızdayız.' },
@@ -609,11 +609,11 @@ const regions = [
     equipmentProtocol: "Basık araçlar için sıfır açılı hidrolik rampa sistemleri, LED flaşör kuleleri ve profesyonel akü takviye üniteleri.",
     localAdvice: "E-5 veya KMO bağlantısında kalan araçların reflektörlerini kuralına uygun yerleştirmesi ve yolcuların kaldırım veya bariyer arkasına geçmesi esastır.",
     distanceTable: [
-      { place: 'Başıbüyük KMO Çıkışı', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Küçükyalı E-5 Kavşağı', km: 5, time: '9 Dk', price: '550 - 800 TL' },
-      { place: 'Zümrütevler / Süreyyapaşa', km: 4, time: '8 Dk', price: '500 - 750 TL' },
-      { place: 'Kartal Oto Sanayi', km: 7, time: '11 Dk', price: '600 - 850 TL' },
-      { place: 'Bostancı Köprüsü', km: 8, time: '12 Dk', price: '650 - 900 TL' }
+      { place: 'Başıbüyük KMO Çıkışı', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Küçükyalı E-5 Kavşağı', km: 5, time: '9 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Zümrütevler / Süreyyapaşa', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Kartal Oto Sanayi', km: 7, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Bostancı Köprüsü', km: 8, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Maltepe oto çekici ne kadar sürede gelir?', a: 'Küçükyalı ve Başıbüyük nöbetçi araçlarımızla 10-15 dakika içinde ulaşıyoruz.' },
@@ -645,11 +645,11 @@ const regions = [
     equipmentProtocol: "Çift kırmalı ağır hizmet kurtarma vinçleri, kayar kasa platformlar, otoyol LED uyarı panoları ve tünel tahliye ekipmanları.",
     localAdvice: "Hereke tünelleri veya KMO viyadüklerinde arızalanan sürücülerin araç içinde beklememesi, derhal tünel acil cebine veya bariyer dışına geçmesi gerekir.",
     distanceTable: [
-      { place: 'Hereke Tünelleri Geçişi', km: 4, time: '8 Dk', price: '600 - 850 TL' },
-      { place: 'KMO Doğu Gişeleri', km: 6, time: '10 Dk', price: '700 - 950 TL' },
-      { place: 'Körfez TEM Gişeleri', km: 7, time: '11 Dk', price: '750 - 1000 TL' },
-      { place: 'Dilovası Viyadüğü', km: 12, time: '14 Dk', price: '850 - 1200 TL' },
-      { place: 'Körfez Sanayi Sitesi', km: 8, time: '12 Dk', price: '750 - 1000 TL' }
+      { place: 'Hereke Tünelleri Geçişi', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'KMO Doğu Gişeleri', km: 6, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Körfez TEM Gişeleri', km: 7, time: '11 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Dilovası Viyadüğü', km: 12, time: '14 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
+      { place: 'Körfez Sanayi Sitesi', km: 8, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
       { q: 'Hereke tünellerine çekici ne kadar sürede varır?', a: 'Tünel çıkışında konuşlu nöbetçi ekiplerimiz ortalama 10-12 dakikada yanınızdadır.' },
@@ -750,7 +750,7 @@ function generateRegionHtml(reg) {
       <td style="padding: 12px 16px; font-weight: 700; color: #0f172a;">${d.place}</td>
       <td style="padding: 12px 16px; color: #64748b;">${d.km} km</td>
       <td style="padding: 12px 16px; color: #ea580c; font-weight: 800;">⏱️ ${d.time}</td>
-      <td style="padding: 12px 16px; color: #10b981; font-weight: 800;">${d.price}</td>
+      <td style="padding: 12px 16px; color: #059669; font-weight: 800;">Telefonda Sabit Fiyat Sözü</td>
     </tr>
   `).join('\n');
 
@@ -1007,13 +1007,13 @@ function generateRegionHtml(reg) {
             </div>
           </div>
 
-          <!-- Kart 2: Bölgesel Mesafe & Fiyat Şeffaflık Tablosu -->
+          <!-- Kart 2: Bölgesel Mesafe & İntikal Süreleri Tablosu -->
           <section class="inner-card-box">
             <h3 class="inner-card-title">
-              📊 ${reg.name} Çıkışlı Tahmini Mesafe, Süre ve Fiyat Tablosu
+              📊 ${reg.name} Çıkışlı Tahmini Mesafe ve İntikal Süreleri
             </h3>
             <p class="inner-card-text">
-              Başlangıç noktanızdan popüler transfer lokasyonlarına ortalama intikal süresi ve yaklaşık çekici ücretleri:
+              Başlangıç noktanızdan popüler transfer lokasyonlarına ortalama intikal süresi ve güzergah bilgileri:
             </p>
             <div style="overflow-x: auto;">
               <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
@@ -1022,7 +1022,7 @@ function generateRegionHtml(reg) {
                     <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Hedef Lokasyon / Servis</th>
                     <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Mesafe</th>
                     <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Ortalama Süre</th>
-                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Tahmini Ücret</th>
+                    <th style="padding: 12px 16px; color: #0f172a; font-weight: 800;">Fiyat Politikası</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1031,7 +1031,7 @@ function generateRegionHtml(reg) {
               </table>
             </div>
             <div style="padding: 12px 0 0 0; font-size: 0.8rem; color: #64748b; text-align: right;">
-              * Fiyatlar binek otomobil standart taban tarifesine göredir; araç ağırlığı ve özel ekipman ihtiyacına göre telefonda netleştirilir.
+              * Mesafe, araç cinsi ve varış noktasına göre telefonda net ve sabit fiyat teyidi verilir; sonradan sürpriz ek masraf çıkarılmaz.
             </div>
           </section>
 
