@@ -348,8 +348,8 @@ const blogs = [
 function generateArticleHtml(blog) {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": blog.headline,
+    "@type": "WebPage",
+    "name": blog.headline,
     "description": blog.metaDesc,
     "image": `${DOMAIN}/images/${blog.image}`,
     "datePublished": `${blog.date}T09:00:00+03:00`,
