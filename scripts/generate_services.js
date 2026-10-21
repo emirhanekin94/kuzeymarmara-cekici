@@ -535,7 +535,11 @@ function generateServiceHtml(svc) {
   <link rel="icon" type="image/webp" href="/images/logo.webp">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-  <meta property="og:type" content="article">
+  <!-- iOS Safari Reader Mode & Phone Heuristics Suppression -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
   <meta property="og:title" content="${svc.title}">
   <meta property="og:description" content="${svc.metaDesc}">
   <meta property="og:url" content="${DOMAIN}/hizmetler/${svc.slug}.html">
@@ -675,7 +679,7 @@ function generateServiceHtml(svc) {
         <div class="inner-content-col">
           
           <!-- Kart 1: Fotoğraflı Hizmet Tanıtımı ve SEO Makalesi -->
-          <article class="inner-card-box">
+          <div class="inner-card-box">
             <div class="inner-media-showcase">
               <img src="/images/${svc.image}" alt="${svc.name} Filosu" width="800" height="420" loading="eager" fetchpriority="high">
               <div class="inner-media-meta-bar">
@@ -737,7 +741,7 @@ function generateServiceHtml(svc) {
                 ${(SERVICE_EXTENSIONS[svc.slug] || {}).qualityAndSafetyCommitment || ''}
               </p>
             </div>
-          </article>
+          </div>
 
           <!-- Kart 2: Hangi Araç Tiplerine Hizmet Veriyoruz? -->
           <section class="inner-card-box">
@@ -845,7 +849,7 @@ function generateServiceHtml(svc) {
           </section>
 
           <!-- Kart 5: SSS -->
-          <article class="inner-card-box">
+          <div class="inner-card-box">
             <h3 class="inner-card-title">
               ${svc.name} Hakkında Sıkça Sorulan Sorular
             </h3>
@@ -853,7 +857,7 @@ function generateServiceHtml(svc) {
               Sürücülerimizin bu hizmetimizle ilgili en çok merak ettiği sorular ve operasyonel cevaplarımız:
             </p>
             ${faqsHtml}
-          </article>
+          </div>
 
         </div>
 

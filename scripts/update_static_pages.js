@@ -100,6 +100,8 @@ function buildHakkimizda() {
   <title>Hakkımızda | Kuzey Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0533 265 70 89</title>
   <meta name="description" content="Kuzey Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
   <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="${DOMAIN}/hakkimizda.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
@@ -182,7 +184,7 @@ function buildHakkimizda() {
     <div class="container" style="max-width: 1000px;">
       
       <!-- Hikayemiz & Misyonumuz -->
-      <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 40px; margin-bottom: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+      <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 40px; margin-bottom: 35px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
         <span style="color: #ea580c; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Kurumsal Tarihçemiz</span>
         <h2 style="font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 900; color: #0f172a; margin: 10px 0 20px;">
           Yolda Kalan Sürücünün Yanında, Dürüst ve İlkeli Hizmet
@@ -196,7 +198,7 @@ function buildHakkimizda() {
         <p style="font-size: 1rem; line-height: 1.8; color: #475569;">
           Biz bu düzeni değiştirdik. Telefonda konumu dinleyip net ve sabit fiyat veren, filosu %100 nakliyat sigortalı olan, basık araçlar için sıfır dereceli rampa kullanan ve ortalama 10-15 dakikada olay yerine varan kurumsal bir kurtarma ekosistemi inşa ettik.
         </p>
-      </article>
+      </div>
 
       <!-- 4 Temel Değerimiz -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 35px;">
@@ -253,7 +255,7 @@ function buildHakkimizda() {
       </div>
 
       <!-- Donanımlı Filomuz -->
-      <article style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px; margin-bottom: 35px;">
+      <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px; margin-bottom: 35px;">
         <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 15px;">Modern Araç Filomuz ve Teknik Donanımımız</h2>
         <p style="color: #475569; line-height: 1.8; margin-bottom: 20px;">
           Filomuzda yer alan tüm kurtarıcı araçlar otoyol çalışma standartlarına uygun olarak yüksek parlaklıklı LED flaşör kuleleri, güvenlik kukaları, sesli ikaz sistemleri ve çift tamburlu hidrolik vinçlerle donatılmıştır:
@@ -265,7 +267,7 @@ function buildHakkimizda() {
           <li><strong>Alçak Tavan Kapalı Otopark Kurtarıcıları:</strong> AVM ve rezidans yer altı otoparklarına girebilen basık kabinli özel araçlar.</li>
           <li><strong>Mobil Yol Yardım Araçları:</strong> 12V/24V dijital akım korumalı akü takviye cihazları, havalı bijon anahtarları ve mobil hava üniteleri.</li>
         </ul>
-      </article>
+      </div>
 
       <!-- Doğrudan Çağrı Kartı -->
       <div style="background: #ffffff; border: 2px solid #ea580c; border-radius: 18px; padding: 35px; text-align: center;">

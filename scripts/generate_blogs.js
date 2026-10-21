@@ -388,6 +388,9 @@ function generateArticleHtml(blog) {
   <meta name="description" content="${blog.metaDesc}">
   <meta name="keywords" content="${blog.keywords}">
   <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
   <link rel="canonical" href="${DOMAIN}/blog/${blog.slug}.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
   <link rel="preload" as="image" href="/images/${blog.image}" fetchpriority="high">
@@ -467,7 +470,7 @@ function generateArticleHtml(blog) {
   <main class="section" style="padding: 50px 0 70px; background: #f8fafc;">
     <div class="container" style="max-width: 880px;">
       
-      <article style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+      <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
         
         <div style="border-radius: 14px; overflow: hidden; margin-bottom: 30px;">
           <img src="/images/${blog.image}" alt="${blog.headline}" width="800" height="450" style="width: 100%; height: auto; display: block;" fetchpriority="high">
@@ -514,8 +517,7 @@ function generateArticleHtml(blog) {
           </div>
         </div>
 
-      </article>
-
+      </div>
     </div>
   </main>
 

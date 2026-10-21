@@ -772,8 +772,12 @@ function generateRegionHtml(reg) {
   <link rel="icon" type="image/webp" href="/images/logo.webp">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
+  <!-- iOS Safari Reader Mode & Phone Heuristics Suppression -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
   <!-- Open Graph -->
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="${reg.title}">
   <meta property="og:description" content="${reg.metaDesc}">
   <meta property="og:url" content="${DOMAIN}/bolgeler/${reg.slug}.html">
@@ -915,7 +919,7 @@ function generateRegionHtml(reg) {
         <div class="inner-content-col">
           
           <!-- Kart 1: Bölgeye Özel Saha Filosu & Yol Analizi -->
-          <article class="inner-card-box">
+          <div class="inner-card-box">
             <div class="inner-media-showcase">
               <img src="/images/${reg.image}" alt="${reg.name} Oto Çekici ve Kurtarıcı Filosu" width="800" height="420" loading="eager" fetchpriority="high">
               <div class="inner-media-meta-bar">
@@ -981,7 +985,27 @@ function generateRegionHtml(reg) {
                 ${(REGION_EXTENSIONS[reg.slug] || {}).emergencyActionPlan || ''}
               </p>
             </div>
-          </article>
+
+            <!-- Kart 1.4: Mahalle Sokakları, Sanayi Bağlantıları & Kritik Arterler -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🏙️</span> ${reg.name} Mahalle Sokakları, Sanayi Bağlantıları &amp; Kritik Arterler
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(REGION_EXTENSIONS[reg.slug] || {}).neighborhoodStreetGuide || ''}
+              </p>
+            </div>
+
+            <!-- Kart 1.5: 7/24 Gece Nöbeti, Mevsimsel Riskler & Bölgesel Kurtarma Stratejisi -->
+            <div style="margin-top: 24px; border-top: 1px solid #e2e8f0; padding-top: 24px;">
+              <h3 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin: 0 0 14px; display: flex; align-items: center; gap: 8px;">
+                <span>🌙</span> ${reg.name} 7/24 Gece Nöbeti, Mevsimsel Riskler &amp; Bölgesel Kurtarma Stratejisi
+              </h3>
+              <p class="inner-card-text" style="line-height: 1.85;">
+                ${(REGION_EXTENSIONS[reg.slug] || {}).seasonalAndNightRescueProtocol || ''}
+              </p>
+            </div>
+          </div>
 
           <!-- Kart 2: Bölgesel Mesafe & Fiyat Şeffaflık Tablosu -->
           <section class="inner-card-box">
@@ -1031,7 +1055,7 @@ function generateRegionHtml(reg) {
           </section>
 
           <!-- Kart 4: Kapsamlı SSS -->
-          <article class="inner-card-box">
+          <div class="inner-card-box">
             <h3 class="inner-card-title">
               ${reg.name} Çekici Hakkında Sıkça Sorulan Sorular
             </h3>
@@ -1051,7 +1075,7 @@ function generateRegionHtml(reg) {
                 </details>
               `).join('')}
             </div>
-          </article>
+          </div>
 
           <!-- Kart 5: Komşu Bölgelerimiz Fotoğraflı Kartlar -->
           <section class="inner-card-box">
