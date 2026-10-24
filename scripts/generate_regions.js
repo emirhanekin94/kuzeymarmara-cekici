@@ -763,6 +763,15 @@ function generateRegionHtml(reg) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>${reg.title}</title>
   <meta name="description" content="${reg.metaDesc}">
   <meta name="keywords" content="${reg.keywords}">
@@ -1381,6 +1390,15 @@ function generateIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>Hizmet Bölgelerimiz | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
   <meta name="robots" content="index, follow">

@@ -99,6 +99,15 @@ function buildHakkimizda() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>Hakkımızda | Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
   <meta name="robots" content="index, follow">
@@ -299,6 +308,15 @@ function buildIletisim() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0536 769 43 24. WhatsApp ile canlı konum gönderin.">
   <meta name="robots" content="index, follow">
@@ -642,6 +660,15 @@ function buildGaleri() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>Foto Galeri | Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
   <meta name="robots" content="index, follow">

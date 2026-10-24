@@ -44,6 +44,15 @@ function generateIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu (KMO), TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde 10-15 dakikada en yakın nöbetçi oto çekici ve yol yardım. %100 kaskolu, net sabit fiyat garantisi: 0536 769 43 24.">
   <meta name="keywords" content="marmara çekici, kuzey marmara otoyolu çekici, kurtköy çekici, kurtköy oto çekici, kmo çekici, tem otoyolu çekici, gebze çekici, pendik çekici, sabiha gökçen çekici, oto kurtarma, oto çekici, acil oto kurtarıcı, kayar kasa çekici">

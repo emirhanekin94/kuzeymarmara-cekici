@@ -392,6 +392,15 @@ function generateArticleHtml(blog) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>${blog.title}</title>
   <meta name="description" content="${blog.metaDesc}">
   <meta name="keywords" content="${blog.keywords}">
@@ -572,6 +581,15 @@ function generateBlogIndexHtml(blogsList) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MT29LQ70Q');
+  </script>
   <title>Sürücü Rehberi &amp; Otoyol ve Şehir İçi Güvenlik Blogu | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Anadolu Yakası, Gebze, Pendik, KMO ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve kasko anlaşmalı kurtarma rehberleri.">
   <meta name="robots" content="index, follow">

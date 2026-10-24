@@ -84,10 +84,86 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 1.1 GOOGLE ANALYTICS 4 (GA4) ÖZEL ETKİNLİK MOTORU
+  function trackGA4Event(eventName, eventParams) {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, eventParams);
+      } else if (window.dataLayer && Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({
+          event: eventName,
+          ...eventParams
+        });
+      }
+    } catch (err) {
+      console.warn('GA4 tracking error:', err);
+    }
+  }
+
+  // Tıklanan buton veya linkin sayfadaki yerini tespit etme
+  function getElementPlacement(el) {
+    if (!el) return 'genel_sayfa';
+    if (el.closest('.site-header, header')) return 'header_navigasyon';
+    if (el.closest('.hero-section, .hero, .inner-hero')) return 'hero_giris_alani';
+    if (el.closest('.sticky-bottom-bar, .mobile-dock, .sticky-cta-bar, .sticky-bottom')) return 'mobil_sabit_alt_bar';
+    if (el.closest('#hero-quote-form, #dispatch-quote-form, form.wp-contact-form')) return 'fiyat_teklif_formu';
+    if (el.closest('#price-calculator, .calculator-card, .price-calc-box')) return 'fiyat_hesaplama_araci';
+    if (el.closest('.service-card, .services-grid, .service-detail')) return 'hizmet_karti';
+    if (el.closest('.region-photo-card, .region-square-card, .region-card, .regions-grid, .region-detail')) return 'bolge_karti';
+    if (el.closest('.blog-card, .blog-detail, .article-content')) return 'blog_yazisi';
+    if (el.closest('.site-footer, footer')) return 'footer_alt_bolum';
+    if (el.closest('.floating-whatsapp, .btn-whatsapp-float')) return 'kayan_whatsapp_butonu';
+    return 'sayfa_ici_buton';
+  }
+
+  // Global Telefon Araması Click Dinleyicisi
+  document.addEventListener('click', (e) => {
+    const phoneEl = e.target.closest('a[href^="tel:"]');
+    if (phoneEl) {
+      const placement = getElementPlacement(phoneEl);
+      const rawText = phoneEl.innerText ? phoneEl.innerText.trim().replace(/\s+/g, ' ') : DISPLAY_PHONE;
+      trackGA4Event('telefon_arama_click', {
+        event_category: 'İletişim',
+        event_label: placement,
+        placement: placement,
+        button_text: rawText,
+        phone_number: DISPLAY_PHONE,
+        page_path: window.location.pathname,
+        page_title: document.title
+      });
+    }
+
+    // Global Doğrudan WhatsApp Link / Buton Click Dinleyicisi
+    const waEl = e.target.closest('a[href*="whatsapp.com"], a[href*="wa.me"], .btn-whatsapp, .sticky-whatsapp-btn, .btn-send-location');
+    if (waEl && !waEl.closest('form')) {
+      const placement = getElementPlacement(waEl);
+      const rawText = waEl.innerText ? waEl.innerText.trim().replace(/\s+/g, ' ') : 'WhatsApp';
+      trackGA4Event('whatsapp_baglanti_click', {
+        event_category: 'İletişim',
+        event_label: placement,
+        placement: placement,
+        button_text: rawText,
+        page_path: window.location.pathname,
+        page_title: document.title
+      });
+    }
+  }, { passive: true });
+
   // 2. WhatsApp Yönlendirme Motoru (Safari, Chrome, iOS & Android Uyumlu)
-  window.sendWhatsAppMessage = function(text) {
+  window.sendWhatsAppMessage = function(text, customSource) {
     const encodedText = encodeURIComponent(text);
     const url = `https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodedText}`;
+
+    // GA4 WhatsApp Etkinliği
+    const placement = customSource || 'whatsapp_yonlendirme';
+    trackGA4Event('whatsapp_baglanti_click', {
+      event_category: 'İletişim',
+      event_label: placement,
+      placement: placement,
+      button_text: 'WhatsApp Mesaj Gönder',
+      page_path: window.location.pathname,
+      page_title: document.title
+    });
 
     const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
@@ -118,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (userPhone) message += `\n📞 İletişim Numaram: ${userPhone}`;
       message += `\n\nEn yakın oto çekicinizi yönlendirip sabit fiyat bilgisi verir misiniz? Konumumu iletiyorum:`;
 
-      window.sendWhatsAppMessage(message);
+      window.sendWhatsAppMessage(message, 'fiyat_teklif_formu');
     });
   });
 
@@ -127,8 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       if (btn.closest('form')) return; // Form içi submit butonlarını atla
       e.preventDefault();
+      const placement = getElementPlacement(btn);
       const message = 'Merhaba Marmara Çekici, yolda kaldım. Bulunduğum konuma en yakın nöbetçi oto çekici / kurtarıcı aracınızı acil yönlendirir misiniz? Canlı konumumu iletiyorum:';
-      window.sendWhatsAppMessage(message);
+      window.sendWhatsAppMessage(message, placement);
     });
   });
 
@@ -494,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const etaText = calcEtaVal ? calcEtaVal.textContent : '10 - 15 Dk';
 
         const msg = `Merhaba Marmara Çekici,\nFiyat ve kurtarma talebimi iletiyorum:\n\n📍 Alınacak Yer: ${pickupText}\n🎯 Teslimat: ${dropoffText}\n🚗 Araç Türü: ${vehicleText}\n⏱️ Tahmini Varış: ${etaText}\n🏷️ Fiyat Talebi: ${pricePolicy}\n\nLütfen en yakın çekicinizi yönlendirip net sabit fiyatı teyit eder misiniz?`;
-        window.sendWhatsAppMessage(msg);
+        window.sendWhatsAppMessage(msg, 'fiyat_hesaplama_araci');
       });
     }
   }
