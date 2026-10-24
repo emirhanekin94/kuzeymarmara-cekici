@@ -48,6 +48,7 @@ function generateIndexHtml() {
   <meta name="description" content="Kuzey Marmara Otoyolu (KMO), TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde 10-15 dakikada en yakın nöbetçi oto çekici ve yol yardım. %100 kaskolu, net sabit fiyat garantisi: 0533 265 70 89.">
   <meta name="keywords" content="marmara çekici, kuzey marmara otoyolu çekici, kurtköy çekici, kurtköy oto çekici, kmo çekici, tem otoyolu çekici, gebze çekici, pendik çekici, sabiha gökçen çekici, oto kurtarma, oto çekici, acil oto kurtarıcı, kayar kasa çekici">
   <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="googledf9451189d4b148f">
   <link rel="canonical" href="${DOMAIN}/">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
 
