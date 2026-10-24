@@ -8,42 +8,78 @@ document.addEventListener('DOMContentLoaded', () => {
   const PHONE_NUMBER = '905332657089';
   const DISPLAY_PHONE = '0533 265 70 89';
 
-  // 1. Mobil Menü Aç / Kapat
+  // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi
   const menuBtn = document.querySelector('.menu-toggle-btn, #hamburger');
   const mainNav = document.querySelector('.main-nav');
-  const mobileDrawer = document.querySelector('.mobile-nav-drawer');
 
-  if (menuBtn) {
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isActive = menuBtn.classList.toggle('active');
-      menuBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  if (menuBtn && mainNav) {
+    // Mobil karartma perdesi (backdrop) - yoksa dinamik oluşturulur
+    let backdrop = document.querySelector('.mobile-menu-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'mobile-menu-backdrop';
+      backdrop.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(backdrop);
+    }
 
-      if (mainNav) mainNav.classList.toggle('active');
-      if (mobileDrawer) mobileDrawer.classList.toggle('active');
-    });
+    const openMenu = () => {
+      menuBtn.classList.add('active');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      mainNav.classList.add('active');
+      backdrop.classList.add('active');
+      document.body.classList.add('menu-open');
+    };
 
     const closeMenu = () => {
       menuBtn.classList.remove('active');
       menuBtn.setAttribute('aria-expanded', 'false');
-      if (mainNav) mainNav.classList.remove('active');
-      if (mobileDrawer) mobileDrawer.classList.remove('active');
+      mainNav.classList.remove('active');
+      backdrop.classList.remove('active');
+      document.body.classList.remove('menu-open');
     };
 
-    if (mainNav) {
-      mainNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-    }
-    if (mobileDrawer) {
-      mobileDrawer.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-    }
+    let lastToggleTime = 0;
+    menuBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const now = Date.now();
+      if (now - lastToggleTime < 300) return; // Mobil cihazlardaki çift tıklama / ghost click önleyici
+      lastToggleTime = now;
 
+      if (mainNav.classList.contains('active')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Menü içi linklere tıklandığında menüyü kapat, link dışı boşluklara tıklamalarda yayılmayı engelle
+    mainNav.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link) {
+        closeMenu();
+      } else {
+        e.stopPropagation();
+      }
+    });
+
+    // Karartılmış arka plana dokunulduğunda menüyü kapat
+    backdrop.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMenu();
+    });
+
+    // Menü dışı tıklamalar için güvenli koruma
     document.addEventListener('click', (e) => {
-      const isNavActive = (mainNav && mainNav.classList.contains('active')) || 
-                          (mobileDrawer && mobileDrawer.classList.contains('active'));
+      if (!mainNav.classList.contains('active')) return;
+      if (e.target.closest('.menu-toggle-btn') || e.target.closest('.main-nav')) return;
+      closeMenu();
+    });
 
-      if (isNavActive && !menuBtn.contains(e.target)) {
-        if (mainNav && !mainNav.contains(e.target)) closeMenu();
-        if (mobileDrawer && !mobileDrawer.contains(e.target)) closeMenu();
+    // ESC tuşu ile kapatma (Erişilebilirlik)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mainNav.classList.contains('active')) {
+        closeMenu();
       }
     });
   }

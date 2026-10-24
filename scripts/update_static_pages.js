@@ -111,7 +111,7 @@ function buildHakkimizda() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.2">
+  <link rel="stylesheet" href="css/style.css?v=3.4">
 
   <script type="application/ld+json">
   {
@@ -287,7 +287,7 @@ function buildHakkimizda() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.2" defer></script>
+  <script src="js/main.js?v=3.4" defer></script>
 </body>
 </html>`;
 }
@@ -309,7 +309,7 @@ function buildIletisim() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.2">
+  <link rel="stylesheet" href="css/style.css?v=3.4">
 
   <script type="application/ld+json">
   {
@@ -518,7 +518,7 @@ function buildIletisim() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.2" defer></script>
+  <script src="js/main.js?v=3.4" defer></script>
 </body>
 </html>`;
 }
@@ -652,7 +652,7 @@ function buildGaleri() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.2">
+  <link rel="stylesheet" href="css/style.css?v=3.4">
 
   <script type="application/ld+json">
   {
@@ -809,7 +809,7 @@ function buildGaleri() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.2" defer></script>
+  <script src="js/main.js?v=3.4" defer></script>
 </body>
 </html>`;
 }
