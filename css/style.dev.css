@@ -552,7 +552,12 @@ ul, ol {
 
 body.menu-open {
   overflow: hidden !important;
-  touch-action: none;
+}
+
+/* Header kendi stacking context'ini oluşturur (sticky + z-index + backdrop-filter);
+   menü açıkken header, backdrop ve alt dock'un üstüne çıkmalı, yoksa menü karartma perdesinin altında kalır. */
+body.menu-open .site-header {
+  z-index: 1000001;
 }
 
 .header-actions {

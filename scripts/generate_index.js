@@ -92,7 +92,7 @@ function generateIndexHtml() {
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
   </noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.4">
+  <link rel="stylesheet" href="css/style.css?v=3.5">
 
   <!-- Schema.org Yapılandırılmış Veri -->
   <script type="application/ld+json">
@@ -1116,7 +1116,7 @@ ${regionCardsHtml}
     </button>
   </div>
 
-  <script src="js/main.js?v=3.4" defer></script>
+  <script src="js/main.js?v=3.5" defer></script>
 </body>
 </html>`;
 }
