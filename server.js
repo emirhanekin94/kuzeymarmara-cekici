@@ -102,14 +102,10 @@ function securityHeaders(res) {
 function cacheHeaders(res, ext) {
   if (IMMUTABLE_EXT.has(ext)) {
     res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
-  } else if (['.css', '.js'].includes(ext)) {
+  } else if (ext === '.css' || ext === '.js') {
     res.setHeader('Cache-Control', 'public, max-age=86400, stale-while-revalidate=604800');
-  } else if (ext === '.html') {
-    res.setHeader('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
-  } else if (['.txt', '.xml'].includes(ext)) {
-    res.setHeader('Cache-Control', 'public, max-age=3600');
   } else {
-    res.setHeader('Cache-Control', 'public, max-age=86400');
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
   }
 }
 

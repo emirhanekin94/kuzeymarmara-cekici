@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { SITE_URL, BUSINESS, whatsappLink } = require('../data/business.js');
-const { REGIONS } = require('../data/regions.js');
+const { regions } = require('./generate_regions.js');
 const { SERVICES } = require('../data/services.js');
 const { BLOG_POSTS } = require('../data/blog.js');
 const { ADDITIONAL_BLOGS } = require('../data/blog_new.js');
@@ -20,8 +20,8 @@ const allBlogPosts = [
 const ROOT = path.join(__dirname, '..');
 
 function buildLlmsTxt() {
-  const serviceList = SERVICES.map(s => `- [${s.name}](${SITE_URL}/hizmetler/${s.slug}.html): ${s.intro || s.lead || s.metaDescription}`).join('\n');
-  const regionList = REGIONS.map(r => `- [${r.name} Oto Çekici](${SITE_URL}/bolgeler/${r.slug}.html): ⏱️ ${r.eta} intikal • ${r.hotspots}`).join('\n');
+  const serviceList = SERVICES.map(s => `- [${s.name}](${SITE_URL}/hizmetler/${s.slug}.html): ${s.intro || s.lead || s.metaDesc}`).join('\n');
+  const regionList = regions.map(r => `- [${r.name} Çekici](${SITE_URL}/bolgeler/${r.slug}.html): ⏱️ ${r.eta} intikal • ${r.hotspots}`).join('\n');
 
   return `# ${BUSINESS.name}
 
@@ -66,7 +66,7 @@ Genişletilmiş teknik RAG dokümantasyonu ve derin operasyon rehberi için: ${S
 }
 
 function buildLlmsFullTxt() {
-  const regionLines = REGIONS.map(r => `- [${r.name} Oto Çekici](${SITE_URL}/bolgeler/${r.slug}.html) — Varış: ⏱️ ${r.eta} | Noktalar: ${r.hotspots} | ${r.metaDescription}`).join('\n');
+  const regionLines = regions.map(r => `- [${r.name} Çekici](${SITE_URL}/bolgeler/${r.slug}.html) — Varış: ⏱️ ${r.eta} | Noktalar: ${r.hotspots} | ${r.metaDesc}`).join('\n');
   const serviceLines = SERVICES.map(s => `- [${s.name}](${SITE_URL}/hizmetler/${s.slug}.html) — ${s.metaDescription || s.metaDesc}`).join('\n');
   const blogLines = allBlogPosts.map(p => `- [${p.title}](${SITE_URL}/blog/${p.slug}.html) — ${p.metaDescription}`).join('\n');
 
@@ -97,7 +97,7 @@ function buildLlmsFullTxt() {
 ## 3. Hizmet Kataloğu (${SERVICES.length} Kapsamlı Hizmet)
 ${serviceLines}
 
-## 4. Bölgesel Operasyon Alanı (${REGIONS.length} Bölge)
+## 4. Bölgesel Operasyon Alanı (${regions.length} Bölge)
 ${regionLines}
 
 ## 5. Teknik Dokümanlar & Sürücü Rehberleri (${allBlogPosts.length} Makale)

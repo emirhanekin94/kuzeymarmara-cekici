@@ -182,25 +182,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 6. CANLI GALERİ FİLTRELEME MOTORU (galeri.html)
-  document.addEventListener('click', (e) => {
-    const filterBtn = e.target.closest('[data-gallery-filter]');
-    if (!filterBtn) return;
-    e.preventDefault();
+  function initGalleryFilter() {
+    const filterBtns = document.querySelectorAll('[data-gallery-filter]');
+    const galleryGrid = document.getElementById('gallery-grid');
+    if (!filterBtns.length && !galleryGrid) return;
 
-    document.querySelectorAll('[data-gallery-filter]').forEach(b => b.classList.remove('active'));
-    filterBtn.classList.add('active');
-    const filter = filterBtn.getAttribute('data-gallery-filter');
+    const cards = document.querySelectorAll('#gallery-grid .gallery-item, #gallery-grid .photo-slot-card, .gallery-item, .photo-slot-card');
 
-    const galleryCards = document.querySelectorAll('.gallery-item, .photo-slot-card');
-    galleryCards.forEach(card => {
-      const category = card.getAttribute('data-category') || '';
-      if (filter === 'all' || category === filter || category.includes(filter)) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
+    function applyFilter(filter, activeBtn) {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      if (activeBtn) activeBtn.classList.add('active');
+
+      cards.forEach(card => {
+        const cat = (card.getAttribute('data-category') || '').trim().toLowerCase();
+        const target = (filter || 'all').toLowerCase();
+        if (target === 'all' || cat === target || cat.includes(target)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const filter = btn.getAttribute('data-gallery-filter') || 'all';
+        applyFilter(filter, btn);
+      });
     });
-  });
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-gallery-filter]');
+      if (!btn) return;
+      e.preventDefault();
+      const filter = btn.getAttribute('data-gallery-filter') || 'all';
+      applyFilter(filter, btn);
+    });
+  }
+  initGalleryFilter();
 
   // 7. Bölge Listesini Genişletme / Daraltma Butonu
   if (toggleAllRegionsBtn && regionsContainer) {

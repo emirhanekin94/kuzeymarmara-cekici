@@ -30,24 +30,24 @@
 - [Şehirler Arası Araç Taşıma & Nakliyat](https://www.kuzeymarmaracekici.com/hizmetler/sehirlerarasi-arac-tasima.html): İstanbul ve Kocaeli hareketli olarak Ankara, İzmir, Bursa, Antalya başta olmak üzere 81 il ve ilçeye %100 emtia nakliyat sigortası ve canlı GPS takibiyle araç nakli.
 
 ## Hizmet Verilen 18 Bölge ve İntikal Süreleri
-- [Kuzey Marmara Otoyolu Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Kurtköy Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurtkoy-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Pendik Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/pendik-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Çayırova Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/cayirova-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Gebze Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/gebze-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Sabiha Gökçen Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sabiha-gokcen-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [TEM Otoyolu Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tem-otoyolu-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Tuzla Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tuzla-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Şekerpınar Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sekerpinar-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Dilovası Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/dilovasi-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Sultanbeyli Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sultanbeyli-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Sancaktepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sancaktepe-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Kurnaköy-Mecidiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurnakoy-mecidiye-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Ömerli-Reşadiye Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/omerli-resadiye-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Darıca Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/darica-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Kartal Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kartal-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Maltepe Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/maltepe-oto-cekici.html): ⏱️ undefined intikal • undefined
-- [Körfez & Hereke Oto Çekici](https://www.kuzeymarmaracekici.com/bolgeler/korfez-hereke-oto-cekici.html): ⏱️ undefined intikal • undefined
+- [Kurtköy Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurtkoy-oto-cekici.html): ⏱️ 10 Dk intikal • Viaport AVM, Kurtköy Gişeleri, Yenişehir Mah., Çamlık, Ankara Caddesi, Sabiha Gökçen Bağlantısı
+- [Kuzey Marmara Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kuzey-marmara-otoyolu-oto-cekici.html): ⏱️ 15 Dk intikal • Kurtköy Gişeleri, Kurnaköy Gişeleri, Mecidiye Tesisleri, Akse Gişeleri, Sevindikli, Mermerciler Viyadüğü
+- [TEM Otoyolu Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tem-otoyolu-oto-cekici.html): ⏱️ 10 - 15 Dk intikal • Kurtköy TEM Çıkışı, Mehmetçik Vakfı Tesisleri, Şekerpınar Gişeleri, Gebze Doğu & Batı Gişeleri, Tuzla Yan Yol
+- [Gebze Çekici](https://www.kuzeymarmaracekici.com/bolgeler/gebze-oto-cekici.html): ⏱️ 10 Dk intikal • Gebze OSB, GOSB Meydanı, Barış Mahallesi, Tatlıkuyu Köprüsü, Eskihisar Feribot Yolu, D-100 Gebze Geçişi
+- [Pendik Çekici](https://www.kuzeymarmaracekici.com/bolgeler/pendik-oto-cekici.html): ⏱️ 10 Dk intikal • Pendik Köprüsü, Kaynarca Kavşağı, Pendik Marina, Velibaba Sanayi Caddesi, Kurtköy Bağlantı Yolu
+- [Çayırova Çekici](https://www.kuzeymarmaracekici.com/bolgeler/cayirova-oto-cekici.html): ⏱️ 10 Dk intikal • Akse Mahallesi, Çayırova Köprüsü, D-100 Kocaeli Sınırı, Şekerpınar Bağlantısı
+- [Sabiha Gökçen Havalimanı Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sabiha-gokcen-oto-cekici.html): ⏱️ 10 Dk intikal • Havalimanı Katlı Otoparkı, İç/Dış Hatlar Girişi, Kargo Terminali, Havalimanı Bağlantı Viyadüğü
+- [Tuzla Çekici](https://www.kuzeymarmaracekici.com/bolgeler/tuzla-oto-cekici.html): ⏱️ 12 Dk intikal • İçmeler Kavşağı, Aydınlı Yolu, Deri OSB, Akfırat / Tepeören, Tuzla Piyade Okulu Çevresi
+- [Şekerpınar Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sekerpinar-oto-cekici.html): ⏱️ 10 Dk intikal • Şekerpınar TEM Gişeleri, TAYSAD OSB, Lojistik Depolar Aksı, KMO Akse Çıkışı
+- [Dilovası Çekici](https://www.kuzeymarmaracekici.com/bolgeler/dilovasi-oto-cekici.html): ⏱️ 15 Dk intikal • Dilovası Rampası, Mermerciler OSB, Osmangazi Köprü Bağlantısı, Diliskelesi
+- [Sultanbeyli Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sultanbeyli-oto-cekici.html): ⏱️ 10 Dk intikal • TEM Sultanbeyli Gişeleri, Fatih Bulvarı, Gölet Parkı Çevresi, Paşaköy Ayrımı
+- [Sancaktepe Çekici](https://www.kuzeymarmaracekici.com/bolgeler/sancaktepe-oto-cekici.html): ⏱️ 10 Dk intikal • Samandıra Gişeleri, Paşaköy KMO Katılımı, Sarıgazi Meydanı, Rings AVM Çevresi
+- [Kurnaköy & Mecidiye Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kurnakoy-mecidiye-oto-cekici.html): ⏱️ 12 Dk intikal • Kurnaköy Gişeleri, Mecidiye Tesisleri, KMO km 120-140 Arası, Akfırat Ayrımı
+- [Darıca Çekici](https://www.kuzeymarmaracekici.com/bolgeler/darica-oto-cekici.html): ⏱️ 12 Dk intikal • Bayramoğlu Sahili, Darıca Millet Bahçesi, Eskihisar İskele Yolu, Cami Mahallesi
+- [Ömerli & Reşadiye Çekici](https://www.kuzeymarmaracekici.com/bolgeler/omerli-resadiye-oto-cekici.html): ⏱️ 15 Dk intikal • KMO Reşadiye Gişeleri, Ömerli Baraj Yolu, Hüseyinli Kavşağı, Şile Yolu Ayrımı
+- [Kartal Çekici](https://www.kuzeymarmaracekici.com/bolgeler/kartal-oto-cekici.html): ⏱️ 10 - 15 Dk intikal • Samandıra KMO Bağlantısı, Yakacık Rampaları, Kartal Köprüsü, Soğanlık E-5, Kartal Sahil Yolu
+- [Maltepe Çekici](https://www.kuzeymarmaracekici.com/bolgeler/maltepe-oto-cekici.html): ⏱️ 10 - 15 Dk intikal • Başıbüyük KMO Çıkışı, Küçükyalı Kavşağı, Zümrütevler, Süreyyapaşa Rampası, Maltepe Sahil Yolu
+- [Körfez & Hereke Çekici](https://www.kuzeymarmaracekici.com/bolgeler/korfez-hereke-oto-cekici.html): ⏱️ 10 - 15 Dk intikal • Hereke Tünelleri, KMO Doğu Gişeleri, Körfez Gişeleri, Hereke Viyadüğü, Yarımca Sanayi Liman Yolu
 
 ## Filo Donanımı ve Araç Tipleri
 - Hidrolik Kayar Kasa Platform: Binek otomobil, SUV, crossover ve hafif ticari araçlar için sıfır sürtünme.

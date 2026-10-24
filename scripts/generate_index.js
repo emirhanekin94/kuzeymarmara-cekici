@@ -16,7 +16,7 @@ function generateIndexHtml() {
   const regionCardsHtml = regions.map((r, idx) => `
           <div class="region-photo-card ${idx >= 4 ? 'mobile-hidden-region' : ''}" data-category="${r.category}">
             <div class="region-photo-img-wrap">
-              <img src="images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
+              <img src="images/${r.image}" alt="${r.name} Çekici" loading="lazy" width="400" height="200">
             </div>
             <div class="region-photo-body">
               <div class="region-photo-meta-row">
@@ -24,7 +24,7 @@ function generateIndexHtml() {
                 <span class="region-meta-tag" style="background: rgba(15, 23, 42, 0.06); color: #334155; border-color: #cbd5e1;">${r.categoryLabel}</span>
               </div>
               <h3 class="region-photo-title">
-                <a href="/bolgeler/${r.slug}.html">${r.name} Oto Çekici</a>
+                <a href="/bolgeler/${r.slug}.html">${r.name} Çekici</a>
               </h3>
               <p class="region-photo-hotspots">📍 ${r.hotspots}</p>
               <div class="region-photo-features">
@@ -270,87 +270,49 @@ function generateIndexHtml() {
       <picture class="hero-bg-picture">
         <source srcset="images/kapak-fotografi-mobile.webp" media="(max-width: 768px)" type="image/webp">
         <source srcset="images/kapak-fotografi.webp" media="(min-width: 769px)" type="image/webp">
-        <img src="images/kapak-fotografi.webp" alt="Marmara Çekici ve Oto Kurtarma Aracı" class="hero-bg-img" width="1920" height="1080" style="opacity: 0.28;">
+        <img src="images/kapak-fotografi.webp" alt="Marmara Çekici Filosu" class="hero-bg-img" width="1920" height="1080" fetchpriority="high">
       </picture>
-      <div class="hero-bg-overlay" style="background: linear-gradient(180deg, rgba(6,9,17,0.7) 0%, rgba(6,9,17,0.95) 100%);"></div>
+      <div class="hero-bg-overlay"></div>
 
       <div class="container" style="position: relative; z-index: 2; max-width: 1050px; text-align: center;">
         
-        <!-- Yalnızca Otoyol Değil: Şehir İçi Güvence Rozeti -->
-        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(16,185,129,0.14); border: 1px solid rgba(16,185,129,0.38); padding: 8px 18px; border-radius: 999px; margin-bottom: 14px;">
-          <span style="font-size: 1rem;">🚗</span>
-          <span style="color: #6ee7b7; font-size: 0.88rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase;">YALNIZCA OTOYOL DEĞİL: PENDİK, KARTAL, MALTEPE, GEBZE VE ÇAYIROVA ŞEHİR İÇİNDE DE 10 DAKİKADA YANINIZDAYIZ!</span>
-        </div>
-        <br>
-        <!-- Canlı Radar Göstergesi -->
-        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(234,88,12,0.12); border: 1px solid rgba(234,88,12,0.35); padding: 7px 16px; border-radius: 999px; margin-bottom: 20px;">
+        <!-- Canlı Radar / Nöbetçi Göstergesi -->
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(234,88,12,0.16); border: 1px solid rgba(234,88,12,0.45); padding: 7px 18px; border-radius: 999px; margin-bottom: 20px;">
           <span class="pulse-dot" style="width: 8px; height: 8px; background: #ea580c; border-radius: 50%; box-shadow: 0 0 10px #ea580c;"></span>
-          <span style="color: #ffedd5; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase;">ANADOLU YAKASI, KOCAELİ &amp; OTOYOL KORİDORU: 8 NÖBETÇİ ÇEKİCİ AKTİF</span>
+          <span style="color: #ffedd5; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase;">7/24 NÖBETÇİ ÇEKİCİ FİLOSU: 10-15 DAKİKADA YANINIZDA</span>
         </div>
 
-        <h1 style="font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 900; color: #ffffff; line-height: 1.2; margin-bottom: 20px;">
-          Marmara Bölge Çekici<br>
-          <span style="background: linear-gradient(90deg, #ff6b00 0%, #ff8800 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Anadolu Yakası, Kocaeli &amp; Otoyol Kurtarma</span>
+        <h1 style="font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 900; color: #ffffff; line-height: 1.2; margin-bottom: 20px; text-shadow: 0 2px 12px rgba(0,0,0,0.8);">
+          Marmara Çekici<br>
+          <span style="background: linear-gradient(90deg, #ff6b00 0%, #ff8800 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">7/24 Acil Çekici &amp; Yol Yardım</span>
         </h1>
 
-        <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: #cbd5e1; max-width: 840px; margin: 0 auto 30px; line-height: 1.7;">
-          <strong>Pendik, Kartal, Maltepe, Tuzla, Çayırova, Gebze</strong> şehir içi arterleri ile <strong>Kuzey Marmara &amp; TEM Otoyolu</strong> güzergahında <strong>10-15 dakikada</strong> en yakın nöbetçi kurtarıcımız yanınızda. Şehir içi ve otoyolda telefonda net sabit fiyat güvencesi, <strong>%100 Taşıma Kaskosu</strong> ve kapıda mobil POS ile kredi kartı kolaylığı.
+        <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: #cbd5e1; max-width: 840px; margin: 0 auto 35px; line-height: 1.7; text-shadow: 0 1px 8px rgba(0,0,0,0.8);">
+          <strong>Kurtköy, Pendik, Kartal, Maltepe, Tuzla, Gebze, Çayırova</strong> ve <strong>Kuzey Marmara &amp; TEM Otoyolu</strong> arterlerinde <strong>10-15 dakikada</strong> en yakın nöbetçi kurtarıcımız yanınızda. Şehir içi ve otoyolda telefonda net sabit fiyat güvencesi, <strong>%100 Taşıma Kaskosu</strong> ve kapıda mobil POS ile kredi kartı kolaylığı.
         </p>
-
-        <!-- Acil Butonlar (Büyük ve Mobil Öncelikli) -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 35px;">
-          <a href="tel:${PHONE_RAW}" class="btn btn-call btn-lg" style="padding: 18px 36px; font-size: 1.15rem; font-weight: 900; border-radius: 14px; box-shadow: 0 10px 30px rgba(234,88,12,0.4); text-decoration: none;">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
-            <span>HEMEN ARA: ${PHONE}</span>
-          </a>
-          <button type="button" id="btn-gps-autolocate" class="btn btn-gps-auto btn-lg" style="padding: 18px 34px; font-size: 1.15rem; font-weight: 900; border-radius: 14px;" aria-label="Uydudan Tek Tıkla Canlı Konum Gönder">
-            <span class="gps-pulse-dot"></span>
-            <span id="btn-gps-text">UYDUDAN CANLI KONUM AT (1 TIKLA)</span>
-          </button>
-          <button type="button" class="btn btn-whatsapp btn-lg btn-send-location" style="padding: 18px 36px; font-size: 1.15rem; font-weight: 900; border-radius: 14px; box-shadow: 0 10px 30px rgba(16,185,129,0.3);">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="vertical-align: middle; margin-right: 8px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
-            <span>WHATSAPP CANLI KONUM AT</span>
-          </button>
-        </div>
-
-        <!-- Hızlı Güzergah Seçici (Milestone Selector - Form Yerine Modern Haplar) -->
-        <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 20px 24px; margin-bottom: 40px; text-align: center;">
-          <span style="color: #94a3b8; font-size: 0.88rem; font-weight: 700; display: block; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;">
-            📍 Hızlı Güzergah Seçimi (10-15 Dk Nöbetçi Çekici İntikali):
-          </span>
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
-            <a href="bolgeler/kurtkoy-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">🛣️ Kurtköy &amp; Viaport</a>
-            <a href="bolgeler/kuzey-marmara-otoyolu-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">📍 KMO Mecidiye Gişeler</a>
-            <a href="bolgeler/tem-otoyolu-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">⛽ TEM Mehmetçik Tesisleri</a>
-            <a href="bolgeler/sabiha-gokcen-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">✈️ Sabiha Gökçen</a>
-            <a href="bolgeler/gebze-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">🏭 Gebze OSB</a>
-            <a href="bolgeler/kurnakoy-mecidiye-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">🌉 Kurnaköy Gişeleri</a>
-            <a href="bolgeler/pendik-oto-cekici.html" style="background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s;">🚗 Pendik &amp; Tuzla</a>
-          </div>
-        </div>
 
         <!-- 4 Otoyol Kokpit Göstergesi (Glassmorphism) -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; text-align: left;">
           
-          <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
+          <div style="background: rgba(15,23,42,0.72); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.35);">
             <div style="font-size: 1.8rem; margin-bottom: 8px;">⚡</div>
             <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">10 - 15 Dk Varış</strong>
             <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">KMO ve TEM arterlerinde hazır bekleyen devriye ekipleri</span>
           </div>
 
-          <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
+          <div style="background: rgba(15,23,42,0.72); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.35);">
             <div style="font-size: 1.8rem; margin-bottom: 8px;">🛡️</div>
             <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">%100 Kasko Güvencesi</strong>
             <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">Tüm nakliye boyunca tam kapsamlı emtia taşıma sigortası</span>
           </div>
 
-          <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
+          <div style="background: rgba(15,23,42,0.72); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.35);">
             <div style="font-size: 1.8rem; margin-bottom: 8px;">🏷️</div>
             <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Telefonda Sabit Fiyat</strong>
             <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">Telefonda teyit edilen net ve şeffaf fiyat; sonradan sürpriz ek masraf yok</span>
           </div>
 
-          <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 20px;">
+          <div style="background: rgba(15,23,42,0.72); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.35);">
             <div style="font-size: 1.8rem; margin-bottom: 8px;">🏎️</div>
             <strong style="color: #fff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Sıfır Açılı Rampa</strong>
             <span style="color: #94a3b8; font-size: 0.85rem; line-height: 1.4; display: block;">Lüks, spor ve elektrikli araçlar için tampona sıfır temas</span>
@@ -402,98 +364,11 @@ function generateIndexHtml() {
       </div>
     </section>
 
-    <!-- DÖNÜŞÜM MOTORU: İNTERAKTİF FİYAT & SÜRE HESAPLAYICI & CANLI DEVRİYE RADARI -->
-    <section class="section" style="padding: 60px 0; background: #f8fafc;" id="fiyat-hesapla">
+    <!-- CANLI OTOYOL NÖBETÇİ ÇEKİCİ RADARI -->
+    <section class="section" style="padding: 50px 0; background: #f8fafc;" id="canli-devriye-radari">
       <div class="container">
-        <div class="section-header text-center" style="text-align: center; max-width: 820px; margin: 0 auto 35px;">
-          <span class="section-badge" style="background: rgba(234,88,12,0.1); color: #ea580c; border: 1px solid rgba(234,88,12,0.25); padding: 5px 14px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">
-            Şeffaf Maliyet &amp; Süre
-          </span>
-          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-            Çekici Ücreti &amp; Varış Süresi Hesaplayıcı
-          </h2>
-          <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
-            Konumunuzu ve aracınızı seçin; telefonda onaylanan sürprizsiz sabit fiyat ve canlı nöbetçi çekici intikal süresini anında görün.
-          </p>
-        </div>
-
-        <!-- İnteraktif Hesaplama Widget'ı -->
-        <div class="pricing-calc-box">
-          <div class="calc-grid-form">
-            <div class="calc-input-group">
-              <label for="calc-pickup">1. Nereden (Aracın Konumu):</label>
-              <select id="calc-pickup" class="calc-select" aria-label="Aracınızın Bulunduğu Konumu Seçin">
-                <option value="kurtkoy" selected>🛣️ Kurtköy Kavşağı / Viaport AVM</option>
-                <option value="kmo">🌉 KMO Mecidiye Gişeler / Tünel</option>
-                <option value="tem">⛽ TEM Otoyolu / Mehmetçik Tesisleri</option>
-                <option value="sabiha">✈️ Sabiha Gökçen Havalimanı Çevresi</option>
-                <option value="gebze">🏭 Gebze OSB / Çayırova / Şekerpınar</option>
-                <option value="pendik">🚗 Pendik / Kaynarca / E-5 Hattı</option>
-                <option value="tuzla">⚓ Tuzla / Aydınlı / İçmeler</option>
-                <option value="kurnakoy">📍 Kurnaköy / Akfırat / Tepeören</option>
-                <option value="dilovasi">🌉 Dilovası / Osmangazi Köprüsü / Hereke</option>
-                <option value="kartal">🏙️ Kartal / Maltepe / E-5 Güzergahı</option>
-                <option value="sultanbeyli">🛣️ Sultanbeyli / Sancaktepe / Samandıra</option>
-                <option value="diger">📍 Diğer Otoyol veya Şehir İçi Nokta</option>
-              </select>
-            </div>
-
-            <div class="calc-input-group">
-              <label for="calc-dropoff">2. Nereye (Teslimat Noktası):</label>
-              <select id="calc-dropoff" class="calc-select" aria-label="Teslim Edilecek Noktayı Seçin">
-                <option value="yakin" selected>🔧 En Yakın Yetkili/Özel Servis (0 - 15 km)</option>
-                <option value="anadolu">🏙️ Anadolu Yakası Sanayi Siteleri (15 - 35 km)</option>
-                <option value="avrupa">🌉 Avrupa Yakası (Boğaz Geçişi • 35 - 65 km)</option>
-                <option value="kocaeli">🏭 Kocaeli / İzmit / Sakarya (40 - 80 km)</option>
-                <option value="sehirlerarasi">🗺️ Şehirler Arası Uzun Yol Transferi (100+ km)</option>
-              </select>
-            </div>
-
-            <div class="calc-input-group">
-              <label for="calc-vehicle">3. Araç Tipi:</label>
-              <select id="calc-vehicle" class="calc-select" aria-label="Araç Tipinizi Seçin">
-                <option value="binek" selected>🚗 Binek Otomobil (Sedan / Hatchback)</option>
-                <option value="suv">🚙 SUV / 4x4 / Crossover / Pikap</option>
-                <option value="ticari">🚐 Minibüs / Panelvan / Hafif Ticari</option>
-                <option value="luks">🏎️ Lüks &amp; Alçak Şasi Spor Otomobil</option>
-                <option value="motor">🏍️ Motosiklet / Maxi Scooter</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Hesaplama Sonuç Paneli -->
-          <div class="calc-result-panel">
-            <div class="calc-metric-item">
-              <span class="calc-metric-label">⏱️ Tahmini Varış</span>
-              <span class="calc-metric-value highlight-orange" id="calc-eta-val">10 - 15 Dakika</span>
-            </div>
-            <div class="calc-metric-item">
-              <span class="calc-metric-label">🏷️ Fiyat Politikası</span>
-              <span class="calc-metric-value highlight-green" id="calc-price-val">Telefonda Sabit Fiyat Garantisi</span>
-            </div>
-            <div class="calc-metric-item">
-              <span class="calc-metric-label">🛡️ Kasko Güvencesi</span>
-              <span class="calc-metric-value" style="font-size: 1.15rem; color: #38bdf8;">%100 Emtia Sigortası</span>
-            </div>
-            <div class="calc-metric-item">
-              <span class="calc-metric-label">💳 Ödeme Tipi</span>
-              <span class="calc-metric-value" style="font-size: 1.15rem; color: #facc15;">Mobil POS / Kredi Kartı</span>
-            </div>
-          </div>
-
-          <!-- Aksiyon Butonları -->
-          <div class="calc-actions-row">
-            <a href="tel:${PHONE_RAW}" id="calc-btn-call" class="btn btn-call btn-lg" style="padding: 16px 32px; font-weight: 900; border-radius: 12px; text-decoration: none;">
-              📞 HEMEN ARA &amp; FİYAT AL: ${PHONE}
-            </a>
-            <button type="button" id="calc-btn-whatsapp" class="btn btn-whatsapp btn-lg" style="padding: 16px 32px; font-weight: 900; border-radius: 12px;">
-              💬 WHATSAPP'TAN FİYAT SOR
-            </button>
-          </div>
-        </div>
-
         <!-- Canlı Otoyol Nöbetçi Çekici Radarı Ticker -->
-        <div class="live-radar-box" style="margin-top: 40px;">
+        <div class="live-radar-box">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 16px;">
             <div style="display: flex; align-items: center; gap: 10px;">
               <span class="gps-pulse-dot" style="background: #10b981; box-shadow: 0 0 12px #10b981;"></span>
@@ -745,7 +620,7 @@ function generateIndexHtml() {
             7/24 Kesintisiz Nöbet
           </span>
           <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin: 12px 0 10px;">
-            Fotoğraflı Hizmet Bölgelerimiz
+            Hizmet Bölgelerimiz
           </h2>
           <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
             Bulunduğunuz güzergahı seçerek ortalama intikal süresi, yol ve kavşak analizlerini inceleyebilir, doğrudan nöbetçi ekibimizi arayabilirsiniz.

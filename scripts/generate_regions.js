@@ -11,14 +11,16 @@ const PHONE = '0533 265 70 89';
 const PHONE_RAW = '905332657089';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
+const waSvg = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>`;
+
 const regions = [
   {
     slug: 'kurtkoy-oto-cekici',
     name: 'Kurtköy',
     category: 'anadolu-merkez',
     categoryLabel: 'Kurtköy & Viaport',
-    image: 'otomobil_cekici-1.webp',
-    title: 'Kurtköy Oto Çekici 7/24 | 10 Dk En Yakın Çekici - 0533 265 70 89',
+    image: 'kapak-fotografi.webp',
+    title: 'Kurtköy Çekici 7/24 | 10 Dk En Yakın Çekici - 0533 265 70 89',
     metaDesc: 'Kurtköy çekici, Kurtköy oto çekici ve 7/24 acil oto kurtarma. Viaport, Yenişehir, Çamlık, TEM ve KMO gişelerinde 10-15 dakikada intikal: 0533 265 70 89.',
     keywords: 'kurtköy çekici, kurtköy oto çekici, viaport çekici, kurtköy acil çekici, yenişehir çekici, çamlık çekici, kurtköy oto kurtarma, kurtköy yol yardım',
     eta: '10 Dk',
@@ -44,19 +46,19 @@ const regions = [
       { q: 'Viaport kapalı otoparkından araç çekebiliyor musunuz?', a: 'Evet, alçak tavanlı kapalı otopark kurtarıcılarımızla yer altı katlarından hasarsız araç tahliyesi yapıyoruz.' },
       { q: 'Kurtköy çekici fiyatı ne kadar?', a: 'Mesafe, araç türü ve varış noktasına göre şeffaf sabit fiyat tarifemiz geçerlidir. Telefonda belirtilen fiyat harici asla sürpriz ücret çıkmaz.' },
       { q: 'Akü takviyesi ve yerinde lastik tamiri var mı?', a: 'Evet, 12V/24V taşınabilir dijital booster ile akü takviyesi ve yerinde stepne değişimi desteğimiz 7/24 aktiftir.' },
-      { q: 'Ödeme kredi kartıyla yapılabilir mi?', a: 'Evet, kurtarıcı araçlarımızda mobil POS cihazı bulunmakta olup tüm kredi kartlarına tek çekim ve taksit imkanı mevcuttur.' },
+      { q: 'Taşıma esnasında ödeme kredi kartıyla yapılabilir mi?', a: 'Evet, kurtarıcı araçlarımızda mobil POS cihazı bulunmakta olup tüm kredi kartlarına tek çekim ve taksit imkanı mevcuttur.' },
       { q: 'Aracımı dilediğim servise götürebilir miyim?', a: 'Evet, aracınızı Pendik, Kartal veya Gebze\'deki dilediğiniz yetkili ya da özel servise güvenle teslim ediyoruz.' }
     ]
   },
   {
     slug: 'kuzey-marmara-otoyolu-oto-cekici',
-    name: 'Kuzey Marmara Otoyolu',
+    name: 'Kuzey Marmara',
     category: 'otoyol-giseler',
     categoryLabel: 'KMO & Gişeler',
     image: 'otoyol-cekici.webp',
-    title: 'Kuzey Marmara Otoyolu Çekici 7/24 | 15 Dk Kurtarma - 0533 265 70 89',
-    metaDesc: 'Kuzey Marmara Otoyolu çekici, KMO gişeleri, tüneller, viyadükler ve dinlenme tesislerinde 7/24 acil oto kurtarıcı. 15 dakikada intikal: 0533 265 70 89.',
-    keywords: 'kuzey marmara otoyolu çekici, marmara çekici, kmo çekici, kmo oto kurtarma, kuzey marmara oto kurtarıcı, otoban çekici kuzey marmara',
+    title: 'Kuzey Marmara Çekici 7/24 | 15 Dk Kurtarma - 0533 265 70 89',
+    metaDesc: 'Kuzey Marmara çekici, KMO gişeleri, tüneller, viyadükler ve dinlenme tesislerinde 7/24 acil oto kurtarıcı. 15 dakikada intikal: 0533 265 70 89.',
+    keywords: 'kuzey marmara çekici, marmara çekici, kmo çekici, kmo oto kurtarma, kuzey marmara oto kurtarıcı, otoban çekici kuzey marmara',
     eta: '15 Dk',
     caseTitle: 'KMO Mecidiye Mevkiinde Lastik Parçalanması Kurtarması',
     caseDesc: 'Kuzey Marmara Otoyolu Mecidiye dinlenme tesisi yakınında çift lastiği yarılan SUV araca 12 dakikada ulaşılarak tepe lambalı güvenlik koridoru eşliğinde kayar kasaya yüklendi.',
@@ -126,7 +128,7 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Gebze & Sanayi',
     image: 'ticari-cekici-1.webp',
-    title: 'Gebze Oto Çekici 7/24 | En Yakın Gebze Çekici - 0533 265 70 89',
+    title: 'Gebze Çekici 7/24 | En Yakın Gebze Çekici - 0533 265 70 89',
     metaDesc: 'Gebze çekici, Gebze oto çekici, Gebze OSB, Barış Mahallesi, Eskihisar ve sanayi sitelerinde 7/24 acil oto kurtarma ve yol yardım. 10 Dk intikal: 0533 265 70 89.',
     keywords: 'gebze çekici, gebze oto çekici, gebze oto kurtarma, gebze osb çekici, gebze acil çekici, gebze yol yardım, gebze oto kurtarıcı',
     eta: '10 Dk',
@@ -161,8 +163,8 @@ const regions = [
     name: 'Pendik',
     category: 'anadolu-merkez',
     categoryLabel: 'Pendik & Sahil',
-    image: 'oto-kurtarici.webp',
-    title: 'Pendik Oto Çekici 7/24 | En Yakın Pendik Çekici - 0533 265 70 89',
+    image: 'otomobil-cekici-1.webp',
+    title: 'Pendik Çekici 7/24 | En Yakın Pendik Çekici - 0533 265 70 89',
     metaDesc: 'Pendik çekici, Pendik oto çekici, Kaynarca, Velibaba, Kurtköy yolu, E-5 ve Pendik Marina mevkiinde 7/24 kaskolu acil oto kurtarma: 0533 265 70 89.',
     keywords: 'pendik çekici, pendik oto çekici, kaynarca çekici, velibaba çekici, pendik oto kurtarma, pendik yol yardım, pendik acil çekici',
     eta: '10 Dk',
@@ -186,7 +188,7 @@ const regions = [
     faqs: [
       { q: 'Pendik oto çekici kaç dakikada gelir?', a: 'Konumunuza göre ortalama 8 ila 12 dakika içinde yanınızdayız.' },
       { q: 'Pendik Oto Sanayi Sitesine çekim yapıyor musunuz?', a: 'Evet, sanayi sitelerine ve özel/yetkili servislere öncelikli teslimat yapıyoruz.' },
-      { q: 'Kredi kartı geçerli mi?', a: 'Evet, mobil POS ile tüm kartlar geçerlidir.' },
+      { q: 'Kredi kartı geçerli mi?', a: 'Evet, seyyar mobil POS cihazlarımızla tüm banka kartları geçerlidir.' },
       { q: 'Motosiklet çekiyor musunuz?', a: 'Özel ön teker sabitleme sehpamızla motosikletleri dik ve hasarsız taşıyoruz.' },
       { q: 'Fiyat ne kadar?', a: 'Kısa mesafe taban ücretimiz ve şeffaf km tarifemiz uygulanır; telefonda teyit edilen fiyat sabittir.' },
       { q: 'Sahil yolunda gece hizmetiniz var mı?', a: 'Evet, gece-gündüz farkı olmadan 7/24 kesintisiz nöbetçiyiz.' }
@@ -198,7 +200,7 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Çayırova & Şekerpınar',
     image: 'ticari-arac-cekici.webp',
-    title: 'Çayırova Oto Çekici 7/24 | En Yakın Çayırova Çekici - 0533 265 70 89',
+    title: 'Çayırova Çekici 7/24 | En Yakın Çayırova Çekici - 0533 265 70 89',
     metaDesc: 'Çayırova çekici, Çayırova oto çekici, Akse Mahallesi, Yenimahalle, Şekerpınar otoban bağlantısında 7/24 oto kurtarma ve yol yardım: 0533 265 70 89.',
     keywords: 'çayırova çekici, çayırova oto çekici, akse mahallesi çekici, çayırova oto kurtarma, çayırova yol yardım, çayırova acil çekici',
     eta: '10 Dk',
@@ -259,7 +261,7 @@ const regions = [
       { q: 'Havalimanı katlı otoparkına çekici girer mi?', a: 'Evet, alçak tavan kurtarıcımızla otopark katlarından hasarsız tahliye yapıyoruz.' },
       { q: 'Akü takviyesi ne kadar sürer?', a: 'Otoparka girişimizle birlikte 5 dakika içinde aracınızı çalıştırıyoruz.' },
       { q: 'Uçuş saatinde acil yetişme desteği var mı?', a: 'Evet, aracı güvenle teslim alıp sizi terminale yönlendiriyoruz.' },
-      { q: 'Ödeme nasıl yapılır?', a: 'Kredi kartı, nakit veya FAST geçerlidir.' },
+      { q: 'Ödeme nasıl yapılır?', a: 'İster kredi kartı, ister nakit veya FAST ile kolayca ödeme yapabilirsiniz.' },
       { q: 'Gece çekici var mı?', a: 'Havalimanı aksında 7/24 kesintisiz nöbetçiyiz.' },
       { q: 'Kargo sahasına araç gönderebiliyor musunuz?', a: 'Evet, kargo sahası ve havalimanı gümrük bölgesine giriş iznine sahip araçlarımızla hizmet veriyoruz.' }
     ]
@@ -269,7 +271,7 @@ const regions = [
     name: 'Tuzla',
     category: 'anadolu-merkez',
     categoryLabel: 'Tuzla & İçmeler',
-    image: 'otomobil-cekici-1.webp',
+    image: 'otomobil-cekici-2.webp',
     title: 'Tuzla Oto Çekici 7/24 | En Yakın Tuzla Çekici - 0533 265 70 89',
     metaDesc: 'Tuzla çekici, Tuzla oto çekici, İçmeler, Aydınlı, Tepeören, Deri OSB, Formula 1 yolu ve D-100 Tuzla geçişinde 7/24 oto kurtarma: 0533 265 70 89.',
     keywords: 'tuzla çekici, tuzla oto çekici, içmeler çekici, aydınlı çekici, tepeören çekici, deri osb çekici, tuzla oto kurtarma, tuzla yol yardım',
@@ -296,7 +298,7 @@ const regions = [
       { q: 'Tepeören ve Akfırat bölgesine servisiniz var mı?', a: 'Evet, Formula 1 ve Tepeören villalar bölgesine 12 dakikada ulaşıyoruz.' },
       { q: 'Taşıma kaskolu mu?', a: 'Tüm araçlarımız %100 emtia sigortasıyla taşınır.' },
       { q: 'Akü takviyesi var mı?', a: 'Evet, taşınabilir dijital cihazla yerinde takviye sağlıyoruz.' },
-      { q: 'Ödeme kredi kartıyla olur mu?', a: 'Evet, mobil POS ile tüm kartlar kabul edilir.' },
+      { q: 'Ödeme kredi kartıyla olur mu?', a: 'Evet, bölgedeki nöbetçi araçlarımızda mobil POS ile tüm kartlar kabul edilir.' },
       { q: 'Tersane bölgesine araç girebiliyor mu?', a: 'Evet, Tuzla Tersaneler bölgesine uygun izinli araçlarımız mevcuttur.' }
     ]
   },
@@ -328,7 +330,7 @@ const regions = [
       { place: 'KMO Akse Gişe Bağlantısı', km: 5, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' }
     ],
     faqs: [
-      { q: 'Şekerpınar gişelerine kaç dakikada gelirsiniz?', a: 'Ortalama 8-10 dakika içinde gişelerdeyiz.' },
+      { q: 'Şekerpınar gişelerine kaç dakikada gelirsiniz?', a: 'Trafik durumuna göre ortalama 8 ila 10 dakika içinde ilgili gişelerdeyiz.' },
       { q: 'Kamyon ve minibüs çekiyor musunuz?', a: 'Evet, ağır vasıta ve hafif ticari kurtarıcılarımız mevcuttur.' },
       { q: 'Fiyatlar sabit mi?', a: 'Telefonda teyit edilen fiyat sabittir; sürpriz ek ücret çıkmaz.' },
       { q: 'Gece çekici var mı?', a: '7/24 nöbetçi ekibimiz hazır beklemektedir.' },
@@ -377,7 +379,7 @@ const regions = [
     name: 'Sultanbeyli',
     category: 'anadolu-merkez',
     categoryLabel: 'Sultanbeyli & TEM',
-    image: 'otomobil_cekici-2.webp',
+    image: 'otomobil-cekici-4.webp',
     title: 'Sultanbeyli Oto Çekici 7/24 | En Yakın Çekici - 0533 265 70 89',
     metaDesc: 'Sultanbeyli çekici, Sultanbeyli oto çekici, TEM Sultanbeyli gişeleri, Fatih Bulvarı, Hasanpaşa ve KMO Paşaköy bağlantısında 7/24 acil kurtarma: 0533 265 70 89.',
     keywords: 'sultanbeyli çekici, sultanbeyli oto çekici, sultanbeyli oto kurtarma, sultanbeyli yol yardım, fatih bulvarı çekici, sultanbeyli acil çekici',
@@ -449,7 +451,7 @@ const regions = [
     name: 'Kurnaköy & Mecidiye',
     category: 'otoyol-giseler',
     categoryLabel: 'Kurnaköy Gişeleri',
-    image: 'otoyol-cekici.webp',
+    image: 'oto-kurtarici.webp',
     title: 'Kurnaköy & Mecidiye Çekici 7/24 | KMO Gişeler - 0533 265 70 89',
     metaDesc: 'Kurnaköy çekici, Mecidiye dinlenme tesisi çekici, KMO Kurnaköy gişeleri ve Akfırat bağlantısında 7/24 acil otoyol kurtarıcı: 0533 265 70 89.',
     keywords: 'kurnaköy çekici, kurnaköy gişeler çekici, mecidiye çekici, kmo mecidiye dinlenme tesisi çekici, kurnaköy oto kurtarma',
@@ -476,7 +478,7 @@ const regions = [
       { q: 'Mecidiye tesislerine servisiniz var mı?', a: 'Evet, dinlenme tesisine dakikalar içinde giriyoruz.' },
       { q: 'Otoyol çekici ücreti nedir?', a: 'Şeffaf ve sabit km tarifesi geçerlidir.' },
       { q: 'Kredi kartı geçerli mi?', a: 'Evet, mobil POS ile araç başında ödeyebilirsiniz.' },
-      { q: 'Elektrikli araç çekiyor musunuz?', a: 'Özel rampa aparatıyla bataryayı koruyarak çekiyoruz.' },
+      { q: 'Bölgenizde elektrikli araç çekiyor musunuz?', a: 'Özel rampa aparatıyla bataryayı koruyarak çekiyoruz.' },
       { q: 'Gişede yakıt bittiğinde takviye yapıyor musunuz?', a: 'Evet, acil yakıt ikmali desteğimiz bulunmaktadır.' }
     ]
   },
@@ -485,7 +487,7 @@ const regions = [
     name: 'Darıca',
     category: 'kocaeli-sanayi',
     categoryLabel: 'Darıca & Eskihisar',
-    image: 'otomobil_cekici-3.webp',
+    image: 'otomobil-cekici-5.webp',
     title: 'Darıca Oto Çekici 7/24 | Bayramoğlu & Sahil - 0533 265 70 89',
     metaDesc: 'Darıca çekici, Darıca oto çekici, Bayramoğlu, Kazım Karabekir, Nenehatun, Darıca sahil ve Eskihisar aksında 7/24 oto kurtarma: 0533 265 70 89.',
     keywords: 'darıca çekici, darıca oto çekici, bayramoğlu çekici, darıca oto kurtarma, darıca yol yardım, darıca acil çekici',
@@ -593,7 +595,7 @@ const regions = [
     name: 'Maltepe',
     category: 'anadolu-merkez',
     categoryLabel: 'Maltepe & Başıbüyük',
-    image: 'e-5-cekici.webp',
+    image: 'luks-arac-cekici.webp',
     title: 'Maltepe Oto Çekici 7/24 | Başıbüyük KMO & E-5 Çekici - 0533 265 70 89',
     metaDesc: 'Maltepe çekici, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto kurtarıcı. 10-15 dk varış: 0533 265 70 89.',
     keywords: 'maltepe çekici, maltepe oto çekici, başıbüyük çekici, küçükyalı çekici, zümrütevler çekici, maltepe oto kurtarma',
@@ -754,6 +756,8 @@ function generateRegionHtml(reg) {
     </tr>
   `).join('\n');
 
+  const mobileImage = reg.image === 'kapak-fotografi.webp' ? 'kapak-fotografi-mobile.webp' : reg.image;
+
   return `<!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -765,7 +769,8 @@ function generateRegionHtml(reg) {
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/bolgeler/${reg.slug}.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
-  <link rel="preload" as="image" href="/images/${reg.image}" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/${mobileImage}" media="(max-width: 768px)" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/${reg.image}" media="(min-width: 769px)" type="image/webp" fetchpriority="high">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
@@ -849,53 +854,72 @@ function generateRegionHtml(reg) {
     </div>
   </header>
 
-  <!-- Lüks İç Sayfa Hero Bölümü -->
-  <section class="inner-hero-lux">
-    <div class="container">
-      <nav class="inner-breadcrumb-nav" aria-label="Breadcrumb">
+  <!-- Lüks İç Sayfa Hero Bölümü (Referans Tasarıma Birebir Uygun) -->
+  <section class="inner-hero-lux" style="position: relative; overflow: hidden; background: #070b14; padding: 40px 0 55px;">
+    <picture class="inner-hero-bg-picture" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+      <source srcset="/images/${mobileImage}" media="(max-width: 768px)" type="image/webp">
+      <source srcset="/images/${reg.image}" media="(min-width: 769px)" type="image/webp">
+      <img src="/images/${reg.image}" alt="${reg.name} Çekici Filosu" class="inner-hero-bg" width="1920" height="1080" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; opacity: 0.90; filter: brightness(1.02);" fetchpriority="high">
+    </picture>
+    <div class="inner-hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(7, 11, 20, 0.45) 0%, rgba(7, 11, 20, 0.20) 40%, rgba(7, 11, 20, 0.75) 100%);"></div>
+    
+    <div class="container" style="position: relative; z-index: 2; max-width: 680px; text-align: center;">
+      <nav class="inner-breadcrumb-nav" aria-label="Breadcrumb" style="justify-content: center; margin-bottom: 14px;">
         <a href="/">Ana Sayfa</a> <span>/</span>
         <a href="/bolgeler/index.html">Bölgelerimiz</a> <span>/</span>
-        <span class="current">${reg.name} Oto Çekici</span>
+        <span class="current">${reg.name} Çekici</span>
       </nav>
 
-      <span class="inner-hero-badge">
-        <span class="pulse-dot"></span> ⚡ ${reg.eta} Varış Garantisi • 7/24 Canlı Nöbetçi Kurtarıcı
-      </span>
+      <!-- Yolda mı kaldınız badge -->
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(30, 20, 10, 0.75); border: 1px solid rgba(234, 88, 12, 0.45); border-radius: 999px; padding: 7px 18px; margin-bottom: 16px;">
+        <span style="width: 8px; height: 8px; background: #ea580c; border-radius: 50%; box-shadow: 0 0 8px #ea580c;"></span>
+        <span style="color: #ffedd5; font-size: 0.85rem; font-weight: 700;">Yolda mı kaldınız? Ortalama varış süremiz ${reg.eta ? (reg.eta.replace(/dakika|dk/gi, '').trim() + ' dakika') : '10-15 dakika'}!</span>
+      </div>
 
-      <h1 class="inner-hero-title">
-        ${reg.name} Oto Çekici &amp; <span>7/24 Acil Oto Kurtarma</span>
+      <!-- Başlık (Referanstaki Birebir Renk & Boyut) -->
+      <h1 style="font-size: clamp(1.85rem, 4.5vw, 2.7rem); font-weight: 900; color: #ffffff; line-height: 1.25; margin: 0 0 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.9);">
+        ${reg.name} Çekici &amp; 7/24<br>
+        <span style="color: #ff5500;">${reg.name} Oto Kurtarma</span> | <span style="color: #ff5500;">En Yakın Oto Çekici</span>
       </h1>
 
-      <p class="inner-hero-desc">
-        ${reg.leadText}
-      </p>
-
-      <div class="inner-trust-pills">
-        <span class="inner-trust-pill">🛡️ %100 Taşıma Kaskolu</span>
-        <span class="inner-trust-pill">💰 Telefonda Sabit Fiyat Sözü</span>
-        <span class="inner-trust-pill">💳 Mobil POS &amp; Kredi Kartı</span>
-        <span class="inner-trust-pill">🏎️ Sıfır Açılı Rampa (Lüks &amp; Elektrikli)</span>
+      <!-- Açıklama Kartı (Transparan Cam Efekti) -->
+      <div style="background: rgba(15, 23, 42, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); text-align: left;">
+        <p style="color: #f1f5f9; font-size: 0.95rem; line-height: 1.65; margin: 0;">
+          ${reg.leadText}
+        </p>
       </div>
 
-      <!-- Quick Stats Strip -->
-      <div class="stats-strip-lux">
-        <div class="stats-strip-item">
-          <span class="stats-strip-val">⏱️ ${reg.eta}</span>
-          <span class="stats-strip-lbl">Ortalama Varış Süresi</span>
-        </div>
-        <div class="stats-strip-item">
-          <span class="stats-strip-val">🛡️ %100</span>
-          <span class="stats-strip-lbl">Emtia Nakliyat Kaskosu</span>
-        </div>
-        <div class="stats-strip-item">
-          <span class="stats-strip-val">📍 7/24</span>
-          <span class="stats-strip-lbl">Bölgede Nöbetçi Filo</span>
-        </div>
-        <div class="stats-strip-item">
-          <span class="stats-strip-val">⭐ 5.0 / 5.0</span>
-          <span class="stats-strip-lbl">128+ Onaylı Müşteri Puanı</span>
+      <!-- 2x2 İstatistik Kartı -->
+      <div style="background: rgba(15, 23, 42, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 20px; margin-bottom: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); text-align: left;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px;">
+          <div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px;">${reg.eta || '10 - 15 Dk'}</div>
+            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Ortalama Ulaşım</div>
+          </div>
+          <div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px;">7/24 Saat</div>
+            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Nöbetçi Çekici</div>
+          </div>
+          <div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px;">%100 Güven</div>
+            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Kaskolu Taşıma</div>
+          </div>
+          <div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px;">5.0 ⭐</div>
+            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Google Müşteri Puanı</div>
+          </div>
         </div>
       </div>
+
+      <!-- Hızlı Fiyat Teklifi Al Şeridi -->
+      <div style="background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.35); text-align: left;">
+        <div>
+          <strong style="color: #fff; font-size: 0.95rem; display: block; margin-bottom: 2px;">Hızlı Fiyat Teklifi Al</strong>
+          <span style="color: #94a3b8; font-size: 0.78rem;">Konum atın, telefonda net sabit fiyat verelim</span>
+        </div>
+        <a href="tel:${PHONE_RAW}" class="btn btn-call" style="padding: 10px 18px; border-radius: 10px; font-weight: 800; font-size: 0.88rem; text-decoration: none; white-space: nowrap;">Hemen Ara →</a>
+      </div>
+
     </div>
   </section>
 
@@ -1097,7 +1121,7 @@ function generateRegionHtml(reg) {
               📞 Hemen Ara: ${PHONE}
             </a>
             <button type="button" class="btn btn-whatsapp btn-block btn-lg btn-send-location">
-              💬 WhatsApp Canlı Konum
+              ${waSvg} WhatsApp Canlı Konum
             </button>
             <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #94a3b8; display: flex; justify-content: space-between;">
               <span>⏱️ Yanıt: 30 Saniye</span>
@@ -1328,7 +1352,7 @@ function generateIndexHtml() {
   const cardsHtml = regions.map(r => `
     <div class="region-photo-card" data-category="${r.category}">
       <div class="region-photo-img-wrap">
-        <img src="/images/${r.image}" alt="${r.name} Oto Çekici" loading="lazy" width="400" height="200">
+        <img src="/images/${r.image}" alt="${r.name} Çekici" loading="lazy" width="400" height="200">
       </div>
       <div class="region-photo-body">
         <div class="region-photo-meta-row">
@@ -1336,7 +1360,7 @@ function generateIndexHtml() {
           <span class="region-meta-tag" style="background: rgba(15, 23, 42, 0.06); color: #334155; border-color: #cbd5e1;">${r.categoryLabel}</span>
         </div>
         <h3 class="region-photo-title">
-          <a href="/bolgeler/${r.slug}.html">${r.name} Oto Çekici</a>
+          <a href="/bolgeler/${r.slug}.html">${r.name} Çekici</a>
         </h3>
         <p class="region-photo-hotspots">📍 ${r.hotspots}</p>
         <div class="region-photo-features">
@@ -1395,7 +1419,7 @@ function generateIndexHtml() {
         <a href="/" class="brand-logo">
           <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="46" height="46">
           <div class="brand-text">
-            <span class="brand-name">KUZEY MARMARA <span>ÇEKİCİ</span></span>
+            <span class="brand-name">MARMARA <span>ÇEKİCİ</span></span>
             <span class="brand-tagline">7/24 Acil Yol Yardım &amp; Kurtarma</span>
           </div>
         </a>
@@ -1447,7 +1471,7 @@ function generateIndexHtml() {
       
       <div style="text-align: center; max-width: 760px; margin: 0 auto 30px;">
         <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 900; color: #0f172a; margin-bottom: 10px;">
-          Fotoğraflı Hizmet Bölgelerimiz
+          Hizmet Bölgelerimiz
         </h2>
         <p style="color: #64748b; font-size: 1rem; line-height: 1.6;">
           Yolda kaldığınız bölgeyi seçerek ortalama intikal süresi, yol ve kavşak analizi ile tek tıkla arama butonlarına ulaşabilirsiniz.
@@ -1597,58 +1621,55 @@ function generateIndexHtml() {
       <!-- SSS Bölümü -->
       <div style="margin-top: 60px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 35px 30px;">
         <h3 style="font-size: 1.5rem; font-weight: 900; color: #0f172a; margin-bottom: 20px;">
-          Bölgelerimiz Hakkında Sıkça Sorulan Sorular
+          Hizmet Bölgelerimiz Hakkında Sıkça Sorulan Sorular
         </h3>
         <div class="faq-accordion-list">
           <details class="faq-accordion-item" open>
             <summary class="faq-summary">
               <div class="faq-summary-left">
                 <span class="faq-num">01</span>
-                <span class="faq-q-text">En yakın oto çekici ne kadar sürede yanımda olur?</span>
+                <span class="faq-q-text">Bölgenize en yakın oto çekici ne kadar sürede ulaşır?</span>
               </div>
               <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
-              <p>Kurtköy, Gebze, KMO gişeleri, TEM ve Pendik gibi stratejik merkezlerde sürekli hazır bekleyen nöbetçi ekiplerimizle ortalama 10 ila 15 dakika içinde yanınızdayız.</p>
+              <p style="margin:0; line-height:1.75;">Kuzey Marmara Otoyolu, TEM, Kurtköy, Gebze, Pendik ve Çayırova nöbetçi filomuzla ortalama 10-15 dakikada yanınızdayız.</p>
             </div>
           </details>
-
           <details class="faq-accordion-item">
             <summary class="faq-summary">
               <div class="faq-summary-left">
                 <span class="faq-num">02</span>
-                <span class="faq-q-text">Çekici fiyatı telefonda mı belirlenir?</span>
+                <span class="faq-q-text">Hizmet bölgeleriniz arasında fiyat tarifesi nasıl hesaplanır?</span>
               </div>
               <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
-              <p>Evet, bulunduğunuz konum ve teslim edilmesini istediğiniz adrese göre telefonda net ve sabit bir fiyat teklifi sunulur; sürpriz ek masraf talep edilmez.</p>
+              <p style="margin:0; line-height:1.75;">Alınış noktası ile varış adresi arasındaki net mesafe ve araç sınıfına göre telefonda net sabit fiyat bildirilir.</p>
             </div>
           </details>
-
           <details class="faq-accordion-item">
             <summary class="faq-summary">
               <div class="faq-summary-left">
                 <span class="faq-num">03</span>
-                <span class="faq-q-text">Otoyolda veya sanayide kredi kartı geçerli mi?</span>
+                <span class="faq-q-text">Tüm bölgelerde araç başında kredi kartı kabul ediliyor mu?</span>
               </div>
               <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
-              <p>Evet, kurtarıcı araçlarımızın tümünde mobil POS cihazı mevcuttur; tüm kredi kartları ile tek çekim veya taksitli ödeme yapabilirsiniz.</p>
+              <p style="margin:0; line-height:1.75;">Evet, tüm kurtarıcı araçlarımızda taşınabilir mobil POS cihazı bulunmakta olup kredi kartlarına tek çekim ve taksit uygulanır.</p>
             </div>
           </details>
-
           <details class="faq-accordion-item">
             <summary class="faq-summary">
               <div class="faq-summary-left">
                 <span class="faq-num">04</span>
-                <span class="faq-q-text">Aracım taşınırken sigortalı mıdır?</span>
+                <span class="faq-q-text">Tüm bölgelerdeki çekimler kasko kapsamında mıdır?</span>
               </div>
               <span class="faq-chevron">▾</span>
             </summary>
             <div class="faq-content">
-              <p>Evet, yükleme anından teslimata kadar tüm araçlar %100 nakliyat emtia sigortası ve taşıyıcı sorumluluk kaskosu kapsamındadır.</p>
+              <p style="margin:0; line-height:1.75;">Evet, Marmara Çekici filosuyla taşınan her araç 1.000.000 TL teminatlı Taşıyıcı Sorumluluk Emtia Sigortası altındadır.</p>
             </div>
           </details>
         </div>
@@ -1663,7 +1684,7 @@ function generateIndexHtml() {
       <div class="footer-col footer-brand">
         <div class="footer-logo">
           <img src="/images/logo.svg" alt="Marmara Çekici Logo" width="44" height="44">
-          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">KUZEY MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
+          <span style="color: #fff; font-size: 1.25rem; font-weight: 900; margin-left: 10px;">MARMARA <span style="color: #ea580c;">ÇEKİCİ</span></span>
         </div>
         <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin: 12px 0 16px;">
           Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Pendik, Gebze, Çayırova ve çevre ilçelerde 7/24 güvenilir, kaskolu ve sabit fiyatlı oto kurtarıcı hizmeti.
