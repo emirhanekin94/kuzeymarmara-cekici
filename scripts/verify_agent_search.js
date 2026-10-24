@@ -17,7 +17,7 @@ async function runAudit() {
   const hasLocalBusiness = indexHtml.includes('EmergencyService') || indexHtml.includes('AutoRepair');
   const hasGeo = indexHtml.includes('GeoCoordinates') && indexHtml.includes('latitude');
   const hasHours = indexHtml.includes('OpeningHoursSpecification') && indexHtml.includes('23:59');
-  const hasPhone = indexHtml.includes('+905332657089');
+  const hasPhone = indexHtml.includes('+905367694324');
   const hasFAQ = indexHtml.includes('FAQPage');
   const hasBreadcrumbs = indexHtml.includes('BreadcrumbList');
   const hasCatalog = indexHtml.includes('hasOfferCatalog');
@@ -34,7 +34,7 @@ async function runAudit() {
   console.log('\n🔍 KRİTER 2: İçerik Netliği, Doğrudan Yanıtlar & Alıntılanabilirlik...');
   const hasEtaAnswer = indexHtml.includes('15') && indexHtml.includes('dakika');
   const hasPriceAnswer = indexHtml.includes('1.500') || indexHtml.includes('fiyat');
-  const hasNapConsistency = indexHtml.includes('0533 265 70 89') && (indexHtml.includes('Kuzey Marmara') || indexHtml.includes('Kurtköy'));
+  const hasNapConsistency = indexHtml.includes('0536 769 43 24') && (indexHtml.includes('Kuzey Marmara') || indexHtml.includes('Kurtköy'));
   const regionFiles = fs.readdirSync('bolgeler').filter(f => f.endsWith('.html') && f !== 'index.html');
   const has18Regions = regionFiles.length === 18;
   const hasServices = indexHtml.includes('Kayar Kasa') && indexHtml.includes('Lüks') && indexHtml.includes('Akü');

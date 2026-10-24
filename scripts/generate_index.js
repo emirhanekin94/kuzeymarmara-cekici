@@ -1,6 +1,6 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ - ÖZEL VE LÜKS ANA SAYFA ÜRETİM MOTORU
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  * Tamamen Özgün, Yüksek Dönüşümlü, Otoyol Kokpit Temalı Ana Sayfa Mimarisi
  */
 
@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 const { regions } = require('./generate_regions.js');
 
-const PHONE = '0533 265 70 89';
-const PHONE_RAW = '905332657089';
+const PHONE = '0536 769 43 24';
+const PHONE_RAW = '905367694324';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 function generateIndexHtml() {
@@ -44,8 +44,8 @@ function generateIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma - 0533 265 70 89</title>
-  <meta name="description" content="Kuzey Marmara Otoyolu (KMO), TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde 10-15 dakikada en yakın nöbetçi oto çekici ve yol yardım. %100 kaskolu, net sabit fiyat garantisi: 0533 265 70 89.">
+  <title>Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma - 0536 769 43 24</title>
+  <meta name="description" content="Kuzey Marmara Otoyolu (KMO), TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde 10-15 dakikada en yakın nöbetçi oto çekici ve yol yardım. %100 kaskolu, net sabit fiyat garantisi: 0536 769 43 24.">
   <meta name="keywords" content="marmara çekici, kuzey marmara otoyolu çekici, kurtköy çekici, kurtköy oto çekici, kmo çekici, tem otoyolu çekici, gebze çekici, pendik çekici, sabiha gökçen çekici, oto kurtarma, oto çekici, acil oto kurtarıcı, kayar kasa çekici">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="googledf9451189d4b148f">
@@ -60,7 +60,7 @@ function generateIndexHtml() {
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma">
-  <meta property="og:description" content="Kuzey Marmara ve TEM otoyollarında 10-15 dakikada en yakın oto çekici ve yol yardım filosu: 0533 265 70 89.">
+  <meta property="og:description" content="Kuzey Marmara ve TEM otoyollarında 10-15 dakikada en yakın oto çekici ve yol yardım filosu: 0536 769 43 24.">
   <meta property="og:url" content="${DOMAIN}/">
   <meta property="og:image" content="${DOMAIN}/images/kapak-fotografi.webp">
   <meta property="og:locale" content="tr_TR">
@@ -68,7 +68,7 @@ function generateIndexHtml() {
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma">
-  <meta name="twitter:description" content="Kuzey Marmara ve TEM otoyollarında 10-15 dakikada intikal: 0533 265 70 89.">
+  <meta name="twitter:description" content="Kuzey Marmara ve TEM otoyollarında 10-15 dakikada intikal: 0536 769 43 24.">
   <meta name="twitter:image" content="${DOMAIN}/images/kapak-fotografi.webp">
 
   <!-- Preload LCP Resimleri -->
@@ -432,7 +432,7 @@ function generateIndexHtml() {
           <!-- 1. Kayar Kasa Oto Çekici -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/otomobil_cekici-1.webp" alt="Kayar Kasa Oto Çekici" loading="lazy" width="600" height="400">
+              <img src="images/otomobil_cekici-1.webp" alt="Kayar Kasa Oto Çekici" loading="lazy" width="400" height="250">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/oto-cekici.html">Kayar Kasa Oto Çekici</a></h3>
@@ -449,7 +449,7 @@ function generateIndexHtml() {
           <!-- 2. Otoyol Oto Kurtarma -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/otoyol-cekici.webp" alt="Otoyol Oto Kurtarma" loading="lazy" width="600" height="400">
+              <img src="images/otoyol-cekici.webp" alt="Otoyol Oto Kurtarma" loading="lazy" width="480" height="320">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/otoyol-oto-kurtarma.html">Otoyol Oto Kurtarma</a></h3>
@@ -466,7 +466,7 @@ function generateIndexHtml() {
           <!-- 3. Kaza & Vinç Kurtarma -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/kazali-arac-cekici.webp" alt="Kaza ve Vinç Kurtarma" loading="lazy" width="600" height="400">
+              <img src="images/kazali-arac-cekici.webp" alt="Kaza ve Vinç Kurtarma" loading="lazy" width="480" height="320">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/kaza-vinc-kurtarma.html">Kaza &amp; Vinç Kurtarma</a></h3>
@@ -483,7 +483,7 @@ function generateIndexHtml() {
           <!-- 4. Lüks & Spor Araç Taşıma -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/luks-arac-cekici.webp" alt="Lüks ve Spor Araç Çekici" loading="lazy" width="600" height="400">
+              <img src="images/luks-arac-cekici.webp" alt="Lüks ve Spor Araç Çekici" loading="lazy" width="480" height="320">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/luks-spor-arac-cekici.html">Lüks &amp; Spor Araç Taşıma</a></h3>
@@ -500,7 +500,7 @@ function generateIndexHtml() {
           <!-- 5. Ahtapot Çekici -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/ahtapot-cekici.webp" alt="Ahtapot Çekici Dört Tekerden Askı" loading="lazy" width="600" height="400">
+              <img src="images/ahtapot-cekici.webp" alt="Ahtapot Çekici Dört Tekerden Askı" loading="lazy" width="480" height="320">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/ahtapot-cekici.html">Ahtapot Çekici</a></h3>
@@ -517,7 +517,7 @@ function generateIndexHtml() {
           <!-- 6. Kapalı Otopark Çekicisi -->
           <div class="service-card">
             <div class="service-card-img-wrap">
-              <img src="images/kapali-otopark-cekici.webp" alt="Kapalı Otopark Çekicisi" loading="lazy" width="600" height="400">
+              <img src="images/kapali-otopark-cekici.webp" alt="Kapalı Otopark Çekicisi" loading="lazy" width="480" height="320">
             </div>
             <div class="service-card-body">
               <h3 class="service-title"><a href="/hizmetler/kapali-otopark-cekici.html">Kapalı Otopark Çekicisi</a></h3>
@@ -831,7 +831,7 @@ ${regionCardsHtml}
         <div class="photo-gallery-grid">
           <div class="photo-slot-card">
             <div class="photo-box">
-              <img src="images/otomobil_cekici-2.webp" alt="Kurtköy Otomobil Çekici Operasyonu" loading="lazy" width="600" height="400">
+              <img src="images/otomobil_cekici-2.webp" alt="Kurtköy Otomobil Çekici Operasyonu" loading="lazy" width="480" height="320">
               <span class="photo-badge">Binek Çekici</span>
             </div>
             <div class="photo-caption">
@@ -842,7 +842,7 @@ ${regionCardsHtml}
 
           <div class="photo-slot-card">
             <div class="photo-box">
-              <img src="images/suv-cekici.webp" alt="KMO SUV Çekici Kurtarma" loading="lazy" width="600" height="400">
+              <img src="images/suv-cekici.webp" alt="KMO SUV Çekici Kurtarma" loading="lazy" width="480" height="320">
               <span class="photo-badge">SUV / 4x4</span>
             </div>
             <div class="photo-caption">
@@ -853,7 +853,7 @@ ${regionCardsHtml}
 
           <div class="photo-slot-card">
             <div class="photo-box">
-              <img src="images/luks-arac-cekici-1.webp" alt="Lüks Spor Araç Taşıma" loading="lazy" width="600" height="400">
+              <img src="images/luks-arac-cekici-1.webp" alt="Lüks Spor Araç Taşıma" loading="lazy" width="480" height="320">
               <span class="photo-badge">Lüks &amp; Spor</span>
             </div>
             <div class="photo-caption">

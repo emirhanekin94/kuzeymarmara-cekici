@@ -1,12 +1,12 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ & YOL YARDIM
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  * Modern Etkileşim, Canlı Arama, Lightbox & Navigasyon Motoru
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const PHONE_NUMBER = '905332657089';
-  const DISPLAY_PHONE = '0533 265 70 89';
+  const PHONE_NUMBER = '905367694324';
+  const DISPLAY_PHONE = '0536 769 43 24';
 
   // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi
   const menuBtn = document.querySelector('.menu-toggle-btn, #hamburger');

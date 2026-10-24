@@ -1,14 +1,14 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ - 7/24 BÖLGE SAYFALARI ÜRETİM MOTORU
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  */
 
 const fs = require('fs');
 const path = require('path');
 const { REGION_EXTENSIONS } = require('../data/region_extensions.js');
 
-const PHONE = '0533 265 70 89';
-const PHONE_RAW = '905332657089';
+const PHONE = '0536 769 43 24';
+const PHONE_RAW = '905367694324';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 const waSvg = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>`;
@@ -20,8 +20,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Kurtköy & Viaport',
     image: 'kapak-fotografi.webp',
-    title: 'Kurtköy Çekici 7/24 | 10 Dk En Yakın Çekici - 0533 265 70 89',
-    metaDesc: 'Kurtköy çekici, Kurtköy oto çekici ve 7/24 acil oto kurtarma. Viaport, Yenişehir, Çamlık, TEM ve KMO gişelerinde 10-15 dakikada intikal: 0533 265 70 89.',
+    title: 'Kurtköy Çekici 7/24 | 10 Dk En Yakın Çekici - 0536 769 43 24',
+    metaDesc: 'Kurtköy çekici, Kurtköy oto çekici ve 7/24 acil oto kurtarma. Viaport, Yenişehir, Çamlık, TEM ve KMO gişelerinde 10-15 dakikada intikal: 0536 769 43 24.',
     keywords: 'kurtköy çekici, kurtköy oto çekici, viaport çekici, kurtköy acil çekici, yenişehir çekici, çamlık çekici, kurtköy oto kurtarma, kurtköy yol yardım',
     eta: '10 Dk',
     caseTitle: 'Viaport AVM Kavşağında Otomatik Vites Arıza Kurtarması',
@@ -33,7 +33,7 @@ const regions = [
     trafficAnalysis: "Kurtköy; Sabiha Gökçen Havalimanı, Viaport AVM, Teknopark İstanbul ve devasa konut projelerinin kesiştiği, aynı zamanda hem TEM Otoyolu hem de Kuzey Marmara Otoyolu gişelerine doğrudan açılan en stratejik merkezdir. Bölgenin ana arteri Ankara Caddesi ile havalimanı bağlantı viyadükleridir. Sabah ve akşam mesai saatlerinde, özellikle Viaport AVM çevresinde ve otoban bağlantı kollarında yoğun trafik sıkışıklığı yaşanır. Yağışlı havalarda viyadük geçişleri ve kavşak katılımlarında ani dur-kalklar zincirleme kazalara ve arızalara zemin hazırlar.",
     scenarios: "Kurtköy bölgesinde en sık karşılaştığımız arıza vakaları; Viaport ve site otoparklarında uzun süre yatan araçların akü bitmesi, start-stop hatası vermesi ve otopark içinde tekerlek kilitlemesidir. İkinci büyük senaryo, otoban katılım viyadüklerinde yüksek hızda giderken hararet yapan veya lastik patlatan araçlardır. Ayrıca yeni nesil elektrikli araçların şarj istasyonlarına ulaşamadan batarya korumaya geçmesi ve çekici talep etmesi son dönemde sıkça görülmektedir.",
     equipmentProtocol: "Kurtköy operasyonlarımızda hem kapalı rezidans ve AVM otoparklarına rahatça girebilen alçak kabinli kurtarıcılar hem de otoyol için geniş tablalı kayar kasa çekiciler devrededir. Tekerlekleri kilitli veya elektrikli el freni devrede kalan araçlar için özel tekerlek arabacıkları (dolly) kullanılır; böylece aracın aktarma organlarına ve şanzımanına en ufak sürtünme veya mekanik hasar verilmez.",
-    localAdvice: "Kurtköy gişeleri ve Ankara Caddesi üzerindeki nöbet noktalarımız sayesinde çağrınızdan sonra ortalama 8-12 dakika içinde yanınızda oluyoruz. Aracınızı Pendik Oto Sanayi, Kartal Oto Sanayi veya Sabiha Gökçen çevresindeki dilediğiniz yetkili servise güvenle ulaştırıyoruz. Yolda kaldıysanız güvenli bir alana geçip 0533 265 70 89 numaramızdan canlı konum paylaşınız.",
+    localAdvice: "Kurtköy gişeleri ve Ankara Caddesi üzerindeki nöbet noktalarımız sayesinde çağrınızdan sonra ortalama 8-12 dakika içinde yanınızda oluyoruz. Aracınızı Pendik Oto Sanayi, Kartal Oto Sanayi veya Sabiha Gökçen çevresindeki dilediğiniz yetkili servise güvenle ulaştırıyoruz. Yolda kaldıysanız güvenli bir alana geçip 0536 769 43 24 numaramızdan canlı konum paylaşınız.",
     distanceTable: [
       { place: 'Viaport AVM Çevresi', km: 3, time: '6-8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
       { place: 'Sabiha Gökçen Havalimanı', km: 4, time: '8 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
@@ -56,8 +56,8 @@ const regions = [
     category: 'otoyol-giseler',
     categoryLabel: 'KMO & Gişeler',
     image: 'otoyol-cekici.webp',
-    title: 'Kuzey Marmara Çekici 7/24 | 15 Dk Kurtarma - 0533 265 70 89',
-    metaDesc: 'Kuzey Marmara çekici, KMO gişeleri, tüneller, viyadükler ve dinlenme tesislerinde 7/24 acil oto kurtarıcı. 15 dakikada intikal: 0533 265 70 89.',
+    title: 'Kuzey Marmara Çekici 7/24 | 15 Dk Kurtarma - 0536 769 43 24',
+    metaDesc: 'Kuzey Marmara çekici, KMO gişeleri, tüneller, viyadükler ve dinlenme tesislerinde 7/24 acil oto kurtarıcı. 15 dakikada intikal: 0536 769 43 24.',
     keywords: 'kuzey marmara çekici, marmara çekici, kmo çekici, kmo oto kurtarma, kuzey marmara oto kurtarıcı, otoban çekici kuzey marmara',
     eta: '15 Dk',
     caseTitle: 'KMO Mecidiye Mevkiinde Lastik Parçalanması Kurtarması',
@@ -69,7 +69,7 @@ const regions = [
     trafficAnalysis: "Kuzey Marmara Otoyolu, yüksek seyir hızına (140 km/s) sahip, geniş şeritli ancak viyadük ve rüzgarlı açık alan geçişleri bol olan modern bir otoyoldur. Özellikle ağır tonajlı tır ve kamyon trafiği ile lüks binek otomobillerin aynı anda aktığı güzergahta, emniyet şeridinde durmak dahi ciddi can güvenliği riski taşır. Tünel içleri ve viyadük geçişleri görüş mesafesinin daraldığı ve rüzgar savurmalarının yaşandığı kritik noktalardır.",
     scenarios: "Kuzey Marmara Otoyolu'nda en sık yaşanan durumlar; yüksek hızda lastik yarılması, aşırı ısınma kaynaklı motor durması, yakıt veya şarj tükenmesi ve bariyer temaslı kazalardır. Yüksek hız limitleri sebebiyle yolda kalan araca arkadan gelen trafiğin çarpma riski çok yüksektir; bu nedenle otoyolda kurtarma hızı ve güvenlik ikaz ışıkları hayati önemdedir.",
     equipmentProtocol: "KMO otoyol kurtarıcılarımız, otoyol işletme kurallarına tam uyumlu, arkadan gelen trafiği 1 km önceden uyaran yüksek parlaklıklı LED flaşör kuleleri ve sesli ikaz tertibatına sahiptir. Ağır tonajlı kayar kasa hidrolik vinç sistemimiz, şarampole inen veya aksı kırılan araçları hızlıca güvenli platforma alır.",
-    localAdvice: "KMO'da aracınız arızalanırsa derhal dörtlülerinizi yakın, aracı emniyet şeridine çekip yolcularla birlikte çelik bariyerlerin arkasına geçiniz. Karayolları kuralı gereği üçgen reflektörü 150 metre geriye yerleştiriniz ve 0533 265 70 89 numaramızı arayarak otoyol kilometre taşını veya WhatsApp konumunuzu iletiniz.",
+    localAdvice: "KMO'da aracınız arızalanırsa derhal dörtlülerinizi yakın, aracı emniyet şeridine çekip yolcularla birlikte çelik bariyerlerin arkasına geçiniz. Karayolları kuralı gereği üçgen reflektörü 150 metre geriye yerleştiriniz ve 0536 769 43 24 numaramızı arayarak otoyol kilometre taşını veya WhatsApp konumunuzu iletiniz.",
     distanceTable: [
       { place: 'Kurnaköy Gişeleri', km: 6, time: '10 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
       { place: 'Mecidiye Dinlenme Tesisi', km: 12, time: '12 Dk', price: 'Telefonda Sabit Fiyat Sözü' },
@@ -92,8 +92,8 @@ const regions = [
     category: 'otoyol-giseler',
     categoryLabel: 'TEM & Otoban',
     image: 'otoyol-yardim-cekici.webp',
-    title: 'TEM Otoyolu Çekici 7/24 | Kurtköy - Gebze Hattı - 0533 265 70 89',
-    metaDesc: 'TEM Otoyolu çekici, Kurtköy, Şekerpınar, Gebze, Pendik ve Tuzla dinlenme tesislerinde 7/24 acil oto kurtarıcı. 10-15 dakikada intikal: 0533 265 70 89.',
+    title: 'TEM Otoyolu Çekici 7/24 | Kurtköy - Gebze Hattı - 0536 769 43 24',
+    metaDesc: 'TEM Otoyolu çekici, Kurtköy, Şekerpınar, Gebze, Pendik ve Tuzla dinlenme tesislerinde 7/24 acil oto kurtarıcı. 10-15 dakikada intikal: 0536 769 43 24.',
     keywords: 'tem otoyolu çekici, tem çekici, tem oto kurtarma, tem kurtköy çekici, tem gebze çekici, tem otoban yol yardım',
     eta: '10 - 15 Dk',
     caseTitle: 'TEM Şekerpınar Ayrımında Debriyaj Balatası Arızası',
@@ -128,8 +128,8 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Gebze & Sanayi',
     image: 'ticari-cekici-1.webp',
-    title: 'Gebze Çekici 7/24 | En Yakın Gebze Çekici - 0533 265 70 89',
-    metaDesc: 'Gebze çekici, Gebze oto çekici, Gebze OSB, Barış Mahallesi, Eskihisar ve sanayi sitelerinde 7/24 acil oto kurtarma ve yol yardım. 10 Dk intikal: 0533 265 70 89.',
+    title: 'Gebze Çekici 7/24 | En Yakın Gebze Çekici - 0536 769 43 24',
+    metaDesc: 'Gebze çekici, Gebze oto çekici, Gebze OSB, Barış Mahallesi, Eskihisar ve sanayi sitelerinde 7/24 acil oto kurtarma ve yol yardım. 10 Dk intikal: 0536 769 43 24.',
     keywords: 'gebze çekici, gebze oto çekici, gebze oto kurtarma, gebze osb çekici, gebze acil çekici, gebze yol yardım, gebze oto kurtarıcı',
     eta: '10 Dk',
     caseTitle: 'Gebze OSB Girişinde Elektrik Arızası Kurtarması',
@@ -164,8 +164,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Pendik & Sahil',
     image: 'otomobil-cekici-1.webp',
-    title: 'Pendik Çekici 7/24 | En Yakın Pendik Çekici - 0533 265 70 89',
-    metaDesc: 'Pendik çekici, Pendik oto çekici, Kaynarca, Velibaba, Kurtköy yolu, E-5 ve Pendik Marina mevkiinde 7/24 kaskolu acil oto kurtarma: 0533 265 70 89.',
+    title: 'Pendik Çekici 7/24 | En Yakın Pendik Çekici - 0536 769 43 24',
+    metaDesc: 'Pendik çekici, Pendik oto çekici, Kaynarca, Velibaba, Kurtköy yolu, E-5 ve Pendik Marina mevkiinde 7/24 kaskolu acil oto kurtarma: 0536 769 43 24.',
     keywords: 'pendik çekici, pendik oto çekici, kaynarca çekici, velibaba çekici, pendik oto kurtarma, pendik yol yardım, pendik acil çekici',
     eta: '10 Dk',
     caseTitle: 'Pendik Kaynarca D-100 Katılımında Mekanik Arıza',
@@ -200,8 +200,8 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Çayırova & Şekerpınar',
     image: 'ticari-arac-cekici.webp',
-    title: 'Çayırova Çekici 7/24 | En Yakın Çayırova Çekici - 0533 265 70 89',
-    metaDesc: 'Çayırova çekici, Çayırova oto çekici, Akse Mahallesi, Yenimahalle, Şekerpınar otoban bağlantısında 7/24 oto kurtarma ve yol yardım: 0533 265 70 89.',
+    title: 'Çayırova Çekici 7/24 | En Yakın Çayırova Çekici - 0536 769 43 24',
+    metaDesc: 'Çayırova çekici, Çayırova oto çekici, Akse Mahallesi, Yenimahalle, Şekerpınar otoban bağlantısında 7/24 oto kurtarma ve yol yardım: 0536 769 43 24.',
     keywords: 'çayırova çekici, çayırova oto çekici, akse mahallesi çekici, çayırova oto kurtarma, çayırova yol yardım, çayırova acil çekici',
     eta: '10 Dk',
     caseTitle: 'Çayırova Akse Mahallesinde Akü Boşalması',
@@ -236,8 +236,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Havalimanı & Yolcu',
     image: 'havalimani-cekici.webp',
-    title: 'Sabiha Gökçen Havalimanı Çekici 7/24 | 10 Dk - 0533 265 70 89',
-    metaDesc: 'Sabiha Gökçen oto çekici, havalimanı otoparkı, gelen-giden yolcu katı, kargo alanı ve bağlantı yolunda 7/24 acil çekici ve akü takviye: 0533 265 70 89.',
+    title: 'Sabiha Gökçen Havalimanı Çekici 7/24 | 10 Dk - 0536 769 43 24',
+    metaDesc: 'Sabiha Gökçen oto çekici, havalimanı otoparkı, gelen-giden yolcu katı, kargo alanı ve bağlantı yolunda 7/24 acil çekici ve akü takviye: 0536 769 43 24.',
     keywords: 'sabiha gökçen çekici, sabiha gökçen oto çekici, havalimanı çekici kurtköy, sabiha gökçen otopark çekici, sabiha gökçen yol yardım',
     eta: '10 Dk',
     caseTitle: 'Havalimanı Katlı Otoparkında Akü Bitmesi',
@@ -272,8 +272,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Tuzla & İçmeler',
     image: 'otomobil-cekici-2.webp',
-    title: 'Tuzla Oto Çekici 7/24 | En Yakın Tuzla Çekici - 0533 265 70 89',
-    metaDesc: 'Tuzla çekici, Tuzla oto çekici, İçmeler, Aydınlı, Tepeören, Deri OSB, Formula 1 yolu ve D-100 Tuzla geçişinde 7/24 oto kurtarma: 0533 265 70 89.',
+    title: 'Tuzla Oto Çekici 7/24 | En Yakın Tuzla Çekici - 0536 769 43 24',
+    metaDesc: 'Tuzla çekici, Tuzla oto çekici, İçmeler, Aydınlı, Tepeören, Deri OSB, Formula 1 yolu ve D-100 Tuzla geçişinde 7/24 oto kurtarma: 0536 769 43 24.',
     keywords: 'tuzla çekici, tuzla oto çekici, içmeler çekici, aydınlı çekici, tepeören çekici, deri osb çekici, tuzla oto kurtarma, tuzla yol yardım',
     eta: '12 Dk',
     caseTitle: 'Tuzla Deri OSB Yolunda Şanzıman Arızası',
@@ -308,8 +308,8 @@ const regions = [
     category: 'otoyol-giseler',
     categoryLabel: 'Şekerpınar & Gişeler',
     image: 'ticari-cekici-2.webp',
-    title: 'Şekerpınar Oto Çekici 7/24 | TEM & KMO Kavşağı - 0533 265 70 89',
-    metaDesc: 'Şekerpınar çekici, Şekerpınar oto çekici, TEM gişeleri, KMO bağlantısı, lojistik depolar ve sanayi bölgesinde 7/24 oto kurtarma: 0533 265 70 89.',
+    title: 'Şekerpınar Oto Çekici 7/24 | TEM & KMO Kavşağı - 0536 769 43 24',
+    metaDesc: 'Şekerpınar çekici, Şekerpınar oto çekici, TEM gişeleri, KMO bağlantısı, lojistik depolar ve sanayi bölgesinde 7/24 oto kurtarma: 0536 769 43 24.',
     keywords: 'şekerpınar çekici, şekerpınar oto çekici, şekerpınar gişeler çekici, şekerpınar oto kurtarma, şekerpınar yol yardım, şekerpınar otoban çekici',
     eta: '10 Dk',
     caseTitle: 'Şekerpınar Gişelerinde Hararet Yapan Araç Tahliyesi',
@@ -344,8 +344,8 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Dilovası & Viyadük',
     image: 'kurtarma-vinc.webp',
-    title: 'Dilovası Oto Çekici 7/24 | Viyadük & Osmangazi - 0533 265 70 89',
-    metaDesc: 'Dilovası çekici, Dilovası oto çekici, D-100 rampaları, Mermerciler OSB, KMO Dilovası viyadüğü ve Osmangazi Köprüsü çıkışında 7/24 acil kurtarma: 0533 265 70 89.',
+    title: 'Dilovası Oto Çekici 7/24 | Viyadük & Osmangazi - 0536 769 43 24',
+    metaDesc: 'Dilovası çekici, Dilovası oto çekici, D-100 rampaları, Mermerciler OSB, KMO Dilovası viyadüğü ve Osmangazi Köprüsü çıkışında 7/24 acil kurtarma: 0536 769 43 24.',
     keywords: 'dilovası çekici, dilovası oto çekici, dilovası viyadük çekici, mermerciler çekici, osmangazi köprüsü çekici, dilovası oto kurtarma',
     eta: '15 Dk',
     caseTitle: 'Dilovası Rampasında Fren Balatası Kilitlenmesi',
@@ -380,8 +380,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Sultanbeyli & TEM',
     image: 'otomobil-cekici-4.webp',
-    title: 'Sultanbeyli Oto Çekici 7/24 | En Yakın Çekici - 0533 265 70 89',
-    metaDesc: 'Sultanbeyli çekici, Sultanbeyli oto çekici, TEM Sultanbeyli gişeleri, Fatih Bulvarı, Hasanpaşa ve KMO Paşaköy bağlantısında 7/24 acil kurtarma: 0533 265 70 89.',
+    title: 'Sultanbeyli Oto Çekici 7/24 | En Yakın Çekici - 0536 769 43 24',
+    metaDesc: 'Sultanbeyli çekici, Sultanbeyli oto çekici, TEM Sultanbeyli gişeleri, Fatih Bulvarı, Hasanpaşa ve KMO Paşaköy bağlantısında 7/24 acil kurtarma: 0536 769 43 24.',
     keywords: 'sultanbeyli çekici, sultanbeyli oto çekici, sultanbeyli oto kurtarma, sultanbeyli yol yardım, fatih bulvarı çekici, sultanbeyli acil çekici',
     eta: '10 Dk',
     caseTitle: 'Fatih Bulvarında Akü Takviye Operasyonu',
@@ -416,8 +416,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Sancaktepe & Samandıra',
     image: 'suv-cekici.webp',
-    title: 'Sancaktepe Oto Çekici 7/24 | Samandıra & Paşaköy - 0533 265 70 89',
-    metaDesc: 'Sancaktepe çekici, Sancaktepe oto çekici, Samandıra gişeleri, Paşaköy KMO ayrımı, Sarıgazi ve Yenidoğan mevkiinde 7/24 acil kurtarma: 0533 265 70 89.',
+    title: 'Sancaktepe Oto Çekici 7/24 | Samandıra & Paşaköy - 0536 769 43 24',
+    metaDesc: 'Sancaktepe çekici, Sancaktepe oto çekici, Samandıra gişeleri, Paşaköy KMO ayrımı, Sarıgazi ve Yenidoğan mevkiinde 7/24 acil kurtarma: 0536 769 43 24.',
     keywords: 'sancaktepe çekici, sancaktepe oto çekici, samandıra çekici, paşaköy çekici, sarıgazi çekici, sancaktepe oto kurtarma, sancaktepe yol yardım',
     eta: '10 Dk',
     caseTitle: 'Samandıra Gişelerinde Lastik Patlaması',
@@ -452,8 +452,8 @@ const regions = [
     category: 'otoyol-giseler',
     categoryLabel: 'Kurnaköy Gişeleri',
     image: 'oto-kurtarici.webp',
-    title: 'Kurnaköy & Mecidiye Çekici 7/24 | KMO Gişeler - 0533 265 70 89',
-    metaDesc: 'Kurnaköy çekici, Mecidiye dinlenme tesisi çekici, KMO Kurnaköy gişeleri ve Akfırat bağlantısında 7/24 acil otoyol kurtarıcı: 0533 265 70 89.',
+    title: 'Kurnaköy & Mecidiye Çekici 7/24 | KMO Gişeler - 0536 769 43 24',
+    metaDesc: 'Kurnaköy çekici, Mecidiye dinlenme tesisi çekici, KMO Kurnaköy gişeleri ve Akfırat bağlantısında 7/24 acil otoyol kurtarıcı: 0536 769 43 24.',
     keywords: 'kurnaköy çekici, kurnaköy gişeler çekici, mecidiye çekici, kmo mecidiye dinlenme tesisi çekici, kurnaköy oto kurtarma',
     eta: '12 Dk',
     caseTitle: 'Mecidiye Dinlenme Tesisinde Yakıt Bitmesi & Kurtarma',
@@ -488,8 +488,8 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Darıca & Eskihisar',
     image: 'otomobil-cekici-5.webp',
-    title: 'Darıca Oto Çekici 7/24 | Bayramoğlu & Sahil - 0533 265 70 89',
-    metaDesc: 'Darıca çekici, Darıca oto çekici, Bayramoğlu, Kazım Karabekir, Nenehatun, Darıca sahil ve Eskihisar aksında 7/24 oto kurtarma: 0533 265 70 89.',
+    title: 'Darıca Oto Çekici 7/24 | Bayramoğlu & Sahil - 0536 769 43 24',
+    metaDesc: 'Darıca çekici, Darıca oto çekici, Bayramoğlu, Kazım Karabekir, Nenehatun, Darıca sahil ve Eskihisar aksında 7/24 oto kurtarma: 0536 769 43 24.',
     keywords: 'darıca çekici, darıca oto çekici, bayramoğlu çekici, darıca oto kurtarma, darıca yol yardım, darıca acil çekici',
     eta: '12 Dk',
     caseTitle: 'Bayramoğlu Sahil Yolunda Fren Arızası',
@@ -524,8 +524,8 @@ const regions = [
     category: 'otoyol-giseler',
     categoryLabel: 'Ömerli & KMO',
     image: 'suv-cekici-1.webp',
-    title: 'Ömerli & Reşadiye Çekici 7/24 | KMO & Orman Yolu - 0533 265 70 89',
-    metaDesc: 'Ömerli çekici, Reşadiye çekici, Kuzey Marmara Otoyolu Reşadiye gişeleri, Şile yolu bağlantısı ve orman bölgesinde 7/24 acil kurtarma: 0533 265 70 89.',
+    title: 'Ömerli & Reşadiye Çekici 7/24 | KMO & Orman Yolu - 0536 769 43 24',
+    metaDesc: 'Ömerli çekici, Reşadiye çekici, Kuzey Marmara Otoyolu Reşadiye gişeleri, Şile yolu bağlantısı ve orman bölgesinde 7/24 acil kurtarma: 0536 769 43 24.',
     keywords: 'ömerli çekici, reşadiye çekici, reşadiye gişeler çekici, kmo reşadiye çekici, ömerli oto kurtarma, şile yolu çekici',
     eta: '15 Dk',
     caseTitle: 'Reşadiye Gişeleri Çıkışında Elektrikli Araç Şarj Bitmesi',
@@ -560,8 +560,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Kartal & Yakacık',
     image: 'oto-kurtarma.webp',
-    title: 'Kartal Oto Çekici 7/24 | 10 Dk En Yakın Çekici - 0533 265 70 89',
-    metaDesc: 'Kartal çekici, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 acil oto kurtarıcı. 10-15 dakikada intikal: 0533 265 70 89.',
+    title: 'Kartal Oto Çekici 7/24 | 10 Dk En Yakın Çekici - 0536 769 43 24',
+    metaDesc: 'Kartal çekici, Samandıra KMO bağlantısı, Yakacık, Soğanlık ve E-5 hattında 7/24 acil oto kurtarıcı. 10-15 dakikada intikal: 0536 769 43 24.',
     keywords: 'kartal çekici, kartal oto çekici, yakacık çekici, samandıra kmo çekici, soğanlık çekici, kartal acil çekici, kartal oto kurtarma',
     eta: '10 - 15 Dk',
     caseTitle: 'Samandıra KMO Bağlantısında Şanzıman Kilitlenmesi',
@@ -596,8 +596,8 @@ const regions = [
     category: 'anadolu-merkez',
     categoryLabel: 'Maltepe & Başıbüyük',
     image: 'luks-arac-cekici.webp',
-    title: 'Maltepe Oto Çekici 7/24 | Başıbüyük KMO & E-5 Çekici - 0533 265 70 89',
-    metaDesc: 'Maltepe çekici, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto kurtarıcı. 10-15 dk varış: 0533 265 70 89.',
+    title: 'Maltepe Oto Çekici 7/24 | Başıbüyük KMO & E-5 Çekici - 0536 769 43 24',
+    metaDesc: 'Maltepe çekici, Başıbüyük Kuzey Marmara bağlantısı, Küçükyalı, Zümrütevler ve Sahil Yolu çevresinde 7/24 oto kurtarıcı. 10-15 dk varış: 0536 769 43 24.',
     keywords: 'maltepe çekici, maltepe oto çekici, başıbüyük çekici, küçükyalı çekici, zümrütevler çekici, maltepe oto kurtarma',
     eta: '10 - 15 Dk',
     caseTitle: 'Başıbüyük KMO Bağlantısında Gece Lastik Patlaması',
@@ -632,8 +632,8 @@ const regions = [
     category: 'kocaeli-sanayi',
     categoryLabel: 'Körfez & Hereke',
     image: 'kazali-arac-cekici.webp',
-    title: 'Körfez & Hereke Oto Çekici 7/24 | KMO & Tüneller - 0533 265 70 89',
-    metaDesc: 'Körfez çekici, Hereke tünelleri çekici, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici ve kurtarma. 10-15 dk varış: 0533 265 70 89.',
+    title: 'Körfez & Hereke Oto Çekici 7/24 | KMO & Tüneller - 0536 769 43 24',
+    metaDesc: 'Körfez çekici, Hereke tünelleri çekici, KMO Doğu Gişeleri ve TEM otoyolu geçişinde 7/24 acil oto çekici ve kurtarma. 10-15 dk varış: 0536 769 43 24.',
     keywords: 'körfez çekici, hereke çekici, hereke tüneli çekici, kmo körfez çekici, körfez oto kurtarma, hereke oto çekici',
     eta: '10 - 15 Dk',
     caseTitle: 'Hereke Tüneli Çıkışında Hararet Yapan Aracın Tahliyesi',
@@ -1381,7 +1381,7 @@ function generateIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hizmet Bölgelerimiz | Marmara Çekici - 0533 265 70 89</title>
+  <title>Hizmet Bölgelerimiz | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/bolgeler/index.html">
@@ -1577,7 +1577,7 @@ function generateIndexHtml() {
             <span class="process-icon-circle">📞</span>
           </div>
           <h3>1. Bize Ulaşın &amp; Konum Atın</h3>
-          <p><strong>0533 265 70 89</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu gönderin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
+          <p><strong>0536 769 43 24</strong> numaramızı tek tıkla arayın veya WhatsApp üzerinden canlı konumunuzu gönderin. Çağrı merkezimiz 30 saniye içinde yanıt verir.</p>
           <span class="process-tag">30 Saniyede Yanıt</span>
         </div>
 

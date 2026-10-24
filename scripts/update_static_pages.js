@@ -1,14 +1,14 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ - STATİK SAYFALAR ÜRETİM MOTORU
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  * Sayfalar: hakkimizda.html, iletisim.html, galeri.html
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const PHONE = '0533 265 70 89';
-const PHONE_RAW = '905332657089';
+const PHONE = '0536 769 43 24';
+const PHONE_RAW = '905367694324';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 const waSvg = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>`;
@@ -99,7 +99,7 @@ function buildHakkimizda() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakkımızda | Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0533 265 70 89</title>
+  <title>Hakkımızda | Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
   <meta name="robots" content="index, follow">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -299,8 +299,8 @@ function buildIletisim() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Marmara Çekici - 0533 265 70 89</title>
-  <meta name="description" content="Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0533 265 70 89. WhatsApp ile canlı konum gönderin.">
+  <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Marmara Çekici - 0536 769 43 24</title>
+  <meta name="description" content="Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0536 769 43 24. WhatsApp ile canlı konum gönderin.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/iletisim.html">
   <link rel="alternate" type="text/plain" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base">
@@ -642,7 +642,7 @@ function buildGaleri() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foto Galeri | Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0533 265 70 89</title>
+  <title>Foto Galeri | Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/galeri.html">

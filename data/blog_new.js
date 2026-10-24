@@ -8,7 +8,7 @@ const ADDITIONAL_BLOGS = [
   {
     slug: 'sehir-ici-ve-otoyol-cekici-farklari-fiyat-ve-guvenlik',
     title: 'Şehir İçi ve Otoyol Çekici Farkları: Fiyat, Hız ve Güvenlik | 2026 Rehberi',
-    metaDesc: 'Şehir içi sokak araları ile Kuzey Marmara ve TEM otoyolu çekici operasyonları arasındaki farklar. Sabit fiyat tarifesi, rampa donanımı ve emniyet şeridi güvenliği: 0533 265 70 89.',
+    metaDesc: 'Şehir içi sokak araları ile Kuzey Marmara ve TEM otoyolu çekici operasyonları arasındaki farklar. Sabit fiyat tarifesi, rampa donanımı ve emniyet şeridi güvenliği: 0536 769 43 24.',
     keywords: 'şehir içi çekici, otoyol çekici farkı, çekici fiyatları 2026, pendik şehir içi çekici, kartal çekici, otoban çekici güvenliği, sabit fiyatlı çekici',
     image: 'otomobil_cekici-2.webp',
     date: '2026-10-19',
@@ -51,7 +51,7 @@ const ADDITIONAL_BLOGS = [
   {
     slug: 'pendik-kartal-maltepe-e5-yol-yardim-ve-cekici-rehberi',
     title: 'Pendik, Kartal, Maltepe E-5 & Sahil Çekici Rehberi | Marmara Çekici',
-    metaDesc: 'İstanbul Anadolu Yakası D-100 (E-5) Karayolu, sahil bulvarı ve mahalle aralarında yolda kalındığında acil çekici çağırma rehberi. 10 dakikada intikal: 0533 265 70 89.',
+    metaDesc: 'İstanbul Anadolu Yakası D-100 (E-5) Karayolu, sahil bulvarı ve mahalle aralarında yolda kalındığında acil çekici çağırma rehberi. 10 dakikada intikal: 0536 769 43 24.',
     keywords: 'pendik çekici, kartal çekici, maltepe çekici, e-5 çekici, sahil yolu çekici, kaynarca çekici, yakacık çekici, küçükyalı oto kurtarma',
     image: 'e-5-cekici.webp',
     date: '2026-10-20',
@@ -79,14 +79,14 @@ const ADDITIONAL_BLOGS = [
       </p>
     `,
     faqs: [
-      { q: 'E-5 üzerinde arızalandığımda ne yapmalıyım?', a: 'Dörtlülerinizi yakın, aracı emniyet şeridine yanaştırın ve araçtan inerek bariyer arkasında bekleyip 0533 265 70 89 numaramızı arayın.' },
+      { q: 'E-5 üzerinde arızalandığımda ne yapmalıyım?', a: 'Dörtlülerinizi yakın, aracı emniyet şeridine yanaştırın ve araçtan inerek bariyer arkasında bekleyip 0536 769 43 24 numaramızı arayın.' },
       { q: 'Kartal veya Pendik sanayisine çekim kaç para?', a: 'İlçe içi şeffaf sabit fiyat politikamız geçerlidir; telefonda onaylanan fiyat dışında varışta sürpriz ek ücret çıkmaz.' },
       { q: 'Kaza durumunda sigorta evrakı düzenliyor musunuz?', a: 'Evet, kasko hasar dosyanız için resmi çekici faturası ve teslim tutanağı eksiksiz verilir.' }
     ]
   },
   {
     slug: 'cayirova-gebze-sanayi-bolgesi-arac-kurtarma-ve-cekici',
-    title: 'Çayırova & Gebze OSB Sanayi Bölgesi Çekici Rehberi | 0533 265 70 89',
+    title: 'Çayırova & Gebze OSB Sanayi Bölgesi Çekici Rehberi | 0536 769 43 24',
     metaDesc: 'Gebze Organize Sanayi Bölgesi (GOSB), Çayırova TOSB, TAYSAD ve lojistik antrepolar koridorunda 7/24 oto çekici, tır kurtarma ve hafif ticari yol yardım rehberi.',
     keywords: 'gebze osb çekici, çayırova çekici, gosb çekici, tosb çekici, şekerpınar çekici, tır çekici gebze, hafif ticari kurtarma çayırova',
     image: 'agir-vasita-cekici.webp',
@@ -118,7 +118,7 @@ const ADDITIONAL_BLOGS = [
   {
     slug: 'kaza-ve-ariza-aninda-kasko-anlasmali-cekici-sureci',
     title: 'Kaza ve Arıza Anında Kasko Anlaşmalı Çekici Süreci | 2026',
-    metaDesc: 'Trafik kazası ve mekanik arızalarda kasko sigortasından çekici hizmeti alma rehberi. Ücretsiz çekici hakkı, rücu süreci ve resmi faturalandırma: 0533 265 70 89.',
+    metaDesc: 'Trafik kazası ve mekanik arızalarda kasko sigortasından çekici hizmeti alma rehberi. Ücretsiz çekici hakkı, rücu süreci ve resmi faturalandırma: 0536 769 43 24.',
     keywords: 'kaskolu çekici, kasko çekici karşılar mı, kaza çekici süreci, kasko anlaşmalı oto kurtarma, trafik kazası tutanağı çekici, sigorta çekici ödemesi',
     image: 'kazali-arac-cekici.webp',
     date: '2026-10-21',
@@ -133,7 +133,7 @@ const ADDITIONAL_BLOGS = [
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Adım Adım Kasko Geri Ödeme Prosedürü</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
         1. Kaza durumunda taraflar arasında Anlaşmalı Maddi Hasarlı Trafik Kazası Tespit Tutanağı düzenlenir ve araçların 4 açıdan fotoğrafları çekilir.<br>
-        2. 0533 265 70 89 numaramızdan Marmara Çekici aranır; 10-15 dakikada gelen nöbetçi kurtarıcımız aracı emtia kaskosuyla platforma yükler.<br>
+        2. 0536 769 43 24 numaramızdan Marmara Çekici aranır; 10-15 dakikada gelen nöbetçi kurtarıcımız aracı emtia kaskosuyla platforma yükler.<br>
         3. Aracınız kasko şirketinizin anlaşmalı olduğu yetkili servise (Doğuş, Birmot, Kosifler vb.) teslim edilir ve teslim tutanağı imzalatılır.<br>
         4. Tarafınıza kesilen resmi kurumsal e-arşiv fatura ve teslim tutanağı, kasko hasar dosyanıza eklenerek sigorta şirketinizden çekici bedelinin eksiksiz geri ödemesi alınır.
       </p>
@@ -146,7 +146,7 @@ const ADDITIONAL_BLOGS = [
   {
     slug: 'gece-nobetci-oto-cekici-cagirirken-bilinmesi-gerekenler',
     title: 'Gece Nöbetçi Çekici Çağırırken Bilinmesi Gereken 5 Kural | Marmara Çekici',
-    metaDesc: '7/24 gece nöbetçi oto çekici çağırırken korsan çekici tuzağına düşmemek ve fahiş fiyattan korunmak için bilmeniz gereken altın kurallar: 0533 265 70 89.',
+    metaDesc: '7/24 gece nöbetçi oto çekici çağırırken korsan çekici tuzağına düşmemek ve fahiş fiyattan korunmak için bilmeniz gereken altın kurallar: 0536 769 43 24.',
     keywords: 'gece nöbetçi çekici, 7 24 çekici çağır, acil gece oto kurtarma, gece çekici fiyatları, güvenilir oto çekici, gece yol yardım',
     image: 'luks-arac-cekici.webp',
     date: '2026-10-21',

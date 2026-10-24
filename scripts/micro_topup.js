@@ -20,7 +20,7 @@ const MICRO_TOPUP = {
 
   'gece-nobetci-oto-cekici-cagirirken-bilinmesi-gerekenler': `
     <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-      Gece saatlerinde yolculuk yaparken karşılaştığınız tüm olumsuzluklarda tek yapmanız gereken 0533 265 70 89 numaralı nöbet hattımızı aramak veya WhatsApp üzerinden konumunuzu paylaşmaktır.
+      Gece saatlerinde yolculuk yaparken karşılaştığınız tüm olumsuzluklarda tek yapmanız gereken 0536 769 43 24 numaralı nöbet hattımızı aramak veya WhatsApp üzerinden konumunuzu paylaşmaktır.
     </p>
   `
 };

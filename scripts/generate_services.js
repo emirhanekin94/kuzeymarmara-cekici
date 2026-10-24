@@ -1,6 +1,6 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ - 7/24 HİZMET SAYFALARI ÜRETİM MOTORU
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  * SEO Odaklı, Zengin İçerikli, Mobil & Masaüstü Uyumlu Yeni Nesil Tasarım
  */
 
@@ -8,8 +8,8 @@ const fs = require('fs');
 const path = require('path');
 const { SERVICE_EXTENSIONS } = require('../data/service_extensions.js');
 
-const PHONE = '0533 265 70 89';
-const PHONE_RAW = '905332657089';
+const PHONE = '0536 769 43 24';
+const PHONE_RAW = '905367694324';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 const waSvg = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>`;
@@ -19,8 +19,8 @@ const services = [
     slug: 'oto-cekici',
     name: 'Kayar Kasa Oto Çekici',
     badge: '⚡ 10-15 Dk Varış',
-    title: 'Kayar Kasa Oto Çekici 7/24 | Marmara Çekici - 0533 265 70 89',
-    metaDesc: 'Binek otomobil, crossover ve SUV araçlarınız için hidrolik kayar kasa çekici. Sıfır hasar garantisi, %100 taşıma kaskosu, 10-15 dk intikal: 0533 265 70 89.',
+    title: 'Kayar Kasa Oto Çekici 7/24 | Marmara Çekici - 0536 769 43 24',
+    metaDesc: 'Binek otomobil, crossover ve SUV araçlarınız için hidrolik kayar kasa çekici. Sıfır hasar garantisi, %100 taşıma kaskosu, 10-15 dk intikal: 0536 769 43 24.',
     keywords: 'oto çekici, kayar kasa çekici, kurtköy oto çekici, kuzey marmara oto çekici, acil çekici, hasarsız araç çekici, çekici çağır',
     image: 'otomobil_cekici-1.webp',
     lead: 'Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde binek ve SUV araçlarınızı geniş açılı hidrolik kayar kasa platformlarımızla tampon sürtmesi olmadan, kaskolu ve hasarsız taşıyoruz.',
@@ -54,8 +54,8 @@ const services = [
     slug: 'otoyol-oto-kurtarma',
     name: 'Otoyol Acil Oto Kurtarma (KMO & TEM)',
     badge: '🚨 7/24 Otoyol Nöbeti',
-    title: 'Otoyol Oto Kurtarma 7/24 | KMO & TEM Çekici - 0533 265 70 89',
-    metaDesc: 'Kuzey Marmara Otoyolu ve TEM Otoyolu acil çekici ve kurtarma servisi. Gişeler, viyadükler ve dinlenme tesislerinde 7/24 hızlı intikal: 0533 265 70 89.',
+    title: 'Otoyol Oto Kurtarma 7/24 | KMO & TEM Çekici - 0536 769 43 24',
+    metaDesc: 'Kuzey Marmara Otoyolu ve TEM Otoyolu acil çekici ve kurtarma servisi. Gişeler, viyadükler ve dinlenme tesislerinde 7/24 hızlı intikal: 0536 769 43 24.',
     keywords: 'otoyol çekici, otoban çekici, kuzey marmara otoyolu kurtarıcı, tem otoyolu çekici, otoban yol yardım, acil otoban kurtarma',
     image: 'otoyol-cekici.webp',
     lead: 'Yüksek hızlı otoyollarda arızalanan veya kaza yapan araçlar için özel otoyol güvenlik ikaz donanımlı, güçlü vinçli ve kayar kasalı acil kurtarma filomuz 7/24 hazır.',
@@ -88,8 +88,8 @@ const services = [
     slug: 'kaza-vinc-kurtarma',
     name: 'Kaza & Ağır Hizmet Vinç Kurtarma',
     badge: '🏗️ Ağır Hizmet Vinç',
-    title: 'Kaza & Vinçli Oto Kurtarma 7/24 | Kuzey Marmara - 0533 265 70 89',
-    metaDesc: 'Şarampol, devrilme, bariyer sıkışması ve kilitli araç durumlarında vinçli oto kurtarma. Kuzey Marmara ve TEM hattında 7/24 acil müdahale: 0533 265 70 89.',
+    title: 'Kaza & Vinçli Oto Kurtarma 7/24 | Kuzey Marmara - 0536 769 43 24',
+    metaDesc: 'Şarampol, devrilme, bariyer sıkışması ve kilitli araç durumlarında vinçli oto kurtarma. Kuzey Marmara ve TEM hattında 7/24 acil müdahale: 0536 769 43 24.',
     keywords: 'kaza çekici, vinçli oto kurtarma, şarampol çekici, devrilen araç kurtarma, kaza kurtarıcı, ahtapot çekici',
     image: 'kazali-arac-cekici.webp',
     lead: 'Trafik kazası, şarampole inme, devrilme veya mekanik aks kırılması durumlarında çift halatlı ağır hizmet vinç tertibatlı araçlarımızla olay yerine anında ulaşıyoruz.',
@@ -122,8 +122,8 @@ const services = [
     slug: 'luks-spor-arac-cekici',
     name: 'Lüks & Spor Basık Araç Taşıma',
     badge: '🏎️ Sıfır Derece Rampa',
-    title: 'Lüks & Spor Araç Çekici | Sıfır Açılı Rampa - 0533 265 70 89',
-    metaDesc: 'Porsche, Ferrari, Tesla, BMW M, Mercedes AMG ve basık spor araçlar için sıfır dereceli rampa uzantılı özel çekici. Tam kaskolu: 0533 265 70 89.',
+    title: 'Lüks & Spor Araç Çekici | Sıfır Açılı Rampa - 0536 769 43 24',
+    metaDesc: 'Porsche, Ferrari, Tesla, BMW M, Mercedes AMG ve basık spor araçlar için sıfır dereceli rampa uzantılı özel çekici. Tam kaskolu: 0536 769 43 24.',
     keywords: 'lüks araç çekici, spor araba çekici, basık araç çekici, tesla çekici, porsche çekici, sıfır açılı çekici',
     image: 'luks-arac-cekici.webp',
     lead: 'Düşük şasili, spor, coupe ve elektrikli prestij araçları için sıfır dereceli rampa uzantıları ve yumuşak mikrofiber jant bağlama aparatlarıyla sürtmesiz VIP transfer.',
@@ -156,8 +156,8 @@ const services = [
     slug: 'ahtapot-cekici',
     name: 'Ahtapot Çekici (4 Tekerden Askılı Vinç)',
     badge: '🐙 4 Tekerden Kaldırma',
-    title: 'Ahtapot Çekici 7/24 | 4 Tekerden Askılı Kurtarıcı - 0533 265 70 89',
-    metaDesc: 'Şanzımanı kilitli, el freni takılı veya sıkışık park halindeki araçlar için 4 tekerden askılı ahtapot çekici. Sıfır mekanik hasar: 0533 265 70 89.',
+    title: 'Ahtapot Çekici 7/24 | 4 Tekerden Askılı Kurtarıcı - 0536 769 43 24',
+    metaDesc: 'Şanzımanı kilitli, el freni takılı veya sıkışık park halindeki araçlar için 4 tekerden askılı ahtapot çekici. Sıfır mekanik hasar: 0536 769 43 24.',
     keywords: 'ahtapot çekici, askılı çekici, tekerden kaldırma çekici, kilitli araç çekici, ahtapot vinç kurtarıcı',
     image: 'ahtapot-cekici.webp',
     lead: 'Şanzımanı kilitlenen, el freni takılı kalan, park yerinde kilitli duran veya tekerlekleri dönmeyen araçlar için 4 tekerlekten özel aparatla havaya kaldırıp kasaya alan ahtapot çekici desteği.',
@@ -189,8 +189,8 @@ const services = [
     slug: 'kapali-otopark-cekici',
     name: 'Kapalı Otopark Çekicisi (Alçak Tavan)',
     badge: '🏢 1.90m Alçak Tavan',
-    title: 'Kapalı Otopark Çekicisi | Alçak Tavan Kurtarıcı - 0533 265 70 89',
-    metaDesc: 'AVM, rezidans ve site kapalı otoparklarına girebilen alçak tavanlı özel kurtarıcı. 1.90m - 2.10m tavan yüksekliği uyumlu: 0533 265 70 89.',
+    title: 'Kapalı Otopark Çekicisi | Alçak Tavan Kurtarıcı - 0536 769 43 24',
+    metaDesc: 'AVM, rezidans ve site kapalı otoparklarına girebilen alçak tavanlı özel kurtarıcı. 1.90m - 2.10m tavan yüksekliği uyumlu: 0536 769 43 24.',
     keywords: 'kapalı otopark çekici, alçak tavan çekici, avm otopark çekici, kapalı garaj kurtarma, bodrum kat çekici',
     image: 'kapali-otopark-cekici.webp',
     lead: 'Standart çekicilerin giremediği AVM, rezidans, havalimanı katlı otoparkları ve yer altı garajlarına rahatça girebilen alçak kabinli, özel kurtarıcılarımızla aracınızı mahsur kaldığı yerden çıkarıyoruz.',
@@ -222,8 +222,8 @@ const services = [
     slug: 'agir-vasita-cekici',
     name: 'Ağır Vasıta, Kamyon & Tır Kurtarma',
     badge: '🚛 Ağır Tonaj Filo',
-    title: 'Ağır Vasıta Çekici 7/24 | Kamyon & Tır Kurtarma - 0533 265 70 89',
-    metaDesc: 'Kuzey Marmara Otoyolu ve TEM koridorunda kamyon, tır, otobüs ve hafif ticari araçlar için 7/24 ağır vasıta çekici ve kurtarıcı: 0533 265 70 89.',
+    title: 'Ağır Vasıta Çekici 7/24 | Kamyon & Tır Kurtarma - 0536 769 43 24',
+    metaDesc: 'Kuzey Marmara Otoyolu ve TEM koridorunda kamyon, tır, otobüs ve hafif ticari araçlar için 7/24 ağır vasıta çekici ve kurtarıcı: 0536 769 43 24.',
     keywords: 'ağır vasıta çekici, kamyon çekici, tır çekici, minibüs çekici, otobüs kurtarma, kmo ağır vasıta çekici',
     image: 'minibus-cekici.webp',
     lead: 'Kuzey Marmara Otoyolu, lojistik depoları ve sanayi yollarında arızalanan kamyon, tır, dorse, otobüs ve minibüsler için yüksek tonajlı ağır kurtarma sistemleri.',
@@ -256,8 +256,8 @@ const services = [
     slug: 'yol-yardim-aku-takviye',
     name: 'Mobil Akü Takviye & Şarj Yol Yardım',
     badge: '🔋 12V/24V Booster',
-    title: 'Mobil Akü Takviye 7/24 | Yerinde Yol Yardım - 0533 265 70 89',
-    metaDesc: 'Yerinde akü takviyesi ve acil yol yardım. Kurtköy, Gebze, Pendik, KMO ve TEM hattında 12V/24V taşınabilir booster ile marş basma: 0533 265 70 89.',
+    title: 'Mobil Akü Takviye 7/24 | Yerinde Yol Yardım - 0536 769 43 24',
+    metaDesc: 'Yerinde akü takviyesi ve acil yol yardım. Kurtköy, Gebze, Pendik, KMO ve TEM hattında 12V/24V taşınabilir booster ile marş basma: 0536 769 43 24.',
     keywords: 'akü takviye, mobil akü yol yardım, yerinde akü çalıştırma, kurtköy akü takviye, gebze akü yol yardım, acil yol yardım',
     image: 'aku-takviye.webp',
     lead: 'Aracınız marş basmıyor veya aküsü bittiyse çekici masrafına gerek kalmadan yerinde çözüm. 12V ve 24V endüstriyel dijital booster cihazlarımızla anında çalıştırma.',
@@ -289,8 +289,8 @@ const services = [
     slug: 'yerinde-lastik-yol-yardim',
     name: 'Mobil Lastik Tamiri & Stepne Değişimi',
     badge: '🔧 Yerinde Lastikçi',
-    title: 'Mobil Lastik Yol Yardım 7/24 | Stepne Değişimi - 0533 265 70 89',
-    metaDesc: 'Otoyolda ve şehir içinde yerinde lastik tamiri, fitil uygulaması, hava desteği ve stepne montajı. 7/24 acil mobil lastikçi: 0533 265 70 89.',
+    title: 'Mobil Lastik Yol Yardım 7/24 | Stepne Değişimi - 0536 769 43 24',
+    metaDesc: 'Otoyolda ve şehir içinde yerinde lastik tamiri, fitil uygulaması, hava desteği ve stepne montajı. 7/24 acil mobil lastikçi: 0536 769 43 24.',
     keywords: 'mobil lastikçi, yerinde lastik tamiri, otoyol lastikçi, stepne değişimi, acil lastik yol yardım, kurtköy lastikçi',
     image: 'lastik-tamir.webp',
     lead: 'Otoyolda veya caddede lastiğiniz patladıysa, bijon kilitlendiyse veya kriko yoksa yerinde emniyetli müdahale ile yolculuğunuza kaldığınız yerden devam edin.',
@@ -322,8 +322,8 @@ const services = [
     slug: 'motosiklet-cekici',
     name: 'Motosiklet Çekici & Özel Taşıma',
     badge: '🏍️ Özel Ön Teker Sehpa',
-    title: 'Motosiklet Çekici 7/24 | Özel Kilit Aparatlı - 0533 265 70 89',
-    metaDesc: 'Scooter, racing, touring ve chopper motosikletler için özel ön tekerlek sabitleme sehpası ve sarsıntısız motosiklet çekici: 0533 265 70 89.',
+    title: 'Motosiklet Çekici 7/24 | Özel Kilit Aparatlı - 0536 769 43 24',
+    metaDesc: 'Scooter, racing, touring ve chopper motosikletler için özel ön tekerlek sabitleme sehpası ve sarsıntısız motosiklet çekici: 0536 769 43 24.',
     keywords: 'motosiklet çekici, motor çekici, motor kurtarma, scooter çekici, motosiklet taşıma istanbul kocaeli',
     image: 'motorsiklet-cekici.webp',
     lead: 'Motosikletler standart çekiciyle taşınmaz! Özel ön tekerlek sabitleme sehpamız ve 4 noktadan hidrolik gergili yumuşak kayışlarımızla motorunuz dik konumda, çizilmeden taşınır.',
@@ -355,8 +355,8 @@ const services = [
     slug: 'tekne-karavan-cekici',
     name: 'Tekne & Karavan Çekici (Römork Transfer)',
     badge: '⛵ Çeki Demiri & Römork',
-    title: 'Tekne & Karavan Çekici 7/24 | Güvenli Römork Taşıma - 0533 265 70 89',
-    metaDesc: 'Karavan, tekne, bot, tiny house ve özel römorklu araçlar için çeki demirli ve kayar kasa profesyonel transfer desteği: 0533 265 70 89.',
+    title: 'Tekne & Karavan Çekici 7/24 | Güvenli Römork Taşıma - 0536 769 43 24',
+    metaDesc: 'Karavan, tekne, bot, tiny house ve özel römorklu araçlar için çeki demirli ve kayar kasa profesyonel transfer desteği: 0536 769 43 24.',
     keywords: 'tekne çekici, karavan çekici, römork çekici, tiny house taşıma, bot çekici, karavan yol yardım',
     image: 'ticari-cekici-1.webp',
     lead: 'Tuzla Marina, Pendik Marina, göl kenarları ve otoyollarda tekne, karavan, tiny house ve her türlü çekme römorkun hasarsız ve belgeli nakli.',
@@ -387,8 +387,8 @@ const services = [
     slug: 'ariza-yol-yardim',
     name: 'Mekanik & Elektrik Arıza Yol Yardım',
     badge: '🛠️ Yerinde Acil Çözüm',
-    title: 'Mekanik & Elektrik Arıza Yol Yardım 7/24 - 0533 265 70 89',
-    metaDesc: 'Yolda stop eden, hararet yapan, yakıtı biten veya elektrik arızası veren araçlar için yerinde hızlı tespit ve mobil müdahale: 0533 265 70 89.',
+    title: 'Mekanik & Elektrik Arıza Yol Yardım 7/24 - 0536 769 43 24',
+    metaDesc: 'Yolda stop eden, hararet yapan, yakıtı biten veya elektrik arızası veren araçlar için yerinde hızlı tespit ve mobil müdahale: 0536 769 43 24.',
     keywords: 'arıza yol yardım, oto elektrik yol yardım, hararet yol yardım, acil oto tamir, yolda kalan araba tamiri',
     image: 'otoyol-yardim-cekici.webp',
     lead: 'Yolda kaldığınızda hemen çekiciye gerek olmayabilir! Yerinde tespit ekiplerimiz hararet, yakıt bitmesi, sigorta arızası, debriyaj teli ve basit elektrik problemlerini dakikalar içinde çözer.',
@@ -419,8 +419,8 @@ const services = [
     slug: 'sehirlerarasi-arac-tasima',
     name: 'Şehirler Arası Araç Taşıma & Nakliyat',
     badge: '🗺️ 81 İle Güvenli Nakil',
-    title: 'Şehirler Arası Araç Taşıma | 81 İle Güvenli Nakil - 0533 265 70 89',
-    metaDesc: 'İstanbul ve Kocaeli çıkışlı Ankara, İzmir, Bursa, Antalya ve tüm Türkiye illerine kaskolu tekli ve çoklu şehirler arası araç nakliyatı: 0533 265 70 89.',
+    title: 'Şehirler Arası Araç Taşıma | 81 İle Güvenli Nakil - 0536 769 43 24',
+    metaDesc: 'İstanbul ve Kocaeli çıkışlı Ankara, İzmir, Bursa, Antalya ve tüm Türkiye illerine kaskolu tekli ve çoklu şehirler arası araç nakliyatı: 0536 769 43 24.',
     keywords: 'şehirler arası çekici, şehirlerarası araç taşıma, kaskolu araç nakliyatı, çoklu çekici, tekli araç transferi, ankara istanbul çekici',
     image: 'sehirlerarasi-cekici.webp',
     lead: 'İstanbul ve Kocaeli hareketli olarak Ankara, İzmir, Bursa, Antalya başta olmak üzere 81 il ve ilçeye %100 emtia nakliyat sigortası ve canlı GPS takibiyle araç nakli.',
@@ -1134,7 +1134,7 @@ function generateIndexHtml() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oto Çekici ve Yol Yardım Hizmetlerimiz | Kuzey Marmara - 0533 265 70 89</title>
+  <title>Oto Çekici ve Yol Yardım Hizmetlerimiz | Kuzey Marmara - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy ve Gebze çevresinde kayar kasa oto çekici, vinç, ahtapot, kapalı otopark, akü takviye ve mobil yol yardım hizmetlerimiz.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/hizmetler/index.html">

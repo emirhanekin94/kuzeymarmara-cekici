@@ -8,7 +8,7 @@ function getHtmlFiles(dir, files = []) {
       if (!['node_modules', '.git'].includes(file)) {
         getHtmlFiles(fullPath, files);
       }
-    } else if (file.endsWith('.html')) {
+    } else if (file.endsWith('.html') && !file.startsWith('google')) {
       files.push(fullPath);
     }
   });

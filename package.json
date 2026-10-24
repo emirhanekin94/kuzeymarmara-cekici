@@ -13,10 +13,15 @@
     "generate:index": "node scripts/generate_index.js",
     "generate:static": "node scripts/update_static_pages.js",
     "generate:sitemap": "node scripts/generate_sitemap.js",
-    "generate:llms": "node scripts/generate_llms.js"
+    "generate:llms": "node scripts/generate_llms.js",
+    "build:css": "node scripts/build_css.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "sharp": "^0.35.5"
+  }
 }

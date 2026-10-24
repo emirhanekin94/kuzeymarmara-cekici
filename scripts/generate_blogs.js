@@ -1,6 +1,6 @@
 /**
  * KUZEY MARMARA OTO ÇEKİCİ - 7/24 BLOG & KAPSAMLI REHBER ÜRETİM MOTORU
- * Tel & WhatsApp: 0533 265 70 89
+ * Tel & WhatsApp: 0536 769 43 24
  */
 
 const fs = require('fs');
@@ -8,8 +8,8 @@ const path = require('path');
 const { ADDITIONAL_BLOGS } = require('../data/blog_new.js');
 const { BLOG_ENRICHMENTS } = require('../data/blog_rich_content.js');
 
-const PHONE = '0533 265 70 89';
-const PHONE_RAW = '905332657089';
+const PHONE = '0536 769 43 24';
+const PHONE_RAW = '905367694324';
 const DOMAIN = 'https://kuzeymarmaracekici.com';
 
 const waSvg = `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 6px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>`;
@@ -79,7 +79,7 @@ const blogs = [
   {
     slug: 'otoyolda-arac-arizalandiginda-yapilmasi-gerekenler',
     title: 'Otoyolda Araç Arızalandığında Yapılması Gerekenler | Kuzey Marmara & TEM Rehberi',
-    metaDesc: 'Kuzey Marmara Otoyolu (KMO) ve TEM Otoyolu üzerinde araç arızalandığında can güvenliğini koruma rehberi. 150 metre reflektör kuralı, emniyet şeridi tahliyesi ve acil çekici çağırma: 0533 265 70 89.',
+    metaDesc: 'Kuzey Marmara Otoyolu (KMO) ve TEM Otoyolu üzerinde araç arızalandığında can güvenliğini koruma rehberi. 150 metre reflektör kuralı, emniyet şeridi tahliyesi ve acil çekici çağırma: 0536 769 43 24.',
     keywords: 'otoyolda yolda kalmak, kuzey marmara otoyolu çekici, otoban çekici, tem otoyolu çekici, kurtköy oto kurtarma, emniyet şeridi kuralları, reflektör kaç metreye konur, otoyol acil yol yardım',
     image: 'otoyol-cekici.webp',
     date: '2026-10-15',
@@ -119,9 +119,9 @@ const blogs = [
         Bariyerin arkasından yürüyerek aracınızın 150 metre gerisine doğru ilerleyin. Üçgen reflektörü emniyet şeridinin çizgisine görünür şekilde kurun. Eğer viraj veya tepe üstü çıkışındaysanız, reflektörü viraj girişinden önce koymalısınız ki arkadan gelen sürücüler tehlikeyi önceden fark etsin.
       </p>
 
-      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">4. Adım: Marmara Çekici Nöbet Merkezini Arayın (0533 265 70 89)</h2>
+      <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">4. Adım: Marmara Çekici Nöbet Merkezini Arayın (0536 769 43 24)</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Güvenli noktaya geçtikten sonra vakit kaybetmeden <strong>0533 265 70 89</strong> numaramızı arayın veya WhatsApp üzerinden canlı konum gönderin. Bulunduğunuz yerdeki otoyol kilometre taşını (Örn: KMO Km: 142+500), geçtiniz son gişeyi (Kurtköy, Kurnaköy, Mecidiye, Akse vb.) veya tünel adını operatörümüze iletiniz.
+        Güvenli noktaya geçtikten sonra vakit kaybetmeden <strong>0536 769 43 24</strong> numaramızı arayın veya WhatsApp üzerinden canlı konum gönderin. Bulunduğunuz yerdeki otoyol kilometre taşını (Örn: KMO Km: 142+500), geçtiniz son gişeyi (Kurtköy, Kurnaköy, Mecidiye, Akse vb.) veya tünel adını operatörümüze iletiniz.
       </p>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
         Otoyol devriye filomuz tepe flaşör kuleleriyle donatılmıştır. Olay yerine intikal ettiğimizde ilk olarak arkadan gelen trafiği uyaran güvenlik koridoru oluşturulur, ardından aracınız hidrolik kayar kasaya sıfır riskle yüklenir.
@@ -144,7 +144,7 @@ const blogs = [
   {
     slug: 'kuzey-marmara-otoyolu-cekici-fiyatlari-nasil-hesaplanir',
     title: 'Kuzey Marmara Otoyolu Çekici Fiyatları Nasıl Hesaplanır? | 2026 Ücret Rehberi',
-    metaDesc: '2026 güncel otoyol oto çekici fiyat hesaplama rehberi. KMO açılış taban ücreti, km tarifesi, Kurtköy-Gebze fiyatları, kasko karşılar mı? Şeffaf tarife: 0533 265 70 89.',
+    metaDesc: '2026 güncel otoyol oto çekici fiyat hesaplama rehberi. KMO açılış taban ücreti, km tarifesi, Kurtköy-Gebze fiyatları, kasko karşılar mı? Şeffaf tarife: 0536 769 43 24.',
     keywords: 'kuzey marmara otoyolu çekici fiyatları, çekici fiyat hesaplama 2026, kurtköy çekici ücreti, kmo çekici ne kadar, oto kurtarıcı km fiyatı, kaskolu çekici fiyatı, çekici sabit fiyat',
     image: 'otomobil_cekici-1.webp',
     date: '2026-10-18',
@@ -205,7 +205,7 @@ const blogs = [
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Marmara Çekici Sabit Fiyat Garantisi</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        <strong>0533 265 70 89</strong> numaramızı aradığınızda, çağrı merkezi yetkilimiz nereden nereye taşınacağını öğrenir ve size <strong>tek ve kesin bir fiyat</strong> söyler. İşlem bittiğinde bu fiyatın tek kuruş üzerine çıkılmaz. Kredi kartı ile mobil POS üzerinden tek çekim ya da taksitli ödeme yapabilir, anında resmi kurumsal e-arşiv faturanızı alabilirsiniz.
+        <strong>0536 769 43 24</strong> numaramızı aradığınızda, çağrı merkezi yetkilimiz nereden nereye taşınacağını öğrenir ve size <strong>tek ve kesin bir fiyat</strong> söyler. İşlem bittiğinde bu fiyatın tek kuruş üzerine çıkılmaz. Kredi kartı ile mobil POS üzerinden tek çekim ya da taksitli ödeme yapabilir, anında resmi kurumsal e-arşiv faturanızı alabilirsiniz.
       </p>
     `,
     faqs: [
@@ -301,7 +301,7 @@ const blogs = [
   {
     slug: 'kurtkoy-ve-gebze-en-yakin-oto-cekici-rehberi',
     title: 'Kurtköy ve Gebze Çevresinde En Yakın Oto Çekici Seçim Rehberi | 2026',
-    metaDesc: 'Kurtköy, Gebze OSB, Pendik ve TEM hattında korsan çekicilere yakalanmadan kurumsal, kaskolu ve sabit fiyatlı çekici seçme rehberi: 0533 265 70 89.',
+    metaDesc: 'Kurtköy, Gebze OSB, Pendik ve TEM hattında korsan çekicilere yakalanmadan kurumsal, kaskolu ve sabit fiyatlı çekici seçme rehberi: 0536 769 43 24.',
     keywords: 'kurtköy çekici, gebze en yakın çekici, pendik oto kurtarma, kurumsal çekici nasıl seçilir, kaskolu oto çekici, sabit fiyatlı çekici kurtköy',
     image: 'kazali-arac-cekici.webp',
     date: '2026-10-20',
@@ -337,7 +337,7 @@ const blogs = [
 
       <h2 style="color:#0f172a; font-size:1.5rem; font-weight:900; margin:35px 0 16px;">Marmara Çekici ile 10-15 Dakikada Çözüm</h2>
       <p style="font-size:1rem; line-height:1.8; color:#334155; margin-bottom:18px;">
-        Marmara Çekici olarak Kurtköy Viaport, KMO gişeleri, Sabiha Gökçen bağlantısı ve Gebze OSB'de 7/24 kesintisiz hazır nöbetçi araçlarımızla çağrınızdan sonra ortalama 10-15 dakika içinde yanınızdayız. Tek dokunuşla <strong>0533 265 70 89</strong> numaramızdan bizi arayabilir veya WhatsApp üzerinden konumunuzu gönderebilirsiniz.
+        Marmara Çekici olarak Kurtköy Viaport, KMO gişeleri, Sabiha Gökçen bağlantısı ve Gebze OSB'de 7/24 kesintisiz hazır nöbetçi araçlarımızla çağrınızdan sonra ortalama 10-15 dakika içinde yanınızdayız. Tek dokunuşla <strong>0536 769 43 24</strong> numaramızdan bizi arayabilir veya WhatsApp üzerinden konumunuzu gönderebilirsiniz.
       </p>
     `,
     faqs: [
@@ -572,7 +572,7 @@ function generateBlogIndexHtml(blogsList) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sürücü Rehberi &amp; Otoyol ve Şehir İçi Güvenlik Blogu | Marmara Çekici - 0533 265 70 89</title>
+  <title>Sürücü Rehberi &amp; Otoyol ve Şehir İçi Güvenlik Blogu | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Anadolu Yakası, Gebze, Pendik, KMO ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve kasko anlaşmalı kurtarma rehberleri.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${DOMAIN}/blog/index.html">
