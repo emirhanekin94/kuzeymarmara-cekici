@@ -10,7 +10,7 @@ const { regions } = require('./generate_regions.js');
 
 const PHONE = '0536 769 43 24';
 const PHONE_RAW = '905367694324';
-const DOMAIN = 'https://kuzeymarmaracekici.com';
+const DOMAIN = 'https://marmaracekici.com';
 
 function generateIndexHtml() {
   const regionCardsHtml = regions.map((r, idx) => `

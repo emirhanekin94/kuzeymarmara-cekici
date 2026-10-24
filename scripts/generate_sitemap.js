@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://kuzeymarmaracekici.com';
+const DOMAIN = 'https://marmaracekici.com';
 const ROOT = path.join(__dirname, '..');
 
 const urls = [

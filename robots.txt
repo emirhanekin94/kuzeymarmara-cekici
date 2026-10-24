@@ -57,7 +57,7 @@ User-agent: CCBot
 Allow: /
 
 # Sitemap ve Yapılandırılmış Ajan Bilgi Kaynakları
-Sitemap: https://kuzeymarmaracekici.com/sitemap.xml
+Sitemap: https://marmaracekici.com/sitemap.xml
 # LLM Knowledge Bases:
-# https://kuzeymarmaracekici.com/llms.txt
-# https://kuzeymarmaracekici.com/llms-full.txt
+# https://marmaracekici.com/llms.txt
+# https://marmaracekici.com/llms-full.txt

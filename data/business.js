@@ -1,6 +1,6 @@
 'use strict';
 
-const SITE_URL = 'https://www.kuzeymarmaracekici.com';
+const SITE_URL = 'https://www.marmaracekici.com';
 
 const BUSINESS = {
   name: 'Marmara Çekici',
@@ -11,7 +11,7 @@ const BUSINESS = {
   phoneHuman: '0536 769 43 24',
   whatsappNumber: '905367694324',
   whatsappMessage: 'Merhaba, Marmara Çekici ekibi; yolda kaldım, acil çekici ve yol yardım istiyorum. Konumum:',
-  email: 'info@kuzeymarmaracekici.com',
+  email: 'info@marmaracekici.com',
   hours: '7 Gün 24 Saat Kesintisiz',
   etaMinutes: '10 - 15 Dakika',
   rating: { value: '5.0', count: '128' },
