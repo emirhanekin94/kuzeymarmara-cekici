@@ -708,7 +708,7 @@ function generateRegionHtml(reg) {
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
     },
@@ -756,7 +756,11 @@ function generateRegionHtml(reg) {
     </tr>
   `).join('\n');
 
-  const mobileImage = reg.image === 'kapak-fotografi.webp' ? 'kapak-fotografi-mobile.webp' : reg.image;
+  const mobileImageMap = {
+    'kapak-fotografi.webp': 'kapak-fotografi-mobile.webp',
+    'otoyol-cekici.webp': 'otoyol-cekici-mobile.webp'
+  };
+  const mobileImage = reg.mobileImage || mobileImageMap[reg.image] || reg.image;
 
   return `<!DOCTYPE html>
 <html lang="tr">
@@ -904,42 +908,42 @@ function generateRegionHtml(reg) {
         <span style="color: #ff5500;">${reg.name} Oto Kurtarma</span> | <span style="color: #ff5500;">En Yakın Oto Çekici</span>
       </h1>
 
-      <!-- Açıklama Kartı (Transparan Cam Efekti) -->
-      <div style="background: rgba(15, 23, 42, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); text-align: left;">
-        <p style="color: #f1f5f9; font-size: 0.95rem; line-height: 1.65; margin: 0;">
+      <!-- Açıklama Kartı (Saydam Cam Efekti / Arka Plan Görseli Görünür) -->
+      <div style="background: rgba(7, 11, 20, 0.32); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); text-align: left;">
+        <p style="color: #ffffff; font-size: 0.95rem; line-height: 1.65; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">
           ${reg.leadText}
         </p>
       </div>
 
-      <!-- 2x2 İstatistik Kartı -->
-      <div style="background: rgba(15, 23, 42, 0.82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 16px; padding: 20px; margin-bottom: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); text-align: left;">
+      <!-- 2x2 İstatistik Kartı (Tam Saydam / Arka Plan Fotoğrafı Net Görünür) -->
+      <div style="background: rgba(7, 11, 20, 0.28); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 16px; padding: 20px; margin-bottom: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); text-align: left;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px;">
           <div>
-            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px;">${reg.eta || '10 - 15 Dk'}</div>
-            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Ortalama Ulaşım</div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">${reg.eta || '10 - 15 Dk'}</div>
+            <div style="font-size: 0.82rem; color: #e2e8f0; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Ortalama Ulaşım</div>
           </div>
           <div>
-            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px;">7/24 Saat</div>
-            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Nöbetçi Çekici</div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">7/24 Saat</div>
+            <div style="font-size: 0.82rem; color: #e2e8f0; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Nöbetçi Çekici</div>
           </div>
           <div>
-            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px;">%100 Güven</div>
-            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Kaskolu Taşıma</div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff; margin-bottom: 2px; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">%100 Güven</div>
+            <div style="font-size: 0.82rem; color: #e2e8f0; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Kaskolu Taşıma</div>
           </div>
           <div>
-            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px;">5.0 ⭐</div>
-            <div style="font-size: 0.80rem; color: #94a3b8; font-weight: 600;">Google Müşteri Puanı</div>
+            <div style="font-size: 1.4rem; font-weight: 900; color: #ff6b00; margin-bottom: 2px; text-shadow: 0 2px 6px rgba(0,0,0,0.95);">5.0 ⭐</div>
+            <div style="font-size: 0.82rem; color: #e2e8f0; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Google Müşteri Puanı</div>
           </div>
         </div>
       </div>
 
-      <!-- Hızlı Fiyat Teklifi Al Şeridi -->
-      <div style="background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 14px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.35); text-align: left;">
+      <!-- Hızlı Fiyat Teklifi Al Şeridi (Saydam Cam Efekti) -->
+      <div style="background: rgba(7, 11, 20, 0.35); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 14px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); text-align: left;">
         <div>
-          <strong style="color: #fff; font-size: 0.95rem; display: block; margin-bottom: 2px;">Hızlı Fiyat Teklifi Al</strong>
-          <span style="color: #94a3b8; font-size: 0.78rem;">Konum atın, telefonda net sabit fiyat verelim</span>
+          <strong style="color: #fff; font-size: 0.95rem; display: block; margin-bottom: 2px; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Hızlı Fiyat Teklifi Al</strong>
+          <span style="color: #cbd5e1; font-size: 0.80rem; text-shadow: 0 1px 3px rgba(0,0,0,0.9);">Konum atın, telefonda net sabit fiyat verelim</span>
         </div>
-        <a href="tel:${PHONE_RAW}" class="btn btn-call" style="padding: 10px 18px; border-radius: 10px; font-weight: 800; font-size: 0.88rem; text-decoration: none; white-space: nowrap;">Hemen Ara →</a>
+        <a href="tel:${PHONE_RAW}" class="btn btn-call" style="padding: 10px 18px; border-radius: 10px; font-weight: 800; font-size: 0.88rem; text-decoration: none; white-space: nowrap; box-shadow: 0 4px 12px rgba(234,88,12,0.4);">Hemen Ara →</a>
       </div>
 
     </div>
