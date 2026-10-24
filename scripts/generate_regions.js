@@ -764,13 +764,26 @@ function generateRegionHtml(reg) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>${reg.title}</title>
   <meta name="description" content="${reg.metaDesc}">
@@ -809,7 +822,7 @@ function generateRegionHtml(reg) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.5">
+  <link rel="stylesheet" href="/css/style.css?v=3.7">
 
   <!-- Schema.org Verileri -->
   <script type="application/ld+json">
@@ -1352,7 +1365,7 @@ function generateRegionHtml(reg) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.5" defer></script>
+  <script src="/js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }
@@ -1391,13 +1404,26 @@ function generateIndexHtml() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>Hizmet Bölgelerimiz | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu, TEM Otoyolu, Kurtköy, Gebze, Pendik, Çayırova ve tüm çevre ilçelerde 7/24 en yakın nöbetçi oto çekici ve kurtarıcı bölgelerimiz.">
@@ -1409,7 +1435,7 @@ function generateIndexHtml() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.5">
+  <link rel="stylesheet" href="/css/style.css?v=3.7">
 
   <script type="application/ld+json">
   {
@@ -1768,7 +1794,7 @@ function generateIndexHtml() {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.5" defer></script>
+  <script src="/js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }

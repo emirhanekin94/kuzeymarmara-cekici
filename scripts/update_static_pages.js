@@ -100,13 +100,26 @@ function buildHakkimizda() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>Hakkımızda | Marmara Çekici &amp; Kurtköy Oto Kurtarma - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici kurumsal tarihi, modern araç filomuz, 15+ yıllık otoyol kurtarma deneyimimiz, sabit fiyat sözümüz ve %100 nakliyat kaskosu güvencemiz.">
@@ -120,7 +133,7 @@ function buildHakkimizda() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.5">
+  <link rel="stylesheet" href="css/style.css?v=3.7">
 
   <script type="application/ld+json">
   {
@@ -296,7 +309,7 @@ function buildHakkimizda() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.5" defer></script>
+  <script src="js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }
@@ -309,13 +322,26 @@ function buildIletisim() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>İletişim &amp; 7/24 Acil Çekici Çağrı Merkezi | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici 7/24 acil çağrı ve sevk merkezi. Kurtköy, KMO, TEM, Pendik ve Gebze nöbetçi çekici telefon hattı: 0536 769 43 24. WhatsApp ile canlı konum gönderin.">
@@ -327,7 +353,7 @@ function buildIletisim() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.5">
+  <link rel="stylesheet" href="css/style.css?v=3.7">
 
   <script type="application/ld+json">
   {
@@ -536,7 +562,7 @@ function buildIletisim() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.5" defer></script>
+  <script src="js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }
@@ -661,13 +687,26 @@ function buildGaleri() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>Foto Galeri | Marmara Çekici Filosu &amp; Gerçek Kurtarma Vakaları - 0536 769 43 24</title>
   <meta name="description" content="Marmara Çekici araç filosu, hidrolik kayar kasa araçlarımız, otoyol acil kurtarma operasyonları, lüks araç taşıma ve vinçli kurtarma fotoğrafları.">
@@ -679,7 +718,7 @@ function buildGaleri() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.5">
+  <link rel="stylesheet" href="css/style.css?v=3.7">
 
   <script type="application/ld+json">
   {
@@ -836,7 +875,7 @@ function buildGaleri() {
   ${richFooterHtml}
   ${mobileDockHtml}
 
-  <script src="js/main.js?v=3.5" defer></script>
+  <script src="js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }

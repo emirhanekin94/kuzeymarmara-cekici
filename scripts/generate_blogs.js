@@ -393,13 +393,26 @@ function generateArticleHtml(blog) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>${blog.title}</title>
   <meta name="description" content="${blog.metaDesc}">
@@ -416,7 +429,7 @@ function generateArticleHtml(blog) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.5">
+  <link rel="stylesheet" href="/css/style.css?v=3.7">
 
   <script type="application/ld+json">
   ${JSON.stringify(articleSchema, null, 2)}
@@ -551,7 +564,7 @@ function generateArticleHtml(blog) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.5" defer></script>
+  <script src="/js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }
@@ -582,13 +595,26 @@ function generateBlogIndexHtml(blogsList) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>Sürücü Rehberi &amp; Otoyol ve Şehir İçi Güvenlik Blogu | Marmara Çekici - 0536 769 43 24</title>
   <meta name="description" content="Anadolu Yakası, Gebze, Pendik, KMO ve TEM güzergahında araç arızaları, otoyol güvenlik kuralları, çekici fiyatları ve kasko anlaşmalı kurtarma rehberleri.">
@@ -600,7 +626,7 @@ function generateBlogIndexHtml(blogsList) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.5">
+  <link rel="stylesheet" href="/css/style.css?v=3.7">
 
   <script type="application/ld+json">
   {
@@ -696,7 +722,7 @@ function generateBlogIndexHtml(blogsList) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.5" defer></script>
+  <script src="/js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }

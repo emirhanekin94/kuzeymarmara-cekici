@@ -45,13 +45,26 @@ function generateIndexHtml() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-7MT29LQ70Q');
+    (function () {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-7MT29LQ70Q';
+        document.head.appendChild(s);
+      }
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadGA, 8000); });
+    })();
   </script>
   <title>Marmara Çekici | 7/24 Acil Oto Çekici &amp; Kurtarma - 0536 769 43 24</title>
   <meta name="description" content="Kuzey Marmara Otoyolu (KMO), TEM Otoyolu, Kurtköy, Viaport, Sabiha Gökçen, Gebze ve Pendik çevresinde 10-15 dakikada en yakın nöbetçi oto çekici ve yol yardım. %100 kaskolu, net sabit fiyat garantisi: 0536 769 43 24.">
@@ -92,7 +105,7 @@ function generateIndexHtml() {
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap">
   </noscript>
-  <link rel="stylesheet" href="css/style.css?v=3.5">
+  <link rel="stylesheet" href="css/style.css?v=3.7">
 
   <!-- Schema.org Yapılandırılmış Veri -->
   <script type="application/ld+json">
@@ -1116,7 +1129,7 @@ ${regionCardsHtml}
     </button>
   </div>
 
-  <script src="js/main.js?v=3.5" defer></script>
+  <script src="js/main.js?v=3.7" defer></script>
 </body>
 </html>`;
 }
