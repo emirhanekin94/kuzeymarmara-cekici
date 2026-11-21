@@ -8,6 +8,49 @@ document.addEventListener('DOMContentLoaded', () => {
   const PHONE_NUMBER = '905367694324';
   const DISPLAY_PHONE = '0536 769 43 24';
 
+  // GOOGLE ADS DÖNÜŞÜM TAKİP SABİTLERİ (YALNIZCA TELEFON ARAMALARI)
+  const GOOGLE_ADS_ID = 'AW-18535534712';
+  const GOOGLE_ADS_PHONE_CONVERSION = 'AW-18535534712/jxgoCLqchbcdEPigt4ZF'; // Birincil (Sadece Telefon Araması)
+
+  // Google Tag (gtag) Başlatma Garantisi
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+
+  // Google Ads Arama Dönüşümü Tetikleme Motoru (Beacon + Güvenli Geri Dönüş)
+  window.gtag_report_conversion = function (url) {
+    if (typeof window.loadGA === 'function') {
+      window.loadGA();
+    }
+
+    let redirected = false;
+    const callback = function () {
+      if (redirected) return;
+      redirected = true;
+      if (typeof url === 'string' && url.length > 0) {
+        window.location.href = url;
+      }
+    };
+
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: GOOGLE_ADS_PHONE_CONVERSION,
+          value: 1.0,
+          currency: 'TRY',
+          transport_type: 'beacon',
+          event_callback: callback
+        });
+      }
+    } catch (err) {
+      console.warn('Google Ads tracking error:', err);
+    }
+
+    if (typeof url === 'string' && url.length > 0) {
+      setTimeout(callback, 250);
+    }
+    return false;
+  };
+
   // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi
   const menuBtn = document.querySelector('.menu-toggle-btn, #hamburger');
   const mainNav = document.querySelector('.main-nav');
@@ -120,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (e) => {
     const phoneEl = e.target.closest('a[href^="tel:"]');
     if (phoneEl) {
+      const rawHref = phoneEl.getAttribute('href') || '';
       const placement = getElementPlacement(phoneEl);
       const rawText = phoneEl.innerText ? phoneEl.innerText.trim().replace(/\s+/g, ' ') : DISPLAY_PHONE;
       trackGA4Event('telefon_arama_click', {
@@ -131,9 +175,16 @@ document.addEventListener('DOMContentLoaded', () => {
         page_path: window.location.pathname,
         page_title: document.title
       });
+
+      // Google Ads Telefon Araması Dönüşümü (YALNIZCA telefon aramaları — WhatsApp dahil değil!)
+      if (rawHref && typeof window.gtag_report_conversion === 'function') {
+        e.preventDefault();
+        window.gtag_report_conversion(rawHref);
+      }
+      return;
     }
 
-    // Global Doğrudan WhatsApp Link / Buton Click Dinleyicisi
+    // Global Doğrudan WhatsApp Link / Buton Click Dinleyicisi (Sadece GA4 — Google Ads dönüşümü YOK)
     const waEl = e.target.closest('a[href*="whatsapp.com"], a[href*="wa.me"], .btn-whatsapp, .sticky-whatsapp-btn, .btn-send-location');
     if (waEl && !waEl.closest('form')) {
       const placement = getElementPlacement(waEl);
@@ -147,14 +198,14 @@ document.addEventListener('DOMContentLoaded', () => {
         page_title: document.title
       });
     }
-  }, { passive: true });
+  }, { passive: false });
 
   // 2. WhatsApp Yönlendirme Motoru (Safari, Chrome, iOS & Android Uyumlu)
   window.sendWhatsAppMessage = function(text, customSource) {
     const encodedText = encodeURIComponent(text);
     const url = `https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodedText}`;
 
-    // GA4 WhatsApp Etkinliği
+    // GA4 WhatsApp Etkinliği (Google Ads dönüşümü gönderilmez)
     const placement = customSource || 'whatsapp_yonlendirme';
     trackGA4Event('whatsapp_baglanti_click', {
       event_category: 'İletişim',
