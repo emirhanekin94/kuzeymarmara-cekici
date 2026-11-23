@@ -564,7 +564,7 @@ function generateArticleHtml(blog) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.8" defer></script>
+  <script src="/js/main.js?v=3.9" defer></script>
 </body>
 </html>`;
 }
@@ -722,7 +722,7 @@ function generateBlogIndexHtml(blogsList) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.8" defer></script>
+  <script src="/js/main.js?v=3.9" defer></script>
 </body>
 </html>`;
 }

@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const PHONE_NUMBER = '905367694324';
   const DISPLAY_PHONE = '0536 769 43 24';
 
-  // GOOGLE ADS DÖNÜŞÜM TAKİP SABİTLERİ (YALNIZCA TELEFON ARAMALARI)
+  // GOOGLE ADS DÖNÜŞÜM TAKİP SABİTLERİ
   const GOOGLE_ADS_ID = 'AW-18535534712';
-  const GOOGLE_ADS_PHONE_CONVERSION = 'AW-18535534712/jxgoCLqchbcdEPigt4ZF'; // Birincil (Sadece Telefon Araması)
+  const GOOGLE_ADS_PHONE_CONVERSION = 'AW-18535534712/jxgoCLqchbcdEPigt4ZF'; // Birincil (Telefon Araması)
+  const GOOGLE_ADS_WHATSAPP_CONVERSION = 'AW-18535534712/bNnQCNKyhrcdEPigt4ZF'; // İkincil (WhatsApp - Sadece Raporlama)
 
   // Google Tag (gtag) Başlatma Garantisi
   window.dataLayer = window.dataLayer || [];
@@ -36,6 +37,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return true;
   };
+
+  // Google Ads WhatsApp İkincil Dönüşümü + Tekil GA4 Takibi (Çift Sayım Engelli)
+  function trackWhatsAppClick(placement, buttonText) {
+    if (typeof window.loadGA === 'function') {
+      window.loadGA();
+    }
+
+    trackGA4Event('whatsapp_baglanti_click', {
+      event_category: 'İletişim',
+      event_label: placement,
+      placement: placement,
+      button_text: buttonText || 'WhatsApp',
+      page_path: window.location.pathname,
+      page_title: document.title
+    });
+
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: GOOGLE_ADS_WHATSAPP_CONVERSION,
+          value: 1.0,
+          currency: 'TRY',
+          transport_type: 'beacon'
+        });
+      }
+    } catch (err) {
+      console.warn('Google Ads WhatsApp tracking error:', err);
+    }
+  }
 
   // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi (Body Portal ile %100 Görünürlük Garantisi)
   const menuBtn = document.querySelector('.menu-toggle-btn, #hamburger');
@@ -163,8 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function getElementPlacement(el) {
     if (!el) return 'genel_sayfa';
     if (el.closest('.site-header, header')) return 'header_navigasyon';
-    if (el.closest('.hero-section, .hero, .inner-hero')) return 'hero_giris_alani';
-    if (el.closest('.sticky-bottom-bar, .mobile-dock, .sticky-cta-bar, .sticky-bottom')) return 'mobil_sabit_alt_bar';
+    if (el.closest('.hero-section, .hero, .inner-hero, .inner-hero-lux')) return 'hero_giris_alani';
+    if (el.closest('.sticky-bottom-bar, .mobile-dock, .mobile-sticky-dock, .sticky-cta-bar, .sticky-bottom')) return 'mobil_sabit_alt_bar';
     if (el.closest('#hero-quote-form, #dispatch-quote-form, form.wp-contact-form')) return 'fiyat_teklif_formu';
     if (el.closest('#price-calculator, .calculator-card, .price-calc-box')) return 'fiyat_hesaplama_araci';
     if (el.closest('.service-card, .services-grid, .service-detail')) return 'hizmet_karti';
@@ -199,37 +229,23 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Global Doğrudan WhatsApp Link / Buton Click Dinleyicisi (Sadece GA4 — Google Ads dönüşümü YOK)
-    const waEl = e.target.closest('a[href*="whatsapp.com"], a[href*="wa.me"], .btn-whatsapp, .sticky-whatsapp-btn, .btn-send-location');
-    if (waEl && !waEl.closest('form')) {
+    // Global Doğrudan WhatsApp Link Dinleyicisi (sendWhatsAppMessage ile yönetilen butonları hariç tutar — çift sayım önlenir)
+    const waEl = e.target.closest('a[href*="whatsapp.com"], a[href*="wa.me"]');
+    if (waEl && !waEl.closest('form') && !waEl.matches('.btn-send-location, .sticky-whatsapp-btn, .btn-whatsapp-direct, .btn-whatsapp')) {
       const placement = getElementPlacement(waEl);
       const rawText = waEl.innerText ? waEl.innerText.trim().replace(/\s+/g, ' ') : 'WhatsApp';
-      trackGA4Event('whatsapp_baglanti_click', {
-        event_category: 'İletişim',
-        event_label: placement,
-        placement: placement,
-        button_text: rawText,
-        page_path: window.location.pathname,
-        page_title: document.title
-      });
+      trackWhatsAppClick(placement, rawText);
     }
   }, { passive: false });
 
   // 2. WhatsApp Yönlendirme Motoru (Safari, Chrome, iOS & Android Uyumlu)
-  window.sendWhatsAppMessage = function(text, customSource) {
+  window.sendWhatsAppMessage = function(text, customSource, buttonText) {
     const encodedText = encodeURIComponent(text);
     const url = `https://api.whatsapp.com/send?phone=${PHONE_NUMBER}&text=${encodedText}`;
 
-    // GA4 WhatsApp Etkinliği (Google Ads dönüşümü gönderilmez)
+    // Tekil GA4 + İkincil Google Ads WhatsApp Dönüşümü (Çift sayım olmadan)
     const placement = customSource || 'whatsapp_yonlendirme';
-    trackGA4Event('whatsapp_baglanti_click', {
-      event_category: 'İletişim',
-      event_label: placement,
-      placement: placement,
-      button_text: 'WhatsApp Mesaj Gönder',
-      page_path: window.location.pathname,
-      page_title: document.title
-    });
+    trackWhatsAppClick(placement, buttonText || 'WhatsApp Mesaj Gönder');
 
     const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
@@ -270,8 +286,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btn.closest('form')) return; // Form içi submit butonlarını atla
       e.preventDefault();
       const placement = getElementPlacement(btn);
+      const rawText = btn.innerText ? btn.innerText.trim().replace(/\s+/g, ' ') : 'WhatsApp';
       const message = 'Merhaba Marmara Çekici, yolda kaldım. Bulunduğum konuma en yakın nöbetçi oto çekici / kurtarıcı aracınızı acil yönlendirir misiniz? Canlı konumumu iletiyorum:';
-      window.sendWhatsAppMessage(message, placement);
+      window.sendWhatsAppMessage(message, placement, rawText);
     });
   });
 

@@ -1129,7 +1129,7 @@ ${regionCardsHtml}
     </button>
   </div>
 
-  <script src="js/main.js?v=3.8" defer></script>
+  <script src="js/main.js?v=3.9" defer></script>
 </body>
 </html>`;
 }
