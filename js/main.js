@@ -16,20 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
 
-  // Google Ads Arama Dönüşümü Tetikleme Motoru (Beacon + Güvenli Geri Dönüş)
-  window.gtag_report_conversion = function (url) {
+  // Google Ads Arama Dönüşümü Tetikleme Motoru (Anında Beacon — Gecikmesiz & iOS Safari Uyumlu)
+  window.gtag_report_conversion = function () {
     if (typeof window.loadGA === 'function') {
       window.loadGA();
     }
-
-    let redirected = false;
-    const callback = function () {
-      if (redirected) return;
-      redirected = true;
-      if (typeof url === 'string' && url.length > 0) {
-        window.location.href = url;
-      }
-    };
 
     try {
       if (typeof window.gtag === 'function') {
@@ -37,21 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
           send_to: GOOGLE_ADS_PHONE_CONVERSION,
           value: 1.0,
           currency: 'TRY',
-          transport_type: 'beacon',
-          event_callback: callback
+          transport_type: 'beacon'
         });
       }
     } catch (err) {
       console.warn('Google Ads tracking error:', err);
     }
-
-    if (typeof url === 'string' && url.length > 0) {
-      setTimeout(callback, 250);
-    }
-    return false;
+    return true;
   };
 
-  // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi
+  // 1. Mobil Menü Aç / Kapat & Dış Tıklama Yönetimi (Body Portal ile %100 Görünürlük Garantisi)
   const menuBtn = document.querySelector('.menu-toggle-btn, #hamburger');
   const mainNav = document.querySelector('.main-nav');
 
@@ -65,7 +51,30 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.appendChild(backdrop);
     }
 
+    // Orijinal DOM konumunu korumak için yer tutucu
+    const navPlaceholder = document.createComment('main-nav-placeholder');
+    let isNavPortaled = false;
+
+    const portalNavToBody = () => {
+      if (isNavPortaled || window.innerWidth >= 992) return;
+      if (mainNav.parentNode) {
+        mainNav.parentNode.insertBefore(navPlaceholder, mainNav);
+        document.body.appendChild(mainNav);
+        isNavPortaled = true;
+      }
+    };
+
+    const restoreNavToHeader = () => {
+      if (!isNavPortaled) return;
+      if (navPlaceholder.parentNode) {
+        navPlaceholder.parentNode.insertBefore(mainNav, navPlaceholder);
+        navPlaceholder.parentNode.removeChild(navPlaceholder);
+      }
+      isNavPortaled = false;
+    };
+
     const openMenu = () => {
+      portalNavToBody();
       menuBtn.classList.add('active');
       menuBtn.setAttribute('aria-expanded', 'true');
       mainNav.classList.add('active');
@@ -79,7 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
       mainNav.classList.remove('active');
       backdrop.classList.remove('active');
       document.body.classList.remove('menu-open');
+      restoreNavToHeader();
     };
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 992 && isNavPortaled) {
+        closeMenu();
+      }
+    });
 
     let lastToggleTime = 0;
     menuBtn.addEventListener('click', (e) => {
@@ -176,10 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
         page_title: document.title
       });
 
-      // Google Ads Telefon Araması Dönüşümü (YALNIZCA telefon aramaları — WhatsApp dahil değil!)
+      // Google Ads Telefon Araması Dönüşümü (e.preventDefault() olmadan anında arama + arka planda beacon)
       if (rawHref && typeof window.gtag_report_conversion === 'function') {
-        e.preventDefault();
-        window.gtag_report_conversion(rawHref);
+        window.gtag_report_conversion();
       }
       return;
     }

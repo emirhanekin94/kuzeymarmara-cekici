@@ -359,6 +359,7 @@ ul, ol {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--dark-border);
+  overflow: visible !important;
   transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -475,20 +476,22 @@ ul, ol {
   }
   .main-nav.active {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     position: fixed !important;
     top: 72px;
     left: 0;
     right: 0;
     width: 100%;
     max-height: calc(100vh - 72px);
+    max-height: calc(100dvh - 72px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     background: #0b0f19;
     border-bottom: 2px solid var(--primary);
     padding: 1.25rem 1rem 2.5rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
-    z-index: 999999 !important;
-    animation: mobileNavSlideDown 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    z-index: 1000002 !important;
   }
   @keyframes mobileNavSlideDown {
     from {
@@ -555,9 +558,14 @@ body.menu-open {
 }
 
 /* Header kendi stacking context'ini oluşturur (sticky + z-index + backdrop-filter);
-   menü açıkken header, backdrop ve alt dock'un üstüne çıkmalı, yoksa menü karartma perdesinin altında kalır. */
+   menü açıkken backdrop-filter kapatılmalı ve overflow:visible olmalı, yoksa iOS/Chrome
+   fixed menüyü 72px header kutusu içinde kırpıp gizler. */
 body.menu-open .site-header {
-  z-index: 1000001;
+  z-index: 1000001 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: #0b0f19 !important;
+  overflow: visible !important;
 }
 
 .header-actions {

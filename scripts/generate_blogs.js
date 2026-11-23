@@ -429,7 +429,7 @@ function generateArticleHtml(blog) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.7">
+  <link rel="stylesheet" href="/css/style.css?v=3.8">
 
   <script type="application/ld+json">
   ${JSON.stringify(articleSchema, null, 2)}
@@ -564,7 +564,7 @@ function generateArticleHtml(blog) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.7" defer></script>
+  <script src="/js/main.js?v=3.8" defer></script>
 </body>
 </html>`;
 }
@@ -626,7 +626,7 @@ function generateBlogIndexHtml(blogsList) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/css/style.css?v=3.7">
+  <link rel="stylesheet" href="/css/style.css?v=3.8">
 
   <script type="application/ld+json">
   {
@@ -722,7 +722,7 @@ function generateBlogIndexHtml(blogsList) {
     </button>
   </div>
 
-  <script src="/js/main.js?v=3.7" defer></script>
+  <script src="/js/main.js?v=3.8" defer></script>
 </body>
 </html>`;
 }
